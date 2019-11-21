@@ -1,0 +1,10 @@
+.companions__list {
+  @include ul-style-reset;
+}
+
+.companions__btn-show {
+  @include set-font(17px, 30px, 700);
+  color: #1d2e5b;
+  border: 0 none;
+  background-color: transparent;
+}

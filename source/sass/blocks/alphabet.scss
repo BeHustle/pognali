@@ -1,0 +1,14 @@
+.alphabet {
+  @include ul-style-reset;
+}
+
+.alphabet__link {
+  @include set-font(14px, 18px, 500);
+  color: #1d2e5b;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  &--active {
+    color: #ffffff;
+    background-color: #1d2e5b;
+  }
+}

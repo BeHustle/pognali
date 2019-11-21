@@ -1,0 +1,4 @@
+.checkbox__text {
+  @include set-font(15px, 15px, 400);
+  color: $grey;
+}

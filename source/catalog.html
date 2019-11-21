@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Погнали! - Попутчики</title>
+  <meta charset="utf-8">
+  <title>Погнали - главная</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="page-header">
@@ -13,21 +15,19 @@
     <button class="main-nav__toggle" type="button">Открыть меню</button>
     <ul class="main-nav__list site-list">
       <li class="site-list__item">
-        <a href="index.html">О сервисе</a>
+        <a href="index.html" class="site-list__link">О сервисе</a>
       </li>
       <li class="site-list__item">
-        <a href="form.html">Направления</a>
+        <a href="form.html" class="site-list__link">Направления</a>
       </li>
       <li class="site-list__item">
-        <a>Попутчики</a>
-      </li>
-    </ul>
-    <ul class="main-nav__list user-list">
-      <li class="user-list__item">
-        <a href="#" class="button">Авторизация</a>
+        <a class="site-list__link">Попутчики</a>
       </li>
     </ul>
     <ul class="main-nav__list contacts-list">
+      <li class="contacts-list__item">
+        <a href="#" class="button">Авторизация</a>
+      </li>
       <li class="contacts-list__item">
         <a href="tel:88005558628" class="contacts-list__link contacts-list__link--tel">
           8 800 555-86-28
@@ -40,14 +40,14 @@
       </li>
     </ul>
     <ul class="main-nav__list social-list">
-      <li class="social-list__item social-list__item--facebook">
-        <a href="#">Facebook</a>
+      <li class="social-list__item">
+        <a href="#" class="social-list__link social-list__link--facebook">Facebook</a>
       </li>
-      <li class="social-list__item social-list__item--vk">
-        <a href="#">Vkontakte</a>
+      <li class="social-list__item">
+        <a href="#" class="social-list__link social-list__link--vk">Vkontakte</a>
       </li>
-      <li class="social-list__item social-list__item--instagram">
-        <a href="#">Instagram</a>
+      <li class="social-list__item">
+        <a href="#" class="social-list__link social-list__link--instagram">Instagram</a>
       </li>
     </ul>
   </nav>
@@ -63,17 +63,17 @@
         <a href="#" class="countries-filter__link continents__link">Европа</a>
       </li>
       <li class="countries-filter__item continents__item">
-        <a href="#" class="countries-filter__link continents__link">Азия</a>
+        <a href="#" class="countries-filter__link continents__link continents__link--disabled">Азия</a>
       </li>
       <li class="countries-filter__item continents__item">
-        <a href="#" class="countries-filter__link continents__link">Америка</a>
+        <a href="#" class="countries-filter__link continents__link continents__link--disabled">Америка</a>
       </li>
       <li class="countries-filter__item continents__item">
-        <a href="#" class="countries-filter__link continents__link">Острова</a>
+        <a href="#" class="countries-filter__link continents__link continents__link--disabled">Острова</a>
       </li>
     </ul>
     <ul class="countries-filter__alphabet alphabet">
-      <li class="alphabet__item"><a href="#" class="alphabet__link">А</a></li>
+      <li class="alphabet__item"><a href="#" class="alphabet__link alphabet__link--active">А</a></li>
       <li class="alphabet__item"><a href="#" class="alphabet__link">Б</a></li>
       <li class="alphabet__item"><a href="#" class="alphabet__link">В</a></li>
       <li class="alphabet__item"><a href="#" class="alphabet__link">Г</a></li>
@@ -99,35 +99,36 @@
       <li class="alphabet__item"><a href="#" class="alphabet__link">Ю</a></li>
       <li class="alphabet__item"><a href="#" class="alphabet__link">Я</a></li>
     </ul>
-    <ul class="countries-filter__list countries">
-      <li class="countries-filter__item countries__item">
-        <a href="#" class="countries-filter__link countries__link">Афганистан</a>
+    <ul class="countries-filter__list">
+      <li class="countries-filter__item">
+        <a href="#" class="countries-filter__link content__text content__text--regular content__text--grey">Афганистан</a>
       </li>
-      <li class="countries-filter__item countries__item">
-        <a href="#" class="countries-filter__link countries__link">Албания</a>
+      <li class="countries-filter__item">
+        <a href="#" class="countries-filter__link content__text content__text--regular content__text--grey">Албания</a>
       </li>
-      <li class="countries-filter__item countries__item">
-        <a href="#" class="countries-filter__link countries__link">Алжир</a>
+      <li class="countries-filter__item">
+        <a href="#" class="countries-filter__link content__text content__text--regular content__text--grey">Алжир</a>
       </li>
-      <li class="countries-filter__item countries__item">
-        <a href="#" class="countries-filter__link countries__link">Андорра</a>
+      <li class="countries-filter__item">
+        <a href="#" class="countries-filter__link content__text content__text--regular content__text--grey">Андорра</a>
       </li>
-      <li class="countries-filter__item countries__item">
-        <a href="#" class="countries-filter__link countries__link">Аргентина</a>
+      <li class="countries-filter__item">
+        <a href="#" class="countries-filter__link content__text content__text--regular content__text--grey">Аргентина</a>
       </li>
-      <li class="countries-filter__item countries__item">
-        <a href="#" class="countries-filter__link countries__link">Армения</a>
+      <li class="countries-filter__item">
+        <a href="#" class="countries-filter__link content__text content__text--regular content__text--grey">Армения</a>
       </li>
-      <li class="countries-filter__item countries__item">
-        <a href="#" class="countries-filter__link countries__link">Австралия</a>
+      <li class="countries-filter__item">
+        <a href="#" class="countries-filter__link content__text content__text--regular content__text--grey">Австралия</a>
       </li>
-      <li class="countries-filter__item countries__item">
-        <a href="#" class="countries-filter__link countries__link">Австрия</a>
+      <li class="countries-filter__item">
+        <a href="#" class="countries-filter__link content__text content__text--regular content__text--grey">Австрия</a>
       </li>
-      <li class="countries-filter__item countries__item">
-        <a href="#" class="countries-filter__link countries__link">Азербайджан</a>
+      <li class="countries-filter__item">
+        <a href="#" class="countries-filter__link content__text content__text--regular content__text--grey">Азербайджан</a>
       </li>
     </ul>
+    <button class="countries-filter__hide-btn">Свернуть</button>
   </section>
 
   <section class="travel-filter">
@@ -142,17 +143,17 @@
         <legend class="travel-filter__legend">
           <button class="travel-filter__show-btn" type="button">Музыка</button>
         </legend>
-        <label class="travel-filter__label">
-          <input type="checkbox" name="hardrock" class="travel-filter__checkbox" checked>
-          Тяжелый рок
+        <label class="travel-filter__label checkbox">
+          <input type="checkbox" name="hardrock" class="travel-filter__checkbox checkbox__input" checked>
+          <span class="checkbox__text">Тяжелый рок</span>
         </label>
         <label class="travel-filter__label">
-          <input type="checkbox" name="russian-rap" class="travel-filter__checkbox">
-          Русский рэп
+          <input type="checkbox" name="russian-rap" class="travel-filter__checkbox checkbox__input">
+          <span class="checkbox__text">Русский рэп</span>
         </label>
         <label class="travel-filter__label">
-          <input type="checkbox" name="euro-dance" class="travel-filter__checkbox">
-          Евроденс
+          <input type="checkbox" name="euro-dance" class="travel-filter__checkbox checkbox__input">
+          <span class="checkbox__text">Евроденс</span>
         </label>
       </fieldset>
       <fieldset class="travel-filter__fieldset">
@@ -165,25 +166,25 @@
           <button class="travel-filter__show-btn" type="button">Транспорт</button>
         </legend>
         <div class="travel-filter__transport-container transport">
-          <label class="travel-filter__transport-item transport__item--plane">
-            <input type="checkbox" name="by-plane" class="travel-filter__transport-checkbox" checked>
-            Самолетом
+          <label class="travel-filter__transport-item checkbox">
+            <input type="checkbox" name="by-plane" class="travel-filter__transport-checkbox checkbox__input" checked>
+            <span class="checkbox__text">Самолетом</span>
           </label>
-          <label class="travel-filter__transport-item transport__item--bus">
-            <input type="checkbox" name="by-bus" class="travel-filter__transport-checkbox" checked>
-            Автобусом
+          <label class="travel-filter__transport-item">
+            <input type="checkbox" name="by-bus" class="travel-filter__transport-checkbox checkbox__input" checked>
+            <span class="checkbox__text">Автобусом</span>
           </label>
-          <label class="travel-filter__transport-item transport__item--bicycle">
-            <input type="checkbox" name="by-bicycle" class="travel-filter__transport-checkbox">
-            Велосипедом
+          <label class="travel-filter__transport-item">
+            <input type="checkbox" name="by-bicycle" class="travel-filter__transport-checkbox checkbox__input">
+            <span class="checkbox__text">Велосипедом</span>
           </label>
-          <label class="travel-filter__transport-item transport__item--walk">
+          <label class="travel-filter__transport-item">
             <input type="checkbox" name="by-walk" class="travel-filter__transport-checkbox" checked>
             Пешком
           </label>
         </div>
       </fieldset>
-      <fieldset class="travel-filter__fieldset">
+      <fieldset class="travel-filter__fieldset ">
         <legend class="travel-filter__legend">
           <button class="travel-filter__show-btn" type="button">Левел</button>
         </legend>
@@ -201,14 +202,14 @@
       <li class="companions__item companion">
         <img src="" width="70" height="70" alt="Таня Фирсова" class="companion__image companion__image--small">
         <span class="companion__likes companion__likes--favourite">1,5 M</span>
-        <h3 class="companion__name companion__name--offline companion__name--small">Таня Фирсова</h3>
-        <ul class="companion__tags-list">
-          <li class="companion__tag">#ЗОЖ</li>
-          <li class="companion__tag">#ПП</li>
-          <li class="companion__tag">#Фитнес</li>
-          <li class="companion__tag">#пляж</li>
-          <li class="companion__tag">#авокадо</li>
-          <li class="companion__tag">#смузи</li>
+        <h3 class="companion__name companion__name--small">Таня Фирсова</h3>
+        <ul class="companion__tags">
+          <li class="companion__tag companion__tag--small">#ЗОЖ</li>
+          <li class="companion__tag companion__tag--small">#ПП</li>
+          <li class="companion__tag companion__tag--small">#Фитнес</li>
+          <li class="companion__tag companion__tag--small">#пляж</li>
+          <li class="companion__tag companion__tag--small">#авокадо</li>
+          <li class="companion__tag companion__tag--small">#смузи</li>
         </ul>
         <div class="companion__fieldset">хочет посетить:</div>
         <ul class="companion__countries-list">
@@ -226,11 +227,11 @@
           </li>
         </ul>
         <div class="companion__fieldset">транспорт:</div>
-        <ul class="companion__transport-list transport">
-          <li class="transport__item transport__item--small transport__item--plane transport__item--active">Самолетом</li>
-          <li class="transport__item transport__item--small transport__item--bus">Автобусом</li>
-          <li class="transport__item transport__item--small transport__item--bicycle">Велосипедом</li>
-          <li class="transport__item transport__item--small transport__item--walk">Пешком</li>
+        <ul class="companion__transports transport">
+          <li class="transport__item transport__item--small transport__item--active">Самолетом</li>
+          <li class="transport__item transport__item--small">Автобусом</li>
+          <li class="transport__item transport__item--small">Велосипедом</li>
+          <li class="transport__item transport__item--small">Пешком</li>
         </ul>
         <div class="companion__fieldset">левел:</div>
         <div class="companion__level companion__level--small">99</div>
@@ -240,13 +241,13 @@
       <li class="companions__item companion">
         <img src="" width="70" height="70" alt="Петя Демин" class="companion__image companion__image--small">
         <span class="companion__likes">150</span>
-        <h3 class="companion__name companion__name--offline companion__name--small">Петя Демин</h3>
-        <ul class="companion__tags-list">
-          <li class="companion__tag">#бургер</li>
-          <li class="companion__tag">#бар</li>
-          <li class="companion__tag">#футбол</li>
-          <li class="companion__tag">#концерт</li>
-          <li class="companion__tag">#крафт</li>
+        <h3 class="companion__name companion__name--small">Петя Демин</h3>
+        <ul class="companion__tags">
+          <li class="companion__tag companion__tag--small">#бургер</li>
+          <li class="companion__tag companion__tag--small">#бар</li>
+          <li class="companion__tag companion__tag--small">#футбол</li>
+          <li class="companion__tag companion__tag--small">#концерт</li>
+          <li class="companion__tag companion__tag--small">#крафт</li>
         </ul>
         <div class="companion__fieldset">хочет посетить:</div>
         <ul class="companion__countries-list">
@@ -260,11 +261,11 @@
           </li>
         </ul>
         <div class="companion__fieldset">транспорт:</div>
-        <ul class="companion__transport-list transport">
-          <li class="transport__item transport__item--small transport__item--plane transport__item--active">Самолетом</li>
-          <li class="transport__item transport__item--small transport__item--bus transport__item--active">Автобусом</li>
-          <li class="transport__item transport__item--small transport__item--bicycle">Велосипедом</li>
-          <li class="transport__item transport__item--small transport__item--walk transport__item--active">Пешком</li>
+        <ul class="companion__transports transport">
+          <li class="transport__item transport__item--small transport__item--active">Самолетом</li>
+          <li class="transport__item transport__item--small transport__item--active">Автобусом</li>
+          <li class="transport__item transport__item--small">Велосипедом</li>
+          <li class="transport__item transport__item--small transport__item--active">Пешком</li>
         </ul>
         <div class="companion__fieldset">левел:</div>
         <div class="companion__level companion__level--small">80</div>
@@ -274,13 +275,13 @@
       <li class="companions__item companion">
         <img src="" width="70" height="70" alt="Марк Смолов" class="companion__image companion__image--small">
         <span class="companion__likes">1700</span>
-        <h3 class="companion__name companion__name--offline companion__name--small">Марк Смолов</h3>
-        <ul class="companion__tags-list">
-          <li class="companion__tag">#рэп</li>
-          <li class="companion__tag">#тату</li>
-          <li class="companion__tag">#хайпбист</li>
-          <li class="companion__tag">#кроссовки</li>
-          <li class="companion__tag">#суприм</li>
+        <h3 class="companion__name companion__name--small">Марк Смолов</h3>
+        <ul class="companion__tags">
+          <li class="companion__tag companion__tag--small">#рэп</li>
+          <li class="companion__tag companion__tag--small">#тату</li>
+          <li class="companion__tag companion__tag--small">#хайпбист</li>
+          <li class="companion__tag companion__tag--small">#кроссовки</li>
+          <li class="companion__tag companion__tag--small">#суприм</li>
         </ul>
         <div class="companion__fieldset">хочет посетить:</div>
         <ul class="companion__countries-list">
@@ -298,11 +299,11 @@
           </li>
         </ul>
         <div class="companion__fieldset">транспорт:</div>
-        <ul class="companion__transport-list transport">
-          <li class="transport__item transport__item--small transport__item--plane transport__item--active">Самолетом</li>
-          <li class="transport__item transport__item--small transport__item--bus">Автобусом</li>
-          <li class="transport__item transport__item--small transport__item--bicycle transport__item--active">Велосипедом</li>
-          <li class="transport__item transport__item--small transport__item--walk">Пешком</li>
+        <ul class="companion__transports transport">
+          <li class="transport__item transport__item--small transport__item--active">Самолетом</li>
+          <li class="transport__item transport__item--small">Автобусом</li>
+          <li class="transport__item transport__item--small transport__item--active">Велосипедом</li>
+          <li class="transport__item transport__item--small">Пешком</li>
         </ul>
         <div class="companion__fieldset">левел:</div>
         <div class="companion__level companion__level--small">80</div>
@@ -313,11 +314,11 @@
         <img src="" width="70" height="70" alt="Лариса Роговая" class="companion__image companion__image--small">
         <span class="companion__likes">23</span>
         <h3 class="companion__name companion__name--online companion__name--small">Лариса Роговая</h3>
-        <ul class="companion__tags-list">
-          <li class="companion__tag">#образование</li>
-          <li class="companion__tag">#карьера</li>
-          <li class="companion__tag">#учеба</li>
-          <li class="companion__tag">#линкедин</li>
+        <ul class="companion__tags">
+          <li class="companion__tag companion__tag--small">#образование</li>
+          <li class="companion__tag companion__tag--small">#карьера</li>
+          <li class="companion__tag companion__tag--small">#учеба</li>
+          <li class="companion__tag companion__tag--small">#линкедин</li>
         </ul>
         <div class="companion__fieldset">хочет посетить:</div>
         <ul class="companion__countries-list">
@@ -331,18 +332,18 @@
           </li>
         </ul>
         <div class="companion__fieldset">транспорт:</div>
-        <ul class="companion__transport-list transport">
-          <li class="transport__item transport__item--small transport__item--plane transport__item--active">Самолетом</li>
-          <li class="transport__item transport__item--small transport__item--bus transport__item--active">Автобусом</li>
-          <li class="transport__item transport__item--small transport__item--bicycle">Велосипедом</li>
-          <li class="transport__item transport__item--small transport__item--walk">Пешком</li>
+        <ul class="companion__transports transport">
+          <li class="transport__item transport__item--small transport__item--active">Самолетом</li>
+          <li class="transport__item transport__item--small transport__item--active">Автобусом</li>
+          <li class="transport__item transport__item--small">Велосипедом</li>
+          <li class="transport__item transport__item--small">Пешком</li>
         </ul>
         <div class="companion__fieldset">левел:</div>
         <div class="companion__level companion__level--small">50</div>
         <button type="button" class="companion__go-btn button">Позвать</button>
       </li>
     </ul>
-    <button class="companions__btn-show">Показать еще</button>
+    <button type="button" class="companions__btn-show">Показать еще</button>
     <div class="companions__pagination pagination">
       <button class="pagination__btn pagination__btn--left" aria-label="Назад"></button>
       <button class="pagination__btn pagination__btn--right" aria-label="Вперед"></button>
@@ -355,18 +356,18 @@
     <img src="" width="96" height="15" alt="Погнали - сервис путешествий" class="logo logo--blue">
   </a>
   <ul class="page-footer__nav social-list">
-    <li class="social-list__item social-list__item--facebook">
-      <a href="#">Facebook</a>
+    <li class="social-list__item">
+      <a href="#" class="social-list__link social-list__link--facebook">Facebook</a>
     </li>
-    <li class="social-list__item social-list__item--vk">
-      <a href="#">Vkontakte</a>
+    <li class="social-list__item">
+      <a href="#" class="social-list__link social-list__link--vk">Vkontakte</a>
     </li>
-    <li class="social-list__item social-list__item--instagram">
-      <a href="#">Instagram</a>
+    <li class="social-list__item">
+      <a href="#" class="social-list__link social-list__link--instagram">Instagram</a>
     </li>
   </ul>
   <div class="copyright">
-    <p class="copyright__title">Разработано</p>
+    <p class="copyright__title content__text content__text--grey">Разработано</p>
     <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
       <img src="" alt="HTML Academy" width="27" height="34">
     </a>
