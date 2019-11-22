@@ -1,3 +1,7 @@
+.companions {
+  background-color: $blue-black;
+}
+
 .companions__list {
   @include ul-style-reset;
 }

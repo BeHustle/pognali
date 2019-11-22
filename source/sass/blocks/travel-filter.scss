@@ -1,3 +1,7 @@
+.travel-filter {
+  background-color: $yellow;
+}
+
 .travel-filter__title {
   @include set-font(22px, 22px, 700);
   color: #1d2e5b;

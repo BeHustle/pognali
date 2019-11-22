@@ -1,0 +1,14 @@
+.plans {
+  background-color: #dfe3f0;
+}
+
+.plans__title {
+  @include set-font(24px, 24px, 700);
+  color: #1d2e5b;
+  margin: 0;
+  padding: 0;
+}
+
+.plans__list {
+  @include ul-style-reset;
+}

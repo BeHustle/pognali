@@ -1,3 +1,7 @@
+.direction {
+  background-color: #ffffff;
+}
+
 .direction__title {
   @include set-font(21px, 21px, 700);
   color: $blue-black;

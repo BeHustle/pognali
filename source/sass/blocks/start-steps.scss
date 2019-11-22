@@ -1,3 +1,7 @@
+.start-steps {
+  background-color: $orange;
+}
+
 .start-steps__link {
   @include set-font(18px, 18px, 700);
   color: $blue-black;

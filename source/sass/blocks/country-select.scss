@@ -1,0 +1,5 @@
+.country-select__title {
+  @include set-font(14px, 18px, 500);
+  color: #1d2e5b;
+  text-transform: uppercase;
+}

@@ -1,3 +1,7 @@
+.countries-filter {
+  background-color: #e2e5f2;
+}
+
 .countries-filter__title {
   @include set-font(16px, 22px, 700);
   color: $blue-white;

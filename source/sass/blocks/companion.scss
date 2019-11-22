@@ -1,8 +1,16 @@
+.companion {
+  background-color: #ffffff;
+}
+
 .companion__level {
   @include set-font(24px, 24px, 700);
   &--medium {
     @include set-font(38px, 38px, 700);
     color: $blue-black;
+  }
+  &--small {
+    @include set-font(24px, 18px, 700);
+    color: #1d2e5b;
   }
 }
 
@@ -30,6 +38,9 @@
   &--small {
     @include set-font(15px, 18px, 400)
   }
+  &--medium {
+    @include set-font(16px, 22px, 400);
+  }
 }
 
 .companion__transports {
@@ -47,6 +58,13 @@
 .companion__fieldset {
   @include set-font(15px, 18px, 400);
   color: $grey;
+  &--big {
+    @include set-font(16px, 18px, 700);
+    color: #1d2e5b;
+    text-transform: uppercase;
+  }
 }
 
-
+.form-main .companion {
+  background-color: transparent;
+}
