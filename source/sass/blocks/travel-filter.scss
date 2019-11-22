@@ -1,0 +1,33 @@
+.travel-filter {
+  background-color: $yellow;
+}
+
+.travel-filter__title {
+  @include set-font(22px, 22px, 700);
+  color: #1d2e5b;
+  padding: 0;
+  margin: 0;
+}
+
+.travel-filter__show-btn {
+  @include set-font(16px, 18px, 700);
+  color: #1d2e5b;
+  text-transform: uppercase;
+  border: 0 none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.travel-filter__fieldset {
+  border: 0 none;
+  padding: 0;
+  margin: 0;
+}
+
+.travel-filter__submit-btn {
+  @include set-font(17px, 30px, 700);
+  color: $blue-black;
+  text-transform: uppercase;
+  border: 0 none;
+  background-color: #ffffff;
+}

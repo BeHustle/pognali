@@ -1,0 +1,10 @@
+.rates {
+  background-color: #edeff6;
+}
+
+.rates__modal-show {
+  @include set-font(16px, 16px, 700);
+  color: $blue-white;
+  border: 0 none;
+  background-color: transparent;
+}

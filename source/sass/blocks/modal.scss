@@ -1,0 +1,14 @@
+.modal {
+  background-color: #ffffff;
+}
+
+.modal__list {
+  @include ul-style-reset;
+}
+
+.modal__close-btn {
+  @include set-font(16px, 24px, 700);
+  color: #1d2e5b;
+  border: 0 none;
+  background-color: transparent;
+}

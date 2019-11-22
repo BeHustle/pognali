@@ -1,0 +1,84 @@
+@import "vars";
+@import "mixins";
+
+@font-face {
+  font-family: "Blogger Sans";
+  src: url("../fonts/bloggersans.woff") format("woff"),
+  url("../fonts/bloggersans-bold.woff") format("woff"),
+  url("../fonts/bloggersans-bolditalic.woff") format("woff"),
+  url("../fonts/bloggersans-italic.woff") format("woff"),
+  url("../fonts/bloggersans-light.woff") format("woff"),
+  url("../fonts/bloggersans-lightitalic.woff") format("woff"),
+  url("../fonts/bloggersans-medium.woff") format("woff"),
+  url("../fonts/bloggersans-mediumitalic.woff") format("woff");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Blogger Sans", Arial, sans-serif;
+  color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+@import "blocks/about.scss";
+@import "blocks/add-plan.scss";
+@import "blocks/alphabet.scss";
+@import "blocks/button.scss";
+@import "blocks/calendar.scss";
+@import "blocks/catalog-main.scss";
+@import "blocks/checkbox.scss";
+@import "blocks/companion.scss";
+@import "blocks/companions.scss";
+@import "blocks/contacts-list.scss";
+@import "blocks/contacts.scss";
+@import "blocks/content.scss";
+@import "blocks/continents.scss";
+@import "blocks/copyright.scss";
+@import "blocks/countries-filter.scss";
+@import "blocks/countries.scss";
+@import "blocks/country-select.scss";
+@import "blocks/cta.scss";
+@import "blocks/d-none.scss";
+@import "blocks/direction.scss";
+@import "blocks/directions.scss";
+@import "blocks/form-main.scss";
+@import "blocks/get-started.scss";
+@import "blocks/input-numbers.scss";
+@import "blocks/intro.scss";
+@import "blocks/leed-form.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/modal.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/page-title.scss";
+@import "blocks/pagination.scss";
+@import "blocks/plan.scss";
+@import "blocks/plans.scss";
+@import "blocks/quote.scss";
+@import "blocks/rates.scss";
+@import "blocks/site-list.scss";
+@import "blocks/social-list.scss";
+@import "blocks/start-steps.scss";
+@import "blocks/step.scss";
+@import "blocks/transport.scss";
+@import "blocks/travel-filter.scss";
+@import "blocks/visually-hidden.scss";

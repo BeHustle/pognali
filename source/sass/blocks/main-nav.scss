@@ -1,0 +1,7 @@
+.main-nav {
+  background-color: #ffffff;
+}
+
+.main-nav__list {
+  @include ul-style-reset;
+}

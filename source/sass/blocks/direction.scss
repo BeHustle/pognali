@@ -1,0 +1,26 @@
+.direction {
+  background-color: #ffffff;
+}
+
+.direction__title {
+  @include set-font(21px, 21px, 700);
+  color: $blue-black;
+  margin: 0;
+  padding: 0;
+}
+
+.direction__text {
+  @include set-font(16px, 18px, 700);
+  color: $grey;
+  opacity: 0.3;
+  padding: 0;
+  margin: 0;
+}
+
+.direction__users {
+  @include set-font(16px, 30px, 500);
+  color: $grey;
+  opacity: 0.3;
+  padding: 0;
+  margin: 0;
+}
