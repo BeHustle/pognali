@@ -1,14 +1,52 @@
 .modal {
   background-color: #ffffff;
+  width: 270px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
 }
 
 .modal__list {
   @include ul-style-reset;
+  padding: 25px;
 }
 
 .modal__close-btn {
   @include set-font(16px, 24px, 700);
   color: #1d2e5b;
   border: 0 none;
-  background-color: transparent;
+  padding: 0;
+  display: block;
+  text-align: center;
+  width: 100%;
+  background-color: #f3f4f8;
+}
+
+.modal__title {
+  text-align: center;
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .modal {
+    width: 690px;
+  }
+
+  .modal__list {
+    padding: 50px 85px 0 85px;
+  }
+
+  .modal__item {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .modal {
+    width: 750px;
+  }
+
+  .modal__list {
+    padding: 50px 55px 0 55px;
+  }
 }

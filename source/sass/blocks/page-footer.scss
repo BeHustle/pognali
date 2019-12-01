@@ -1,3 +1,16 @@
 .page-footer {
   background-color: #ffffff;
 }
+
+.page-footer__logo-link {
+  display: block;
+  text-align: center;
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .page-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

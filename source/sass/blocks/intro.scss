@@ -6,3 +6,50 @@
   margin: 0;
   padding: 0;
 }
+
+.intro__menu-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro__title {
+  text-align: center;
+}
+
+.intro__quote {
+  padding-left: 25px;
+  padding-right: 90px;
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .intro__menu-list {
+    display: none;
+  }
+
+  .intro__title {
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .intro__quote {
+    width: 270px;
+    margin-left: 50px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .intro__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .intro__title {
+    width: 400px;
+    margin-right: 0;
+    margin-left: 70px;
+    text-align: left;
+  }
+}

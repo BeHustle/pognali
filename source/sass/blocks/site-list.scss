@@ -1,4 +1,29 @@
+.site-list {
+  text-align: center;
+}
+
 .site-list__link {
   @include set-font(30px, 36px, 500);
   color: $blue-white;
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .site-list {
+    text-align: left;
+  }
+
+  .site-list__link {
+    @include set-font(60px, 71px, 500);
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .site-list {
+    text-align: left;
+  }
+
+  .site-list__link {
+    @include set-font(20px, 30px, 500);
+    color: #ffffff;
+  }
 }

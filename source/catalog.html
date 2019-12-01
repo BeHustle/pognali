@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Погнали - главная</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Погнали - попутчики</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,8 +12,8 @@
   <a class="page-header__logo-link">
     <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали - сервис путешествий" class="logo logo--white">
   </a>
+  <button class="main-nav__toggle" type="button" aria-label="открыть меню."></button>
   <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
     <ul class="main-nav__list site-list">
       <li class="site-list__item">
         <a href="index.html" class="site-list__link">О сервисе</a>
@@ -59,17 +60,17 @@
     <h2 class="countries-filter__title">Фильтрация по странам</h2>
     <button class="countries-filter__show-btn">Показать страны</button>
     <ul class="countries-filter__list continents">
-      <li class="countries-filter__item continents__item">
-        <a href="#" class="countries-filter__link continents__link">Европа</a>
+      <li class="continents__item">
+        <a href="#" class="continents__link">Европа</a>
       </li>
-      <li class="countries-filter__item continents__item">
-        <a href="#" class="countries-filter__link continents__link continents__link--disabled">Азия</a>
+      <li class="continents__item">
+        <a href="#" class="continents__link continents__link--disabled">Азия</a>
       </li>
-      <li class="countries-filter__item continents__item">
-        <a href="#" class="countries-filter__link continents__link continents__link--disabled">Америка</a>
+      <li class="continents__item">
+        <a href="#" class="continents__link continents__link--disabled">Америка</a>
       </li>
-      <li class="countries-filter__item continents__item">
-        <a href="#" class="countries-filter__link continents__link continents__link--disabled">Острова</a>
+      <li class="continents__item">
+        <a href="#" class="continents__link continents__link--disabled">Острова</a>
       </li>
     </ul>
     <ul class="countries-filter__alphabet alphabet">
@@ -99,33 +100,33 @@
       <li class="alphabet__item"><a href="#" class="alphabet__link">Ю</a></li>
       <li class="alphabet__item"><a href="#" class="alphabet__link">Я</a></li>
     </ul>
-    <ul class="countries-filter__list">
-      <li class="countries-filter__item">
-        <a href="#" class="countries-filter__link content__text content__text--regular content__text--grey">Афганистан</a>
+    <ul class="countries-filter__list countries">
+      <li class="countries__item">
+        <a href="#" class="countries__link content-text content-text--regular content-text--grey">Афганистан</a>
       </li>
-      <li class="countries-filter__item">
-        <a href="#" class="countries-filter__link content__text content__text--regular content__text--grey">Албания</a>
+      <li class="countries__item">
+        <a href="#" class="countries__link content-text content-text--regular content-text--grey">Албания</a>
       </li>
-      <li class="countries-filter__item">
-        <a href="#" class="countries-filter__link content__text content__text--regular content__text--grey">Алжир</a>
+      <li class="countries__item">
+        <a href="#" class="countries__link content-text content-text--regular content-text--grey">Алжир</a>
       </li>
-      <li class="countries-filter__item">
-        <a href="#" class="countries-filter__link content__text content__text--regular content__text--grey">Андорра</a>
+      <li class="countries__item">
+        <a href="#" class="countries__link content-text content-text--regular content-text--grey">Андорра</a>
       </li>
-      <li class="countries-filter__item">
-        <a href="#" class="countries-filter__link content__text content__text--regular content__text--grey">Аргентина</a>
+      <li class="countries__item">
+        <a href="#" class="countries__link content-text content-text--regular content-text--grey">Аргентина</a>
       </li>
-      <li class="countries-filter__item">
-        <a href="#" class="countries-filter__link content__text content__text--regular content__text--grey">Армения</a>
+      <li class="countries__item">
+        <a href="#" class="countries__link content-text content-text--regular content-text--grey">Армения</a>
       </li>
-      <li class="countries-filter__item">
-        <a href="#" class="countries-filter__link content__text content__text--regular content__text--grey">Австралия</a>
+      <li class="countries__item">
+        <a href="#" class="countries__link content-text content-text--regular content-text--grey">Австралия</a>
       </li>
-      <li class="countries-filter__item">
-        <a href="#" class="countries-filter__link content__text content__text--regular content__text--grey">Австрия</a>
+      <li class="countries__item">
+        <a href="#" class="countries__link content-text content-text--regular content-text--grey">Австрия</a>
       </li>
-      <li class="countries-filter__item">
-        <a href="#" class="countries-filter__link content__text content__text--regular content__text--grey">Азербайджан</a>
+      <li class="countries__item">
+        <a href="#" class="countries__link content-text content-text--regular content-text--grey">Азербайджан</a>
       </li>
     </ul>
     <button class="countries-filter__hide-btn">Свернуть</button>
@@ -166,21 +167,21 @@
           <button class="travel-filter__show-btn" type="button">Транспорт</button>
         </legend>
         <div class="travel-filter__transport-container transport">
-          <label class="travel-filter__transport-item checkbox">
-            <input type="checkbox" name="by-plane" class="travel-filter__transport-checkbox checkbox__input" checked>
+          <label class="transport__item checkbox">
+            <input type="checkbox" name="by-plane" class="checkbox__input" checked>
             <span class="checkbox__text">Самолетом</span>
           </label>
-          <label class="travel-filter__transport-item">
-            <input type="checkbox" name="by-bus" class="travel-filter__transport-checkbox checkbox__input" checked>
+          <label class="transport__item">
+            <input type="checkbox" name="by-bus" class="checkbox__input" checked>
             <span class="checkbox__text">Автобусом</span>
           </label>
-          <label class="travel-filter__transport-item">
-            <input type="checkbox" name="by-bicycle" class="travel-filter__transport-checkbox checkbox__input">
+          <label class="transport__item">
+            <input type="checkbox" name="by-bicycle" class="checkbox__input">
             <span class="checkbox__text">Велосипедом</span>
           </label>
-          <label class="travel-filter__transport-item">
-            <input type="checkbox" name="by-walk" class="travel-filter__transport-checkbox" checked>
-            Пешком
+          <label class="transport__item">
+            <input type="checkbox" name="by-walk" class="checkbox__input" checked>
+            <span class="checkbox__text">Пешком</span>
           </label>
         </div>
       </fieldset>
@@ -203,13 +204,13 @@
         <img src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="Таня Фирсова" class="companion__image companion__image--small">
         <span class="companion__likes companion__likes--favourite">1,5 M</span>
         <h3 class="companion__name companion__name--small">Таня Фирсова</h3>
-        <ul class="companion__tags">
-          <li class="companion__tag companion__tag--small">#ЗОЖ</li>
-          <li class="companion__tag companion__tag--small">#ПП</li>
-          <li class="companion__tag companion__tag--small">#Фитнес</li>
-          <li class="companion__tag companion__tag--small">#пляж</li>
-          <li class="companion__tag companion__tag--small">#авокадо</li>
-          <li class="companion__tag companion__tag--small">#смузи</li>
+        <ul class="companion__tags tags tags--small">
+          <li class="tags__item">#ЗОЖ</li>
+          <li class="tags__item">#ПП</li>
+          <li class="tags__item">#Фитнес</li>
+          <li class="tags__item">#пляж</li>
+          <li class="tags__item">#авокадо</li>
+          <li class="tags__item">#смузи</li>
         </ul>
         <div class="companion__fieldset">хочет посетить:</div>
         <ul class="companion__countries-list">
@@ -227,11 +228,11 @@
           </li>
         </ul>
         <div class="companion__fieldset">транспорт:</div>
-        <ul class="companion__transports transport">
-          <li class="transport__item transport__item--small transport__item--active">Самолетом</li>
-          <li class="transport__item transport__item--small">Автобусом</li>
-          <li class="transport__item transport__item--small">Велосипедом</li>
-          <li class="transport__item transport__item--small">Пешком</li>
+        <ul class="companion__transports transport transport--small">
+          <li class="transport__item transport__item--active">Самолетом</li>
+          <li class="transport__item">Автобусом</li>
+          <li class="transport__item">Велосипедом</li>
+          <li class="transport__item">Пешком</li>
         </ul>
         <div class="companion__fieldset">левел:</div>
         <div class="companion__level companion__level--small">99</div>
@@ -242,12 +243,12 @@
         <img src="img/demin-mobile@1x.jpg" width="70" height="70" alt="Петя Демин" class="companion__image companion__image--small">
         <span class="companion__likes">150</span>
         <h3 class="companion__name companion__name--small">Петя Демин</h3>
-        <ul class="companion__tags">
-          <li class="companion__tag companion__tag--small">#бургер</li>
-          <li class="companion__tag companion__tag--small">#бар</li>
-          <li class="companion__tag companion__tag--small">#футбол</li>
-          <li class="companion__tag companion__tag--small">#концерт</li>
-          <li class="companion__tag companion__tag--small">#крафт</li>
+        <ul class="companion__tags tags tags--small">
+          <li class="tags__item">#бургер</li>
+          <li class="tags__item">#бар</li>
+          <li class="tags__item">#футбол</li>
+          <li class="tags__item">#концерт</li>
+          <li class="tags__item">#крафт</li>
         </ul>
         <div class="companion__fieldset">хочет посетить:</div>
         <ul class="companion__countries-list">
@@ -261,11 +262,11 @@
           </li>
         </ul>
         <div class="companion__fieldset">транспорт:</div>
-        <ul class="companion__transports transport">
-          <li class="transport__item transport__item--small transport__item--active">Самолетом</li>
-          <li class="transport__item transport__item--small transport__item--active">Автобусом</li>
-          <li class="transport__item transport__item--small">Велосипедом</li>
-          <li class="transport__item transport__item--small transport__item--active">Пешком</li>
+        <ul class="companion__transports transport transport--small">
+          <li class="transport__item transport__item--active">Самолетом</li>
+          <li class="transport__item transport__item--active">Автобусом</li>
+          <li class="transport__item">Велосипедом</li>
+          <li class="transport__item transport__item--active">Пешком</li>
         </ul>
         <div class="companion__fieldset">левел:</div>
         <div class="companion__level companion__level--small">80</div>
@@ -276,12 +277,12 @@
         <img src="img/smolov-mobile@1x.jpg" width="70" height="70" alt="Марк Смолов" class="companion__image companion__image--small">
         <span class="companion__likes">1700</span>
         <h3 class="companion__name companion__name--small">Марк Смолов</h3>
-        <ul class="companion__tags">
-          <li class="companion__tag companion__tag--small">#рэп</li>
-          <li class="companion__tag companion__tag--small">#тату</li>
-          <li class="companion__tag companion__tag--small">#хайпбист</li>
-          <li class="companion__tag companion__tag--small">#кроссовки</li>
-          <li class="companion__tag companion__tag--small">#суприм</li>
+        <ul class="companion__tags tags tags--small">
+          <li class="tags__item">#рэп</li>
+          <li class="tags__item">#тату</li>
+          <li class="tags__item">#хайпбист</li>
+          <li class="tags__item">#кроссовки</li>
+          <li class="tags__item">#суприм</li>
         </ul>
         <div class="companion__fieldset">хочет посетить:</div>
         <ul class="companion__countries-list">
@@ -299,11 +300,11 @@
           </li>
         </ul>
         <div class="companion__fieldset">транспорт:</div>
-        <ul class="companion__transports transport">
-          <li class="transport__item transport__item--small transport__item--active">Самолетом</li>
-          <li class="transport__item transport__item--small">Автобусом</li>
-          <li class="transport__item transport__item--small transport__item--active">Велосипедом</li>
-          <li class="transport__item transport__item--small">Пешком</li>
+        <ul class="companion__transports transport transport--small">
+          <li class="transport__item transport__item--active">Самолетом</li>
+          <li class="transport__item">Автобусом</li>
+          <li class="transport__item transport__item--active">Велосипедом</li>
+          <li class="transport__item">Пешком</li>
         </ul>
         <div class="companion__fieldset">левел:</div>
         <div class="companion__level companion__level--small">80</div>
@@ -314,11 +315,11 @@
         <img src="img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="Лариса Роговая" class="companion__image companion__image--small">
         <span class="companion__likes">23</span>
         <h3 class="companion__name companion__name--online companion__name--small">Лариса Роговая</h3>
-        <ul class="companion__tags">
-          <li class="companion__tag companion__tag--small">#образование</li>
-          <li class="companion__tag companion__tag--small">#карьера</li>
-          <li class="companion__tag companion__tag--small">#учеба</li>
-          <li class="companion__tag companion__tag--small">#линкедин</li>
+        <ul class="companion__tags tags tags--small">
+          <li class="tags__item">#образование</li>
+          <li class="tags__item">#карьера</li>
+          <li class="tags__item">#учеба</li>
+          <li class="tags__item">#линкедин</li>
         </ul>
         <div class="companion__fieldset">хочет посетить:</div>
         <ul class="companion__countries-list">
@@ -332,11 +333,11 @@
           </li>
         </ul>
         <div class="companion__fieldset">транспорт:</div>
-        <ul class="companion__transports transport">
-          <li class="transport__item transport__item--small transport__item--active">Самолетом</li>
-          <li class="transport__item transport__item--small transport__item--active">Автобусом</li>
-          <li class="transport__item transport__item--small">Велосипедом</li>
-          <li class="transport__item transport__item--small">Пешком</li>
+        <ul class="companion__transports transport transport--small">
+          <li class="transport__item transport__item--active">Самолетом</li>
+          <li class="transport__item transport__item--active">Автобусом</li>
+          <li class="transport__item">Велосипедом</li>
+          <li class="transport__item">Пешком</li>
         </ul>
         <div class="companion__fieldset">левел:</div>
         <div class="companion__level companion__level--small">50</div>
@@ -367,7 +368,7 @@
     </li>
   </ul>
   <div class="copyright">
-    <p class="copyright__title content__text content__text--grey">Разработано</p>
+    <p class="copyright__title content-text content-text--grey">Разработано</p>
     <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
       <img src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
     </a>

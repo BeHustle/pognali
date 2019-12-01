@@ -1,7 +1,49 @@
 .directions {
   background-color: #edeff6;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 .directions__list {
   @include ul-style-reset;
+}
+
+.directions__info {
+  width: 200px;
+  margin-left: 25px;
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .directions__info {
+    width: 350px;
+    margin-left: 35px;
+  }
+
+  .directions__show-btn {
+    display: block;
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .directions__container {
+    width: 1070px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .directions__show-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+  }
+
+  .directions__info {
+    margin-left: 0;
+    order: 1;
+  }
 }

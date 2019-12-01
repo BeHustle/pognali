@@ -1,3 +1,20 @@
 .contacts {
   background-color: $yellow;
 }
+
+@media only screen and (min-width: $tablet-width) {
+  .contacts__wrapper {
+    width: 620px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+
+@media only screen and (min-width: $desktop-width) {
+  .contacts__wrapper {
+    width: 1176px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

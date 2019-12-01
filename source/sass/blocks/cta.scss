@@ -6,3 +6,44 @@
   color: $yellow;
   text-decoration: underline;
 }
+
+.cta__title,
+.cta__text {
+  text-align: center;
+}
+
+.cta__text {
+  width: 210px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .cta__text {
+    width: auto;
+  }
+
+  .cta__wrapper {
+    width: 620px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .cta__wrapper {
+    width: 1176px;
+  }
+
+  .cta__contacts {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cta__contacts .contacts-list__item {
+    margin-right: 100px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

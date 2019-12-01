@@ -8,3 +8,69 @@
   border: 0 none;
   background-color: transparent;
 }
+
+.rates__container {
+  position: relative;
+  margin-left: 25px;
+}
+
+.rates__img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.rates__title {
+  width: 102px;
+}
+
+.rates__list {
+  padding-left: 0;
+  counter-reset: rates-counter;
+}
+
+.rates__item {
+  list-style: none;
+  position: relative;
+  &::after {
+    counter-increment: rates-counter;
+    content: counter(rates-counter);
+    color: #ffffff;
+    position: absolute;
+    display: inline-block;
+    text-align: right;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .rates-container {
+    margin-left: 0;
+  }
+
+  .rates__title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .rates__img {
+    top: auto;
+    bottom: 0;
+  }
+
+  .rates__item {
+    display: flex;
+    justify-content: space-between;
+    &::after {
+      right: auto;
+      left: 0;
+    }
+  }
+
+  .rates__text {
+    &:nth-child(1n) {
+      margin-left: 70px;
+    }
+  }
+}

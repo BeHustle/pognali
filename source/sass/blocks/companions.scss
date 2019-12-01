@@ -1,5 +1,7 @@
 .companions {
   background-color: $blue-black;
+  padding-top: 50px;
+  margin-top: -20px;
 }
 
 .companions__list {
@@ -12,3 +14,54 @@
   border: 0 none;
   background-color: transparent;
 }
+
+.companions__info {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .companions__list {
+    display: flex;
+    width: 620px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .companions__item {
+    width: 285px;
+    margin-right: 48px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .companions__info {
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .companions__show-btn {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 620px;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .companions .container {
+    display: flex;
+    position: relative;
+  }
+
+  .companions__show-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 280px;
+    margin-left: 0;
+  }
+}
+
