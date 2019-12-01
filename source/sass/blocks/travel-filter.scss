@@ -1,5 +1,20 @@
 .travel-filter {
   background-color: $yellow;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+.travel-filter__label {
+  display: block;
+}
+
+.travel-filter__level {
+  display: flex;
+  justify-content: space-between;
+}
+
+.travel-filter__level-number {
+  width: 50%;
 }
 
 .travel-filter__title {
@@ -30,4 +45,27 @@
   text-transform: uppercase;
   border: 0 none;
   background-color: #ffffff;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .travel-filter {
+    padding: 35px;
+  }
+
+  .travel-filter__fieldset {
+    display: flex;
+  }
+
+  .travel-filter__show-btn {
+    width: 120px;
+    text-align: left;
+  }
+
+  .travel-filter__label {
+    width: 170px;
+    text-align: left;
+  }
 }
