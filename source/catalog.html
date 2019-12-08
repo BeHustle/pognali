@@ -774,151 +774,59 @@
       <button class="travel-filter__submit-btn" type="submit">Показать</button>
     </form>
   </section>
-    <section class="companions d-none">
+    <section class="companions-catalog">
       <h2 class="visually-hidden">Попутчики</h2>
-      <ul class="companions__list">
-        <li class="companions__item companion">
-          <img src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="Таня Фирсова" class="companion__image companion__image--small">
-          <span class="companion__likes companion__likes--favourite">1,5 M</span>
-          <h3 class="companion__name companion__name--small">Таня Фирсова</h3>
-          <ul class="companion__tags tags tags--small">
-            <li class="tags__item">#ЗОЖ</li>
-            <li class="tags__item">#ПП</li>
-            <li class="tags__item">#Фитнес</li>
-            <li class="tags__item">#пляж</li>
-            <li class="tags__item">#авокадо</li>
-            <li class="tags__item">#смузи</li>
-          </ul>
-          <div class="companion__fieldset">хочет посетить:</div>
-          <ul class="companion__countries-list">
-            <li class="companion__country companion__country--column">
-              <img src="" alt="Шри-Ланка" width="26" height="18">
-              <span class="companion__country-title">Шри-Ланка</span>
+      <ul class="companions-catalog__list d-none">
+        <li class="companions-catalog__item companion-catalog">
+          <img src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="Таня Фирсова" class="companion-catalog__image">
+          <div class="companion-catalog__main-info">
+            <h3 class="companion-catalog__name">Таня Фирсова</h3>
+            <ul class="tags">
+              <li class="tags__item">#ЗОЖ</li>
+              <li class="tags__item">#ПП</li>
+              <li class="tags__item">#Фитнес</li>
+              <li class="tags__item">#пляж</li>
+              <li class="tags__item">#авокадо</li>
+              <li class="tags__item">#смузи</li>
+            </ul>
+            <div class="companion-catalog__cta">
+              <button type="button" class="companion-catalog__btn button">Позвать</button>
+              <a href="#" class="companion-catalog__heart companion-catalog__heart--active">ht</a>
+              <span class="companion-catalog__likes">1,5 M</span>
+            </div>
+          </div>
+          <div class="companion-catalog__countries-container">
+            <div class="companion-catalog__fieldset">хочет посетить:</div>
+            <ul class="companion-catalog__countries">
+            <li class="companion-catalog__country">
+              <img src="" alt="Шри-Ланка" width="26" height="18" class="companion-catalog__country-img">
+              Шри-Ланка
             </li>
-            <li class="companion__country">
-              <img src="" alt="Тайланд" width="26" height="18">
-              <span class="companion__country-title">Таиланд</span>
+            <li class="companion-catalog__country">
+              <img src="" alt="Тайланд" width="26" height="18" class="companion-catalog__country-img">
+              Таиланд
             </li>
-            <li class="companion__country">
-              <img src="" alt="Сейшелы" width="26" height="18">
-              <span class="companion__country-title">Сейшелы</span>
-            </li>
-          </ul>
-          <div class="companion__fieldset">транспорт:</div>
-          <ul class="companion__transports transport transport--small">
-            <li class="transport__item transport__item--active">Самолетом</li>
-            <li class="transport__item">Автобусом</li>
-            <li class="transport__item">Велосипедом</li>
-            <li class="transport__item">Пешком</li>
-          </ul>
-          <div class="companion__fieldset">левел:</div>
-          <div class="companion__level companion__level--small">99</div>
-          <button type="button" class="companion__go-btn button">Позвать</button>
-        </li>
-
-        <li class="companions__item companion">
-          <img src="img/demin-mobile@1x.jpg" width="70" height="70" alt="Петя Демин" class="companion__image companion__image--small">
-          <span class="companion__likes">150</span>
-          <h3 class="companion__name companion__name--small">Петя Демин</h3>
-          <ul class="companion__tags tags tags--small">
-            <li class="tags__item">#бургер</li>
-            <li class="tags__item">#бар</li>
-            <li class="tags__item">#футбол</li>
-            <li class="tags__item">#концерт</li>
-            <li class="tags__item">#крафт</li>
-          </ul>
-          <div class="companion__fieldset">хочет посетить:</div>
-          <ul class="companion__countries-list">
-            <li class="companion__country companion__country--column">
-              <img src="" alt="Бельгия" width="26" height="18">
-              <span class="companion__country-title">Бельгия</span>
-            </li>
-            <li class="companion__country">
-              <img src="" alt="Чехия" width="26" height="18">
-              <span class="companion__country-title">Чехия</span>
+            <li class="companion-catalog__country">
+              <img src="" alt="Сейшелы" width="26" height="18" class="companion-catalog__country-img">
+              Сейшелы
             </li>
           </ul>
-          <div class="companion__fieldset">транспорт:</div>
-          <ul class="companion__transports transport transport--small">
-            <li class="transport__item transport__item--active">Самолетом</li>
-            <li class="transport__item transport__item--active">Автобусом</li>
-            <li class="transport__item">Велосипедом</li>
-            <li class="transport__item transport__item--active">Пешком</li>
+          </div>
+          <div class="companion-catalog__transport-level">
+            <div class="companion-catalog__transport-container">
+              <div class="companion-catalog__fieldset">транспорт:</div>
+              <ul class="transport">
+            <li class="transport__item transport__item--active">pl</li>
+            <li class="transport__item">bus</li>
+            <li class="transport__item">byc</li>
+            <li class="transport__item">wl</li>
           </ul>
-          <div class="companion__fieldset">левел:</div>
-          <div class="companion__level companion__level--small">80</div>
-          <button type="button" class="companion__go-btn button">Позвать</button>
-        </li>
-
-        <li class="companions__item companion">
-          <img src="img/smolov-mobile@1x.jpg" width="70" height="70" alt="Марк Смолов" class="companion__image companion__image--small">
-          <span class="companion__likes">1700</span>
-          <h3 class="companion__name companion__name--small">Марк Смолов</h3>
-          <ul class="companion__tags tags tags--small">
-            <li class="tags__item">#рэп</li>
-            <li class="tags__item">#тату</li>
-            <li class="tags__item">#хайпбист</li>
-            <li class="tags__item">#кроссовки</li>
-            <li class="tags__item">#суприм</li>
-          </ul>
-          <div class="companion__fieldset">хочет посетить:</div>
-          <ul class="companion__countries-list">
-            <li class="companion__country companion__country--column">
-              <img src="" alt="США" width="26" height="18">
-              <span class="companion__country-title">США</span>
-            </li>
-            <li class="companion__country">
-              <img src="" alt="Австралия" width="26" height="18">
-              <span class="companion__country-title">Австралия</span>
-            </li>
-            <li class="companion__country">
-              <img src="" alt="Доминикана" width="26" height="18">
-              <span class="companion__country-title">Доминикана</span>
-            </li>
-          </ul>
-          <div class="companion__fieldset">транспорт:</div>
-          <ul class="companion__transports transport transport--small">
-            <li class="transport__item transport__item--active">Самолетом</li>
-            <li class="transport__item">Автобусом</li>
-            <li class="transport__item transport__item--active">Велосипедом</li>
-            <li class="transport__item">Пешком</li>
-          </ul>
-          <div class="companion__fieldset">левел:</div>
-          <div class="companion__level companion__level--small">80</div>
-          <button type="button" class="companion__go-btn button">Позвать</button>
-        </li>
-
-        <li class="companions__item companion">
-          <img src="img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="Лариса Роговая" class="companion__image companion__image--small">
-          <span class="companion__likes">23</span>
-          <h3 class="companion__name companion__name--online companion__name--small">Лариса Роговая</h3>
-          <ul class="companion__tags tags tags--small">
-            <li class="tags__item">#образование</li>
-            <li class="tags__item">#карьера</li>
-            <li class="tags__item">#учеба</li>
-            <li class="tags__item">#линкедин</li>
-          </ul>
-          <div class="companion__fieldset">хочет посетить:</div>
-          <ul class="companion__countries-list">
-            <li class="companion__country companion__country--column">
-              <img src="" alt="Великобритания" width="26" height="18">
-              <span class="companion__country-title">Великобритания</span>
-            </li>
-            <li class="companion__country">
-              <img src="" alt="Австралия" width="26" height="18">
-              <span class="companion__country-title">Германия</span>
-            </li>
-          </ul>
-          <div class="companion__fieldset">транспорт:</div>
-          <ul class="companion__transports transport transport--small">
-            <li class="transport__item transport__item--active">Самолетом</li>
-            <li class="transport__item transport__item--active">Автобусом</li>
-            <li class="transport__item">Велосипедом</li>
-            <li class="transport__item">Пешком</li>
-          </ul>
-          <div class="companion__fieldset">левел:</div>
-          <div class="companion__level companion__level--small">50</div>
-          <button type="button" class="companion__go-btn button">Позвать</button>
+            </div>
+            <div class="companion-catalog__level-container">
+              <div class="companion-catalog__fieldset">левел:</div>
+              <div class="companion-catalog__level">99</div>
+            </div>
+          </div>
         </li>
       </ul>
       <button type="button" class="companions__btn-show">Показать еще</button>

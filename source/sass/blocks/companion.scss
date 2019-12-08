@@ -10,11 +10,6 @@
     @include set-font(38px, 38px, 700);
     color: $blue-black;
   }
-
-  &--small {
-    @include set-font(24px, 18px, 700);
-    color: #1d2e5b;
-  }
 }
 
 .companion__level {
@@ -29,15 +24,12 @@
   justify-content: center;
 }
 
+
 .companion__name {
   @include set-font(21px, 21px, 700);
   color: #1d2e5b;
   padding: 0;
   margin: 0;
-
-  &--small {
-    @include set-font(20px, 20px, 700);
-  }
 }
 
 .companion__change-photo {
@@ -66,3 +58,4 @@
 .companion__name {
   text-align: center;
 }
+
