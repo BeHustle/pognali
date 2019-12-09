@@ -1,0 +1,20 @@
+.leed-form__description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .leed-form__description {
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .leed-form__description {
+    justify-content: center;
+  }
+}

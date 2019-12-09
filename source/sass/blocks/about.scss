@@ -1,4 +1,46 @@
 .about {
   background-color: $blue-white;
-  background-image: url("../../img/about-mobile@1x.png");
+  background-image: url("../img/about-mobile@1x.png");
+}
+
+.about__title,
+.about__text {
+  margin-left: 25px;
+  margin-right: 35px;
+}
+
+.about__show-btn {
+  display: none;
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .about__title,
+  .about__text {
+    width: 300px;
+    margin-left: 40px;
+    margin-right: 0;
+  }
+
+  .about__show-btn {
+    display: block;
+    width: 275px;
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .about__title,
+  .about__text,
+  .about__show-btn {
+    margin-left: 72px;
+  }
+
+  .about__text,
+  .about__title {
+    width: 615px;
+  }
+
+  .about__text.content-text--bold {
+    width: 420px;
+  }
 }

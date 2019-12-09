@@ -5,7 +5,20 @@
 .contacts-list__link {
   @include set-font(16px, 22px, 700);
   color: $blue-white;
+
   &--yellow {
     color: $yellow;
+  }
+}
+
+@media only screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .contacts-list__auth {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .contacts-list__link {
+    @include set-font(28px, 28px, 700);
   }
 }

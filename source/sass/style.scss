@@ -1,42 +1,7 @@
-@import "vars";
-@import "mixins";
-
-@font-face {
-  font-family: "Blogger Sans";
-  src: url("../fonts/bloggersans.woff") format("woff"),
-  url("../fonts/bloggersans-bold.woff") format("woff"),
-  url("../fonts/bloggersans-bolditalic.woff") format("woff"),
-  url("../fonts/bloggersans-italic.woff") format("woff"),
-  url("../fonts/bloggersans-light.woff") format("woff"),
-  url("../fonts/bloggersans-lightitalic.woff") format("woff"),
-  url("../fonts/bloggersans-medium.woff") format("woff"),
-  url("../fonts/bloggersans-mediumitalic.woff") format("woff");
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Blogger Sans", Arial, sans-serif;
-  color: #ffffff;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-}
-
+@import "vars.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+@import "common.scss";
 @import "blocks/about.scss";
 @import "blocks/add-plan.scss";
 @import "blocks/alphabet.scss";
@@ -45,17 +10,21 @@ a {
 @import "blocks/catalog-main.scss";
 @import "blocks/checkbox.scss";
 @import "blocks/companion.scss";
+@import "blocks/companion-catalog.scss";
 @import "blocks/companions.scss";
+@import "blocks/companions-catalog.scss";
 @import "blocks/contacts-list.scss";
 @import "blocks/contacts.scss";
-@import "blocks/content.scss";
+@import "blocks/container.scss";
+@import "blocks/content-text.scss";
+@import "blocks/content-title.scss";
+@import "blocks/content-link.scss";
 @import "blocks/continents.scss";
 @import "blocks/copyright.scss";
 @import "blocks/countries-filter.scss";
 @import "blocks/countries.scss";
 @import "blocks/country-select.scss";
 @import "blocks/cta.scss";
-@import "blocks/d-none.scss";
 @import "blocks/direction.scss";
 @import "blocks/directions.scss";
 @import "blocks/form-main.scss";
@@ -64,6 +33,7 @@ a {
 @import "blocks/intro.scss";
 @import "blocks/leed-form.scss";
 @import "blocks/logo.scss";
+@import "blocks/main.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/modal.scss";
 @import "blocks/page-footer.scss";
@@ -79,6 +49,6 @@ a {
 @import "blocks/social-list.scss";
 @import "blocks/start-steps.scss";
 @import "blocks/step.scss";
+@import "blocks/tags.scss";
 @import "blocks/transport.scss";
 @import "blocks/travel-filter.scss";
-@import "blocks/visually-hidden.scss";

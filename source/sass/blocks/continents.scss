@@ -2,7 +2,21 @@
   @include set-font(16px, 22px, 700);
   color: $blue-white;
   text-transform: uppercase;
-  &--disabled {
-    opacity: 0.3;
+  opacity: 0.3;
+  &--current {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .continents__link {
+    @include set-font(20px, 24px, 700);
+  }
+
+  .continents__item {
+    margin-right: 25px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

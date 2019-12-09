@@ -1,3 +1,61 @@
 .page-header {
   background-color: $blue-black;
 }
+
+.page-header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__auth {
+  display: none;
+}
+
+@media only screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .page-header__auth {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .page-header__toggle-menu {
+    display: none;
+  }
+
+  .page-header .container {
+    width: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .page-header__container {
+    width: $desktop-width;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header .main-nav__menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header .main-nav__list {
+    display: flex;
+  }
+
+  .page-header .social-list {
+    display: none;
+  }
+
+  .page-header .contacts-list__auth {
+    order: 1;
+  }
+
+  .page-header .main-nav {
+    flex-grow: 1;
+  }
+}

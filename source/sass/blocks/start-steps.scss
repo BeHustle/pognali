@@ -1,8 +1,50 @@
-.start-steps {
-  background-color: $orange;
-}
-
 .start-steps__link {
   @include set-font(18px, 18px, 700);
   color: $blue-black;
+}
+
+.start-steps {
+  padding-left: 0;
+  counter-reset: start-steps-counter;
+}
+
+.start-steps__item {
+  background-color: $orange;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  &::after {
+    counter-increment: start-steps-counter;
+    content: counter(start-steps-counter);
+    color: #ffffff;
+    display: inline-block;
+    text-align: right;
+  }
+  &:nth-child(2) {
+    background-color: #ffa530;
+  }
+  &:nth-child(3) {
+    background-color: #ffbd30;
+  }
+  &:nth-child(4) {
+    background-color: #ffd74b;
+  }
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .start-steps {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .start-steps__item {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .start-steps__item {
+    width: auto;
+    flex-grow: 1;
+  }
 }

@@ -1,0 +1,6 @@
+.content-title {
+  @include set-font(24px, 24px, 700);
+  color: $orange;
+  margin-top: 0;
+  margin-bottom: 0;
+}

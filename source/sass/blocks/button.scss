@@ -1,16 +1,19 @@
 .button {
-  border: 0 none;
   @include set-font(17px, 30px, 700);
+  border: 0 none;
   color: $blue-black;
   background-color: $yellow;
   text-transform: uppercase;
+
   &--bordered {
     color: #1d2e5b;
     border: 3px solid #1d2e5b;
   }
+
   &--transparent {
     background-color: transparent;
   }
+
   &--lowercase {
     text-transform: lowercase;
   }

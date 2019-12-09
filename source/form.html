@@ -2,82 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Погнали - главная</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Погнали - направления</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="page-header">
-  <a class="page-header__logo-link">
-    <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали - сервис путешествий" class="logo logo--white">
-  </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <ul class="main-nav__list site-list">
-      <li class="site-list__item">
-        <a href="index.html" class="site-list__link">О сервисе</a>
-      </li>
-      <li class="site-list__item">
-        <a class="site-list__link">Направления</a>
-      </li>
-      <li class="site-list__item">
-        <a href="catalog.html" class="site-list__link">Попутчики</a>
-      </li>
-    </ul>
-    <ul class="main-nav__list contacts-list">
-      <li class="contacts-list__item">
-        <a href="#" class="button">Авторизация</a>
-      </li>
-      <li class="contacts-list__item">
-        <a href="tel:88005558628" class="contacts-list__link contacts-list__link--tel">
-          8 800 555-86-28
-        </a>
-      </li>
-      <li class="contacts-list__item">
-        <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link contacts-list__link--mail">
-          mail@htmlacademy.ru
-        </a>
-      </li>
-    </ul>
-    <ul class="main-nav__list social-list">
-      <li class="social-list__item">
-        <a href="#" class="social-list__link social-list__link--facebook">Facebook</a>
-      </li>
-      <li class="social-list__item">
-        <a href="#" class="social-list__link social-list__link--vk">Vkontakte</a>
-      </li>
-      <li class="social-list__item">
-        <a href="#" class="social-list__link social-list__link--instagram">Instagram</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="page-header__container">
+    <div class="page-header__menu container">
+      <a class="page-header__logo-link">
+        <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали - сервис путешествий" class="logo logo--white">
+      </a>
+      <button class="page-header__toggle-menu" type="button" aria-label="открыть меню."></button>
+      <a href="#" class="page-header__auth button">Авторизация</a>
+    </div>
+    <nav class="main-nav">
+      <div class="container main-nav__menu">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link">О сервисе</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html" class="site-list__link">Направления</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html" class="site-list__link">Попутчики</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list contacts-list">
+          <li class="contacts-list__item contacts-list__auth">
+            <a href="#" class="button">Авторизация</a>
+          </li>
+          <li class="contacts-list__item">
+            <a href="tel:88005558628" class="contacts-list__link contacts-list__link--tel">
+              8 800 555-86-28
+            </a>
+          </li>
+          <li class="contacts-list__item">
+            <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link contacts-list__link--mail">
+              mail@htmlacademy.ru
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list social-list">
+          <li class="social-list__item">
+            <a href="#" class="social-list__link social-list__link--facebook">Facebook</a>
+          </li>
+          <li class="social-list__item">
+            <a href="#" class="social-list__link social-list__link--vk">Vkontakte</a>
+          </li>
+          <li class="social-list__item">
+            <a href="#" class="social-list__link social-list__link--instagram">Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>
 
 <main class="form-main">
-  <h1 class="form-main__title page-title">Направления</h1>
+  <div class="main__background">
+    <div class="container">
+      <div class="main__wrapper">
+        <h1 class="main__title page-title">Направления</h1>
+        <a href="index.html" class="main__link">На главную</a>
+      </div>
+    </div>
+  </div>
   <section class="form-main__companion-info companion">
     <img src="img/demin-mobile@1x.jpg" width="100" height="100" alt="Сергей Демин" class="companion__image companion__image--medium">
     <div class="companion__level companion__level--medium">80</div>
     <button class="companion__change-photo">Сменить фото</button>
     <div class="companion__fieldset-container">
       <div class="companion__fieldset companion__fieldset--big">Тэги</div>
-      <ul class="companion__tags">
-        <li class="companion__tag">#ЗОЖ</li>
-        <li class="companion__tag">#ПП</li>
-        <li class="companion__tag">#Фитнес</li>
-        <li class="companion__tag">#пляж</li>
-        <li class="companion__tag">#авокадо</li>
-        <li class="companion__tag">#смузи</li>
+      <ul class="companion__tags tags">
+        <li class="tags__item">#ЗОЖ</li>
+        <li class="tags__item">#ПП</li>
+        <li class="tags__item">#Фитнес</li>
+        <li class="tags__item">#пляж</li>
+        <li class="tags__item">#авокадо</li>
+        <li class="tags__item">#смузи</li>
       </ul>
     </div>
     <div class="companion__fieldset-container">
       <div class="companion__fieldset companion__fieldset--big">транспорт:</div>
-      <ul class="companion__transports transport">
-        <li class="transport__item transport__item--small transport__item--white transport__item--active">Самолетом</li>
-        <li class="transport__item transport__item--small transport__item--white">Автобусом</li>
-        <li class="transport__item transport__item--small transport__item--white">Велосипедом</li>
-        <li class="transport__item transport__item--small transport__item--white">Пешком</li>
+      <ul class="companion__transports transport transport--small transport--white">
+        <li class="transport__item transport__item--active">Самолетом</li>
+        <li class="transport__item">Автобусом</li>
+        <li class="transport__item">Велосипедом</li>
+        <li class="transport__item">Пешком</li>
       </ul>
     </div>
   </section>
@@ -105,12 +120,12 @@
   </section>
 
   <section class="form-main__add-plan add-plan">
-    <h2 class="form-main__description add-plan__title">Добавить план</h2>
+    <h2 class="add-plan__title">Добавить план</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
       <div class="add-plan__item step">
         <p class="step__title">Шаг 1.</p>
         <h3 class="step__title">Даты пребывания</h3>
-        <p class="step__description content__text content__text--grey">
+        <p class="step__description content-text content-text--grey">
           Укажите предпочтительное количество попутчиков,
           которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
         </p>
@@ -131,8 +146,8 @@
           <button class="input-numbers__btn input-numbers__btn--increase" aria-label="увеличить количество."></button>
         </fieldset>
         <label for="children" class="checkbox">
-          <input class="step__checkbox checkbox__input" type="checkbox" name="children" id="children">
-          <span class="step__checkbox-title checkbox__text">Можно с детьми</span>
+          <input class="checkbox__input" type="checkbox" name="children" id="children">
+          <span class="checkbox__text">Можно с детьми</span>
         </label>
         <div class="step__calendar calendar"></div> <!-- календарь -->
         <button class="step__btn button" type="button">Следующий шаг</button>
@@ -141,7 +156,7 @@
       <div class="add-plan__item step">
         <p class="step__title">Шаг 2.</p>
         <h3 class="step__title">Маршрут</h3>
-        <p class="step__description content__text content__text--grey">
+        <p class="step__description content-text content-text--grey">
           Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.
         </p>
         <div class="step__country country-select"><!-- список стран -->
@@ -161,7 +176,7 @@
       <div class="add-plan__item step">
         <p class="step__title">Шаг 3.</p>
         <h3 class="step__title">Развлечения</h3>
-        <p class="step__description content__text content__text--grey">
+        <p class="step__description content-text content-text--grey">
           Наконец, расскажите о своих планах времяпровождения.
           Можно писать в свободной форме и ставить тэги.
         </p>
@@ -177,25 +192,27 @@
 </main>
 
 <footer class="page-footer">
-  <a class="page-header__logo-link">
-    <img src="img/logo-mobile-blue@1x.png" width="96" height="15" alt="Погнали - сервис путешествий" class="logo logo--blue">
-  </a>
-  <ul class="page-footer__nav social-list">
-    <li class="social-list__item">
-      <a href="#" class="social-list__link social-list__link--facebook">Facebook</a>
-    </li>
-    <li class="social-list__item">
-      <a href="#" class="social-list__link social-list__link--vk">Vkontakte</a>
-    </li>
-    <li class="social-list__item">
-      <a href="#" class="social-list__link social-list__link--instagram">Instagram</a>
-    </li>
-  </ul>
-  <div class="copyright">
-    <p class="copyright__title content__text content__text--grey">Разработано</p>
-    <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-      <img src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+  <div class="container">
+    <a class="page-footer__logo-link">
+      <img src="img/logo-mobile-blue@1x.png" width="96" height="15" alt="Погнали - сервис путешествий" class="logo logo--blue">
     </a>
+    <ul class="page-footer__nav social-list">
+      <li class="social-list__item">
+        <a href="#" class="social-list__link social-list__link--facebook">Facebook</a>
+      </li>
+      <li class="social-list__item">
+        <a href="#" class="social-list__link social-list__link--vk">Vkontakte</a>
+      </li>
+      <li class="social-list__item">
+        <a href="#" class="social-list__link social-list__link--instagram">Instagram</a>
+      </li>
+    </ul>
+    <div class="copyright">
+      <p class="copyright__title content-text content-text--grey">Разработано</p>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+        <img src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+      </a>
+    </div>
   </div>
 </footer>
 </body>
