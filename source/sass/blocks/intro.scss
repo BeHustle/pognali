@@ -2,37 +2,37 @@
   background-color: $blue-black;
 }
 
-.intro__quote {
+.intro .quote {
   margin: 0;
   padding: 0;
 }
 
-.intro__menu-list {
+.intro .contacts-list {
   display: flex;
   justify-content: space-between;
 }
 
-.intro__title {
+.intro .page-title {
   text-align: center;
 }
 
-.intro__quote {
+.intro .quote {
   padding-left: 25px;
   padding-right: 90px;
 }
 
 @media only screen and (min-width: $tablet-width) {
-  .intro__menu-list {
+  .intro .contacts-list {
     display: none;
   }
 
-  .intro__title {
+  .intro .page-title {
     width: 400px;
     margin-right: auto;
     margin-left: auto;
   }
 
-  .intro__quote {
+  .intro .quote {
     width: 270px;
     margin-left: 50px;
     padding-left: 0;
@@ -41,13 +41,13 @@
 }
 
 @media only screen and (min-width: $desktop-width) {
-  .intro__container {
+  .intro .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
-  .intro__title {
-    width: 400px;
+  .intro .page-title {
     margin-right: 0;
     margin-left: 70px;
     text-align: left;

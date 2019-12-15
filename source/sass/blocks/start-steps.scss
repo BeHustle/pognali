@@ -4,6 +4,7 @@
 }
 
 .start-steps {
+  @include ul-style-reset;
   padding-left: 0;
   counter-reset: start-steps-counter;
 }
@@ -17,8 +18,6 @@
     counter-increment: start-steps-counter;
     content: counter(start-steps-counter);
     color: #ffffff;
-    display: inline-block;
-    text-align: right;
   }
   &:nth-child(2) {
     background-color: #ffa530;

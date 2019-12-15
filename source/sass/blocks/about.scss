@@ -3,44 +3,30 @@
   background-image: url("../img/about-mobile@1x.png");
 }
 
-.about__title,
-.about__text {
-  margin-left: 25px;
-  margin-right: 35px;
+.about .container {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-.about__show-btn {
+.about .button {
   display: none;
 }
 
 @media only screen and (min-width: $tablet-width) {
-  .about__title,
-  .about__text {
-    width: 300px;
-    margin-left: 40px;
-    margin-right: 0;
+  .about .container {
+    padding-left: 60px;
+    padding-right: 350px;
   }
 
-  .about__show-btn {
+  .about .button {
     display: block;
     width: 275px;
-    margin-left: 40px;
   }
 }
 
 @media only screen and (min-width: $desktop-width) {
-  .about__title,
-  .about__text,
-  .about__show-btn {
-    margin-left: 72px;
-  }
-
-  .about__text,
-  .about__title {
-    width: 615px;
-  }
-
-  .about__text.content-text--bold {
-    width: 420px;
+  .about .container {
+    padding-left: 100px;
+    padding-right: 650px;
   }
 }

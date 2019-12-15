@@ -1,23 +1,22 @@
-.main__background {
+.main-title {
   width: 100%;
   background-color: $blue-black;
 }
 
-.main__link {
+.main-title__link {
   display: none;
 }
 
 @media only screen and (min-width: $tablet-width) {
-  .main__wrapper {
-    width: 620px;
-    margin-right: auto;
-    margin-left: auto;
+  .main-title .container {
+    padding-left: 55px;
+    padding-right: 55px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .main__link {
+  .main-title__link {
     @include set-font(20px, 24px, 700);
     color: #ffffff;
     display: block;
@@ -25,7 +24,13 @@
 }
 
 @media only screen and (min-width: $desktop-width) {
-  .main__wrapper {
-    width: 1190px;
+  .main-title .container {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  .main-title .page-title {
+    padding-top: 140px;
+    padding-bottom: 80px;
   }
 }

@@ -38,13 +38,13 @@
 
 .direction__flag {
   position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @media only screen and (min-width: $tablet-width) {
   .direction {
     display: flex;
-    margin-left: 55px;
-    margin-right: 55px;
   }
 
   .direction__content {

@@ -4,101 +4,95 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Погнали - направления</title>
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="page-header">
-  <div class="page-header__container">
-    <div class="page-header__menu container">
-      <a class="page-header__logo-link">
-        <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали - сервис путешествий" class="logo logo--white">
-      </a>
-      <button class="page-header__toggle-menu" type="button" aria-label="открыть меню."></button>
-      <a href="#" class="page-header__auth button">Авторизация</a>
-    </div>
+<header class="page-header page-header--js"> <!-- добавлять page-header--js, переключать page-header--opened -->
+  <div class="container">
+    <a class="page-header__logo-link">
+      <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали - сервис путешествий" class="logo logo--white">
+    </a>
+    <button class="page-header__toggle-menu" type="button" aria-label="открыть меню."></button>
+    <a href="#" class="page-header__auth-tablet button">Авторизация</a>
     <nav class="main-nav">
-      <div class="container main-nav__menu">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link">О сервисе</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html" class="site-list__link">Направления</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html" class="site-list__link">Попутчики</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list contacts-list">
-          <li class="contacts-list__item contacts-list__auth">
-            <a href="#" class="button">Авторизация</a>
-          </li>
-          <li class="contacts-list__item">
-            <a href="tel:88005558628" class="contacts-list__link contacts-list__link--tel">
-              8 800 555-86-28
-            </a>
-          </li>
-          <li class="contacts-list__item">
-            <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link contacts-list__link--mail">
-              mail@htmlacademy.ru
-            </a>
-          </li>
-        </ul>
-        <ul class="main-nav__list social-list">
-          <li class="social-list__item">
-            <a href="#" class="social-list__link social-list__link--facebook">Facebook</a>
-          </li>
-          <li class="social-list__item">
-            <a href="#" class="social-list__link social-list__link--vk">Vkontakte</a>
-          </li>
-          <li class="social-list__item">
-            <a href="#" class="social-list__link social-list__link--instagram">Instagram</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link">О сервисе</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html" class="site-list__link">Направления</a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html" class="site-list__link">Попутчики</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list contacts-list">
+        <li class="contacts-list__item contacts-list__auth">
+          <a href="#" class="button">Авторизация</a>
+        </li>
+        <li class="contacts-list__item">
+          <a href="tel:88005558628" class="contacts-list__link contacts-list__link--tel">
+            tel
+          </a>
+        </li>
+        <li class="contacts-list__item">
+          <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link contacts-list__link--mail">
+            mail
+          </a>
+        </li>
+      </ul>
+      <ul class="main-nav__list social-list">
+        <li class="social-list__item">
+          <a href="#" class="social-list__link social-list__link--facebook">Facebook</a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social-list__link social-list__link--vk">Vkontakte</a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social-list__link social-list__link--instagram">Instagram</a>
+        </li>
+      </ul>
     </nav>
   </div>
 </header>
 
 <main class="form-main">
-  <div class="main__background">
+  <section class="main-title">
     <div class="container">
-      <div class="main__wrapper">
-        <h1 class="main__title page-title">Направления</h1>
-        <a href="index.html" class="main__link">На главную</a>
+      <h1 class="page-title">Направления</h1>
+    </div>
+  </section>
+  <section class="form-main__companion companion">
+    <div class="container">
+      <div class="companion__level companion__level--medium">80</div>
+      <img src="img/demin-mobile@1x.jpg" width="100" height="100" alt="Сергей Демин" class="companion__image companion__image--medium">
+      <button class="companion__change-photo"><span class="companion__desktop-hide">Сменить</span> фото</button>
+      <div class="companion__fieldset-container companion__fieldset-container--tags">
+        <div class="companion__fieldset companion__fieldset--big">Тэги</div>
+        <ul class="tags">
+          <li class="tags__item">#ЗОЖ</li>
+          <li class="tags__item">#ПП</li>
+          <li class="tags__item">#Фитнес</li>
+          <li class="tags__item">#пляж</li>
+          <li class="tags__item">#авокадо</li>
+          <li class="tags__item">#смузи</li>
+        </ul>
       </div>
-    </div>
-  </div>
-  <section class="form-main__companion-info companion">
-    <img src="img/demin-mobile@1x.jpg" width="100" height="100" alt="Сергей Демин" class="companion__image companion__image--medium">
-    <div class="companion__level companion__level--medium">80</div>
-    <button class="companion__change-photo">Сменить фото</button>
-    <div class="companion__fieldset-container">
-      <div class="companion__fieldset companion__fieldset--big">Тэги</div>
-      <ul class="companion__tags tags">
-        <li class="tags__item">#ЗОЖ</li>
-        <li class="tags__item">#ПП</li>
-        <li class="tags__item">#Фитнес</li>
-        <li class="tags__item">#пляж</li>
-        <li class="tags__item">#авокадо</li>
-        <li class="tags__item">#смузи</li>
-      </ul>
-    </div>
-    <div class="companion__fieldset-container">
-      <div class="companion__fieldset companion__fieldset--big">транспорт:</div>
-      <ul class="companion__transports transport transport--small transport--white">
-        <li class="transport__item transport__item--active">Самолетом</li>
-        <li class="transport__item">Автобусом</li>
-        <li class="transport__item">Велосипедом</li>
-        <li class="transport__item">Пешком</li>
-      </ul>
+      <div class="companion__fieldset-container companion__fieldset-container--transport">
+        <div class="companion__fieldset companion__fieldset--big">Транспорт</div>
+        <ul class="transport transport--small transport--white">
+          <li class="transport__item transport__item--active">Сам</li>
+          <li class="transport__item">Авт</li>
+          <li class="transport__item">Вел</li>
+          <li class="transport__item">Пеш</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <section class="form-main__plans plans">
-    <h2 class="form-main__description plans__title">Мои планы</h2>
+    <h2 class="plans__title">Мои планы</h2>
     <ul class="plans__list">
       <li class="plans__item plan">
         <h3 class="plan__title">1. Франция, Италия</h3>

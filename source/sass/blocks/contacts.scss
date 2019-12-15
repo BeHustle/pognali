@@ -2,19 +2,38 @@
   background-color: $yellow;
 }
 
+.contacts__link {
+  @include set-font(16px, 22px, 700);
+  color: $blue-white;
+}
+
 @media only screen and (min-width: $tablet-width) {
-  .contacts__wrapper {
-    width: 620px;
-    margin-right: auto;
-    margin-left: auto;
+  .contacts .container {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  .contacts__link {
+    @include set-font(28px, 28px, 700);
+    display: block;
+  }
+
+  .contacts .button {
+    display: block;
+    width: 100%;
   }
 }
 
 
 @media only screen and (min-width: $desktop-width) {
-  .contacts__wrapper {
-    width: 1176px;
+  .contacts .container {
+    padding-left: 100px;
+    padding-right: 100px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .contacts .button {
+    width: 325px;
   }
 }

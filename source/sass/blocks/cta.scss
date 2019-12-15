@@ -7,40 +7,40 @@
   text-decoration: underline;
 }
 
-.cta__title,
-.cta__text {
+.cta .content-title {
   text-align: center;
 }
 
 .cta__text {
-  width: 210px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 @media only screen and (min-width: $tablet-width) {
-  .cta__text {
-    width: auto;
+  .cta .container {
+    padding-left: 55px;
+    padding-right: 55px;
   }
 
-  .cta__wrapper {
-    width: 620px;
-    margin-right: auto;
-    margin-left: auto;
+  .cta__text {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 @media only screen and (min-width: $desktop-width) {
-  .cta__wrapper {
-    width: 1176px;
+  .cta .container {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
-  .cta__contacts {
+  .cta .contacts-list {
     display: flex;
     justify-content: center;
   }
 
-  .cta__contacts .contacts-list__item {
+  .cta .contacts-list__item {
     margin-right: 100px;
     &:last-child {
       margin-right: 0;
