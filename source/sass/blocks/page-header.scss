@@ -21,6 +21,11 @@
   display: none;
 }
 
+.page-header__logo-link {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 .page-header--js .page-header__toggle-menu {
   display: block;
 }
@@ -53,6 +58,11 @@
   margin-right: auto;
 }
 
+.page-header .button {
+  @include set-font(17px, 30px, 700);
+  text-transform: uppercase;
+}
+
 @media only screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .page-header .contacts-list__auth {
     display: none;
@@ -67,8 +77,23 @@
   .page-header--js .main-nav__list,
   .page-header--js .social-list {
     width: $tablet-width;
-    padding-left: 20px;
-    padding-right: 20px;
+  }
+
+  .page-header .main-nav__list,
+  .page-header .social-list {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .page-header__logo-link {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .page-header .button {
+    @include set-font(18px, 24px, 700);
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
@@ -79,27 +104,42 @@
       background-color: $blue-black;
     }
     &--opened {
-      background-color: $blue-black;
+      background-color: #ffffff;
     }
   }
 
   .page-header .container {
     display: flex;
     justify-content: flex-start;
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
 
-  .page-header--js .main-nav {
+  .page-header .main-nav {
     display: flex;
-    position: static;
+    position: relative;
     width: auto;
+    padding-left: 145px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      top: 50%;
+      left: 40px;
+      background-color: #ffffff;
+    }
   }
 
-  .page-header--js .page-header__toggle-menu {
+  .page-header .page-header__toggle-menu {
     display: none;
   }
 
   .page-header .main-nav__list {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   .page-header .social-list {
@@ -110,17 +150,22 @@
     order: 1;
   }
 
-  .page-header--opened .main-nav{
+  .page-header .main-nav{
     display: flex;
   }
 
-  .page-header--js .main-nav__list {
+  .page-header .main-nav__list {
     width: auto;
     padding: 0;
     margin: 0;
   }
 
-  .page-header--js .contacts-list {
+  .page-header .contacts-list {
     margin-left: auto;
+  }
+
+  .page-header__logo-link {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }

@@ -73,3 +73,18 @@
     text-align: left;
   }
 }
+
+@media only screen and (min-width: $desktop-width) {
+  .travel-filter {
+    padding: 45px;
+  }
+
+  .travel-filter__fieldset {
+    display: block;
+  }
+
+  .travel-filter__show-btn,
+  .travel-filter__label {
+    width: 100%;
+  }
+}

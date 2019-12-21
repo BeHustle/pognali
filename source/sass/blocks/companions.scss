@@ -10,6 +10,7 @@
 
 .companions__list {
   @include ul-style-reset;
+  margin-top: 55px;
 }
 
 .companions__info {
@@ -22,6 +23,26 @@
   bottom: 30px;
   left: 25px;
   width: calc(100% - 25px * 2);
+}
+
+.companions .content-title {
+  margin-bottom: 20px;
+}
+
+.companions .content-text {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.companions__list .companion {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (min-width: $tablet-width) {
@@ -45,6 +66,7 @@
 
   .companions__list {
     display: flex;
+    margin-top: 60px;
   }
 
   .companions__list .companion {
@@ -55,13 +77,25 @@
       margin-right: 0;
     }
   }
+
+  .companions .content-title {
+    margin-bottom: 50px;
+  }
+
+  .companions .content-text {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 @media only screen and (min-width: $desktop-width) {
   .companions .container {
     display: flex;
     padding-top: 125px;
-    padding-bottom: 130px;
+    padding-bottom: 135px;
   }
 
   .companions__show-btn {
@@ -73,6 +107,10 @@
   .companions__info {
     padding-right: 0;
     margin-right: 190px;
+  }
+
+  .companions__list {
+    margin-top: 0;
   }
 
   .companions__list .companion {

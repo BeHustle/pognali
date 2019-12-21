@@ -11,4 +11,31 @@
 
 .plans__list {
   @include ul-style-reset;
+  counter-reset: plans-list-counter;
+}
+
+.plans__list .plan__title {
+  &::before {
+    counter-increment: plans-list-counter;
+    content: counter(plans-list-counter) ".";
+    color: #1d2e5b;
+  }
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .plans__list .plan__title {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .plans__list .plan__title {
+    display: block;
+
+    &::before {
+      margin-right: 35px;
+    }
+  }
 }

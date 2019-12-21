@@ -1,3 +1,18 @@
+.step {
+  background-color: #ffffff;
+  padding: 25px 25px 20px 25px;
+  margin-bottom: 10px;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.step__nav {
+  display: none;
+}
+
 .step__title {
   @include set-font(20px, 20px, 700);
   color: #1d2e5b;
@@ -5,13 +20,99 @@
   margin: 0;
 }
 
-.step__fieldset {
-  border: 0 none;
-  padding: 0;
-  margin: 0;
+.step__country {
+  width: 100%;
 }
 
 .step__country-label {
   @include set-font(18px, 18px, 500);
   color: #1d2e5b;
+}
+
+.step__btn {
+  width: 100%;
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .step {
+    padding: 50px 45px;
+    margin-bottom: 40px;
+  }
+
+  .step__btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 48%;
+  }
+
+  .step__country-label {
+    @include set-font(30px, 30px, 700);
+    display: block;
+    width: 100%;
+  }
+
+  .step__textarea {
+    display: block;
+    width: calc(100% - 30px);
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .step {
+    padding: 100px 160px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .step__btn {
+    order: 3;
+  }
+
+  .step .calendar{
+    width: 100%;
+    order: 2;
+  }
+
+  .step .input-numbers--duration {
+    order: 1;
+  }
+
+  .step__btn {
+    width: 25%;
+  }
+
+  .step__title,
+  .step .content-text {
+    width: 75%;
+  }
+
+  .step__nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    width: 25%;
+    padding-right: 215px;
+  }
+
+  .step__nav-link {
+    @include set-font(20px, 20px, 400);
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 0.6;
+
+    &[href] {
+      opacity: 1;
+    }
+  }
+
+  .step__title br {
+    display: none;
+  }
+
+  .step__textarea {
+    width: 100%;
+    margin-right: 270px;
+  }
 }

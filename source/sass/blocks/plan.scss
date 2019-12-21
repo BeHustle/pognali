@@ -1,3 +1,14 @@
+.plan {
+  background-color: #ffffff;
+  padding: 25px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .plan__title {
   @include set-font(16px, 16px, 700);
   color: #1d2e5b;
@@ -20,4 +31,34 @@
   border: 0 none;
   background-color: transparent;
   opacity: 0.3;
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .plan {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .plan__title {
+    width: 100%;
+  }
+
+  .plan__text {
+    width: 33%;
+  }
+
+  .plan__change-btn {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .plan__title {
+    width: 50%;
+  }
+
+  .plan__text {
+    width: 15%;
+  }
 }

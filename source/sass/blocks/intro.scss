@@ -1,5 +1,7 @@
 .intro {
   background-color: $blue-black;
+  padding-top: 25px;
+  padding-bottom: 40px;
 }
 
 .intro .quote {
@@ -10,6 +12,16 @@
 .intro .contacts-list {
   display: flex;
   justify-content: space-between;
+  margin-top: 245px;
+}
+
+.intro .contacts-list__item--auth {
+  flex-grow: 1;
+}
+
+.intro .button {
+  display: block;
+  width: 100%;
 }
 
 .intro .page-title {
@@ -19,9 +31,16 @@
 .intro .quote {
   padding-left: 25px;
   padding-right: 90px;
+  padding-top: 30px;
+  padding-bottom: 35px;
 }
 
 @media only screen and (min-width: $tablet-width) {
+  .intro {
+    padding-top: 40px;
+    padding-bottom: 95px;
+  }
+
   .intro .contacts-list {
     display: none;
   }
@@ -41,9 +60,15 @@
 }
 
 @media only screen and (min-width: $desktop-width) {
+  .intro {
+    padding-top: 105px;
+    padding-bottom: 120px;
+  }
+
   .intro .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
   }
 
@@ -51,5 +76,14 @@
     margin-right: 0;
     margin-left: 70px;
     text-align: left;
+  }
+
+  .intro .quote {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .intro .start-steps {
+    margin-top: 100px;
   }
 }

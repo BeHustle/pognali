@@ -1,26 +1,52 @@
 .companion-catalog {
   position: relative;
+  background-color: #ffffff;
+  padding: 15px 20px 80px 20px;
+  border-radius: 15px;
+}
+
+.companion-catalog__image {
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  left: 18px;
 }
 
 .companion-catalog__name {
   @include set-font(20px, 20px, 700);
   color: #1d2e5b;
+  padding-left: 85px;
   margin-top: 0;
   margin-bottom: 0;
-  order: -2;
-  margin-left: 80px;
-  width: 100%;
+}
+
+.companion-catalog .button {
+  position: absolute;
+  bottom: 22px;
+  left: 20px;
+  width: calc(100% - 40px);
 }
 
 .companion-catalog__likes {
   @include set-font(14px, 21px, 700);
   color: $blue-black;
+  margin-left: 50px;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  border: 0 none;
+  background-color: transparent;
+}
+
+.companion-catalog__info-main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .companion-catalog .tags {
-  justify-content: flex-start;
-  margin-left: 0;
-  margin-top: 40px;
+  order: 1;
 }
 
 .companion-catalog__fieldset {
@@ -39,47 +65,140 @@
 }
 
 .companion-catalog .transport {
-  justify-content: flex-start;
-}
+   justify-content: flex-start;
+ }
 
 .companion-catalog__level {
   @include set-font(24px, 18px, 700);
   color: #1d2e5b;
 }
 
-.companion-catalog__transport-level {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
+@media only screen and (min-width: $tablet-width) {
+  .companion-catalog {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 35px;
+    padding-bottom: 105px;
+  }
+
+  .companion-catalog__info-main {
+    display: block;
+    width: 260px;
+    padding-left: 30px;
+  }
+
+  .companion-catalog__name {
+    padding-left: 0;
+  }
+
+  .companion-catalog .button {
+    position: static;
+    width: auto;
+  }
+
+  .companion-catalog__likes {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .companion-catalog .tags {
+    order: 0;
+  }
+
+  .companion-catalog__fieldset-title {
+    display: none;
+  }
+
+  .companion-catalog__fieldset-title--countries {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 70px;
+    right: 0;
+  }
+
+  .companion-catalog__info-other {
+    margin-left: auto;
+  }
+
+  .companion-catalog .transport {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .companion-catalog__fieldset--transport-level {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .companion-catalog__countries {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    bottom: 20px;
+    right: 35px;
+    width: calc(100% - 70px);
+  }
+
+  .companion-catalog__image { /* временно для сетки */
+    position: static;
+    width: 190px;
+    border-radius: 15px;
+  }
 }
 
-.companion-catalog__main-info {
-  display: flex;
-  flex-wrap: wrap;
-}
+@media only screen and (min-width: $desktop-width) {
+  .companion-catalog {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 950px;
+    padding: 0;
+  }
 
-.companion-catalog__image {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+  .companion-catalog__info-other {
+    margin-left: 0;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
 
-.companion-catalog__cta {
-  order: -1;
-  width: 100%;
-  position: relative;
-  z-index: 1;
-}
+  .companion-catalog__info-main {
+    width: auto;
+    padding-right: 50px;
+    padding-left: 35px;
+  }
 
-.companion-catalog__heart {
-  margin-left: 70px;
-}
+  .companion-catalog .transport {
+    flex-direction: row;
+  }
 
-.companion-catalog__btn {
-  order: 1;
-  position: absolute;
-  bottom: -100px;
-  left: 0;
-  display: block;
-  width: 100%;
+  .companion-catalog__fieldset--transport-level {
+    flex-direction: row;
+  }
+
+  .companion-catalog__fieldset {
+
+    &--transport-level {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  .companion-catalog__countries {
+    position: static;
+    display: block;
+    width: auto;
+  }
+
+  .companion-catalog__fieldset-title--countries {
+    display: none;
+  }
+
+  .companion-catalog__image { /* временно для сетки */
+    width: 290px;
+  }
 }

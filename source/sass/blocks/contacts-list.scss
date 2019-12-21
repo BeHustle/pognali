@@ -5,10 +5,21 @@
 .contacts-list__link {
   @include set-font(16px, 22px, 700);
   color: $blue-white;
+  text-transform: uppercase;
 
   &--yellow {
     color: $yellow;
   }
+}
+
+.contacts-list__auth {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.contacts-list__auth .button {
+  display: block;
+  width: 100%;
 }
 
 @media only screen and (min-width: $tablet-width) {
@@ -16,3 +27,11 @@
     @include set-font(28px, 28px, 700);
   }
 }
+
+@media only screen and (min-width: $desktop-width) {
+  .contacts-list__auth {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+

@@ -669,8 +669,8 @@
 
   <div class="catalog-main__content container">
     <section class="travel-filter">
-    <h2 class="travel-filter__title">Подберите идеального попутчика</h2>
-    <form action="https://echo.htmlacademy.ru" class="travel-filter__form" method="get" name="travel-filter-form">
+      <h2 class="travel-filter__title">Подберите идеального попутчика</h2>
+      <form action="https://echo.htmlacademy.ru" class="travel-filter__form" method="get" name="travel-filter-form">
       <div class="travel-filter__fieldset">
         <button class="travel-filter__show-btn" type="button">Хобби</button>
         <label class="travel-filter__label checkbox">
@@ -750,10 +750,10 @@
     </section>
     <section class="companions-catalog">
       <h2 class="visually-hidden">Попутчики</h2>
-      <ul class="companions-catalog__list d-none">
-        <li class="companions-catalog__item companion-catalog">
+      <ul class="companions-catalog__list">
+        <li class="companion-catalog">
           <img src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="Таня Фирсова" class="companion-catalog__image">
-          <div class="companion-catalog__main-info">
+          <div class="companion-catalog__info-main">
             <h3 class="companion-catalog__name">Таня Фирсова</h3>
             <ul class="tags">
               <li class="tags__item">#ЗОЖ</li>
@@ -762,51 +762,51 @@
               <li class="tags__item">#пляж</li>
               <li class="tags__item">#авокадо</li>
               <li class="tags__item">#смузи</li>
-            </ul>
-            <div class="companion-catalog__cta">
-              <button type="button" class="companion-catalog__btn button">Позвать</button>
-              <a href="#" class="companion-catalog__heart companion-catalog__heart--active">ht</a>
-              <span class="companion-catalog__likes">1,5 M</span>
-            </div>
+          </ul>
+            <button type="button" class="button">Позвать</button>
+            <button class="companion-catalog__likes companion-catalog__likes--favourite" type="button">1,5 M</button>
           </div>
-          <div class="companion-catalog__countries-container">
-            <div class="companion-catalog__fieldset">хочет посетить:</div>
+          <div class="companion-catalog__info-other">
+            <div class="companion-catalog__fieldset">
+            <span class="companion-catalog__fieldset-title companion-catalog__fieldset-title--countries">хочет посетить:</span>
             <ul class="companion-catalog__countries">
-            <li class="companion-catalog__country">
-              <img src="" alt="Шри-Ланка" width="26" height="18" class="companion-catalog__country-img">
-              Шри-Ланка
-            </li>
-            <li class="companion-catalog__country">
-              <img src="" alt="Тайланд" width="26" height="18" class="companion-catalog__country-img">
-              Таиланд
-            </li>
-            <li class="companion-catalog__country">
+              <li class="companion-catalog__country">
+                <img src="" alt="Шри-Ланка" width="26" height="18" class="companion-catalog__country-img">
+              </li>
+              <li class="companion-catalog__country">
+                <img src="" alt="Тайланд" width="26" height="18" class="companion-catalog__country-img">
+              </li>
+              <li class="companion-catalog__country">
               <img src="" alt="Сейшелы" width="26" height="18" class="companion-catalog__country-img">
-              Сейшелы
             </li>
-          </ul>
+            </ul>
+            </div>
+            <div class="companion-catalog__fieldset companion-catalog__fieldset--transport-level">
+            <span class="companion-catalog__fieldset-title">транспорт:</span>
+            <ul class="transport">
+              <li class="transport__item transport__item--active">pl</li>
+              <li class="transport__item">bus</li>
+              <li class="transport__item">byc</li>
+              <li class="transport__item">wl</li>
+            </ul>
+            <span class="companion-catalog__fieldset-title">левел:</span>
+            <div class="companion-catalog__level">99</div>
           </div>
-          <div class="companion-catalog__transport-level">
-            <div class="companion-catalog__transport-container">
-              <div class="companion-catalog__fieldset">транспорт:</div>
-              <ul class="transport">
-            <li class="transport__item transport__item--active">pl</li>
-            <li class="transport__item">bus</li>
-            <li class="transport__item">byc</li>
-            <li class="transport__item">wl</li>
-          </ul>
-            </div>
-            <div class="companion-catalog__level-container">
-              <div class="companion-catalog__fieldset">левел:</div>
-              <div class="companion-catalog__level">99</div>
-            </div>
           </div>
         </li>
       </ul>
-      <button type="button" class="companions__btn-show">Показать еще</button>
-      <div class="companions__pagination pagination">
-        <button class="pagination__btn pagination__btn--left" aria-label="Назад"></button>
-        <button class="pagination__btn pagination__btn--right" aria-label="Вперед"></button>
+      <button type="button" class="companions-catalog__btn-show">Показать еще</button>
+      <div class="pagination">
+        <ul class="pagination__list">
+          <li class="pagination__item"><a href="#" class="pagination__link">1</a></li>
+          <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+          <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+          <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+        </ul>
+        <div class="pagination__controls">
+          <button class="pagination__btn pagination__btn--left" aria-label="Назад"></button>
+          <button class="pagination__btn pagination__btn--right" aria-label="Вперед"></button>
+        </div>
       </div>
     </section>
   </div>

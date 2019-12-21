@@ -9,10 +9,35 @@
   padding: 0;
 }
 
+.add-plan .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .add-plan__add-country {
   @include set-font(14px, 18px, 500);
   color: #1d2e5b;
   text-transform: uppercase;
   border: 0 none;
   background-color: #edeff6;
+}
+
+.add-plan__nav-link {
+  @include circle(5px, #1d2e5b);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 16px;
+  opacity: 0.3;
+
+  &[href] {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .add-plan__nav {
+    display: none;
+  }
 }

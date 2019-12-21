@@ -1,3 +1,16 @@
 .catalog-main {
   background-color: #edeff6;
 }
+
+@media only screen and (min-width: $desktop-width) {
+  .catalog-main__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .catalog-main__content .travel-filter {
+    width: 280px;
+    order: 1;
+  }
+}

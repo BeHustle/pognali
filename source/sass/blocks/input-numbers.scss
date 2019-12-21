@@ -1,5 +1,53 @@
+.input-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .input-numbers__label {
   @include set-font(16px, 16px, 700);
   color: #1d2e5b;
   text-transform: uppercase;
+  width: 80%;
+  &--opacity {
+    opacity: 0.3;
+    width: 20%;
+    text-align: right;
+  }
 }
+
+.input-numbers__input {
+  display: block;
+  width: 80%;
+}
+
+.input-numbers__btn {
+  display: block;
+  width: 10%;
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .input-numbers {
+    justify-content: flex-start;
+    min-width: 50%;
+  }
+
+  .input-numbers__input {
+    width: 16%;
+  }
+
+  .input-numbers__btn {
+    width: 10%;
+  }
+
+  .input-numbers__label {
+    width: 50%;
+    &--opacity {
+      margin-left: 35px;
+      width: auto;
+      opacity: 1;
+      order: 1;
+    }
+  }
+}
+
