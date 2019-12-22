@@ -3,6 +3,11 @@
   background-color: $blue-black;
 }
 
+.main-title .container {
+  padding-top: 35px;
+  padding-bottom: 15px;
+}
+
 .main-title__link {
   display: none;
 }
@@ -11,6 +16,8 @@
   .main-title .container {
     padding-left: 55px;
     padding-right: 55px;
+    padding-top: 100px;
+    padding-bottom: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,10 +34,7 @@
   .main-title .container {
     padding-left: 90px;
     padding-right: 90px;
-  }
-
-  .main-title .page-title {
-    padding-top: 140px;
-    padding-bottom: 80px;
+    padding-top: 110px;
+    padding-bottom: 75px;
   }
 }

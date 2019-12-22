@@ -4,17 +4,28 @@
   border-radius: 25px;
 }
 
+.travel-filter__form {
+  padding-top: 20px;
+}
+
 .travel-filter .transport {
   justify-content: flex-start;
 }
 
 .travel-filter__label {
   display: block;
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+  &:last-child {
+    margin-bottom: 14px;
+  }
 }
 
 .travel-filter__level {
   display: flex;
   justify-content: space-between;
+  height: 35px;
 }
 
 .travel-filter__level-number {
@@ -34,7 +45,7 @@
   text-transform: uppercase;
   border: 0 none;
   background-color: transparent;
-  padding: 0;
+  padding: 11px 0;
 }
 
 .travel-filter__fieldset {
@@ -52,6 +63,10 @@
   display: block;
   width: 100%;
   cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 50px;
+  margin-top: 20px;
 }
 
 @media only screen and (min-width: $tablet-width) {
@@ -59,18 +74,43 @@
     padding: 35px;
   }
 
+  .travel-filter__form {
+    padding-top: 35px;
+  }
+
+  .travel-filter__title {
+    @include set-font(30px, 30px, 700);
+  }
+
   .travel-filter__fieldset {
     display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
   }
 
   .travel-filter__show-btn {
+    @include set-font(20px, 30px, 500);
     width: 120px;
     text-align: left;
+    padding: 0;
   }
 
   .travel-filter__label {
     width: 170px;
     text-align: left;
+    padding: 0;
+  }
+
+  .travel-filter__submit-btn {
+    @include set-font(20px, 30px, 700);
+    padding: 10px 0;
+    margin-top: 35px;
+  }
+
+  .travel-filter__level {
+    margin-bottom: 30px;
+    width: 25%;
+    margin-left: auto;
   }
 }
 
@@ -79,12 +119,22 @@
     padding: 45px;
   }
 
+  .travel-filter__form {
+    padding-top: 30px;
+  }
+
   .travel-filter__fieldset {
     display: block;
   }
 
   .travel-filter__show-btn,
   .travel-filter__label {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .travel-filter__level {
+    margin-bottom: 0;
     width: 100%;
   }
 }

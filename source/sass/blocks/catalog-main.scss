@@ -2,15 +2,43 @@
   background-color: #edeff6;
 }
 
+.catalog-main .travel-filter {
+  margin-top: 25px;
+}
+
+.catalog-main .companions-catalog {
+  margin-top: 25px;
+  padding-bottom: 45px;
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .catalog-main .travel-filter {
+    margin-top: 50px;
+  }
+
+  .catalog-main .companions-catalog {
+    margin-top: 40px;
+    padding-bottom: 60px;
+  }
+}
+
 @media only screen and (min-width: $desktop-width) {
   .catalog-main__content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .catalog-main .companions-catalog {
+    margin-top: 0;
+    padding-bottom: 0;
   }
 
   .catalog-main__content .travel-filter {
-    width: 280px;
+    width: 21.2%;
     order: 1;
+    margin-top: 0;
   }
 }

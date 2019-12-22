@@ -9,7 +9,7 @@
   color: #1d2e5b;
   display: block;
   width: 100%;
-  padding: 0;
+  padding: 25px 0;
   border: 0 none;
   background-color: transparent;
 }
@@ -26,6 +26,7 @@
 @media only screen and (min-width: $tablet-width) {
   .companions-catalog__btn-show {
     @include set-font(20px, 30px, 700);
+    padding: 45px 0;
   }
 
   .companions-catalog .pagination__list {
@@ -34,5 +35,12 @@
 
   .companions-catalog .pagination__controls {
     margin-left: auto;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .companions-catalog__btn-show {
+    @include set-font(20px, 30px, 700);
+    padding: 65px 0;
   }
 }

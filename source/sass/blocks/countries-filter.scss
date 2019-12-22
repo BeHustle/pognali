@@ -2,11 +2,17 @@
   background-color: #e2e5f2;
 }
 
+.countries-filter .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .countries-filter__title {
   @include set-font(16px, 22px, 700);
   color: $blue-white;
   text-transform: uppercase;
-  padding: 0;
+  padding: 16px 0;
   margin: 0;
 }
 
@@ -15,9 +21,12 @@
   color: $blue-black;
   text-transform: uppercase;
   background-color: #d6daed;
+  border-radius: 50px;
   border: 0 none;
   display: block;
   width: 100%;
+  margin-top: 40px;
+  margin-bottom: 25px;
 }
 
 .countries-filter__toggle-desc {
@@ -37,11 +46,28 @@
   padding-right: 25px;
 }
 
+.countries-filter .continents {
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.countries-filter .alphabet {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
 @media only screen and (min-width: $tablet-width) {
+  .countries-filter .container {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
   .countries-filter__toggle-desc {
-    display: block;
     @include set-font(20px, 24px, 700);
+    display: block;
+    text-transform: uppercase;
     color: $blue-white;
+    padding-right: 55px;
     &--hide {
       display: none;
     }
@@ -59,22 +85,30 @@
   }
 
   .countries-filter .continents {
+    padding-top: 55px;
+    padding-bottom: 55px;
     display: flex;
     order: -1;
   }
 
   .countries-filter .alphabet {
     margin-right: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
-  .countries-filter .container {
-    padding-left: 55px;
-    padding-right: 55px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+  .countries-filter__countries-container {
+    align-self: flex-start;
   }
 
+  .countries-filter__hide-btn {
+    @include set-font(20px, 30px, 700);
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-radius: 15px;
+  }
 }
 
 @media only screen and (min-width: $desktop-width) {
@@ -94,6 +128,8 @@
   }
 
   .countries-filter .continents {
+    padding-top: 60px;
+    padding-bottom: 60px;
     margin-right: 50px;
     &:nth-child(5n) {
       margin-right: 0;
@@ -115,5 +151,10 @@
 
   .countries-filter .alphabet {
     display: none;
+  }
+
+  .countries-filter__hide-btn {
+    margin-top: 10px;
+    margin-bottom: 60px;
   }
 }
