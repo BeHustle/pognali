@@ -253,7 +253,7 @@
         <button type="button" class="rates__modal-show">Показать тарифы для бизнеса</button>
       </div>
       <div class="modal d-none">
-        <h3 class="content-title">Бизнес тарифы</h3>
+        <h3 class="modal__title">Бизнес тарифы</h3>
         <ul class="modal__list">
           <li class="modal__item">
             <p class="content-text content-text--grey">Реклама у блоггера</p>
@@ -285,26 +285,32 @@
         <p class="cta__text content-text">
           Уже зарегистрированы? Тогда скорее <a href="#" class="cta__login">авторизуйтесь.</a>
         </p>
-        <form action="index.html" method="post" name="cta-form" class="cta__form leed-form">
+        <form action="index.html" method="post" name="cta-form" class="leed-form">
           <input type="email" class="leed-form__input" id="cta-email" name="cta-email" placeholder="E-mail" aria-label="Ввести ваш email" required>
-          <button type="submit" class="leed-form__button" aria-label="Отправить ваш email"></button>
-          <label for="cta-email" class="leed-form__description content-text">
+          <button type="submit" class="leed-form__button" aria-label="Отправить ваш email">
+            Регистрация
+            <svg width="14px" height="10px" class="leed-form__button-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 10 5" style="enable-background:new 0 0 10 5;" xml:space="preserve">
+            <polygon points="5,5 0,0 10,0 "/>
+            </svg>
+          </button>
+          <label for="cta-email" class="leed-form__description">
             <span class="content-text">Остались вопросы?</span>
             <span class="content-text">Мы с радостью на них ответим!</span>
           </label>
-          <ul class="contacts-list">
-            <li class="contacts-list__item">
-              <a href="tel:88005558628" class="contacts-list__link contacts-list__link--yellow contacts-list__link--tel">
-                8 800 555-86-28
-              </a>
-            </li>
-            <li class="contacts-list__item">
-              <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link contacts-list__link--yellow contacts-list__link--mail">
-                mail@htmlacademy.ru
-              </a>
-            </li>
-          </ul>
         </form>
+        <ul class="contacts-list">
+          <li class="contacts-list__item">
+            <a href="tel:88005558628" class="contacts-list__link contacts-list__link--yellow contacts-list__link--tel">
+              8 800 555-86-28
+            </a>
+          </li>
+          <li class="contacts-list__item">
+            <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link contacts-list__link--yellow contacts-list__link--mail">
+              mail@htmlacademy.ru
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -313,9 +319,17 @@
         <a href="tel:88005558628" class="contacts__link">
           ул. Большая Конюшенная, 19/8
         </a>
-        <a href="#" class="button button--bordered">Проложить маршрут</a>
+        <a href="#" class="button button--bordered">
+          Проложить маршрут
+          <svg width="14px" height="10px" class="contacts__button-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               viewBox="0 0 10 5" style="enable-background:new 0 0 10 5;" xml:space="preserve">
+            <polygon points="5,5 0,0 10,0 "/>
+            </svg>
+        </a>
       </div>
     </section>
+
+    <section class="map"></section> <!-- здесь будет карта -->
   </main>
 
   <footer class="page-footer">
@@ -335,11 +349,11 @@
         </li>
       </ul>
       <div class="copyright">
-      <p class="content-text content-text--grey">Разработано</p>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-        <img src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
-      </a>
-    </div>
+        <p class="content-text content-text--grey">Разработано</p>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+          <img src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+        </a>
+      </div>
     </div>
   </footer>
   </body>
