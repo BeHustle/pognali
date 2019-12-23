@@ -1,5 +1,32 @@
-.country-select__title {
+.country-select {
+  margin-bottom: 20px;
+}
+
+.country-select__button {
   @include set-font(14px, 18px, 500);
   color: #1d2e5b;
   text-transform: uppercase;
+  padding: 11px 5px;
+  text-align: left;
+  border: 1px solid #cbced9;
+  border-radius: 5px;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+
+  &--add {
+    background-color: #edeff6;
+    border-color: #edeff6;
+  }
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .country-select__button {
+    @include set-font(20px, 20px, 500);
+    padding: 25px;
+  }
+
+  .country-select {
+    margin-bottom: 15px;
+  }
 }
