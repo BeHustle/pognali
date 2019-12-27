@@ -3,9 +3,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 200px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .tags__item {
@@ -19,4 +16,10 @@
 
 .tags--medium .tags__item {
   @include set-font(16px, 22px, 400);
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .tags__item {
+    @include set-font(20px, 20px, 400);
+  }
 }

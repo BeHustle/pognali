@@ -1,49 +1,102 @@
 .directions {
   background-color: #edeff6;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+}
+
+.directions .container {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 90px;
 }
 
 .directions__list {
   @include ul-style-reset;
+  margin-top: 60px;
 }
 
 .directions__info {
-  width: 200px;
-  margin-left: 25px;
+  padding-left: 25px;
+  padding-right: 50px;
+}
+
+.directions .button {
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+  width: calc(100% - 25px * 2);
+}
+
+.directions .content-title {
+  margin-bottom: 20px;
+}
+
+.directions .direction {
+  margin-bottom: 11px;
 }
 
 @media only screen and (min-width: $tablet-width) {
-  .directions__info {
-    width: 350px;
-    margin-left: 35px;
+  .directions .container {
+    padding-top: 70px;
+    padding-bottom: 190px;
   }
 
-  .directions__show-btn {
-    display: block;
-    margin-left: 55px;
-    margin-right: 55px;
+  .directions .button {
+    bottom: 80px;
+    left: 55px;
+    width: calc(100% - 55px * 2);
+  }
+
+  .directions__info {
+    padding-left: 35px;
+    padding-right: 300px;
+  }
+
+  .directions__list {
+    margin-top: 105px;
+    padding-left: 35px;
+    padding-right: 35px;
+    width: 100%;
+  }
+
+  .directions .content-title {
+    margin-bottom: 60px;
   }
 }
 
 @media only screen and (min-width: $desktop-width) {
-  .directions__container {
-    width: 1070px;
-    margin-left: 100px;
+  .directions .container {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 160px;
+    padding-bottom: 140px;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     position: relative;
   }
 
-  .directions__show-btn {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 0;
+  .directions__info,
+  .directions__list {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .directions__info {
-    margin-left: 0;
-    order: 1;
+    margin-right: 100px;
+    margin-left: 175px;
+  }
+
+  .directions__list {
+    margin-top: 0;
+  }
+
+  .directions .button {
+    position: static;
+    display: block;
+    width: 275px;
+    margin-top: 100px;
+  }
+
+  .directions .content-title {
+    margin-bottom: 50px;
   }
 }

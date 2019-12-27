@@ -1,38 +1,57 @@
 .intro {
   background-color: $blue-black;
+  padding-top: 25px;
+  padding-bottom: 40px;
 }
 
-.intro__quote {
+.intro .quote {
   margin: 0;
   padding: 0;
 }
 
-.intro__menu-list {
+.intro .contacts-list {
   display: flex;
   justify-content: space-between;
+  margin-top: 245px;
 }
 
-.intro__title {
+.intro .contacts-list__item--auth {
+  flex-grow: 1;
+}
+
+.intro .button {
+  display: block;
+  width: 100%;
+}
+
+.intro .page-title {
   text-align: center;
 }
 
-.intro__quote {
+.intro .quote {
   padding-left: 25px;
   padding-right: 90px;
+  padding-top: 30px;
+  padding-bottom: 35px;
 }
 
 @media only screen and (min-width: $tablet-width) {
-  .intro__menu-list {
+  .intro {
+    padding-top: 40px;
+    padding-bottom: 95px;
+  }
+
+  .intro .contacts-list {
     display: none;
   }
 
-  .intro__title {
+  .intro .page-title {
     width: 400px;
     margin-right: auto;
     margin-left: auto;
   }
 
-  .intro__quote {
+  .intro .quote {
     width: 270px;
     margin-left: 50px;
     padding-left: 0;
@@ -41,15 +60,30 @@
 }
 
 @media only screen and (min-width: $desktop-width) {
-  .intro__container {
-    display: flex;
-    justify-content: space-between;
+  .intro {
+    padding-top: 105px;
+    padding-bottom: 120px;
   }
 
-  .intro__title {
-    width: 400px;
+  .intro .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .intro .page-title {
     margin-right: 0;
     margin-left: 70px;
     text-align: left;
+  }
+
+  .intro .quote {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .intro .start-steps {
+    margin-top: 100px;
   }
 }

@@ -1,3 +1,33 @@
 .form-main {
   background-color: #edeff6;
 }
+
+.form-main__companion .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .form-main__companion .container {
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .form-main__companion .container {
+    margin-top: -190px;
+    justify-content: flex-end;
+    padding-top: 0;
+    padding-bottom: 55px;
+    padding-right: 65px;
+    padding-left: 0;
+  }
+}

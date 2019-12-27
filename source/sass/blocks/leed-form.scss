@@ -1,8 +1,39 @@
+.leed-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.leed-form__input {
+  flex-grow: 1;
+  height: 62px;
+  border: 0 none;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
 .leed-form__description {
   display: flex;
   flex-direction: column;
   width: 100%;
   text-align: center;
+  margin-top: 30px;
+}
+
+.leed-form__button {
+  font-size: 0;
+  border: 0 none;
+  border-radius: 15px;
+  margin-left: -15px;
+  padding: 0;
+  background-color: $yellow;
+  width: 60px;
+}
+
+.leed-form__button-svg {
+  transform: rotate(270deg);
+  fill: #1d2e5b;
+  width: 14px;
+  height: 10px;
 }
 
 @media only screen and (min-width: $tablet-width) {
@@ -10,11 +41,39 @@
     flex-direction: row;
     flex-wrap: wrap;
     text-align: left;
+    margin-top: 60px;
+  }
+
+  .leed-form__input {
+    height: 82px;
+  }
+
+  .leed-form__button {
+    width: 80px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: 0;
   }
 }
 
 @media only screen and (min-width: $desktop-width) {
   .leed-form__description {
     justify-content: center;
+    margin-top: 70px;
+  }
+
+  .leed-form__button {
+    @include set-font(24px, 24px, 700);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #1d2e5b;
+    width: auto;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .leed-form__button-svg {
+    margin-left: 107px;
   }
 }

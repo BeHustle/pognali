@@ -1,67 +1,123 @@
 .companions {
   background-color: $blue-black;
-  padding-top: 50px;
-  margin-top: -20px;
+}
+
+.companions .container {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 110px;
 }
 
 .companions__list {
   @include ul-style-reset;
-}
-
-.companions__btn-show {
-  @include set-font(17px, 30px, 700);
-  color: #1d2e5b;
-  border: 0 none;
-  background-color: transparent;
+  margin-top: 55px;
 }
 
 .companions__info {
-  margin-left: 25px;
-  margin-right: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.companions__show-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+  width: calc(100% - 25px * 2);
+}
+
+.companions .content-title {
+  margin-bottom: 20px;
+}
+
+.companions .content-text {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.companions__list .companion {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (min-width: $tablet-width) {
-  .companions__list {
-    display: flex;
-    width: 620px;
-    margin-right: auto;
-    margin-left: auto;
+  .companions .container {
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 140px;
+    padding-bottom: 250px;
   }
 
-  .companions__item {
-    width: 285px;
-    margin-right: 48px;
+  .companions__show-btn {
+    bottom: 85px;
+    left: 55px;
+    width: calc(100% - 55px * 2);
+  }
+
+  .companions__info {
+    padding-left: 0;
+    padding-right: 220px;
+  }
+
+  .companions__list {
+    display: flex;
+    margin-top: 60px;
+  }
+
+  .companions__list .companion {
+    margin-right: 50px;
+    flex-grow: 1;
+    min-width: 285px;
     &:nth-child(2n) {
       margin-right: 0;
     }
   }
 
-  .companions__info {
-    width: 620px;
-    margin-left: auto;
-    margin-right: auto;
+  .companions .content-title {
+    margin-bottom: 50px;
   }
 
-  .companions__show-btn {
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    width: 620px;
+  .companions .content-text {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
 @media only screen and (min-width: $desktop-width) {
   .companions .container {
     display: flex;
-    position: relative;
+    padding-top: 125px;
+    padding-bottom: 135px;
   }
 
   .companions__show-btn {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: static;
+    display: block;
     width: 280px;
-    margin-left: 0;
+  }
+
+  .companions__info {
+    padding-right: 0;
+    margin-right: 190px;
+  }
+
+  .companions__list {
+    margin-top: 0;
+  }
+
+  .companions__list .companion {
+    margin-right: 60px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 }
 

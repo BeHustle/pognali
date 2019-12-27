@@ -1,0 +1,40 @@
+.main-title {
+  width: 100%;
+  background-color: $blue-black;
+}
+
+.main-title .container {
+  padding-top: 35px;
+  padding-bottom: 15px;
+}
+
+.main-title__link {
+  display: none;
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .main-title .container {
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 100px;
+    padding-bottom: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-title__link {
+    @include set-font(20px, 24px, 700);
+    color: #ffffff;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .main-title .container {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 110px;
+    padding-bottom: 75px;
+  }
+}

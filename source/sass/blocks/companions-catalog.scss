@@ -1,3 +1,46 @@
 .companions-catalog__list {
   @include ul-style-reset();
 }
+
+.companions-catalog__btn-show {
+  @include set-font(17px, 30px, 700);
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #1d2e5b;
+  display: block;
+  width: 100%;
+  padding: 25px 0;
+  border: 0 none;
+  background-color: transparent;
+}
+
+.companions-catalog .pagination__list {
+  display: none;
+}
+
+.companions-catalog .pagination__controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .companions-catalog__btn-show {
+    @include set-font(20px, 30px, 700);
+    padding: 45px 0;
+  }
+
+  .companions-catalog .pagination__list {
+    display: flex;
+  }
+
+  .companions-catalog .pagination__controls {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .companions-catalog__btn-show {
+    @include set-font(20px, 30px, 700);
+    padding: 65px 0;
+  }
+}

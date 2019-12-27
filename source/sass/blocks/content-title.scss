@@ -4,3 +4,10 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+
+
+@media only screen and (min-width: $tablet-width) {
+  .content-title {
+    @include set-font(45px, 45px, 700);
+  }
+}

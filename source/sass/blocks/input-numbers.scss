@@ -1,5 +1,90 @@
+.input-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .input-numbers__label {
   @include set-font(16px, 16px, 700);
   color: #1d2e5b;
   text-transform: uppercase;
+  width: 80%;
+  margin-bottom: 10px;
+
+  &--opacity {
+    opacity: 0.3;
+    width: 20%;
+    text-align: right;
+  }
 }
+
+.input-numbers__input {
+  display: block;
+  width: 70%;
+  margin-bottom: 20px;
+  height: 45px;
+}
+
+.input-numbers__btn {
+  display: block;
+  width: 15%;
+  margin-bottom: 20px;
+  height: 45px;
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .input-numbers__label {
+    @include set-font(20px, 20px, 500);
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .input-numbers__input {
+    margin-bottom: 25px;
+    height: 70px;
+  }
+
+  .input-numbers__btn {
+    margin-bottom: 25px;
+    height: 70px;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .input-numbers {
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-top: 30px;
+
+    &--duration {
+      padding-top: 0;
+      padding-bottom: 30px;
+      margin-bottom: 0;
+    }
+  }
+
+  .input-numbers__input {
+    margin-bottom: 0;
+    width: 16%;
+  }
+
+  .input-numbers__btn {
+    margin-bottom: 0;
+    width: 10%;
+  }
+
+  .input-numbers__label {
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 50%;
+    &--opacity {
+      margin-left: 35px;
+      width: auto;
+      opacity: 1;
+      order: 1;
+    }
+  }
+}
+

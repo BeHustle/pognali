@@ -1,52 +1,97 @@
 .modal {
   background-color: #ffffff;
   width: 270px;
-  margin-right: auto;
-  margin-left: auto;
-  position: relative;
+  top: -25px;
+  right: 50%;
+  transform: translateX(50%);
+  position: absolute;
+  padding-top: 30px;
+  border-radius: 20px;
 }
 
 .modal__list {
   @include ul-style-reset;
-  padding: 25px;
+  padding: 30px 25px 35px 25px;
 }
 
 .modal__close-btn {
   @include set-font(16px, 24px, 700);
+  text-transform: uppercase;
   color: #1d2e5b;
   border: 0 none;
-  padding: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: block;
   text-align: center;
   width: 100%;
   background-color: #f3f4f8;
+  cursor: pointer;
 }
 
 .modal__title {
+  @include set-font(24px, 24px, 700);
+  color: $orange;
+  margin-top: 0;
+  margin-bottom: 0;
   text-align: center;
 }
 
-@media only screen and (min-width: $tablet-width) {
-  .modal {
-    width: 690px;
-  }
-
-  .modal__list {
-    padding: 50px 85px 0 85px;
-  }
-
-  .modal__item {
-    display: flex;
-    justify-content: space-between;
-  }
+.modal__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 @media only screen and (min-width: $tablet-width) {
   .modal {
-    width: 750px;
+    width: 670px;
+    padding-top: 55px;
+    top: 0;
   }
 
   .modal__list {
-    padding: 50px 55px 0 55px;
+    padding: 50px 90px;
+  }
+
+  .modal__item {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .modal__title {
+    @include set-font(45px, 45px, 700);
+  }
+
+  .modal .content-text {
+    @include set-font(22px, 28px, 300);
+  }
+
+  .modal__close-btn {
+    @include set-font(24px, 24px, 700);
+    text-transform: none;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .modal {
+    width: 750px;
+    bottom: 50%;
+    right: 50%;
+    top: auto;
+    transform: translateX(50%) translateY(50%);
+  }
+
+  .modal__list {
+    padding: 50px 60px;
+  }
+
+  .modal__close-btn {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }

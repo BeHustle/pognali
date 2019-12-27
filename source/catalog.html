@@ -4,98 +4,74 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Погнали - попутчики</title>
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="page-header">
-  <div class="page-header__container">
-    <div class="page-header__menu container">
-      <a class="page-header__logo-link">
-        <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали - сервис путешествий" class="logo logo--white">
-      </a>
-      <button class="page-header__toggle-menu" type="button" aria-label="открыть меню."></button>
-      <a href="#" class="page-header__auth button">Авторизация</a>
-    </div>
+<header class="page-header page-header--js"> <!-- добавлять page-header--js, переключать page-header--opened -->
+  <div class="container">
+    <a class="page-header__logo-link">
+      <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали - сервис путешествий" class="logo logo--white">
+    </a>
+    <button class="page-header__toggle-menu" type="button" aria-label="открыть меню."></button>
+    <a href="#" class="page-header__auth-tablet button">Авторизация</a>
     <nav class="main-nav">
-      <div class="container main-nav__menu">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link">О сервисе</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html" class="site-list__link">Направления</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html" class="site-list__link">Попутчики</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list contacts-list">
-          <li class="contacts-list__item contacts-list__auth">
-            <a href="#" class="button">Авторизация</a>
-          </li>
-          <li class="contacts-list__item">
-            <a href="tel:88005558628" class="contacts-list__link contacts-list__link--tel">
-              8 800 555-86-28
-            </a>
-          </li>
-          <li class="contacts-list__item">
-            <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link contacts-list__link--mail">
-              mail@htmlacademy.ru
-            </a>
-          </li>
-        </ul>
-        <ul class="main-nav__list social-list">
-          <li class="social-list__item">
-            <a href="#" class="social-list__link social-list__link--facebook">Facebook</a>
-          </li>
-          <li class="social-list__item">
-            <a href="#" class="social-list__link social-list__link--vk">Vkontakte</a>
-          </li>
-          <li class="social-list__item">
-            <a href="#" class="social-list__link social-list__link--instagram">Instagram</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link">О сервисе</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html" class="site-list__link">Направления</a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html" class="site-list__link">Попутчики</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list contacts-list">
+        <li class="contacts-list__item contacts-list__auth">
+          <a href="#" class="button">Авторизация</a>
+        </li>
+        <li class="contacts-list__item">
+          <a href="tel:88005558628" class="contacts-list__link contacts-list__link--tel">
+            8 800 555-86-28
+          </a>
+        </li>
+        <li class="contacts-list__item">
+          <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link contacts-list__link--mail">
+            mail@htmlacademy.ru
+          </a>
+        </li>
+      </ul>
+      <ul class="main-nav__list social-list">
+        <li class="social-list__item">
+          <a href="#" class="social-list__link social-list__link--facebook">Facebook</a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social-list__link social-list__link--vk">Vkontakte</a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social-list__link social-list__link--instagram">Instagram</a>
+        </li>
+      </ul>
     </nav>
   </div>
 </header>
 
-<main class="catalog-main main">
-  <div class="main__background">
+<main class="catalog-main">
+  <section class="main-title">
     <div class="container">
-      <div class="main__wrapper">
-        <h1 class="main__title page-title">Попутчики</h1>
-        <a href="index.html" class="main__link">На главную</a>
-      </div>
+      <h1 class="page-title">Попутчики</h1>
+      <a href="index.html" class="main-title__link">На главную</a>
     </div>
-  </div>
+  </section>
+
   <section class="countries-filter">
     <div class="container">
-      <div class="countries-filter__menu">
-        <h2 class="countries-filter__title">Фильтрация по странам</h2>
-        <ul class="countries-filter__list continents">
-          <li class="continents__item">
-            <a href="#" class="continents__link continents__link--current">Европа</a>
-          </li>
-          <li class="continents__item">
-            <a href="#" class="continents__link">Азия</a>
-          </li>
-          <li class="continents__item">
-            <a href="#" class="continents__link">Америка</a>
-          </li>
-          <li class="continents__item">
-            <a href="#" class="continents__link">Острова</a>
-          </li>
-        </ul>
-        <button class="countries-filter__toggle-btn" aria-label="Показать страны.">
-          <span class="countries-filter__toggle-desc countries-filter__toggle-desc--show">Показать все</span>
-          <span class="countries-filter__toggle-desc countries-filter__toggle-desc--hide">Свернуть</span>
-        </button>
-      </div>
-      <div class="countries-filter__content">
-        <div class="countries-filter__wrapper">
-          <ul class="countries-filter__list continents">
+      <h2 class="countries-filter__title">Фильтрация по странам</h2>
+      <button class="countries-filter__toggle-btn" aria-label="Показать страны.">
+        <span class="countries-filter__toggle-desc countries-filter__toggle-desc--show">Показать все</span>
+        <span class="countries-filter__toggle-desc countries-filter__toggle-desc--hide">Свернуть</span>
+      </button>
+      <ul class="continents">
             <li class="continents__item">
               <a href="#" class="continents__link continents__link--current">Европа</a>
             </li>
@@ -109,7 +85,7 @@
               <a href="#" class="continents__link">Острова</a>
             </li>
           </ul>
-          <ul class="countries-filter__alphabet alphabet">
+      <ul class="alphabet">
             <li class="alphabet__item"><a href="#" class="alphabet__link alphabet__link--active">А</a></li>
             <li class="alphabet__item"><a href="#" class="alphabet__link">Б</a></li>
             <li class="alphabet__item"><a href="#" class="alphabet__link">В</a></li>
@@ -136,8 +112,8 @@
             <li class="alphabet__item"><a href="#" class="alphabet__link">Ю</a></li>
             <li class="alphabet__item"><a href="#" class="alphabet__link">Я</a></li>
           </ul>
-          <div class="countries-filter__all-countries">
-            <ul class="countries-filter__list countries countries--active">
+      <div class="countries-filter__countries-container">
+            <ul class="countries countries--active">
               <li class="countries__title">А</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">Австралия</a>
@@ -173,7 +149,7 @@
                 <a href="#" class="countries__link">Афганистан</a>
               </li>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">Б</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">Багамские Острова</a>
@@ -227,7 +203,7 @@
                 <a href="#" class="countries__link">Бутан</a>
               </li>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">В</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">Вануату</a>
@@ -248,7 +224,7 @@
                 <a href="#" class="countries__link">Вьетнам</a>
               </li>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">В</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">Габон</a>
@@ -277,7 +253,7 @@
               <li class="countries__item">
                 <a href="#" class="countries__link">Грузия</a>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">Д</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">Дания</a>
@@ -288,13 +264,13 @@
               <li class="countries__item">
                 <a href="#" class="countries__link">Доминикана</a>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">Е</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">Египет</a>
               </li>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">З</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">Замбия</a>
@@ -303,7 +279,7 @@
                 <a href="#" class="countries__link">Зимбабве</a>
               </li>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">И</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">Израиль</a>
@@ -336,7 +312,7 @@
                 <a href="#" class="countries__link">Италия</a>
               </li>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">К</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">Кабо-Верде</a>
@@ -375,7 +351,7 @@
                 <a href="#" class="countries__link">Колумбия</a>
               </li>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">Л</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">Лаос</a>
@@ -405,7 +381,7 @@
                 <a href="#" class="countries__link">Люксембург</a>
               </li>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">М</li>
               <li class="countries-filter__item">
                 <a href="#" class="countries__link">Маврикий</a>
@@ -437,7 +413,7 @@
               <li class="countries-filter__item">
               <a href="#" class="countries__link">Мексика</a>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">Н</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">Намибия</a>
@@ -467,7 +443,7 @@
                 <a href="#" class="countries__link">Норвегия</a>
               </li>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">О</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">ОАЭ</a>
@@ -476,7 +452,7 @@
                 <a href="#" class="countries__link">Оман</a>
               </li>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">П</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">Пакистан</a>
@@ -503,7 +479,7 @@
                 <a href="#" class="countries__link">Португалия</a>
               </li>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">Р</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">Руанда</a>
@@ -515,7 +491,7 @@
                 <a href="#" class="countries__link">Россия</a>
               </li>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">С</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">Сальвадор</a>
@@ -554,7 +530,7 @@
                 <a href="#" class="countries__link">США</a>
               </li>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">Т</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">Таджикистан</a>
@@ -587,7 +563,7 @@
                 <a href="#" class="countries__link">Турция</a>
               </li>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">У</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">Уганда</a>
@@ -602,7 +578,7 @@
                 <a href="#" class="countries__link">Уругвай</a>
               </li>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">Ф</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">Фиджи</a>
@@ -617,13 +593,13 @@
                 <a href="#" class="countries__link">Франция</a>
               </li>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">Х</li>
               <li class="countries__link">
                 <a href="#" class="countries__link">Хорватия</a>
               </li>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">Ч</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">Чад</a>
@@ -638,7 +614,7 @@
                 <a href="#" class="countries__link">Чили</a>
               </li>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">Ш</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">Швейцария</a>
@@ -650,7 +626,7 @@
                 <a href="#" class="countries__link">Шри-Ланка</a>
               </li>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">Э</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">Эквадор</a>
@@ -668,7 +644,7 @@
                 <a href="#" class="countries__link">Эфиопия</a>
               </li>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">Ю</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">ЮАР</a>
@@ -677,7 +653,7 @@
                 <a href="#" class="countries__link">Южный судан</a>
               </li>
             </ul>
-            <ul class="countries-filter__list countries">
+            <ul class="countries">
               <li class="countries__title">Я</li>
               <li class="countries__item">
                 <a href="#" class="countries__link">Ямайка</a>
@@ -687,83 +663,81 @@
               </li>
             </ul>
           </div>
-        </div>
-        <button class="countries-filter__hide-btn">Свернуть</button>
-      </div>
+      <button class="countries-filter__hide-btn">Свернуть</button>
     </div>
   </section>
 
-  <div class="container catalog-main__wrapper">
+  <div class="catalog-main__content container">
     <section class="travel-filter">
-    <h2 class="travel-filter__title">Подберите идеального попутчика</h2>
-    <form action="https://echo.htmlacademy.ru" class="travel-filter__form" method="get" name="travel-filter-form">
+      <h2 class="travel-filter__title">Подберите идеального попутчика</h2>
+      <form action="https://echo.htmlacademy.ru" class="travel-filter__form" method="get" name="travel-filter-form">
       <div class="travel-filter__fieldset">
         <button class="travel-filter__show-btn" type="button">Хобби</button>
         <label class="travel-filter__label checkbox">
-          <input type="checkbox" name="gym" class="travel-filter__checkbox checkbox__input" checked>
+          <input type="checkbox" name="gym" class="checkbox__input" checked>
           <span class="checkbox__text">Спортзал</span>
         </label>
         <label class="travel-filter__label checkbox">
-          <input type="checkbox" name="hookah" class="travel-filter__checkbox checkbox__input">
+          <input type="checkbox" name="hookah" class="checkbox__input">
           <span class="checkbox__text">Кальян</span>
         </label>
         <label class="travel-filter__label checkbox">
-          <input type="checkbox" name="sofa" class="travel-filter__checkbox checkbox__input">
+          <input type="checkbox" name="sofa" class="checkbox__input">
           <span class="checkbox__text">Диван</span>
         </label>
       </div>
       <div class="travel-filter__fieldset">
         <button class="travel-filter__show-btn" type="button">Музыка</button>
         <label class="travel-filter__label checkbox">
-          <input type="checkbox" name="hardrock" class="travel-filter__checkbox checkbox__input" checked>
+          <input type="checkbox" name="hardrock" class="checkbox__input" checked>
           <span class="checkbox__text">Тяжелый рок</span>
         </label>
         <label class="travel-filter__label checkbox">
-          <input type="checkbox" name="russian-rap" class="travel-filter__checkbox checkbox__input">
+          <input type="checkbox" name="russian-rap" class="checkbox__input">
           <span class="checkbox__text">Русский рэп</span>
         </label>
         <label class="travel-filter__label checkbox">
-          <input type="checkbox" name="euro-dance" class="travel-filter__checkbox checkbox__input">
+          <input type="checkbox" name="euro-dance" class="checkbox__input">
           <span class="checkbox__text">Евроденс</span>
         </label>
       </div>
       <div class="travel-filter__fieldset">
         <button class="travel-filter__show-btn" type="button">Еда</button>
         <label class="travel-filter__label checkbox">
-          <input type="checkbox" name="meat" class="travel-filter__checkbox checkbox__input" checked>
+          <input type="checkbox" name="meat" class="checkbox__input" checked>
           <span class="checkbox__text">Мясоед</span>
         </label>
         <label class="travel-filter__label checkbox">
-          <input type="checkbox" name="pp" class="travel-filter__checkbox checkbox__input">
+          <input type="checkbox" name="pp" class="checkbox__input">
           <span class="checkbox__text">Сидит на ПП</span>
         </label>
         <label class="travel-filter__label checkbox">
-          <input type="checkbox" name="vegan" class="travel-filter__checkbox checkbox__input">
+          <input type="checkbox" name="vegan" class="checkbox__input">
           <span class="checkbox__text">Веган-сыроед</span>
         </label>
       </div>
       <div class="travel-filter__fieldset">
         <button class="travel-filter__show-btn" type="button">Транспорт</button>
-        <div class="travel-filter__transport-container transport">
-          <label class="transport__item checkbox">
+        <div class="transport">
+          <label class="checkbox">
             <input type="checkbox" name="by-plane" class="checkbox__input" checked>
-            <span class="checkbox__text">Самолетом</span>
+            <span class="transport__item">Сам</span>
           </label>
-          <label class="transport__item">
+          <label class="checkbox">
             <input type="checkbox" name="by-bus" class="checkbox__input" checked>
-            <span class="checkbox__text">Автобусом</span>
+            <span class="transport__item">Авт</span>
           </label>
-          <label class="transport__item">
+          <label class="checkbox">
             <input type="checkbox" name="by-bicycle" class="checkbox__input">
-            <span class="checkbox__text">Велосипедом</span>
+            <span class="transport__item">Вел</span>
           </label>
-          <label class="transport__item">
+          <label class="checkbox">
             <input type="checkbox" name="by-walk" class="checkbox__input" checked>
-            <span class="checkbox__text">Пешком</span>
+            <span class="transport__item">Пеш</span>
           </label>
         </div>
       </div>
-      <div class="travel-filter__fieldset ">
+      <div class="travel-filter__fieldset">
         <button class="travel-filter__show-btn" type="button">Левел</button>
         <div class="travel-filter__level">
           <input type="number" name="min-level" class="travel-filter__level-number travel-filter__level-number--min">
@@ -773,13 +747,13 @@
       </div>
       <button class="travel-filter__submit-btn" type="submit">Показать</button>
     </form>
-  </section>
+    </section>
     <section class="companions-catalog">
       <h2 class="visually-hidden">Попутчики</h2>
-      <ul class="companions-catalog__list d-none">
-        <li class="companions-catalog__item companion-catalog">
+      <ul class="companions-catalog__list">
+        <li class="companion-catalog">
           <img src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="Таня Фирсова" class="companion-catalog__image">
-          <div class="companion-catalog__main-info">
+          <div class="companion-catalog__info-main">
             <h3 class="companion-catalog__name">Таня Фирсова</h3>
             <ul class="tags">
               <li class="tags__item">#ЗОЖ</li>
@@ -788,51 +762,61 @@
               <li class="tags__item">#пляж</li>
               <li class="tags__item">#авокадо</li>
               <li class="tags__item">#смузи</li>
-            </ul>
-            <div class="companion-catalog__cta">
-              <button type="button" class="companion-catalog__btn button">Позвать</button>
-              <a href="#" class="companion-catalog__heart companion-catalog__heart--active">ht</a>
-              <span class="companion-catalog__likes">1,5 M</span>
-            </div>
+          </ul>
+            <button type="button" class="button">Позвать!</button>
+            <button class="companion-catalog__likes companion-catalog__likes--favourite" type="button">1,5 M</button>
           </div>
-          <div class="companion-catalog__countries-container">
-            <div class="companion-catalog__fieldset">хочет посетить:</div>
+          <div class="companion-catalog__info-other">
+            <div class="companion-catalog__fieldset">
+            <span class="companion-catalog__fieldset-title companion-catalog__fieldset-title--countries">хочет посетить:</span>
             <ul class="companion-catalog__countries">
-            <li class="companion-catalog__country">
-              <img src="" alt="Шри-Ланка" width="26" height="18" class="companion-catalog__country-img">
-              Шри-Ланка
-            </li>
-            <li class="companion-catalog__country">
-              <img src="" alt="Тайланд" width="26" height="18" class="companion-catalog__country-img">
-              Таиланд
-            </li>
-            <li class="companion-catalog__country">
+              <li class="companion-catalog__country">
+                <img src="" alt="Шри-Ланка" width="26" height="18" class="companion-catalog__country-img">
+              </li>
+              <li class="companion-catalog__country">
+                <img src="" alt="Тайланд" width="26" height="18" class="companion-catalog__country-img">
+              </li>
+              <li class="companion-catalog__country">
               <img src="" alt="Сейшелы" width="26" height="18" class="companion-catalog__country-img">
-              Сейшелы
             </li>
-          </ul>
+            </ul>
+            </div>
+            <div class="companion-catalog__fieldset companion-catalog__fieldset--transport-level">
+            <span class="companion-catalog__fieldset-title">транспорт:</span>
+            <ul class="transport">
+              <li class="transport__item transport__item--active">pl</li>
+              <li class="transport__item">bus</li>
+              <li class="transport__item">byc</li>
+              <li class="transport__item">wl</li>
+            </ul>
+            <span class="companion-catalog__fieldset-title">левел:</span>
+            <div class="companion-catalog__level">99</div>
           </div>
-          <div class="companion-catalog__transport-level">
-            <div class="companion-catalog__transport-container">
-              <div class="companion-catalog__fieldset">транспорт:</div>
-              <ul class="transport">
-            <li class="transport__item transport__item--active">pl</li>
-            <li class="transport__item">bus</li>
-            <li class="transport__item">byc</li>
-            <li class="transport__item">wl</li>
-          </ul>
-            </div>
-            <div class="companion-catalog__level-container">
-              <div class="companion-catalog__fieldset">левел:</div>
-              <div class="companion-catalog__level">99</div>
-            </div>
           </div>
         </li>
       </ul>
-      <button type="button" class="companions__btn-show">Показать еще</button>
-      <div class="companions__pagination pagination">
-        <button class="pagination__btn pagination__btn--left" aria-label="Назад"></button>
-        <button class="pagination__btn pagination__btn--right" aria-label="Вперед"></button>
+      <button type="button" class="companions-catalog__btn-show">Показать еще</button>
+      <div class="pagination">
+        <ul class="pagination__list">
+          <li class="pagination__item pagination__item--current"><a class="pagination__link">1</a></li>
+          <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+          <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+          <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+        </ul>
+        <div class="pagination__controls">
+          <a href="#" class="pagination__btn" aria-label="Назад">
+            <svg width="20px" height="20px"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 10 5" style="enable-background:new 0 0 10 5;" xml:space="preserve">
+              <polygon points="5,5 0,0 10,0 "/>
+            </svg>
+          </a>
+          <a href="#" class="pagination__btn" aria-label="Вперед">
+            <svg width="20px" height="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 10 5" style="enable-background:new 0 0 10 5;" xml:space="preserve">
+              <polygon points="5,5 0,0 10,0 "/>
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
   </div>

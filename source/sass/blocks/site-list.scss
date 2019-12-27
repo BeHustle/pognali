@@ -5,6 +5,7 @@
 .site-list__link {
   @include set-font(30px, 36px, 500);
   color: $blue-white;
+  text-transform: uppercase;
 }
 
 @media only screen and (min-width: $tablet-width) {
@@ -20,6 +21,10 @@
 @media only screen and (min-width: $desktop-width) {
   .site-list {
     text-align: left;
+  }
+
+  .site-list__item {
+    margin-right: 35px;
   }
 
   .site-list__link {

@@ -9,3 +9,10 @@
   padding: 0;
   margin: 0;
 }
+
+@mixin circle($width, $color) {
+  width: $width;
+  height: $width;
+  background: $color;
+  border-radius: $width/2;
+}

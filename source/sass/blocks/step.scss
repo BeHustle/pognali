@@ -1,17 +1,216 @@
+.step {
+  background-color: #ffffff;
+  padding: 25px 25px 20px 25px;
+  margin-bottom: 10px;
+  position: relative;
+  border-radius: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.step__nav {
+  display: none;
+}
+
 .step__title {
   @include set-font(20px, 20px, 700);
   color: #1d2e5b;
   padding: 0;
   margin: 0;
+  margin-bottom: 15px;
 }
 
-.step__fieldset {
-  border: 0 none;
-  padding: 0;
-  margin: 0;
+.step .country-select {
+  width: 100%;
 }
 
 .step__country-label {
   @include set-font(18px, 18px, 500);
   color: #1d2e5b;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.step__btn {
+  @include set-font(17px, 30px, 700);
+  width: 100%;
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.step__btn.button--transparent {
+  margin-top: 10px;
+}
+
+.step .content-text {
+  margin-bottom: 20px;
+}
+
+.step .checkbox {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.step__textarea {
+  border: 1px solid #cbced9;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .step {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 45px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+  }
+
+  .step__title {
+    @include set-font(36px, 36px, 700);
+    margin-bottom: 30px;
+  }
+
+  .step__btn {
+    @include set-font(24px, 30px, 700);
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-top: 45px;
+    border-radius: 15px;
+    text-transform: none;
+    display: inline-block;
+    vertical-align: middle;
+    width: 45%;
+    order: 3;
+  }
+
+  .step__btn.button--transparent {
+    margin-top: 45px;
+    margin-left: auto;
+  }
+
+  .step__country-label {
+    @include set-font(30px, 30px, 700);
+    display: block;
+    width: 100%;
+    padding-top: 35px;
+  }
+
+  .step__textarea {
+    display: block;
+    width: calc(100% - 30px);
+  }
+
+  .step .content-text {
+    margin-bottom: 40px;
+  }
+
+  .step .calendar{
+    width: 100%;
+    order: 2;
+  }
+
+  .step .input-numbers--duration {
+    order: 1;
+  }
+
+  .step .input-numbers {
+    width: 100%;
+  }
+
+  .step .checkbox {
+    display: block;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .step {
+    padding: 100px 160px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 25px;
+  }
+
+  .step__title {
+    margin-bottom: 40px;
+  }
+
+  .step__btn {
+    width: 25%;
+    order: 3;
+    margin-top: 60px;
+  }
+
+  .step__btn.button--transparent {
+    margin-top: 60px;
+  }
+
+  .step .calendar{
+    width: 100%;
+    order: 2;
+  }
+
+  .step .input-numbers--duration {
+    order: 1;
+  }
+
+  .step__title,
+  .step .content-text {
+    width: 70%;
+  }
+
+  .step .content-text {
+    @include set-font(20px, 24px, 400);
+    margin-bottom: 55px;
+  }
+
+  .step__nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: -70px;
+    width: 30%;
+  }
+
+  .step__nav-link {
+    @include set-font(20px, 20px, 400);
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 0.6;
+    margin-bottom: 25px;
+    padding-left: 165px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &[href] {
+      opacity: 1;
+    }
+  }
+
+  .step__title br {
+    display: none;
+  }
+
+  .step__textarea {
+    width: 100%;
+    margin-right: 270px;
+  }
+
+
+  .step .input-numbers {
+    width: 55%;
+  }
+
+  .step .checkbox {
+    padding-bottom: 0;
+    align-self: center;
+  }
 }

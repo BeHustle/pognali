@@ -1,5 +1,6 @@
 .countries {
   display: none;
+  @include ul-style-reset;
   &--active {
     display: block;
   }
@@ -25,10 +26,11 @@
     @include set-font(60px, 60px, 700);
     color: $blue-white;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
   }
 
   .countries {
     display: block;
+    margin-bottom: 40px;
   }
 }

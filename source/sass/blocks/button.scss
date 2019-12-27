@@ -1,9 +1,13 @@
 .button {
-  @include set-font(17px, 30px, 700);
+  @include set-font(18px, 18px, 700);
   border: 0 none;
   color: $blue-black;
   background-color: $yellow;
-  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
 
   &--bordered {
     color: #1d2e5b;
@@ -12,9 +16,20 @@
 
   &--transparent {
     background-color: transparent;
+    border-radius: 0;
   }
 
   &--lowercase {
     text-transform: lowercase;
+  }
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .button {
+    @include set-font(24px, 24px, 700);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 28px;
+    padding-bottom: 28px;
   }
 }

@@ -7,12 +7,52 @@
   color: #1d2e5b;
   margin: 0;
   padding: 0;
+  margin-bottom: 30px;
 }
 
-.add-plan__add-country {
-  @include set-font(14px, 18px, 500);
-  color: #1d2e5b;
-  text-transform: uppercase;
-  border: 0 none;
-  background-color: #edeff6;
+.add-plan .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+
+.add-plan__nav-link {
+  @include circle(5px, #1d2e5b);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 16px;
+  opacity: 0.3;
+
+  &[href] {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .add-plan .container {
+    padding-top: 55px;
+    padding-bottom: 65px;
+  }
+
+  .add-plan__title {
+    @include set-font(36px, 40px, 700);
+    margin-bottom: 55px;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .add-plan .container {
+    padding-bottom: 70px;
+  }
+
+  .add-plan__nav {
+    display: none;
+  }
+
+  .add-plan__title {
+    margin-left: 65px;
+  }
 }

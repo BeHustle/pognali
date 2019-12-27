@@ -2,3 +2,10 @@
   @include set-font(15px, 15px, 400);
   color: $grey;
 }
+
+@media only screen and (min-width: $tablet-width) {
+  .checkbox__text {
+    @include set-font(20px, 20px, 400);
+    text-transform: uppercase;
+  }
+}

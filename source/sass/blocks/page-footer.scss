@@ -2,9 +2,18 @@
   background-color: #ffffff;
 }
 
+.page-footer .container {
+  padding-top: 38px;
+  padding-bottom: 14px;
+}
+
 .page-footer__logo-link {
   display: block;
   text-align: center;
+}
+
+.page-footer .social-list {
+  margin: 40px 0;
 }
 
 @media only screen and (min-width: $tablet-width) {
@@ -12,5 +21,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .page-footer .social-list {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .page-footer .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
