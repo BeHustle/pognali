@@ -74,6 +74,10 @@
 }
 
 @media only screen and (min-width: $tablet-width) {
+  .page-header {
+    background-color: #182044;
+  }
+
   .page-header--js .main-nav__list,
   .page-header--js .social-list {
     width: $tablet-width;

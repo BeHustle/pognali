@@ -179,9 +179,8 @@
     width: calc(100% - 70px);
   }
 
-  .companion-catalog__image { /* временно для сетки */
+  .companion-catalog__image {
     position: static;
-    width: 190px;
     border-radius: 15px;
   }
 
@@ -248,10 +247,6 @@
 
   .companion-catalog__fieldset-title--countries {
     display: none;
-  }
-
-  .companion-catalog__image { /* временно для сетки */
-    width: 290px;
   }
 
   .companion-catalog__country {

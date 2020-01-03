@@ -36,5 +36,8 @@
   ],
   "engines": {
     "node": "12.13"
+  },
+  "dependencies": {
+    "gulp-resolve-url": "0.0.2"
   }
 }

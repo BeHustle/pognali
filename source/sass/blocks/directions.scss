@@ -37,6 +37,14 @@
   .directions .container {
     padding-top: 70px;
     padding-bottom: 190px;
+    background-image: url("../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-size: 289px auto;
+    background-position: top 70px right;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/flags-back@2x.png");
+    }
   }
 
   .directions .button {
@@ -72,6 +80,7 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     position: relative;
+    background-position: top 85px right;
   }
 
   .directions__info,
