@@ -1,14 +1,38 @@
 .contacts-list {
   @include ul-style-reset;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contacts-list__link {
   @include set-font(16px, 22px, 700);
   color: $blue-white;
   text-transform: uppercase;
-
+  display: flex;
+  align-items: center;
   &--yellow {
     color: $yellow;
+  }
+}
+
+.contacts-list__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+
+  &--tel {
+    background-color: $orange;
+  }
+
+  &--mail {
+    background-color: #ffbd30;
+  }
+
+  & svg {
+    fill: $blue-black;
   }
 }
 
@@ -22,9 +46,35 @@
   width: 100%;
 }
 
+.contacts-list__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121936;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin-right: 15px;
+
+  & svg {
+    fill: $yellow;
+  }
+}
+
 @media only screen and (min-width: $tablet-width) {
   .contacts-list__link {
     @include set-font(28px, 28px, 700);
+  }
+
+  .contacts-list__icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+
+    & svg {
+      width: 27px;
+      height: 27px;
+    }
   }
 }
 
@@ -32,6 +82,11 @@
   .contacts-list__auth {
     width: auto;
     margin-bottom: 0;
+  }
+
+  .contacts-list__img {
+    width: 50px;
+    height: 50px;
   }
 }
 

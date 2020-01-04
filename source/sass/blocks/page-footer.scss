@@ -16,6 +16,24 @@
   margin: 40px 0;
 }
 
+.page-footer .social-list__item {
+  margin-right: 0;
+}
+
+.page-footer .social-list__link {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $yellow;
+  border-radius: 50%;
+}
+
+.page-footer .social-list__icon {
+  fill: #1d2e5b;
+}
+
 @media only screen and (min-width: $tablet-width) {
   .page-footer .container {
     display: flex;
@@ -27,6 +45,16 @@
 
   .page-footer .social-list {
     margin: 0;
+  }
+
+  .page-footer .social-list__link {
+    width: 60px;
+    height: 60px;
+  }
+
+  .page-footer .social-list__icon {
+    width: 24px;
+    height: 28px;
   }
 }
 

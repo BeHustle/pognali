@@ -45,6 +45,10 @@
   bottom: 30px;
   left: 25px;
   width: calc(100% - 25px * 2);
+  border-radius: 10px;
+  color: #1d2e5b;
+  padding-left: 23px;
+  padding-right: 23px;
 }
 
 .companions .content-title {
@@ -79,6 +83,9 @@
     bottom: 85px;
     left: 55px;
     width: calc(100% - 55px * 2);
+    border-radius: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   .companions__info {
@@ -122,7 +129,7 @@
 
   .companions__show-btn {
     position: static;
-    display: block;
+    display: flex;
     width: 280px;
   }
 

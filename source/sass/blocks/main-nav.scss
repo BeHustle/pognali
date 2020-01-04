@@ -29,10 +29,16 @@
 
   .main-nav .contacts-list {
     margin-top: 140px;
+    display: flex;
+    flex-direction: column;
   }
 
   .main-nav .social-list {
     margin-top: 125px;
+  }
+
+  .main-nav .contacts-list__auth {
+    display: none;
   }
 }
 

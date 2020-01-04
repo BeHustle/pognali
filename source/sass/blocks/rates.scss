@@ -8,6 +8,7 @@
   color: $blue-white;
   border: 0 none;
   background-color: transparent;
+  padding: 0;
 }
 
 .rates .container {
@@ -66,6 +67,10 @@
   }
 }
 
+.rates__business-icon {
+  display: none;
+}
+
 @media only screen and (min-width: $tablet-width) {
   .rates .container {
     padding-left: 20px;
@@ -90,9 +95,11 @@
 
   .rates__modal-show {
     @include set-font(20px, 20px, 700);
-    padding-left: 85px;
+    display: flex;
+    align-items: center;
     padding-top: 23px;
     padding-bottom: 23px;
+    color: #132576;
   }
 
   .rates__item {
@@ -107,6 +114,21 @@
       right: auto;
       left: 0;
       top: 5px;
+    }
+  }
+
+  .rates__business-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e2e5f2;
+    border-radius: 50%;
+    margin-right: 23px;
+    width: 67px;
+    height: 67px;
+
+    & svg {
+      fill: #132576;
     }
   }
 }

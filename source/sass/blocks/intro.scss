@@ -37,12 +37,7 @@
 .intro .quote {
   margin: 0;
   padding: 0;
-}
-
-.intro .contacts-list {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 245px;
+  margin-top: 300px;
 }
 
 .intro .contacts-list__item--auth {
@@ -50,8 +45,12 @@
 }
 
 .intro .button {
+  @include set-font(17px, 30px, 700);
   display: block;
   width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
 }
 
 .intro .page-title {
@@ -84,6 +83,7 @@
   .intro .quote {
     width: 270px;
     margin-left: 50px;
+    margin-top: 0;
     padding-top: 80px;
     padding-bottom: 200px;
     padding-left: 0;

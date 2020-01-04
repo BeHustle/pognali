@@ -2,4 +2,22 @@
   @include ul-style-reset;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.transport__icon {
+  fill: #1d2e5b;
+  opacity: 0.15;
+}
+
+.transport__item--active .transport__icon {
+  opacity: 1;
+}
+
+.transport__item {
+  margin-right: 13px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }

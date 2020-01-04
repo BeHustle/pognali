@@ -29,13 +29,6 @@
   width: 60px;
 }
 
-.leed-form__button-svg {
-  transform: rotate(270deg);
-  fill: #1d2e5b;
-  width: 14px;
-  height: 10px;
-}
-
 @media only screen and (min-width: $tablet-width) {
   .leed-form__description {
     flex-direction: row;
@@ -66,14 +59,10 @@
     @include set-font(24px, 24px, 700);
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     color: #1d2e5b;
-    width: auto;
-    padding-left: 36px;
-    padding-right: 36px;
-  }
-
-  .leed-form__button-svg {
-    margin-left: 107px;
+    width: 320px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
