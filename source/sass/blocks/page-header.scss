@@ -85,9 +85,14 @@
   padding-bottom: 5px;
   display: block;
   width: auto;
+  border-radius: 50px;
 }
 
 .page-header__contacts {
+  display: none;
+}
+
+.page-header__contacts--main {
   position: absolute;
   bottom: -444px;
   display: flex;
@@ -125,6 +130,8 @@
   .page-header__contacts {
     width: auto;
     position: static;
+    display: flex;
+    align-items: center;
   }
 
   .page-header__contacts .contacts-list__item {

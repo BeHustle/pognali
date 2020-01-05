@@ -7,11 +7,24 @@
   text-transform: uppercase;
   cursor: pointer;
   color: #1d2e5b;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   padding: 25px 0;
   border: 0 none;
   background-color: transparent;
+
+  &::before {
+    content: "";
+    background-image: url("../img/show-more-plus.svg");
+    background-size: 18px 18px;
+    background-position: center;
+    width: 18px;
+    height: 18px;
+    display: block;
+    margin-right: 15px;
+  }
 }
 
 .companions-catalog .pagination__list {
@@ -27,6 +40,13 @@
   .companions-catalog__btn-show {
     @include set-font(20px, 30px, 700);
     padding: 45px 0;
+
+    &::before {
+      background-size: 27px 27px;
+      width: 27px;
+      height: 27px;
+      margin-right: 25px;
+    }
   }
 
   .companions-catalog .pagination__list {

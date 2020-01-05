@@ -69,6 +69,10 @@
   margin-top: 20px;
 }
 
+.travel-filter__slider {
+  margin-top: 20px;
+}
+
 @media only screen and (min-width: $tablet-width) {
   .travel-filter {
     padding: 35px;
@@ -93,6 +97,13 @@
     width: 120px;
     text-align: left;
     padding: 0;
+    order: -2;
+  }
+
+  .travel-filter__slider {
+    order: -1;
+    width: 282px;
+    margin-top: 15px;
   }
 
   .travel-filter__label {
@@ -136,5 +147,11 @@
   .travel-filter__level {
     margin-bottom: 0;
     width: 100%;
+  }
+
+  .travel-filter__slider {
+    order: 1;
+    width: auto;
+    margin-top: 30px;
   }
 }
