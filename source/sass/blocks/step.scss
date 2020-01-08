@@ -60,6 +60,7 @@
   text-transform: uppercase;
   padding-top: 5px;
   padding-bottom: 5px;
+  color: #1d2e5b;
 
   & svg {
     display: none;
@@ -84,12 +85,48 @@
   width: 100%;
   resize: vertical;
   border: 1px solid #cbced9;
-  border-radius: 5px;
+  border-radius: 3px;
   margin-bottom: 20px;
+
+  &:hover,
+  &:focus {
+    border-color: #959bb2
+  }
+
+  &:active {
+    border-color: $blue-black;
+  }
 }
 
-.step .checkbox__text::before {
-  border: 1px solid #cbced9;
+.step__btn--fwd {
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+}
+
+.step__btn--back {
+  &:hover,
+  &:focus {
+    color: rgba(#1d2e5b, 0.7);
+  }
+
+  &:hover svg,
+  &:focus svg {
+    opacity: 0.7;
+  }
+}
+
+.step__btn {
+
+  &:active {
+    color: rgba(#1d2e5b, 0.3);
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 @media only screen and (min-width: $tablet-width) {
@@ -178,10 +215,6 @@
   .step .checkbox__text {
     text-transform: uppercase;
     font-weight: 500;
-
-    &::before {
-      border-radius: 3px;
-    }
   }
 }
 

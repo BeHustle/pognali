@@ -121,23 +121,23 @@
       <div class="companion__fieldset-container companion__fieldset-container--transport">
         <div class="companion__fieldset companion__fieldset--big">Транспорт</div>
         <ul class="transport transport--form">
-          <li class="transport__item transport__item--active">
-            <button class="transport__button" type="button" aria-label="Выбрать транспорт самолетом">
+          <li class="transport__item">
+            <button class="transport__button transport__button--active" type="button" aria-label="Выбрать транспорт самолет">
               <svg width="19" height="17" class="transport__icon"><use xlink:href="img/transport-icons.svg#plane"></use></svg>
             </button>
           </li>
-          <li class="transport__item transport__item--active">
-            <button class="transport__button" type="button" aria-label="Выбрать транспорт самолетом">
+          <li class="transport__item">
+            <button class="transport__button transport__button--active" type="button" aria-label="Выбрать транспорт автобус">
               <svg width="19" height="17" class="transport__icon"><use xlink:href="img/transport-icons.svg#bus"></use></svg>
             </button>
           </li>
           <li class="transport__item">
-            <button class="transport__button" type="button" aria-label="Выбрать транспорт самолетом">
+            <button class="transport__button" type="button" aria-label="Выбрать транспорт велосипед">
               <svg width="19" height="17" class="transport__icon"><use xlink:href="img/transport-icons.svg#bike"></use></svg>
             </button>
           </li>
-          <li class="transport__item transport__item--active">
-            <button class="transport__button" type="button" aria-label="Выбрать транспорт самолетом">
+          <li class="transport__item">
+            <button class="transport__button transport__button--active" type="button" aria-label="Выбрать транспорт пешком">
               <svg width="19" height="17" class="transport__icon"><use xlink:href="img/transport-icons.svg#run"></use></svg>
             </button>
           </li>
@@ -212,12 +212,12 @@
               <svg width="14" height="14"><use xlink:href="img/nav-icons.svg#plus"></use></svg>
             </button>
           </div>
-          <label for="children" class="checkbox">
+          <label for="children" class="checkbox checkbox--bordered">
             <input class="checkbox__input" type="checkbox" name="children" id="children">
             <span class="checkbox__text">Можно с детьми</span>
           </label>
           <div class="calendar"></div> <!-- календарь -->
-          <button class="step__btn button" type="button">
+          <button class="step__btn step__btn--fwd button" type="button">
             Следующий шаг
             <svg width="14" height="18"><use xlink:href="img/nav-icons.svg#arrow-right"></use></svg>
           </button>
@@ -272,15 +272,15 @@
               <svg width="14" height="14"><use xlink:href="img/nav-icons.svg#plus"></use></svg>
             </button>
           </div>
-          <button class="step__btn button" type="button">
+          <button class="step__btn step__btn--fwd button" type="button">
             Следующий шаг
             <svg width="14" height="18"><use xlink:href="img/nav-icons.svg#arrow-right"></use></svg>
           </button>
-          <button class="step__btn button button--transparent" type="button">
+          <button class="step__btn step__btn--back button button--transparent" type="button">
             <svg width="14" height="18"><use xlink:href="img/nav-icons.svg#arrow-left"></use></svg>
             На шаг назад
           </button>
-          <div class="alphabet-modal d-none">
+          <div class="alphabet-modal">
             <div class="alphabet-modal__menu">
               <h4 class="alphabet-modal__title">Выберите страну</h4>
               <button class="alphabet-modal__close" type="button" aria-label="Закрыть окно">
@@ -288,7 +288,7 @@
               </button>
             </div>
             <ul class="alphabet">
-              <li class="alphabet__item"><a href="#" class="alphabet__link alphabet__link--active">А</a></li>
+              <li class="alphabet__item alphabet__item--active"><a href="#" class="alphabet__link alphabet__link--active">А</a></li>
               <li class="alphabet__item"><a href="#" class="alphabet__link">Б</a></li>
               <li class="alphabet__item"><a href="#" class="alphabet__link">В</a></li>
               <li class="alphabet__item"><a href="#" class="alphabet__link">Г</a></li>
@@ -865,11 +865,11 @@
             <img width="35" height="24" src="img/flag-czech.svg" alt="Чехия">
           </label>
           <textarea class="step__textarea" name="text-czech" id="text-czech" cols="30" rows="10" placeholder="План действий"></textarea>
-          <button class="step__btn button" type="submit">
+          <button class="step__btn step__btn--fwd button" type="submit">
             Отправить
             <svg width="14" height="18"><use xlink:href="img/nav-icons.svg#arrow-right"></use></svg>
           </button>
-          <button class="step__btn button button--transparent" type="button">
+          <button class="step__btn step__btn--back button button--transparent" type="button">
             <svg width="14" height="18"><use xlink:href="img/nav-icons.svg#arrow-left"></use></svg>
             На шаг назад
           </button>

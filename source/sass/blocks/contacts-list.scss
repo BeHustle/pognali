@@ -27,12 +27,26 @@
     background-color: $orange;
   }
 
+  &--tel:hover,
+  &--tel:focus {
+    background-color: #f26926;
+  }
+
   &--mail {
     background-color: #ffbd30;
   }
 
+  &--mail:hover,
+  &--mail:focus {
+    background-color: #ff8d30;
+  }
+
   & svg {
     fill: $blue-black;
+  }
+
+  &:active svg {
+    opacity: 0.3;
   }
 }
 
@@ -44,6 +58,15 @@
 .contacts-list__auth .button {
   display: block;
   width: 100%;
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba($blue-black, 0.3);
+  }
 }
 
 .contacts-list__icon {

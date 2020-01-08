@@ -35,6 +35,16 @@
   display: block;
   background-color: transparent;
   opacity: 0.3;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 @media only screen and (min-width: $tablet-width) {

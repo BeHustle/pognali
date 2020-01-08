@@ -16,10 +16,6 @@
   margin: 40px 0;
 }
 
-.page-footer .social-list__item {
-  margin-right: 0;
-}
-
 .page-footer .social-list__link {
   width: 45px;
   height: 45px;
@@ -28,6 +24,15 @@
   align-items: center;
   background-color: $yellow;
   border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+}
+
+.page-footer .social-list__item {
+  margin-right: 0;
 }
 
 .page-footer .social-list__icon {
