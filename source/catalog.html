@@ -7,8 +7,10 @@
     document.createElement("picture");
   </script>
   <script src="js/picturefill.min.js" async></script>
+  <script src="js/svg4everybody.min.js" async></script>
+  <script>svg4everybody();</script>
   <title>Погнали - попутчики</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <header class="page-header page-header--js"> <!-- добавлять page-header--js, переключать page-header--opened -->
@@ -724,8 +726,11 @@
     <section class="travel-filter">
       <h2 class="travel-filter__title">Подберите идеального попутчика</h2>
       <form action="https://echo.htmlacademy.ru" class="travel-filter__form" method="get" name="travel-filter-form">
-      <div class="travel-filter__fieldset">
-        <button class="travel-filter__show-btn" type="button">Хобби</button>
+      <div class="travel-filter__fieldset travel-filter__fieldset--opened">
+        <button class="travel-filter__show-btn" type="button">
+          Хобби
+          <svg class="travel-filter__btn-svg" width="8" height="4"><use xlink:href="img/nav-icons.svg#dropdown"></use></svg>
+        </button>
         <label class="travel-filter__label checkbox">
           <input type="checkbox" name="gym" class="checkbox__input" checked>
           <span class="checkbox__text">Спортзал</span>
@@ -739,8 +744,11 @@
           <span class="checkbox__text">Диван</span>
         </label>
       </div>
-      <div class="travel-filter__fieldset">
-        <button class="travel-filter__show-btn" type="button">Музыка</button>
+      <div class="travel-filter__fieldset travel-filter__fieldset--opened">
+        <button class="travel-filter__show-btn" type="button">
+          Музыка
+          <svg class="travel-filter__btn-svg" width="8" height="4"><use xlink:href="img/nav-icons.svg#dropdown"></use></svg>
+        </button>
         <label class="travel-filter__label checkbox">
           <input type="checkbox" name="hardrock" class="checkbox__input" checked>
           <span class="checkbox__text">Тяжелый рок</span>
@@ -755,7 +763,10 @@
         </label>
       </div>
       <div class="travel-filter__fieldset">
-        <button class="travel-filter__show-btn" type="button">Еда</button>
+        <button class="travel-filter__show-btn" type="button">
+          Еда
+          <svg class="travel-filter__btn-svg" width="8" height="4"><use xlink:href="img/nav-icons.svg#dropdown"></use></svg>
+        </button>
         <label class="travel-filter__label checkbox">
           <input type="checkbox" name="meat" class="checkbox__input" checked>
           <span class="checkbox__text">Мясоед</span>
@@ -769,8 +780,11 @@
           <span class="checkbox__text">Веган-сыроед</span>
         </label>
       </div>
-      <div class="travel-filter__fieldset">
-        <button class="travel-filter__show-btn" type="button">Транспорт</button>
+      <div class="travel-filter__fieldset travel-filter__fieldset--opened">
+        <button class="travel-filter__show-btn" type="button">
+          Транспорт
+          <svg class="travel-filter__btn-svg" width="8" height="4"><use xlink:href="img/nav-icons.svg#dropdown"></use></svg>
+        </button>
         <div class="transport">
           <label class="checkbox">
             <input type="checkbox" name="by-plane" class="checkbox__input" checked>
@@ -798,11 +812,14 @@
           </label>
         </div>
       </div>
-      <div class="travel-filter__fieldset">
-        <button class="travel-filter__show-btn" type="button">Левел</button>
+      <div class="travel-filter__fieldset travel-filter__fieldset--opened">
+        <button class="travel-filter__show-btn" type="button">
+          Левел
+          <svg class="travel-filter__btn-svg" width="8" height="4"><use xlink:href="img/nav-icons.svg#dropdown"></use></svg>
+        </button>
         <div class="travel-filter__level">
-          <input min="1" value="30" type="number" name="min-level" class="travel-filter__level-number travel-filter__level-number--min">
-          <input max="100" value="100" type="number" name="max-level" class="travel-filter__level-number travel-filter__level-number--max">
+          <input min="1" max="100" value="30" type="number" name="min-level" class="travel-filter__level-number travel-filter__level-number--min">
+          <input min="1" max="100" value="100" type="number" name="max-level" class="travel-filter__level-number travel-filter__level-number--max">
         </div>
         <div class="travel-filter__slider d-none"></div> <!-- ползунок -->
       </div>
@@ -852,7 +869,7 @@
             </div>
             <div class="companion-catalog__fieldset companion-catalog__fieldset--transport-level">
             <span class="companion-catalog__fieldset-title">транспорт:</span>
-            <ul class="transport">
+            <ul class="transport transport--catalog">
               <li class="transport__item transport__item--active">
                 <svg class="transport__icon" width="19" height="17"><use xlink:href="img/transport-icons.svg#plane"></use></svg>
               </li>

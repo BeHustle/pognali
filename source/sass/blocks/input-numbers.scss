@@ -23,13 +23,39 @@
   width: 70%;
   margin-bottom: 20px;
   height: 45px;
+  border-top: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+  border-right: 0 none;
+  border-left: 0 none;
 }
 
 .input-numbers__btn {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 15%;
   margin-bottom: 20px;
   height: 45px;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid #cbced9;
+
+  &--increase {
+    border-left: 0 none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+
+  &--reduce {
+    border-right: 0 none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+
+  & svg {
+    fill: #606161;
+    opacity: 0.3;
+  }
 }
 
 @media only screen and (min-width: $tablet-width) {
@@ -48,6 +74,26 @@
   .input-numbers__btn {
     margin-bottom: 25px;
     height: 70px;
+
+    &--increase {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    &--reduce {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    &--increase svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    &--reduce svg {
+      width: 20px;
+      height: 2px;
+    }
   }
 }
 

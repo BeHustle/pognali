@@ -21,3 +21,47 @@
     margin-right: 0;
   }
 }
+
+.transport--form .transport__item {
+  margin-right: 0;
+}
+
+.transport__button {
+  padding: 0;
+  border: 0 none;
+  width: 33px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .transport--form .transport__icon,
+  .transport--catalog .transport__icon {
+    width: 24px;
+    height: 21px;
+  }
+
+  .transport__button {
+    width: 43px;
+    height: 43px;
+  }
+
+  .transport--form .transport__item {
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .transport--form .transport__item {
+    margin-right: 0;
+  }
+}

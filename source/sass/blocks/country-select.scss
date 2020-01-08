@@ -1,22 +1,125 @@
 .country-select {
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    background-image: url("../img/small-arrow.svg");
+    background-position: center;
+    background-size: 5px 10px;
+    background-repeat: no-repeat;
+    bottom: -15px;
+    left: 165px;
+  }
+
+  &--add::after {
+    display: none;
+  }
+}
+
+.country-select__flag {
+  display: flex;
+  width: 53px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #cbced9;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.country-select__del-btn {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  display: block;
+  border: 0 none;
+  background-color: #cbced9;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  transform: translateY(-50%) translateX(50%);
+
+  & svg {
+    fill: #000000;
+    opacity: 0.3;
+  }
 }
 
 .country-select__button {
   @include set-font(14px, 18px, 500);
   color: #1d2e5b;
   text-transform: uppercase;
-  padding: 11px 5px;
+  padding: 11px 12px;
   text-align: left;
   border: 1px solid #cbced9;
   border-radius: 5px;
   background-color: transparent;
-  display: block;
-  width: 100%;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  position: relative;
+  width: 167px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   &--add {
     background-color: #edeff6;
     border-color: #edeff6;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: 161px;
+    transform: translateY(50%);
+    width: 9px;
+    height: 9px;
+    background-color: #1d2e5b;
+    border-radius: 50%;
+  }
+
+  & svg {
+    fill: #000000;
+    opacity: 0.3;
+  }
+
+  &--choose::before {
+    background-color: transparent;
+    border: 1px solid #cbced9;
+  }
+
+  &--add::before {
+    background-color: #edeff6;
+    border: 1px solid #cbced9;
+  }
+}
+
+.country-select__text-btn {
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
+  flex-shrink: 1;
+  width: 125px;
+  display: block;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 25px;
+    background: linear-gradient(to right, rgba(#ffffff, 0.4), #ffffff 100%);
   }
 }
 
@@ -24,9 +127,65 @@
   .country-select__button {
     @include set-font(20px, 20px, 500);
     padding: 25px;
+    width: 370px;
+    flex-grow: 0;
+
+    &::before {
+      left: auto;
+      right: -35px;
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .country-select__text-btn {
+    width: 300px;
+  }
+
+  .country-select__flag {
+    border: 0 none;
+    width: auto;
+
+    & img {
+      width: 70px;
+      height: 47px;
+    }
+  }
+
+  .country-select__del-btn {
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border-radius: 0;
+    transform: none;
+
+    & svg {
+      opacity: 0.2;
+      width: 18px;
+      height: 18px;
+    }
   }
 
   .country-select {
     margin-bottom: 15px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .country-select__button {
+    width: 730px;
+
+    &::before {
+      right: -48px;
+    }
+  }
+
+  .country-select__text-btn {
+    width: 670px;
   }
 }

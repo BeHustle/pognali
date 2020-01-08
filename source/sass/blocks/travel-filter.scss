@@ -46,12 +46,18 @@
   border: 0 none;
   background-color: transparent;
   padding: 11px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.travel-filter__fieldset {
-  border: 0 none;
-  padding: 0;
-  margin: 0;
+.travel-filter__btn-svg {
+  fill: #1d2e5b;
+
+  @media only screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    display: none;
+  }
 }
 
 .travel-filter__submit-btn {
@@ -71,6 +77,35 @@
 
 .travel-filter__slider {
   margin-top: 20px;
+}
+
+.travel-filter__fieldset {
+  border: 0 none;
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: $tablet-width - 1px), (min-width: $desktop-width) {
+  .travel-filter__fieldset {
+
+    & .travel-filter__label,
+    & .transport,
+    & .travel-filter__level,
+    & .travel-filter__slider {
+      display: none;
+    }
+
+    &--opened .travel-filter__label,
+    &--opened .transport,
+    &--opened .travel-filter__level,
+    &--opened .travel-filter__slider {
+      display: flex;
+    }
+
+    &--opened .travel-filter__btn-svg {
+      transform: rotate(180deg);
+    }
+  }
 }
 
 @media only screen and (min-width: $tablet-width) {

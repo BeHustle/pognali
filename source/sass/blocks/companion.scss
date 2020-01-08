@@ -108,15 +108,18 @@
   margin-bottom: 15px;
 }
 
-.companion__fieldset-container .tags {
-  justify-content: flex-start;
-  margin: 0;
-  padding: 25px;
-}
+.companion__fieldset-container {
+  width: 100%;
 
-.companion__fieldset-container .transport {
-  margin: 0;
-  padding: 15px;
+  & .tags {
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  & .transport {
+    margin: 0;
+    padding: 15px;
+  }
 }
 
 @media only screen and (min-width: $tablet-width) {
@@ -131,6 +134,7 @@
   .companion__fieldset-container {
     display: flex;
     flex-direction: column-reverse;
+    width: auto;
 
     &--transport {
       order: -1;
