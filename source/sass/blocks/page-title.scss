@@ -2,12 +2,10 @@
   @include set-font(36px, 40px, 700);
   margin-top: 0;
   margin-bottom: 0;
-  background-color: $blue-black;
 }
 
 @media only screen and (min-width: $tablet-width) {
   .page-title {
     @include set-font(60px, 70px, 700);
-    background-color: transparent;
   }
 }

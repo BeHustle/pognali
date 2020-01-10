@@ -6,6 +6,17 @@
   @include set-font(30px, 36px, 500);
   color: $blue-white;
   text-transform: uppercase;
+  position: relative;
+  transition: transform 0.3s;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: #ffd74b;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 @media only screen and (min-width: $tablet-width) {

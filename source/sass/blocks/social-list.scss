@@ -2,4 +2,34 @@
   @include ul-style-reset;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.social-list__item {
+  margin-right: 25px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social-list__icon {
+  fill: #cccccc;
+}
+
+.social-list__link {
+
+  &:active .social-list__icon {
+    opacity: 0.3;
+  }
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .social-list__item {
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

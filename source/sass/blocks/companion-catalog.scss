@@ -19,6 +19,22 @@
   padding-right: 25px;
   margin-top: 0;
   margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+
+  &::after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    width: 5px;
+    height: 5px;
+    background-color: #f97676;
+    border-radius: 50%;
+  }
+
+  &--online::after {
+    background-color: #81e31e;
+  }
 }
 
 .companion-catalog .button {
@@ -29,19 +45,65 @@
   text-transform: uppercase;
   padding-top: 11px;
   padding-bottom: 11px;
+  border-radius: 50px;
 }
 
 .companion-catalog__likes {
   @include set-font(14px, 21px, 700);
   color: $blue-black;
-  margin-left: 50px;
+  margin-left: 47px;
   margin-right: auto;
   margin-top: 5px;
   position: relative;
   z-index: 1;
   padding: 0;
+  padding-left: 40px;
   border: 0 none;
   background-color: transparent;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    bottom: 50%;
+    transform: translateY(50%);
+    opacity: 0.3;
+    left: 0;
+    background-color: transparent;
+    background-image: url("../img/heart.svg");
+    background-size: 31px 11px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: #e2e5f2;
+    opacity: 1;
+  }
+
+  &:active::before {
+    background-color: #e2e5f2;
+    opacity: 0.1;
+  }
+
+  &--favourite::before {
+    background-color: #f9eaea;
+    background-image: url("../img/heart-active.svg");
+    opacity: 1;
+  }
+
+  &--favourite:hover::before,
+  &--favourite:focus::before {
+    background-color: #f9d8d8;
+  }
+
+  &--favourite:active::before {
+    opacity: 0.3;
+  }
 }
 
 .companion-catalog__info-main {
@@ -72,6 +134,8 @@
   color: #1d2e5b;
   text-transform: uppercase;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 
   &:last-child {
     margin-bottom: 0;
@@ -101,6 +165,21 @@
   align-items: center;
 }
 
+.companion-catalog__country-img {
+  margin-right: 15px;
+}
+
+.companion-catalog .transport__item {
+  width: 32px;
+  height: 32px;
+  background-color: #edeff6;
+  border-radius: 50%;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media only screen and (min-width: $tablet-width) {
   .companion-catalog {
     display: flex;
@@ -116,13 +195,20 @@
 
   .companion-catalog__info-main {
     display: block;
-    width: 260px;
+    width: 310px;
     padding-left: 30px;
   }
 
   .companion-catalog__name {
     padding-left: 0;
     padding-right: 0;
+    justify-content: flex-start;
+    align-items: center;
+
+    &::after {
+      margin-top: 0;
+      margin-left: 20px;
+    }
   }
 
   .companion-catalog .button {
@@ -135,6 +221,14 @@
     @include set-font(20px, 30px, 700);
     margin-left: 0;
     margin-right: 0;
+    padding-left: 51px;
+
+    &::before {
+      width: 50px;
+      height: 50px;
+      background-size: 20px 17px;
+      left: -4px;
+    }
   }
 
   .companion-catalog .tags {
@@ -179,18 +273,36 @@
     width: calc(100% - 70px);
   }
 
-  .companion-catalog__image { /* временно для сетки */
+  .companion-catalog__image {
     position: static;
-    width: 190px;
     border-radius: 15px;
   }
 
   .companion-catalog__country {
+    @include set-font(20px, 30px, 500);
     margin-bottom: 0;
     margin-right: 25px;
 
     &:last-child {
       margin-right: 0;
+    }
+  }
+
+  .companion-catalog__country-img {
+    width: 35px;
+    height: 24px;
+    margin-right: 10px;
+  }
+
+  .companion-catalog .transport__item {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border-radius: 0;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
@@ -250,10 +362,6 @@
     display: none;
   }
 
-  .companion-catalog__image { /* временно для сетки */
-    width: 290px;
-  }
-
   .companion-catalog__country {
     margin-bottom: 10px;
     margin-right: 0;
@@ -265,5 +373,31 @@
 
   .companion-catalog__level {
     margin-top: 0;
+  }
+
+  .companion-catalog__country-img {
+    margin-right: 20px;
+  }
+
+  .companion-catalog .transport__item {
+    margin-bottom: 0;
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .companion-catalog__name {
+    display: block;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: 50%;
+      transform: translateY(50%);
+      left: -18px;
+      margin: 0;
+    }
   }
 }

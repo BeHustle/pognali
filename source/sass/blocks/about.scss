@@ -1,6 +1,33 @@
 .about {
   background-color: $blue-white;
   background-image: url("../img/about-mobile@1x.png");
+  background-size: 292px auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/about-mobile@2x.png");
+  }
+
+  @media only screen and (min-width: $tablet-width) {
+    background-image: url("../img/about-tablet@1x.png");
+    background-size: 376px auto;
+    background-position: top 50px right 0;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/about-tablet@2x.png");
+    }
+  }
+
+  @media only screen and (min-width: $desktop-width) {
+    background-image: url("../img/about-desktop@1x.png");
+    background-size: 630px auto;
+    background-position: bottom 0 right 70px;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/about-desktop@2x.png");
+    }
+  }
 }
 
 .about .container {
@@ -29,15 +56,16 @@
 @media only screen and (min-width: $tablet-width) {
   .about .container {
     padding-left: 60px;
-    padding-right: 350px;
+    padding-right: 360px;
     padding-top: 40px;
     padding-bottom: 90px;
   }
 
   .about .button {
-    display: block;
+    display: flex;
     width: 275px;
     margin-top: 50px;
+    color: #1d2e5b;
   }
 
   .about .content-title {

@@ -37,6 +37,18 @@
 .alphabet-modal .alphabet__item {
   width: 44px;
   height: 41px;
+
+  &--active {
+    border-color: #1d2e5b;
+  }
+
+  &:hover {
+    border-color: #959bb2;
+  }
+
+  &:focus-within {
+    border-color: #959bb2;
+  }
 }
 
 .alphabet-modal .alphabet__link {
@@ -49,12 +61,49 @@
   width: 100%;
 }
 
+.alphabet-modal__close {
+  border: 0 none;
+  padding: 0;
+  display: block;
+  background-color: transparent;
+  cursor: pointer;
+
+  & svg {
+    opacity: 0.3;
+    fill: #ffffff;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    opacity: 1;
+  }
+
+  &:active svg {
+    opacity: 0.1;
+  }
+}
+
+.alphabet-modal .countries__link {
+  &:hover,
+  &:focus {
+    color: #1d2e5b;
+  }
+
+  &:active {
+    color: rgba(#1d2e5b, 0.3);
+  }
+}
+
 @media only screen and (min-width: $tablet-width) {
   .alphabet-modal {
     width: calc(100% - 45px);
     left: 45px;
     right: auto;
     transform: none;
+  }
+
+  .alphabet-modal__title {
+    @include set-font(20px, 20px, 500);
   }
 
   .alphabet-modal__menu {
@@ -90,6 +139,14 @@
     &--active {
       background-color: #1d2e5b;
       color: #ffffff;
+    }
+  }
+
+  .alphabet-modal__close {
+
+    & svg {
+      width: 18px;
+      height: 18px;
     }
   }
 }

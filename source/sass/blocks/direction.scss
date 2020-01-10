@@ -36,12 +36,25 @@
   margin: 0;
   width: 50%;
   text-align: right;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("../img/user.svg");
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    top: 9px;
+    left: 50px;
+    opacity: 0.4;
+  }
 }
 
 .direction__flag {
   position: absolute;
-  top: 0;
-  left: 0;
+  z-index: 2;
+  top: 98px;
+  left: 25px;
 }
 
 @media only screen and (min-width: $tablet-width) {
@@ -70,6 +83,24 @@
     text-align: left;
     margin-top: 10px;
     order: 1;
+    padding-left: 30px;
+
+    &::before {
+      width: 20px;
+      height: 20px;
+      top: auto;
+      bottom: 50%;
+      transform: translateY(50%);
+      left: 0;
+    }
+  }
+
+  .direction__flag {
+    width: 70px;
+    height: 47px;
+    top: 22px;
+    left: auto;
+    right: 150px;
   }
 }
 

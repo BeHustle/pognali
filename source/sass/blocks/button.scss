@@ -22,11 +22,22 @@
   &--lowercase {
     text-transform: lowercase;
   }
+
+  &--arrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.button__right {
+  fill: #1d2e5b;
 }
 
 @media only screen and (min-width: $tablet-width) {
   .button {
     @include set-font(24px, 24px, 700);
+    border-radius: 20px;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 28px;

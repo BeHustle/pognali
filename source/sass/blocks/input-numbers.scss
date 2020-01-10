@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
 }
 
 .input-numbers__label {
@@ -20,16 +21,57 @@
 
 .input-numbers__input {
   display: block;
-  width: 70%;
+  width: 100%;
   margin-bottom: 20px;
   height: 45px;
+  border: 1px solid #cbced9;
+  text-align: center;
+  border-radius: 3px;
+
+  &:hover,
+  &:focus {
+    border-color: #959bb2;
+  }
+
+  &:active {
+    border-color: $blue-black;
+  }
 }
 
 .input-numbers__btn {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 15%;
   margin-bottom: 20px;
   height: 45px;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  border: 0 none;
+
+  &--increase {
+    right: 0;
+  }
+
+  &--reduce {
+    left: 0;
+  }
+
+  & svg {
+    fill: #606161;
+    opacity: 0.3;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    opacity: 0.4;
+  }
+
+  &:active svg {
+    opacity: 0.1;
+  }
 }
 
 @media only screen and (min-width: $tablet-width) {
@@ -48,6 +90,16 @@
   .input-numbers__btn {
     margin-bottom: 25px;
     height: 70px;
+
+    &--increase svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    &--reduce svg {
+      width: 20px;
+      height: 2px;
+    }
   }
 }
 
@@ -55,24 +107,26 @@
   .input-numbers {
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 10px;
-    padding-top: 30px;
-
-    &--duration {
-      padding-top: 0;
-      padding-bottom: 30px;
-      margin-bottom: 0;
-    }
+    margin-bottom: 15px;
   }
 
   .input-numbers__input {
     margin-bottom: 0;
-    width: 16%;
+    width: 180px;
   }
 
   .input-numbers__btn {
-    margin-bottom: 0;
     width: 10%;
+    margin-bottom: 0;
+
+    &--increase {
+      right: 95px;
+    }
+
+    &--reduce {
+      right: 220px;
+      left: auto;
+    }
   }
 
   .input-numbers__label {
