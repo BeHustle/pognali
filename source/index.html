@@ -11,16 +11,27 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<header class="page-header page-header--js"> <!-- добавлять page-header--js, переключать page-header--opened -->
+<header class="page-header">
   <div class="container">
     <a class="page-header__logo-link">
-      <picture>
-        <source media="(min-width: 1380px)" srcset="img/logo-desktop-white@2x.png 2x, img/logo-desktop-white@1x.png 1x">
-        <source media="(min-width: 728px)" srcset="img/logo-tablet-white@2x.png 2px, img/logo-tablet-white@1x.png 1x">
-        <img src="img/logo-mobile-white@1x.png"
-             srcset="img/logo-mobile-white@2x.png 2x, img/logo-mobile-white@1x.png 1x"
-             alt="Погнали - сервис путешествий" class="logo logo--white">
-      </picture>
+      <div class="logo logo--white">
+        <picture>
+          <source media="(min-width: 1380px)" srcset="img/logo-desktop-white@2x.png 2x, img/logo-desktop-white@1x.png 1x">
+          <source media="(min-width: 728px)" srcset="img/logo-tablet-white@2x.png 2px, img/logo-tablet-white@1x.png 1x">
+          <img src="img/logo-mobile-white@1x.png"
+               srcset="img/logo-mobile-white@2x.png 2x, img/logo-mobile-white@1x.png 1x"
+               alt="Погнали - сервис путешествий">
+        </picture>
+      </div>
+      <div class="logo logo--blue">
+        <picture>
+          <source media="(min-width: 1380px)" srcset="img/logo-desktop-blue@2x.png 2x, img/logo-desktop-blue@1x.png 1x">
+          <source media="(min-width: 728px)" srcset="img/logo-tablet-blue@2x.png 2px, img/logo-tablet-blue@1x.png 1x">
+          <img src="img/logo-mobile-blue@1x.png"
+               srcset="img/logo-mobile-blue@2x.png 2x, img/logo-mobile-blue@1x.png 1x"
+               alt="Погнали - сервис путешествий">
+        </picture>
+      </div>
     </a>
     <button class="page-header__toggle-menu" type="button" aria-label="открыть меню.">
       <svg class="page-header__menu-open" width="25" height="11">
@@ -30,7 +41,7 @@
         <use xlink:href="img/nav-icons.svg#menu-close"></use>
       </svg>
     </button>
-    <ul class="page-header__contacts page-header__contacts--main contacts-list">
+    <ul class="page-header__contacts contacts-list">
       <li class="contacts-list__item">
         <a href="tel:88005558628" class="contacts-list__img contacts-list__img--tel" aria-label="Позвонить в сервис.">
           <svg width="18" height="18">
@@ -53,13 +64,13 @@
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a class="site-list__link">О сервисе</a>
+          <a class="site-list__link" data-hover="Направления">О сервисе</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html" class="site-list__link">Направления</a>
+          <a href="form.html" class="site-list__link" data-hover="Направления">Направления</a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html" class="site-list__link">Попутчики</a>
+          <a href="catalog.html" class="site-list__link" data-hover="Попутчики">Попутчики</a>
         </li>
       </ul>
       <ul class="main-nav__list contacts-list">
@@ -176,11 +187,13 @@
       </div>
       <ul class="directions__list">
         <li class="direction">
+          <div class="direction__image-wrapper">
           <picture>
             <source media="(min-width: 728px)" srcset="img/thailand-desktop@2x.jpg 2x, img/thailand-desktop@1x.jpg 1x">
             <img src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x, img/thailand-mobile@1x.jpg 1x"
                  alt="Погнали - сервис путешествий" class="direction__image">
-          </picture>
+            </picture>
+          </div>
           <img src="img/flag-thailand.svg" alt="Тайланд" width="35" height="25" class="direction__flag">
           <div class="direction__content">
             <h3 class="direction__title">Тайланд</h3>
@@ -189,11 +202,13 @@
           </div>
         </li>
         <li class="direction">
-          <picture>
-            <source media="(min-width: 728px)" srcset="img/france-desktop@2x.jpg 2x, img/france-desktop@1x.jpg 1x">
-            <img src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x, img/france-mobile@1x.jpg 1x"
-                 alt="Погнали - сервис путешествий" class="direction__image">
-          </picture>
+          <div class="direction__image-wrapper">
+            <picture>
+              <source media="(min-width: 728px)" srcset="img/france-desktop@2x.jpg 2x, img/france-desktop@1x.jpg 1x">
+              <img src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x, img/france-mobile@1x.jpg 1x"
+                  alt="Погнали - сервис путешествий" class="direction__image">
+            </picture>
+          </div>
           <img src="img/flag-france.svg" alt="Франция" width="35" height="25" class="direction__flag">
           <div class="direction__content">
             <h3 class="direction__title">Франция</h3>
@@ -497,6 +512,7 @@
   </div>
 </footer>
 <script src="js/jquery-1.6.1.min.js"></script>
+<script src="js/enquire.min.js"></script>
 <script src="js/jquery.ui-slider.js"></script>
 <script src="js/script.js"></script>
 </body>

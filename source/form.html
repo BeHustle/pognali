@@ -7,23 +7,32 @@
     document.createElement("picture");
   </script>
   <script src="js/picturefill.min.js" async></script>
-  <script src="js/svg4everybody.min.js" async></script>
-  <script>svg4everybody();</script>
   <title>Погнали - направления</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
-<header class="page-header page-header--js"> <!-- добавлять page-header--js, переключать page-header--opened -->
+<header class="page-header">
   <div class="container">
     <a class="page-header__logo-link">
-      <picture>
-        <source media="(min-width: 1380px)" srcset="img/logo-desktop-white@2x.png 2x, img/logo-desktop-white@1x.png 1x">
-        <source media="(min-width: 728px)" srcset="img/logo-tablet-white@2x.png 2px, img/logo-tablet-white@1x.png 1x">
-        <img src="img/logo-mobile-white@1x.png"
-             srcset="img/logo-mobile-white@2x.png 2x, img/logo-mobile-white@1x.png 1x"
-             alt="Погнали - сервис путешествий" class="logo logo--white">
-      </picture>
+      <div class="logo logo--white">
+        <picture>
+          <source media="(min-width: 1380px)" srcset="img/logo-desktop-white@2x.png 2x, img/logo-desktop-white@1x.png 1x">
+          <source media="(min-width: 728px)" srcset="img/logo-tablet-white@2x.png 2px, img/logo-tablet-white@1x.png 1x">
+          <img src="img/logo-mobile-white@1x.png"
+               srcset="img/logo-mobile-white@2x.png 2x, img/logo-mobile-white@1x.png 1x"
+               alt="Погнали - сервис путешествий">
+        </picture>
+      </div>
+      <div class="logo logo--blue">
+        <picture>
+          <source media="(min-width: 1380px)" srcset="img/logo-desktop-blue@2x.png 2x, img/logo-desktop-blue@1x.png 1x">
+          <source media="(min-width: 728px)" srcset="img/logo-tablet-blue@2x.png 2px, img/logo-tablet-blue@1x.png 1x">
+          <img src="img/logo-mobile-blue@1x.png"
+               srcset="img/logo-mobile-blue@2x.png 2x, img/logo-mobile-blue@1x.png 1x"
+               alt="Погнали - сервис путешествий">
+        </picture>
+      </div>
     </a>
     <button class="page-header__toggle-menu" type="button" aria-label="открыть меню.">
       <svg class="page-header__menu-open" width="25" height="11">
@@ -49,20 +58,20 @@
           </svg>
         </a>
       </li>
-      <li class="contacts-list__item contacts-list__item--auth">
+      <li class="contacts-list__item contacts-list__auth">
         <a href="#" class="button">Авторизация</a>
       </li>
     </ul>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a class="site-list__link">О сервисе</a>
+          <a class="site-list__link" data-hover="Направления">О сервисе</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html" class="site-list__link">Направления</a>
+          <a href="form.html" class="site-list__link" data-hover="Направления">Направления</a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html" class="site-list__link">Попутчики</a>
+          <a href="catalog.html" class="site-list__link" data-hover="Попутчики">Попутчики</a>
         </li>
       </ul>
       <ul class="main-nav__list contacts-list">
@@ -349,7 +358,7 @@
             </svg>
             На шаг назад
           </button>
-          <div class="alphabet-modal">
+          <div class="alphabet-modal d-none">
             <div class="alphabet-modal__menu">
               <h4 class="alphabet-modal__title">Выберите страну</h4>
               <button class="alphabet-modal__close" type="button" aria-label="Закрыть окно">
@@ -359,9 +368,7 @@
               </button>
             </div>
             <ul class="alphabet">
-              <li class="alphabet__item alphabet__item--active"><a href="#"
-                                                                   class="alphabet__link alphabet__link--active">А</a>
-              </li>
+              <li class="alphabet__item alphabet__item--active"><a href="#" class="alphabet__link alphabet__link--active">А</a></li>
               <li class="alphabet__item"><a href="#" class="alphabet__link">Б</a></li>
               <li class="alphabet__item"><a href="#" class="alphabet__link">В</a></li>
               <li class="alphabet__item"><a href="#" class="alphabet__link">Г</a></li>
@@ -1005,5 +1012,9 @@
     </div>
   </div>
 </footer>
+<script src="js/jquery-1.6.1.min.js"></script>
+<script src="js/enquire.min.js"></script>
+<script src="js/jquery.ui-slider.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

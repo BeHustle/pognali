@@ -2,6 +2,16 @@
   background-color: #edeff6;
 }
 
+.form-main__companion {
+  &:hover {
+    box-shadow: none;
+  }
+
+  &:focus-within {
+    box-shadow: none;
+  }
+}
+
 .form-main__companion .container {
   display: flex;
   flex-wrap: wrap;

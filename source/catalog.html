@@ -11,16 +11,27 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<header class="page-header"> <!-- добавлять page-header--js, переключать page-header--opened -->
+<header class="page-header">
   <div class="container">
     <a class="page-header__logo-link">
-      <picture>
-        <source media="(min-width: 1380px)" srcset="img/logo-desktop-white@2x.png 2x, img/logo-desktop-white@1x.png 1x">
-        <source media="(min-width: 728px)" srcset="img/logo-tablet-white@2x.png 2px, img/logo-tablet-white@1x.png 1x">
-        <img src="img/logo-mobile-white@1x.png"
-             srcset="img/logo-mobile-white@2x.png 2x, img/logo-mobile-white@1x.png 1x"
-             alt="Погнали - сервис путешествий" class="logo logo--white">
-      </picture>
+      <div class="logo logo--white">
+        <picture>
+          <source media="(min-width: 1380px)" srcset="img/logo-desktop-white@2x.png 2x, img/logo-desktop-white@1x.png 1x">
+          <source media="(min-width: 728px)" srcset="img/logo-tablet-white@2x.png 2px, img/logo-tablet-white@1x.png 1x">
+          <img src="img/logo-mobile-white@1x.png"
+               srcset="img/logo-mobile-white@2x.png 2x, img/logo-mobile-white@1x.png 1x"
+               alt="Погнали - сервис путешествий">
+        </picture>
+      </div>
+      <div class="logo logo--blue">
+        <picture>
+          <source media="(min-width: 1380px)" srcset="img/logo-desktop-blue@2x.png 2x, img/logo-desktop-blue@1x.png 1x">
+          <source media="(min-width: 728px)" srcset="img/logo-tablet-blue@2x.png 2px, img/logo-tablet-blue@1x.png 1x">
+          <img src="img/logo-mobile-blue@1x.png"
+               srcset="img/logo-mobile-blue@2x.png 2x, img/logo-mobile-blue@1x.png 1x"
+               alt="Погнали - сервис путешествий">
+        </picture>
+      </div>
     </a>
     <button class="page-header__toggle-menu" type="button" aria-label="открыть меню.">
       <svg class="page-header__menu-open" width="25" height="11">
@@ -141,7 +152,7 @@
           <svg width="12" height="12"><use xlink:href="img/nav-icons.svg#filter-close"></use></svg>
         </span>
       </button>
-      <ul class="continents">
+      <ul id="continents-catalog" class="continents">
         <li class="continents__item">
           <a href="#" class="continents__link continents__link--current">Европа</a>
         </li>
@@ -155,7 +166,7 @@
           <a href="#" class="continents__link">Острова</a>
         </li>
       </ul>
-      <ul class="alphabet">
+      <ul id="alphabet-catalog" class="alphabet">
         <li class="alphabet__item"><a href="#" class="alphabet__link alphabet__link--active">А</a></li>
         <li class="alphabet__item"><a href="#" class="alphabet__link">Б</a></li>
         <li class="alphabet__item"><a href="#" class="alphabet__link">В</a></li>
@@ -746,7 +757,7 @@
     <section class="travel-filter">
       <h2 class="travel-filter__title">Подберите идеального попутчика</h2>
       <form action="https://echo.htmlacademy.ru" class="travel-filter__form" method="get" name="travel-filter-form">
-        <div class="travel-filter__fieldset">
+        <div class="travel-filter__fieldset travel-filter__fieldset--opened">
           <button class="travel-filter__show-btn" type="button">
             Хобби
             <svg class="travel-filter__btn-svg" width="8" height="4">
@@ -766,7 +777,7 @@
             <span class="checkbox__text">Диван</span>
           </label>
         </div>
-        <div class="travel-filter__fieldset">
+        <div class="travel-filter__fieldset travel-filter__fieldset--opened">
           <button class="travel-filter__show-btn" type="button">
             Музыка
             <svg class="travel-filter__btn-svg" width="8" height="4">
@@ -786,7 +797,7 @@
             <span class="checkbox__text">Евроденс</span>
           </label>
         </div>
-        <div class="travel-filter__fieldset">
+        <div class="travel-filter__fieldset travel-filter__fieldset--opened">
           <button class="travel-filter__show-btn" type="button">
             Еда
             <svg class="travel-filter__btn-svg" width="8" height="4">
@@ -806,7 +817,7 @@
             <span class="checkbox__text">Веган-сыроед</span>
           </label>
         </div>
-        <div class="travel-filter__fieldset">
+        <div class="travel-filter__fieldset travel-filter__fieldset--opened">
           <button class="travel-filter__show-btn" type="button">
             Транспорт
             <svg class="travel-filter__btn-svg" width="8" height="4">
@@ -842,7 +853,7 @@
             </label>
           </div>
         </div>
-        <div class="travel-filter__fieldset">
+        <div class="travel-filter__fieldset travel-filter__fieldset--opened">
           <button class="travel-filter__show-btn" type="button">
             Левел
             <svg class="travel-filter__btn-svg" width="8" height="4">
@@ -1009,6 +1020,7 @@
   </div>
 </footer>
 <script src="js/jquery-1.6.1.min.js"></script>
+<script src="js/enquire.min.js"></script>
 <script src="js/jquery.ui-slider.js"></script>
 <script src="js/script.js"></script>
 </body>
