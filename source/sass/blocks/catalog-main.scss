@@ -1,9 +1,13 @@
 .catalog-main {
   background-color: #edeff6;
+  position: relative;
+  z-index: 4;
+  margin-bottom: -30px;
+  padding-bottom: 30px;
 }
 
 .catalog-main .travel-filter {
-  margin-top: 25px;
+  margin-top: 75px;
 }
 
 .catalog-main .companions-catalog {
@@ -12,8 +16,13 @@
 }
 
 @media only screen and (min-width: $tablet-width) {
+  .catalog-main {
+    margin-bottom: -60px;
+    padding-bottom: 60px;
+  }
+
   .catalog-main .travel-filter {
-    margin-top: 50px;
+    margin-top: 182px;
   }
 
   .catalog-main .companions-catalog {

@@ -1,4 +1,9 @@
 .cta {
+  @include set-bb-radius(30px);
+  position: relative;
+  margin-top: -30px;
+  padding-top: 30px;
+  z-index: 15;
   background-color: $blue-white;
 }
 
@@ -38,6 +43,13 @@
 }
 
 @media only screen and (min-width: $tablet-width) {
+  .cta {
+    @include set-bb-radius(60px);
+    margin-top: -60px;
+    padding-top: 60px;
+    z-index: 15;
+  }
+
   .cta .container {
     padding-left: 55px;
     padding-right: 55px;

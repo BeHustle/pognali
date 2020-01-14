@@ -1,31 +1,51 @@
 .about {
+  @include set-bb-radius();
   background-color: $blue-white;
-  background-image: url("../img/about-mobile@1x.png");
-  background-size: 292px auto;
-  background-repeat: no-repeat;
-  background-position: top center;
+  position: relative;
+  z-index: 19;
 
-  @media (min-resolution: 1.5dppx) {
-    background-image: url("../img/about-mobile@2x.png");
-  }
+  &::after {
+    width: 320px;
+    height: 100%;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0 auto;
+    z-index: -1;
+    background-image: url("../img/about-mobile@1x.png"), url("../img/rectangle.svg");
+    background-size: contain, 143px 143px;
+    background-position: left 15px center,  left -30px top -11px;
+    background-repeat: no-repeat, no-repeat;
 
-  @media only screen and (min-width: $tablet-width) {
-    background-image: url("../img/about-tablet@1x.png");
-    background-size: 376px auto;
-    background-position: top 50px right 0;
-
-    @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/about-tablet@2x.png");
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/about-mobile@2x.png"), url("../img/rectangle.svg");
     }
-  }
 
-  @media only screen and (min-width: $desktop-width) {
-    background-image: url("../img/about-desktop@1x.png");
-    background-size: 630px auto;
-    background-position: bottom 0 right 70px;
+    @media (min-width: $tablet-width) {
+      width: $tablet-width;
+      background-image: url("../img/about-tablet@1x.png"), url("../img/rectangle-big.svg");
+      background-size: 376px 548px, 688px 213px;
+      background-position: right 15px bottom 88px, left 30px top 0;
+      background-repeat: no-repeat, no-repeat;
 
-    @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/about-desktop@2x.png");
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/about-tablet@2x.png"), url("../img/rectangle-big.svg");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      width: $desktop-width;
+      background-image: url("../img/about-desktop@1x.png"), url("../img/rectangle.svg");
+      background-size: 638px 665px, 213px 213px;
+      background-position: right 55px bottom, left 60px top 131px;
+      background-repeat: no-repeat, no-repeat;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/about-desktop@2x.png"), url("../img/rectangle.svg");
+      }
     }
   }
 }
@@ -54,6 +74,10 @@
 }
 
 @media only screen and (min-width: $tablet-width) {
+  .about {
+    @include set-bb-radius(60px);
+  }
+
   .about .container {
     padding-left: 60px;
     padding-right: 360px;
@@ -82,6 +106,11 @@
 }
 
 @media only screen and (min-width: $desktop-width) {
+  .about {
+    margin-top: -60px;
+    padding-top: 60px;
+  }
+
   .about .container {
     padding-left: 100px;
     padding-right: 650px;

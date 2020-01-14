@@ -5,7 +5,9 @@
   background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
   background-size: 192px 225px, 100% 400px;
   background-repeat: no-repeat, no-repeat;
-  background-position: top 24% right 50%, top 4% right 0;
+  background-position: top 26% center, top 4% center;
+  position: relative;
+  z-index: 20;
 
   @media (min-resolution: 1.5dppx) {
     background-image: url("../img/traveller-illustration-mobile@2x.png"), url("../img/globe-back-mobile@2x.jpg");
@@ -93,6 +95,8 @@
 
 @media only screen and (min-width: $desktop-width) {
   .intro {
+
+    @include set-bb-radius(60px);
     padding-top: 105px;
     padding-bottom: 120px;
   }

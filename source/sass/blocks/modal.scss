@@ -1,10 +1,11 @@
 .modal {
   background-color: #ffffff;
   width: 270px;
-  top: -25px;
+  bottom: 50%;
   right: 50%;
-  transform: translateX(50%);
-  position: absolute;
+  transform: translateX(50%) translateY(50%);
+  position: fixed;
+  z-index: 100;
   padding-top: 30px;
   border-radius: 20px;
 }
@@ -50,13 +51,17 @@
 .modal__item {
   padding-top: 15px;
   padding-bottom: 15px;
+  border-bottom: 1px solid rgba(#000000, 0.05);
+
+  &:first-child {
+    border-top: 1px solid rgba(#000000, 0.05);
+  }
 }
 
 @media only screen and (min-width: $tablet-width) {
   .modal {
     width: 670px;
     padding-top: 55px;
-    top: 0;
   }
 
   .modal__list {
@@ -89,10 +94,6 @@
 @media only screen and (min-width: $desktop-width) {
   .modal {
     width: 750px;
-    bottom: 50%;
-    right: 50%;
-    top: auto;
-    transform: translateX(50%) translateY(50%);
   }
 
   .modal__list {

@@ -1,5 +1,10 @@
 .directions {
+  @include set-bb-radius(30px);
+  margin-top: -30px;
+  padding-top: 30px;
   background-color: #edeff6;
+  position: relative;
+  z-index: 18;
 }
 
 .directions .container {
@@ -42,6 +47,12 @@
 }
 
 @media only screen and (min-width: $tablet-width) {
+  .directions {
+    @include set-bb-radius(60px);
+    margin-top: -60px;
+    padding-top: 60px;
+  }
+
   .directions .container {
     padding-top: 70px;
     padding-bottom: 190px;

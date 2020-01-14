@@ -1,4 +1,9 @@
 .companions {
+  @include set-bb-radius(30px);
+  position: relative;
+  margin-top: -30px;
+  padding-top: 30px;
+  z-index: 17;
   background-color: $blue-black;
   background-image: url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-mobile@1x.png");
   background-repeat: no-repeat, no-repeat;
@@ -72,6 +77,12 @@
 }
 
 @media only screen and (min-width: $tablet-width) {
+  .companions {
+    @include set-bb-radius(60px);
+    margin-top: -60px;
+    padding-top: 60px;
+  }
+
   .companions .container {
     padding-left: 55px;
     padding-right: 55px;

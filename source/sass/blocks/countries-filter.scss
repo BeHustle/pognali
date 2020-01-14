@@ -1,5 +1,13 @@
 .countries-filter {
+  @include set-bb-radius(30px);
+  position: absolute;
+  z-index: 19;
+  padding-top: 30px;
   background-color: #e2e5f2;
+  width: 100%;
+  top: 60px;
+  right: 0;
+  left: 0;
 }
 
 .countries-filter .container {
@@ -110,6 +118,12 @@
 }
 
 @media only screen and (min-width: $tablet-width) {
+  .countries-filter {
+    @include set-bb-radius(60px);
+    top: 185px;
+    padding-top: 60px;
+  }
+
   .countries-filter .container {
     padding-left: 55px;
     padding-right: 55px;
@@ -173,6 +187,14 @@
 }
 
 @media only screen and (min-width: $desktop-width) {
+  .countries-filter {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    margin-top: -60px;
+  }
+
   .countries-filter__title {
     @include set-font(20px, 24px, 700);
     display: block;

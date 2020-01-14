@@ -20,12 +20,25 @@ $alphabet-item-height: 40px;
     color: #ffffff;
     background-color: #1d2e5b;
   }
+
+  &:active {
+    color: #ffffff;
+    background-color: #1d2e5b;
+  }
 }
 
 .alphabet__item {
   border: 1px solid #cbced9;
   width: 43px;
   height: $alphabet-item-height;
+
+  &:hover {
+    border-color: #959bb2;
+  }
+
+  &:focus-within {
+    border-color: #959bb2;
+  }
 }
 
 @media only screen and (min-width: $tablet-width) {

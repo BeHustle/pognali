@@ -1,4 +1,9 @@
 .contacts {
+  @include set-bb-radius(30px);
+  position: relative;
+  margin-top: -30px;
+  padding-top: 30px;
+  z-index: 14;
   background-color: $yellow;
 }
 
@@ -74,6 +79,12 @@
 }
 
 @media only screen and (min-width: $tablet-width) {
+  .contacts {
+    @include set-bb-radius(60px);
+    margin-top: -60px;
+    padding-top: 60px;
+  }
+
   .contacts .container {
     padding-top: 45px;
     padding-bottom: 85px;

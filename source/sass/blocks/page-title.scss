@@ -4,8 +4,36 @@
   margin-bottom: 0;
 }
 
+.page-title--underline {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 98%;
+    height: 5px;
+    border-radius: 3px;
+    bottom: -17px;
+    left: 2px;
+    background-color: $orange;
+  }
+}
+
 @media only screen and (min-width: $tablet-width) {
   .page-title {
     @include set-font(60px, 70px, 700);
+  }
+
+  .page-title--underline {
+
+    &::after {
+      width: 99%;
+      height: 8px;
+      border-radius: 5px;
+      bottom: -78px;
+    }
   }
 }

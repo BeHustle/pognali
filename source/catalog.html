@@ -124,7 +124,7 @@
 <main class="catalog-main">
   <section class="main-title">
     <div class="container">
-      <h1 class="page-title">Попутчики</h1>
+      <h1 class="page-title page-title--underline">Попутчики</h1>
       <a href="index.html" class="main-title__link">
         На главную
         <svg width="32" height="16">
@@ -825,26 +825,26 @@
             </svg>
           </button>
           <div class="transport">
-            <label class="checkbox">
+            <label class="checkbox tooltip" data-tooltip="Авиаперелет">
               <input type="checkbox" name="by-plane" class="checkbox__input" checked>
               <span class="transport__item checkbox__transport">
               <svg class="transport__icon" width="19" height="17"><use xlink:href="img/transport-icons.svg#plane"></use></svg>
             </span>
             </label>
-            <label class="checkbox">
+            <label class="checkbox tooltip" data-tooltip="Автопутешествие">
               <input type="checkbox" name="by-bus" class="checkbox__input" checked>
               <span class="transport__item checkbox__transport">
               <svg class="transport__icon" width="19" height="17"><use
                 xlink:href="img/transport-icons.svg#bus"></use></svg>
             </span>
             </label>
-            <label class="checkbox">
+            <label class="checkbox tooltip" data-tooltip="Велопутешествие">
               <input type="checkbox" name="by-bicycle" class="checkbox__input">
               <span class="transport__item checkbox__transport">
               <svg class="transport__icon" width="19" height="17"><use xlink:href="img/transport-icons.svg#bike"></use></svg>
             </span>
             </label>
-            <label class="checkbox">
+            <label class="checkbox tooltip" data-tooltip="Пешее путешествие">
               <input type="checkbox" name="by-walk" class="checkbox__input" checked>
               <span class="transport__item checkbox__transport">
               <svg class="transport__icon" width="19" height="17"><use
@@ -862,9 +862,9 @@
           </button>
           <div class="travel-filter__level">
             <input aria-label="Ввести минимальный уровень" type="text" name="min-level"
-                   class="travel-filter__level-number travel-filter__level-number--min">
+                   class="travel-filter__level-number travel-filter__level-number--min" value="30">
             <input aria-label="Ввести максимальный уровень" type="text" name="max-level"
-                   class="travel-filter__level-number travel-filter__level-number--max">
+                   class="travel-filter__level-number travel-filter__level-number--max" value="100">
           </div>
           <div class="travel-filter__slider d-none"></div> <!-- ползунок -->
         </div>
@@ -926,22 +926,22 @@
             <div class="companion-catalog__fieldset companion-catalog__fieldset--transport-level">
               <span class="companion-catalog__fieldset-title">транспорт:</span>
               <ul class="transport transport--catalog">
-                <li class="transport__item transport__item--active tooltip" data-tooltip="Самолет">
+                <li class="transport__item transport__item--active tooltip" data-tooltip="Авиаперелет">
                   <svg class="transport__icon" width="19" height="17">
                     <use xlink:href="img/transport-icons.svg#plane"></use>
                   </svg>
                 </li>
-                <li class="transport__item tooltip" data-tooltip="Автобус">
+                <li class="transport__item tooltip" data-tooltip="Автопутешествие">
                   <svg class="transport__icon" width="19" height="17">
                     <use xlink:href="img/transport-icons.svg#bus"></use>
                   </svg>
                 </li>
-                <li class="transport__item tooltip" data-tooltip="Велосипед">
+                <li class="transport__item tooltip" data-tooltip="Велопутешествие">
                   <svg class="transport__icon" width="19" height="17">
                     <use xlink:href="img/transport-icons.svg#bike"></use>
                   </svg>
                 </li>
-                <li class="transport__item tooltip" data-tooltip="Бег">
+                <li class="transport__item tooltip" data-tooltip="Пешее путешествие">
                   <svg class="transport__icon" width="19" height="17">
                     <use xlink:href="img/transport-icons.svg#run"></use>
                   </svg>

@@ -1,5 +1,9 @@
 .page-footer {
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
   background-color: #ffffff;
+  position: relative;
+  z-index: 5;
 }
 
 .page-footer .container {
@@ -40,6 +44,11 @@
 }
 
 @media only screen and (min-width: $tablet-width) {
+  .page-footer {
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+  }
+
   .page-footer .container {
     display: flex;
     justify-content: space-between;

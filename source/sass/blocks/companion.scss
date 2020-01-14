@@ -1,6 +1,7 @@
 .companion {
   background-color: #ffffff;
   position: relative;
+  border-radius: 10px;
 
   &:hover .companion__image {
     transform: scale(1.05);
@@ -22,6 +23,9 @@
 }
 
 .companion__image-wrapper {
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
   overflow: hidden;
 }
 
@@ -169,6 +173,10 @@
 }
 
 @media only screen and (min-width: $tablet-width) {
+  .companion {
+    border-radius: 20px;
+  }
+
   .companion__info {
     padding: 30px 25px 25px 25px;
   }
@@ -225,6 +233,12 @@
 
   .companion__countries-list {
     top: 273px;
+  }
+
+  .companion__image-wrapper {
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 
