@@ -2,15 +2,28 @@
   text-align: center;
 }
 
+.site-list__item {
+  overflow: hidden;
+}
+
 .site-list__link {
   @include set-font(30px, 36px, 500);
   color: $blue-white;
   text-transform: uppercase;
   position: relative;
+  display: flex;
   transition: transform 0.3s;
+
+  &::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    transform: translate3d(0, 0, 0);
+  }
 
   &[href]:hover,
   &[href]:focus {
+    transform: translateY(-100%);
     color: #ffd74b;
   }
 

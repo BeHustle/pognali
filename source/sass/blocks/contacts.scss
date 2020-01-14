@@ -13,6 +13,15 @@
   color: $blue-white;
   display: flex;
   align-items: center;
+
+  &:hover,
+  &:focus {
+    color: rgba($blue-white, 0.7);
+  }
+
+  &:active {
+    color: rgba($blue-white, 0.3);
+  }
 }
 
 .contacts .button {
@@ -24,6 +33,28 @@
   padding-right: 20px;
   justify-content: space-between;
   align-items: center;
+}
+
+.contacts__btn {
+  &:hover,
+  &:focus {
+    background-color: #1d2e5b;
+    color: #ffffff;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: #ffffff;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
+
+  &:active svg {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
 }
 
 .contacts__location {

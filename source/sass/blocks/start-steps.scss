@@ -24,6 +24,7 @@
   border-top-right-radius: 10px;
   position: relative;
   margin-top: -10px;
+
   &::after {
     @include set-font(18px, 18px, 700);
     counter-increment: start-steps-counter;
@@ -32,15 +33,19 @@
     display: block;
     padding-top: 25px;
   }
+
   &:nth-child(2) {
     background-color: #ffa530;
   }
+
   &:nth-child(3) {
     background-color: #ffbd30;
   }
+
   &:nth-child(4) {
     background-color: #ffd74b;
   }
+
   &:last-child {
     min-height: 80px;
     border-bottom-left-radius: 10px;

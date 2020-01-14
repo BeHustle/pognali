@@ -7,19 +7,19 @@
   background-repeat: no-repeat, no-repeat;
   background-position: top 24% right 50%, top 4% right 0;
 
-    @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/traveller-illustration-mobile@2x.png"), url("../img/globe-back-mobile@2x.jpg");
-    }
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/traveller-illustration-mobile@2x.png"), url("../img/globe-back-mobile@2x.jpg");
+  }
 
   @media only screen and (min-width: $tablet-width) {
-  background-color: #182044;
-  background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
-  background-size: 372px 451px, 1479px auto;
-  background-position: top 39% right 37%, center;
+    background-color: #182044;
+    background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
+    background-size: 372px 451px, 1479px auto;
+    background-position: top 39% right 37%, center;
 
     @media (min-resolution: 1.5dppx) {
       background-image: url("../img/traveller-illustration-tablet@2x.png"), url("../img/globe-back-tablet@2x.jpg");
-      }
+    }
   }
 
   @media only screen and (min-width: $desktop-width) {

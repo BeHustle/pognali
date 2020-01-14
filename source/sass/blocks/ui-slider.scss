@@ -19,6 +19,17 @@
   background-repeat: no-repeat; /* картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления */
   cursor: pointer;
   border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+  }
+
+  &:active {
+    box-shadow: 0 3px 7px 0 rgba(29, 46, 91, 0.35);
+  }
 }
 
 .ui-slider .ui-slider-range {

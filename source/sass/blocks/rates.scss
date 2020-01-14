@@ -9,6 +9,25 @@
   border: 0 none;
   background-color: transparent;
   padding: 0;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: rgba(#132576, 0.7);
+  }
+
+  &:hover svg,
+  &:focus svg {
+    opacity: 0.7;
+  }
+
+  &:active {
+    color: rgba(#132576, 0.3);
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 .rates .container {
@@ -108,6 +127,7 @@
     padding-left: 85px;
     padding-top: 17px;
     padding-bottom: 17px;
+
     &::after {
       @include set-font(28px, 28px, 400);
       padding: 19px 26px;

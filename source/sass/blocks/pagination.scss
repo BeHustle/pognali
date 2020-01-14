@@ -32,6 +32,15 @@
   & svg {
     fill: $blue-white;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .pagination__list {
@@ -75,13 +84,23 @@
     margin-left: 30px;
   }
 
-  .pagination__item {
+  .pagination__link {
+    display: block;
     padding: 10px 20px;
-    margin-right: 2px;
     border-radius: 50%;
 
-    &--current {
+    &[href]:hover,
+    &[href]:focus {
+      color: rgba($blue-black, 0.6);
+    }
+
+    &:not([href]),
+    &:active {
       background-color: $yellow;
     }
+  }
+
+  .pagination__item {
+    margin-right: 2px;
   }
 }

@@ -102,6 +102,7 @@
     margin-right: 50px;
     flex-grow: 1;
     min-width: 285px;
+
     &:nth-child(2n) {
       margin-right: 0;
     }
@@ -144,6 +145,7 @@
 
   .companions__list .companion {
     margin-right: 60px;
+
     &:nth-child(2n) {
       margin-right: 0;
     }

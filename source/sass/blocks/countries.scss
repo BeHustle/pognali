@@ -1,6 +1,7 @@
 .countries {
   display: none;
   @include ul-style-reset;
+
   &--active {
     display: block;
   }

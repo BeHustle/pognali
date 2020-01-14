@@ -35,6 +35,24 @@
       fill: #ffffff;
       margin-left: 30px;
     }
+
+    &:hover,
+    &:focus {
+      color: rgba(#ffffff, 0.6);
+    }
+
+    &:hover svg,
+    &:focus svg {
+      opacity: 0.6;
+    }
+
+    &:active {
+      color: rgba(#ffffff, 0.3);
+    }
+
+    &:active svg {
+      opacity: 0.3;
+    }
   }
 }
 

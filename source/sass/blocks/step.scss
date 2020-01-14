@@ -80,6 +80,27 @@
   margin-bottom: 20px;
 }
 
+.step__textarea-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.step__textarea-invalid {
+  @include set-font(16px, 16px, 400);
+  color: #ff0000;
+  background-color: #ffefef;
+  border-radius: 4px;
+  width: 100%;
+  height: 60px;
+  padding: 10px 15px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
 .step__textarea {
   display: block;
   width: 100%;
@@ -87,6 +108,9 @@
   border: 1px solid #cbced9;
   border-radius: 3px;
   margin-bottom: 20px;
+  position: relative;
+  background-color: transparent;
+  z-index: 2;
 
   &:hover,
   &:focus {
@@ -95,6 +119,14 @@
 
   &:active {
     border-color: $blue-black;
+  }
+
+  &:invalid {
+    border-color: #f47e7e;
+  }
+
+  &:invalid ~ .step__textarea-invalid {
+    display: block;
   }
 }
 
@@ -185,15 +217,22 @@
     padding-left: 0;
   }
 
-  .step__textarea {
+  .step__textarea-wrapper {
     width: calc(100% - 30px);
+  }
+
+  .step__textarea-invalid {
+    font-size: 20px;
+    height: 57px;
+    padding: 17px 24px 20px;
+    bottom: 20px;
   }
 
   .step .content-text {
     margin-bottom: 40px;
   }
 
-  .step .calendar{
+  .step .calendar {
     width: 100%;
     order: 2;
   }
@@ -242,7 +281,7 @@
     margin-top: 60px;
   }
 
-  .step .calendar{
+  .step .calendar {
     width: 100%;
     order: 2;
   }
@@ -289,8 +328,7 @@
     display: none;
   }
 
-  .step__textarea {
-    width: 100%;
+  .step__textarea-wrapper {
     margin-right: 270px;
   }
 

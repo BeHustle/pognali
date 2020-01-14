@@ -10,8 +10,28 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
+
   &--yellow {
     color: $yellow;
+  }
+
+  &--yellow:hover,
+  &--yellow:focus {
+    color: #ffbd30;
+  }
+
+  &--yellow:hover svg,
+  &--hellow:focus svg {
+    fill: #ffbd30;
+  }
+
+  &--yellow:active {
+    color: rgba(#ffbd30, 0.3);
+  }
+
+  &--yellow:active svg {
+    fill: #ffbd30;
+    opacity: 0.3;
   }
 }
 

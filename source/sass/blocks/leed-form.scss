@@ -4,11 +4,32 @@
 }
 
 .leed-form__input {
+  color: rgba($grey, 0.3);
   flex-grow: 1;
   height: 62px;
-  border: 0 none;
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
+  background-color: #ffffff;
+  border: 4px solid #ffffff;
+
+  &:hover {
+    color: rgba($grey, 0.5);
+    background-color: #edeff6;
+    border-color: #edeff6;
+  }
+
+  &:active,
+  &:focus {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+
+  &:invalid {
+    background-color: #ffefef;
+    border-color: #ffefef;
+    color: #ff0000;
+  }
 }
 
 .leed-form__description {

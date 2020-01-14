@@ -2,9 +2,11 @@
   background-color: #ffffff;
   position: relative;
   z-index: 1;
+
   &--js {
     background-color: $blue-black;
   }
+
   &--opened {
     background-color: #ffffff;
   }
@@ -58,7 +60,7 @@
   display: none;
 }
 
-.page-header--opened .main-nav{
+.page-header--opened .main-nav {
   display: block;
 }
 
@@ -138,8 +140,9 @@
     display: none;
   }
 
-  .page-header__contacts .contacts-list__item--auth {
+  .page-header__contacts .contacts-list__auth {
     display: block;
+    margin-bottom: 0;
   }
 
   .page-header .button {
@@ -194,7 +197,7 @@
     margin: 0;
   }
 
-  .page-header .main-nav{
+  .page-header .main-nav {
     display: flex;
   }
 

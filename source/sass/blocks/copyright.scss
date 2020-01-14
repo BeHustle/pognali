@@ -3,6 +3,30 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 15px;
+
+  &:hover .copyright__link {
+    opacity: 0.6;
+  }
+
+  &:hover .content-text {
+    color: rgba($grey, 0.6);
+  }
+
+  &:focus-within .copyright__link {
+    opacity: 0.6;
+  }
+
+  &:focus-within .content-text {
+    color: rgba($grey, 0.6);
+  }
+
+  &:active .copyright__link {
+    opacity: 0.3;
+  }
+
+  &:active .content-text {
+    color: rgba($grey, 0.3);
+  }
 }
 
 @media only screen and (min-width: $tablet-width) {

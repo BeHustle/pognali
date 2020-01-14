@@ -26,10 +26,39 @@
   display: flex;
   justify-content: space-between;
   height: 35px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 2;
+    bottom: 50%;
+    right: 50%;
+    transform: translateX(50%) translateY(50%);
+    width: 21px;
+    height: 15px;
+    background-image: url("../img/line.svg");
+    background-size: 21px 2px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+  }
 }
 
 .travel-filter__level-number {
   width: 50%;
+  background-color: #ffffff;
+  border: 1px solid #cbced9;
+
+  &:hover,
+  &:focus {
+    border-color: #959bb2;
+  }
+
+  &:active {
+    border-color: $blue-black;
+  }
 }
 
 .travel-filter__title {
@@ -50,6 +79,25 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: rgba(#1d2e5b, 0.6);
+  }
+
+  &:hover .travel-filter__btn-svg,
+  &:focus .travel-filter__btn-svg {
+    opacity: 0.6;
+  }
+
+  &:active {
+    color: rgba(#1d2e5b, 0.3);
+  }
+
+  &:active .travel-filter__btn-svg {
+    opacity: 0.3;
+  }
 }
 
 .travel-filter__btn-svg {
@@ -73,6 +121,16 @@
   padding-bottom: 5px;
   border-radius: 50px;
   margin-top: 20px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    color: rgba($blue-black, 0.3);
+    background-color: #f3c72b;
+  }
 }
 
 .travel-filter__slider {

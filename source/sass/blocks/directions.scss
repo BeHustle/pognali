@@ -27,6 +27,10 @@
   padding-right: 23px;
   border-radius: 10px;
   color: #1d2e5b;
+
+  &:active {
+    color: rgba(#1d2e5b, 0.3);
+  }
 }
 
 .directions .content-title {
