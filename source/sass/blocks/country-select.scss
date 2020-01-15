@@ -99,7 +99,7 @@
   }
 
   &--choose::before {
-    background-color: transparent;
+    background-color: #ffffff;
     border: 1px solid #cbced9;
   }
 
@@ -179,6 +179,23 @@
       right: -35px;
       width: 15px;
       height: 15px;
+      z-index: 1;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 165px;
+      right: -28px;
+      top: -36px;
+      background-color: #d6d9e6;
+      z-index: 0;
+    }
+
+    &--add::after {
+      top: -15px;
+      background: linear-gradient(to top, transparent, #d6d9e6);
     }
   }
 
@@ -226,6 +243,16 @@
 
     &::before {
       right: -48px;
+    }
+
+    &::after {
+      right: -41px;
+      top: -27px;
+      height: 155px;
+    }
+
+    &--add::after {
+      height: 200px;
     }
   }
 

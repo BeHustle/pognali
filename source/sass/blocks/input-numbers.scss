@@ -20,6 +20,8 @@
 }
 
 .input-numbers__input {
+  @include set-font(15px, 15px, 500);
+  color: #1d2e5b;
   display: block;
   width: 100%;
   margin-bottom: 20px;
@@ -27,6 +29,8 @@
   border: 1px solid #cbced9;
   text-align: center;
   border-radius: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
 
   &:hover,
   &:focus {
@@ -83,6 +87,7 @@
   }
 
   .input-numbers__input {
+    @include set-font(25px, 25px, 500);
     margin-bottom: 25px;
     height: 70px;
   }

@@ -140,6 +140,15 @@
 .companion__fieldset {
   @include set-font(15px, 18px, 400);
   color: $grey;
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  z-index: 1;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #edeff6;
 
   &--big {
     @include set-font(16px, 18px, 700);
@@ -168,7 +177,15 @@
 
   & .transport {
     margin: 0;
-    padding: 15px;
+  }
+
+  & .tags--textarea {
+    padding: 15px 25px;
+  }
+
+  & .transport--form {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
@@ -189,6 +206,7 @@
     display: flex;
     flex-direction: column-reverse;
     width: auto;
+    position: relative;
 
     &--transport {
       order: -1;
@@ -196,6 +214,14 @@
 
     &--tags {
       width: 100%;
+    }
+
+    & .tags--textarea {
+      padding: 25px 35px;
+    }
+
+    & .transport--form {
+      padding: 20px 55px;
     }
   }
 
@@ -207,7 +233,6 @@
   .companion__fieldset-container .tags {
     margin-top: 0;
     margin-bottom: 0;
-    padding: 35px;
   }
 
   .companion__name {
@@ -229,6 +254,9 @@
 
   .companion__fieldset {
     @include set-font(20px, 20px, 500);
+    position: absolute;
+    bottom: -10px;
+    top: auto;
   }
 
   .companion__countries-list {
@@ -253,6 +281,14 @@
     &--tags {
       width: 730px;
       margin-right: 140px;
+    }
+
+    & .tags--textarea {
+      padding: 22px 40px;
+    }
+
+    & .transport--form {
+      padding: 25px 55px;
     }
   }
 
@@ -288,7 +324,7 @@
   }
 
   .companion__fieldset-container--tags .companion__fieldset {
-    text-align: left;
-    padding-left: 35px;
+    left: 22px;
+    transform: none;
   }
 }

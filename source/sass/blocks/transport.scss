@@ -23,8 +23,13 @@
   }
 }
 
-.transport--form .transport__item {
-  margin-right: 0;
+.transport--form {
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+
+  & .transport__item {
+    margin-right: 0;
+  }
 }
 
 .transport__button {

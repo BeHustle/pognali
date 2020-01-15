@@ -1,8 +1,13 @@
 .form-main {
   background-color: #edeff6;
+  position: relative;
+  z-index: 4;
 }
 
 .form-main__companion {
+  position: relative;
+  z-index: 20;
+
   &:hover {
     box-shadow: none;
   }

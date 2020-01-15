@@ -1,5 +1,11 @@
 .add-plan {
   background-color: #d4d9eb;
+  position: relative;
+  z-index: 20;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  margin-bottom: -30px;
+  padding-bottom: 30px;
 }
 
 .add-plan__title {
@@ -32,6 +38,13 @@
 }
 
 @media only screen and (min-width: $tablet-width) {
+  .add-plan {
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+    margin-bottom: -60px;
+    padding-bottom: 60px;
+  }
+
   .add-plan .container {
     padding-top: 55px;
     padding-bottom: 65px;
