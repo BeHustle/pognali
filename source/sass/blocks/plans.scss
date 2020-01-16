@@ -9,7 +9,7 @@
 }
 
 .plans .container {
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 30px;
 }
 
@@ -30,7 +30,6 @@
   &::before {
     counter-increment: plans-list-counter;
     content: counter(plans-list-counter) ".";
-    color: #1d2e5b;
   }
 }
 

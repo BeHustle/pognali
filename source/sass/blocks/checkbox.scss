@@ -97,6 +97,9 @@
 
   & .checkbox__text::before {
     border: 1px solid #cbced9;
+    width: 26px;
+    height: 26px;
+    margin-right: 14px;
   }
 
   &:focus-within .checkbox__text::before {

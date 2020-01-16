@@ -7,6 +7,7 @@
 
 .input-numbers__label {
   @include set-font(16px, 16px, 700);
+  letter-spacing: 1px;
   color: #1d2e5b;
   text-transform: uppercase;
   width: 80%;
@@ -25,7 +26,7 @@
   display: block;
   width: 100%;
   margin-bottom: 20px;
-  height: 45px;
+  height: 43px;
   border: 1px solid #cbced9;
   text-align: center;
   border-radius: 3px;
@@ -48,7 +49,7 @@
   justify-content: center;
   width: 15%;
   margin-bottom: 20px;
-  height: 45px;
+  height: 43px;
   padding: 0;
   background-color: transparent;
   position: absolute;
@@ -56,11 +57,11 @@
   border: 0 none;
 
   &--increase {
-    right: 0;
+    right: 4px;
   }
 
   &--reduce {
-    left: 0;
+    left: 4px;
   }
 
   & svg {

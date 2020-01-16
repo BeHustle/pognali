@@ -13,11 +13,11 @@
   &::after {
     position: absolute;
     content: "";
-    width: 98%;
+    width: 99%;
     height: 5px;
     border-radius: 3px;
-    bottom: -17px;
-    left: 2px;
+    bottom: -14px;
+    left: 1px;
     background-color: $orange;
   }
 }

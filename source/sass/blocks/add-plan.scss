@@ -21,18 +21,24 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  padding-top: 30px;
+  padding-top: 27px;
   padding-bottom: 45px;
+}
+
+.add-plan__nav {
+  margin-top: 3px;
+  margin-right: 3px;
 }
 
 .add-plan__nav-link {
   @include circle(5px, #1d2e5b);
   display: inline-block;
   vertical-align: middle;
-  margin-right: 16px;
+  margin-right: 14px;
   opacity: 0.3;
 
   &[href] {
+    margin-right: 12px;
     opacity: 1;
   }
 }
