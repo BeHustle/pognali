@@ -85,6 +85,10 @@
   z-index: 2;
   top: 98px;
   left: 25px;
+
+  &.tooltip {
+    position: absolute;
+  }
 }
 
 .direction__image {

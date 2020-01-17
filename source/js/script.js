@@ -1,6 +1,6 @@
 $(window).scroll(function() {
   var height = $(window).scrollTop();
-  if(height > 9999){ //поставить потом 200
+  if(height > 9999){ //поставить 200 при сдаче
     $('.page-header').addClass('page-header--scrolled');
   } else{
     $('.page-header').removeClass('page-header--scrolled');
@@ -46,18 +46,17 @@ $('.travel-filter__slider').slider({
   }
 });
 
-enquire.register('screen and (max-width: 727px)', {
+enquire.register('screen and (min-width: 728px)', {
   match: function () {
-    $('#continents-catalog').addClass('d-none');
-  },
-  unmatch: function () {
     $('#continents-catalog').removeClass('d-none');
   }
 });
+
+//удалить при сдаче проекта
 $('#alphabet-catalog').addClass('d-none');
 $('.countries-filter__countries-container').addClass('d-none');
 $('.countries-filter__hide-btn').addClass('d-none');
-
+//
 
 function toggleFilterCatalog(className) {
   enquire.register('screen and (max-width: 727px)', {

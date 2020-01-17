@@ -7,6 +7,8 @@
     document.createElement("picture");
   </script>
   <script src="js/picturefill.min.js" async></script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody(); // run it now or whenever you are ready</script>
   <title>Погнали - главная</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -16,7 +18,14 @@
     <a class="page-header__logo-link">
       <div class="logo logo--white">
         <picture>
-          <source media="(min-width: 1380px)" srcset="img/logo-desktop-white@2x.png 2x, img/logo-desktop-white@1x.png 1x">
+          <source type="image/webp" media="(min-width: 1380px)"
+                  srcset="img/logo-desktop-white@2x.webp 2x, img/logo-desktop-white@1x.webp 1x">
+          <source type="image/webp" media="(min-width: 728px)"
+                  srcset="img/logo-tablet-white@2x.webp 2px, img/logo-tablet-white@1x.webp 1x">
+          <source type="image/webp" srcset="img/logo-mobile-white@2x.webp 2x, img/logo-mobile-white@1x.webp 1x">
+
+          <source media="(min-width: 1380px)"
+                  srcset="img/logo-desktop-white@2x.png 2x, img/logo-desktop-white@1x.png 1x">
           <source media="(min-width: 728px)" srcset="img/logo-tablet-white@2x.png 2px, img/logo-tablet-white@1x.png 1x">
           <img src="img/logo-mobile-white@1x.png"
                srcset="img/logo-mobile-white@2x.png 2x, img/logo-mobile-white@1x.png 1x"
@@ -25,6 +34,12 @@
       </div>
       <div class="logo logo--blue">
         <picture>
+          <source type="image/webp" media="(min-width: 1380px)"
+                  srcset="img/logo-desktop-blue@2x.webp 2x, img/logo-desktop-blue@1x.webp 1x">
+          <source type="image/webp" media="(min-width: 728px)"
+                  srcset="img/logo-tablet-blue@2x.webp 2px, img/logo-tablet-blue@1x.webp 1x">
+          <source type="image/webp" srcset="img/logo-mobile-blue@2x.webp 2x, img/logo-mobile-blue@1x.webp 1x">
+
           <source media="(min-width: 1380px)" srcset="img/logo-desktop-blue@2x.png 2x, img/logo-desktop-blue@1x.png 1x">
           <source media="(min-width: 728px)" srcset="img/logo-tablet-blue@2x.png 2px, img/logo-tablet-blue@1x.png 1x">
           <img src="img/logo-mobile-blue@1x.png"
@@ -188,10 +203,16 @@
       <ul class="directions__list">
         <li class="direction">
           <div class="direction__image-wrapper">
-          <picture>
-            <source media="(min-width: 728px)" srcset="img/thailand-desktop@2x.jpg 2x, img/thailand-desktop@1x.jpg 1x">
-            <img src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x, img/thailand-mobile@1x.jpg 1x"
-                 alt="Погнали - сервис путешествий" class="direction__image">
+            <picture>
+              <source type="image/webp" media="(min-width: 728px)"
+                      srcset="img/thailand-desktop@2x.webp 2x, img/thailand-desktop@1x.webp 1x">
+              <source type="image/webp" srcset="img/thailand-mobile@2x.webp 2x, img/thailand-mobile@1x.webp 1x">
+
+              <source media="(min-width: 728px)"
+                      srcset="img/thailand-desktop@2x.jpg 2x, img/thailand-desktop@1x.jpg 1x">
+              <img src="img/thailand-mobile@1x.jpg"
+                   srcset="img/thailand-mobile@2x.jpg 2x, img/thailand-mobile@1x.jpg 1x"
+                   alt="Погнали - сервис путешествий" class="direction__image">
             </picture>
           </div>
           <img src="img/flag-thailand.svg" alt="Тайланд" width="35" height="25" class="direction__flag">
@@ -204,9 +225,13 @@
         <li class="direction">
           <div class="direction__image-wrapper">
             <picture>
+              <source type="image/webp" media="(min-width: 728px)"
+                      srcset="img/france-desktop@2x.webp 2x, img/france-desktop@1x.webp 1x">
+              <source type="image/webp" srcset="img/france-mobile@2x.webp 2x, img/france-mobile@1x.webp 1x">
+
               <source media="(min-width: 728px)" srcset="img/france-desktop@2x.jpg 2x, img/france-desktop@1x.jpg 1x">
               <img src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x, img/france-mobile@1x.jpg 1x"
-                  alt="Погнали - сервис путешествий" class="direction__image">
+                   alt="Погнали - сервис путешествий" class="direction__image">
             </picture>
           </div>
           <img src="img/flag-france.svg" alt="Франция" width="35" height="25" class="direction__flag">
@@ -218,10 +243,14 @@
         </li>
         <li class="direction">
           <div class="direction__image-wrapper">
-          <picture>
+            <picture>
+              <source type="image/webp" media="(min-width: 728px)"
+                      srcset="img/czech-desktop@2x.webp 2x, img/czech-desktop@1x.webp 1x">
+              <source type="image/webp" srcset="img/czech-mobile@2x.webp 2x, img/czech-mobile@1x.webp 1x">
+
               <source media="(min-width: 728px)" srcset="img/czech-desktop@2x.jpg 2x, img/czech-desktop@1x.jpg 1x">
               <img src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x, img/czech-mobile@1x.jpg 1x"
-                    alt="Погнали - сервис путешествий" class="direction__image">
+                   alt="Погнали - сервис путешествий" class="direction__image">
             </picture>
           </div>
           <img src="img/flag-czech.svg" alt="Чехия" width="35" height="25" class="direction__flag">
@@ -256,8 +285,11 @@
       <ul class="companions__list">
         <li class="companion">
           <div class="companion__image-wrapper">
-            <img srcset="img/firsova-desktop@2x.jpg 2x, img/firsova-desktop@1x.jpg 1x" src="img/firsova-desktop@1x.jpg"
-                 alt="Таня Фирсова" class="companion__image">
+            <picture>
+              <source type="image/webp" srcset="img/firsova-desktop@2x.webp 2x, img/firsova-desktop@1x.webp 1x">
+              <img srcset="img/firsova-desktop@2x.jpg 2x, img/firsova-desktop@1x.jpg 1x" src="img/firsova-desktop@1x.jpg"
+                   alt="Таня Фирсова" class="companion__image">
+            </picture>
           </div>
           <div class="companion__level">99</div>
           <ul class="companion__countries-list">
@@ -282,22 +314,22 @@
               <li class="tags__item">#смузи</li>
             </ul>
             <ul class="transport">
-              <li class="transport__item transport__item--active tooltip" data-tooltip="Самолет">
+              <li class="transport__item transport__item--active tooltip" data-tooltip="Авиаперелет">
                 <svg width="24" height="21" class="transport__icon">
                   <use xlink:href="img/transport-icons.svg#plane"></use>
                 </svg>
               </li>
-              <li class="transport__item tooltip" data-tooltip="Автобус">
+              <li class="transport__item tooltip" data-tooltip="Автопутешествие">
                 <svg width="24" height="21" class="transport__icon">
                   <use xlink:href="img/transport-icons.svg#bus"></use>
                 </svg>
               </li>
-              <li class="transport__item tooltip" data-tooltip="Велосипед">
+              <li class="transport__item tooltip" data-tooltip="Велопутешествие">
                 <svg width="24" height="21" class="transport__icon">
                   <use xlink:href="img/transport-icons.svg#bike"></use>
                 </svg>
               </li>
-              <li class="transport__item tooltip" data-tooltip="Бег">
+              <li class="transport__item tooltip" data-tooltip="Пешее путешествие">
                 <svg width="24" height="21" class="transport__icon">
                   <use xlink:href="img/transport-icons.svg#run"></use>
                 </svg>
@@ -307,8 +339,11 @@
         </li>
         <li class="companion">
           <div class="companion__image-wrapper">
-            <img srcset="img/demin-desktop@2x.jpg 2x, img/demin-desktop@1x.jpg 1x" src="img/demin-desktop@1x.jpg"
-                 alt="Петя Демин" class="companion__image">
+            <picture>
+              <source type="image/webp" srcset="img/demin-desktop@2x.webp 2x, img/demin-desktop@1x.webp 1x">
+              <img srcset="img/demin-desktop@2x.jpg 2x, img/demin-desktop@1x.jpg 1x" src="img/demin-desktop@1x.jpg"
+                   alt="Таня Фирсова" class="companion__image">
+            </picture>
           </div>
           <div class="companion__level">80</div>
           <ul class="companion__countries-list">
@@ -329,22 +364,22 @@
               <li class="tags__item">#крафт</li>
             </ul>
             <ul class="transport">
-              <li class="transport__item transport__item--active tooltip" data-tooltip="Самолет">
+              <li class="transport__item transport__item--active tooltip" data-tooltip="Авиаперелет">
                 <svg width="24" height="21" class="transport__icon">
                   <use xlink:href="img/transport-icons.svg#plane"></use>
                 </svg>
               </li>
-              <li class="transport__item transport__item--active tooltip" data-tooltip="Автобус">
+              <li class="transport__item transport__item--active tooltip" data-tooltip="Автопутешествие">
                 <svg width="24" height="21" class="transport__icon">
                   <use xlink:href="img/transport-icons.svg#bus"></use>
                 </svg>
               </li>
-              <li class="transport__item tooltip" data-tooltip="Велосипед">
+              <li class="transport__item tooltip" data-tooltip="Велопутешествие">
                 <svg width="24" height="21" class="transport__icon">
                   <use xlink:href="img/transport-icons.svg#bike"></use>
                 </svg>
               </li>
-              <li class="transport__item transport__item--active tooltip" data-tooltip="Бег">
+              <li class="transport__item transport__item--active tooltip" data-tooltip="Пешее путешествие">
                 <svg width="24" height="21" class="transport__icon">
                   <use xlink:href="img/transport-icons.svg#run"></use>
                 </svg>
@@ -361,8 +396,11 @@
       <h2 class="content-title">
         <a href="#" class="content-link">Добавьте свой профиль</a>
       </h2>
-      <img srcset="img/rates@2x.png 2x, img/rates@1x.png 1x" src="img/rates@1x.png" width="99" height="99"
-           alt="Имя профиля" class="rates__img">
+      <picture>
+        <source type="image/webp" srcset="img/rates@2x.webp 2x, img/rates@1x.webp 1x" src="img/rates@1x.png">
+        <img srcset="img/rates@2x.png 2x, img/rates@1x.png 1x" src="img/rates@1x.png" width="99" height="99"
+             alt="Имя профиля" class="rates__img">
+      </picture>
       <ol class="rates__list">
         <li class="rates__item">
           <p class="content-text content-text--grey">Базовое размещение</p>
@@ -377,12 +415,12 @@
           <p class="content-text content-text--grey">59 руб./мес</p>
         </li>
       </ol>
-      <button type="button" class="rates__modal-show">
+      <a href="rates.html" class="rates__modal-show">
           <span class="rates__business-icon">
             <svg width="17" height="21"><use xlink:href="img/nav-icons.svg#business"></use></svg>
           </span>
         Показать тарифы для бизнеса
-      </button>
+      </a>
     </div>
   </section>
 
@@ -416,7 +454,7 @@
         Зарегистрируйтесь, это&nbsp;быстро&nbsp;и бесплатно!
       </p>
       <p class="cta__text content-text">
-        Уже зарегистрированы? Тогда скорее <a href="#" class="cta__login">авторизуйтесь.</a>
+        Уже зарегистрированы? Тогда скорее <a href="auth.html" class="cta__login">авторизуйтесь.</a>
       </p>
       <form action="index.html" method="post" name="cta-form" class="leed-form">
         <input type="email" class="leed-form__input" id="cta-email" name="cta-email" placeholder="E-mail"
@@ -477,6 +515,10 @@
   <div class="container">
     <a class="page-footer__logo-link">
       <picture>
+        <source type="image/webp" media="(min-width: 1380px)" srcset="img/logo-desktop-blue@2x.webp 2x, img/logo-desktop-blue@1x.webp 1x">
+        <source type="image/webp" media="(min-width: 728px)" srcset="img/logo-tablet-blue@2x.webp 2px, img/logo-tablet-blue@1x.webp 1x">
+        <source type="image/webp" srcset="img/logo-mobile-blue@2x.webp 2x, img/logo-mobile-blue@1x.webp 1x">
+
         <source media="(min-width: 1380px)" srcset="img/logo-desktop-blue@2x.png 2x, img/logo-desktop-blue@1x.png 1x">
         <source media="(min-width: 728px)" srcset="img/logo-tablet-blue@2x.png 2px, img/logo-tablet-blue@1x.png 1x">
         <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x, img/logo-mobile-blue@1x.png 1x"
