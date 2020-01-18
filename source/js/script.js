@@ -114,3 +114,4 @@ $('.companion-catalog__likes').click(function (evt) {
   evt.preventDefault();
   $(this).toggleClass('companion-catalog__likes--favourite');
 });
+

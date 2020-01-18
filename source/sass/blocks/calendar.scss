@@ -1,3 +1,128 @@
 .calendar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.calendar__weekdays-list {
+  @include ul-style-reset;
+  display: flex;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.calendar__days {
+  @include ul-style-reset;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 5px;
+  border-top: 1px solid #cbced9;
+  border-left: 1px solid #cbced9;
+}
+
+.calendar__title {
+  @include set-font(20px, 20px, 700);
+  color: #1d2e5b;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: relative;
+  flex-grow: 1;
+  text-align: center;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: #cbced9;
+    width: calc(100% + 18px);
+    height: 1px;
+    right: -9px;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+}
+
+.calendar__btn {
   display: block;
+  width: 9px;
+  height: 18px;
+  align-self: auto;
+  border: 0 none;
+  background-color: transparent;
+  background-position: center;
+  background-size: 9px 18px;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &--previous {
+    background-image: url("../img/month-arrow-left.svg");
+  }
+
+  &--next {
+    background-image: url("../img/month-arrow-right.svg");
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.calendar__weekday {
+  @include set-font(0, 18px, 400);
+  text-align: center;
+  width: calc(100% / 7);
+  color: $grey;
+
+  &--holiday {
+    color: #ff5c23;
+  }
+
+  &:first-letter {
+    font-size: 14px;
+  }
+}
+
+.calendar__day {
+  width: calc(100% / 7);
+  height: 32px;
+  border-bottom: 1px solid #cbced9;
+  border-right: 1px solid #cbced9;
+}
+
+.calendar__day-number {
+  @include set-font(14px, 32px, 400);
+  color: $grey;
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: #edeff6;
+}
+
+.calendar__input {
+
+  &:checked + .calendar__day-number {
+    background-color: #1d2e5b;
+    color: #ffffff;
+  }
+
+  &:disabled + .calendar__day-number {
+    background-color: transparent;
+    opacity: 0.3;
+  }
 }
