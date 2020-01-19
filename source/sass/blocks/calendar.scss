@@ -11,7 +11,7 @@
   @include ul-style-reset;
   display: flex;
   width: 100%;
-  margin-top: 25px;
+  margin-top: 22px;
 }
 
 .calendar__days {
@@ -101,13 +101,13 @@
 
 .calendar__day {
   width: calc(100% / 7);
-  height: 32px;
+  height: 31px;
   border-bottom: 1px solid #cbced9;
   border-right: 1px solid #cbced9;
 }
 
 .calendar__day-number {
-  @include set-font(14px, 32px, 400);
+  @include set-font(14px, 28px, 400);
   color: $grey;
   display: block;
   text-align: center;
@@ -157,8 +157,8 @@
 
 @media only screen and (min-width: $tablet-width) {
   .calendar {
-    margin-top: 10px;
-    margin-bottom: 45px;
+    margin-top: 35px;
+    margin-bottom: 0;
   }
 
   .calendar__title {
@@ -188,7 +188,7 @@
   }
 
   .calendar__weekdays-list {
-    margin-top: 40px;
+    margin-top: 32px;
   }
 
   .calendar__weekday {
@@ -200,15 +200,15 @@
   }
 
   .calendar__days {
-    margin-top: 0;
+    margin-top: 3px;
   }
 
   .calendar__day {
-    height: 70px;
+    height: 69px;
   }
 
   .calendar__day-number {
-    @include set-font(20px, 70px, 500);
+    @include set-font(20px, 69px, 500);
 
     &--first {
       font-size: 0;

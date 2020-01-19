@@ -48,13 +48,49 @@
   position: absolute;
   top: 0;
   right: 0;
+}
 
-  &--medium {
-    @include set-font(38px, 38px, 700);
-    color: $blue-black;
-    position: static;
+.companion__level--form {
+  & {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    position: relative;
     top: auto;
     right: auto;
+    margin-left: 18px;
+  }
+
+  & .companion__level-circle {
+    position: absolute;
+    top: -2px;
+    left: -1px;
+    transform: rotate(-90deg);
+  }
+
+  & .companion__level-number {
+    @include set-font(38px, 38px, 700);
+    color: $blue-black;
+    position: relative;
+    margin-top: 20px;
+
+    &:after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: calc(100% + 8px);
+      bottom: -2px;
+      left: -4px;
+      background-color: #cbced9;
+    }
+  }
+
+  & .companion__level-desc {
+    @include set-font(18px, 22px, 400);
+    color: $grey;
+    margin-top: 3px;
   }
 }
 
@@ -204,8 +240,19 @@
     padding: 30px 25px 25px 25px;
   }
 
-  .companion__level--medium {
+  .companion__level--form {
+    margin-top: 2px;
+    margin-left: -3px;
     order: -2;
+  }
+
+  .companion__level--form {
+    & .companion__level-circle {
+      width: 100px;
+      height: 100px;
+      top: -2px;
+      left: 0;
+    }
   }
 
   .companion__fieldset-container {
@@ -223,11 +270,14 @@
     }
 
     & .tags--textarea {
-      padding: 25px 35px;
+      padding: 32px 39px;
+      height: 94px;
     }
 
     & .transport--form {
-      padding: 20px 55px;
+      margin-top: -7px;
+      margin-right: 5px;
+      padding: 24px 55px 25px 55px;
     }
   }
 
@@ -251,11 +301,12 @@
 
   .companion__change-photo {
     @include set-font(20px, 20px, 500);
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 19px;
+    padding-bottom: 20px;
     border-radius: 10px;
-    margin-top: 40px;
-    margin-bottom: 50px;
+    margin-top: 47px;
+    margin-bottom: 52px;
+    letter-spacing: 1.9px;
   }
 
   .companion__fieldset {
@@ -263,6 +314,7 @@
     position: absolute;
     bottom: -10px;
     top: auto;
+    letter-spacing: 1.9px;
   }
 
   .companion__countries-list {
@@ -273,6 +325,11 @@
     border-radius: 20px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+  }
+
+  .companion__avatar {
+    margin-right: 0;
+    border-radius: 5px;
   }
 }
 
@@ -307,7 +364,7 @@
     width: 190px;
   }
 
-  .companion__level--medium {
+  .companion__level--form {
     color: #ffffff;
   }
 

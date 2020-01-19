@@ -35,15 +35,17 @@
 
 @media only screen and (min-width: $tablet-width) {
   .plans {
-    border-top-right-radius: 60px;
-    border-top-left-radius: 60px;
-    margin-bottom: -60px;
-    padding-bottom: 60px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin-bottom: -30px;
+    padding-bottom: 30px;
   }
 
   .plans .container {
-    padding-top: 50px;
-    padding-bottom: 70px;
+    padding-top: 48px;
+    padding-bottom: 75px;
+    padding-left: 55px;
+    padding-right: 55px;
   }
 
   .plans__list .plan__title {
@@ -54,10 +56,11 @@
 
   .plans__title {
     @include set-font(36px, 50px, 700);
+    letter-spacing: -0.3px;
   }
 
   .plans__list {
-    margin-top: 35px;
+    margin-top: 44px;
   }
 }
 

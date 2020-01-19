@@ -8,7 +8,7 @@
   </script>
   <script src="js/picturefill.min.js" async></script>
   <script src="js/svg4everybody.min.js"></script>
-  <script>svg4everybody(); // run it now or whenever you are ready</script>
+  <script>svg4everybody();</script>
   <title>Погнали - направления</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -147,7 +147,13 @@
   <section class="form-main__companion companion">
     <h2 class="visually-hidden">Мои данные</h2>
     <div class="container">
-      <div class="companion__level companion__level--medium">80</div>
+      <div class="companion__level companion__level--form">
+        <svg class="companion__level-circle" width="102" height="102" viewBox="0 0 100 100">
+          <circle r="47" cx="50" cy="50" fill="transparent" stroke="#ff8d30" stroke-width="3" stroke-dasharray="246px 63px"></circle>
+        </svg>
+        <span class="companion__level-number">80</span>
+        <span class="companion__level-desc">level</span>
+      </div>
       <picture>
         <source type="image/webp" media="(min-width: 728px)"
                 srcset="img/photo-account-tablet@2x.webp 2x, img/photo-account-tablet@1x.webp 1x">
@@ -486,7 +492,7 @@
         <div id="step2" class="step step--countries">
           <h3 class="step__title">Шаг 2. <br>Маршрут</h3>
           <p class="content-text content-text--grey">
-            Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.
+            Укажите страны, которые вы хотели посетить. Это&nbsp;может&nbsp;быть&nbsp;одна или сразу несколько.
           </p>
           <div class="step__nav">
             <a href="#step1" class="step__nav-link">Даты</a>
@@ -1125,7 +1131,7 @@
           </div>
         </div>
 
-        <div id="step3" class="step">
+        <div id="step3" class="step step--entertainment">
           <h3 class="step__title">Шаг 3. <br>Развлечения</h3>
           <p class="content-text content-text--grey">
             Наконец, расскажите о своих планах времяпровождения.<br>
@@ -1137,7 +1143,7 @@
             <a class="step__nav-link">Развлечения</a>
           </div>
           <label for="text-bosny" class="step__country-label">
-            <span class="step__country-title">Босния и Герцеговина</span>
+            <span class="step__country-title">Босния и герцеговина</span>
             <img width="35" height="24" src="img/flag-bosnia.svg" alt="Босния и Герцеговина">
           </label>
           <div class="step__textarea-wrapper step__textarea-wrapper--line">

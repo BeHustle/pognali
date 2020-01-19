@@ -1,8 +1,11 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding-top: 15px;
+
+  & .content-text {
+    margin-top: 4px;
+  }
 
   &:hover .copyright__link {
     opacity: 0.6;
@@ -32,6 +35,11 @@
 @media only screen and (min-width: $tablet-width) {
   .copyright {
     padding-top: 0;
+
+    & .content-text {
+      @include set-font(20px, 24px, 400);
+      margin-top: 3px;
+    }
   }
 
   .copyright__link {

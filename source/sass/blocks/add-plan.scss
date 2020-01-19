@@ -45,20 +45,36 @@
 
 @media only screen and (min-width: $tablet-width) {
   .add-plan {
-    border-top-right-radius: 60px;
-    border-top-left-radius: 60px;
-    margin-bottom: -60px;
-    padding-bottom: 60px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin-bottom: -55px;
+    padding-bottom: 51px;
   }
 
   .add-plan .container {
-    padding-top: 55px;
+    padding-top: 49px;
     padding-bottom: 65px;
+    padding-left: 55px;
+    padding-right: 55px;
   }
 
   .add-plan__title {
     @include set-font(36px, 40px, 700);
-    margin-bottom: 55px;
+    margin-bottom: 57px;
+  }
+
+  .add-plan__nav {
+    margin-top: 10px;
+    margin-right: 0;
+  }
+
+  .add-plan__nav-link {
+    margin-right: 0;
+    margin-left: 24px;
+
+    &[href] {
+      margin-right: 0;
+    }
   }
 }
 

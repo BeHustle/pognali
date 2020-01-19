@@ -61,7 +61,7 @@
 }
 
 .step__country-title {
-  padding-left: 12px;
+  padding-left: 11px;
   width: 155px;
   text-overflow: clip;
   overflow: hidden;
@@ -81,20 +81,18 @@
 
 .step__btn {
   @include set-font(17px, 30px, 700);
-  width: 100%;
+  width: calc(100% + 10px);
   text-transform: uppercase;
   padding-top: 5px;
   padding-bottom: 5px;
   color: #1d2e5b;
   display: block;
+  margin-right: -5px;
+  margin-left: -5px;
 
   & svg {
     display: none;
   }
-}
-
-.step__btn.button--transparent {
-  margin-top: 10px;
 }
 
 .step .content-text {
@@ -146,11 +144,11 @@
   resize: none;
   border: 1px solid #cbced9;
   border-radius: 3px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   position: relative;
   background-color: transparent;
   z-index: 2;
-  padding: 12px 13px;
+  padding: 8px 13px;
 
   &:hover,
   &:focus {
@@ -192,6 +190,11 @@
 }
 
 .step__btn--back {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 13px;
+  margin-bottom: -11px;
+
   &:hover,
   &:focus {
     background-color: transparent;
@@ -219,20 +222,24 @@
   .step {
     display: flex;
     flex-wrap: wrap;
-    padding: 50px 45px;
+    padding: 44px 43px 55px 43px;
     margin-bottom: 40px;
-    border-radius: 15px;
+    border-radius: 30px;
+
+    &--countries {
+      margin-bottom: 49px;
+    }
   }
 
   .step__textarea {
     @include set-font(20px, 24px, 400);
-    padding: 20px 18px;
+    padding: 16px 32px 16px 18px;
     height: 142px;
   }
 
   .step__title {
     @include set-font(36px, 36px, 700);
-    margin-bottom: 30px;
+    margin-bottom: 36px;
   }
 
   .step__btn {
@@ -240,33 +247,48 @@
     padding-top: 26px;
     padding-bottom: 26px;
     margin-top: 45px;
+    margin-right: 0;
+    margin-left: 2px;
     border-radius: 15px;
     text-transform: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 45%;
     order: 3;
+
+    &--fwd {
+      width: 53%;
+    }
+
+    &--back {
+      width: auto;
+      margin-left: auto;
+      padding: 0;
+      margin-bottom: 0;
+    }
 
     & svg {
       display: block;
+      width: 10px;
+      height: 14px;
+      margin-right: 4px;
       fill: #1d2e5b;
     }
-  }
 
-  .step__btn.button--transparent {
-    margin-top: 45px;
-    margin-left: auto;
+    &--back svg {
+      margin-right: 21px;
+    }
   }
 
   .step__country-label {
     @include set-font(30px, 30px, 700);
     width: 100%;
-    margin-top: 35px;
+    margin-top: 20px;
     margin-bottom: 30px;
+    letter-spacing: -0.1px;
 
     & img {
-      margin-right: 30px;
+      margin-right: 33px;
       width: 70px;
       height: 47px;
     }
@@ -277,7 +299,8 @@
 
     &::before {
       left: auto;
-      right: 0;
+      right: 5px;
+      top: 10px;
       transform: translateY(50%) translateX(50%);
       width: 15px;
       height: 15px;
@@ -295,7 +318,8 @@
     &::before {
       width: 3px;
       left: auto;
-      right: -32px;
+      right: -26px;
+      height: 271px;
       top: -57px;
     }
   }
@@ -308,8 +332,10 @@
   }
 
   .step .content-text {
-    margin-bottom: 40px;
+    @include set-font(20px, 24px, 400);
+    margin-bottom: 43px;
     position: relative;
+    width: 100%;
 
     &::after {
       position: absolute;
@@ -318,7 +344,7 @@
       height: 1px;
       background-color: #d6d9e6;
       left: 0;
-      bottom: -35px;
+      bottom: -41px;
     }
   }
 
@@ -344,11 +370,36 @@
   .step .checkbox__text {
     text-transform: uppercase;
     font-weight: 500;
+    letter-spacing: 2px;
   }
 
-  .step--countries .content-text {
-    margin-bottom: 70px;
-    position: relative;
+  .step--countries {
+    & .step__btn {
+      margin-top: 32px;
+    }
+
+    & .content-text {
+      margin-bottom: 77px;
+      position: relative;
+
+      &::after {
+        bottom: -37px;
+      }
+    }
+  }
+
+  .step--entertainment {
+    & .content-text {
+      margin-bottom: 42px;
+
+      &::after {
+        bottom: -36px;
+      }
+    }
+
+    & .step__btn {
+      margin-top: 24px;
+    }
   }
 }
 

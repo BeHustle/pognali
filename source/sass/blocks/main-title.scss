@@ -1,5 +1,5 @@
 .main-title {
-  @include set-bb-radius(30px);
+  @include set-bb-radius(19px);
   position: relative;
   z-index: 20;
   width: 100%;
@@ -21,10 +21,10 @@
   }
 
   .main-title .container {
-    padding-left: 55px;
-    padding-right: 55px;
-    padding-top: 100px;
-    padding-bottom: 75px;
+    padding-left: 54px;
+    padding-right: 54px;
+    padding-top: 83px;
+    padding-bottom: 68px;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -60,23 +60,39 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: 34px;
+    padding-left: 32px;
+    padding-right: 25px;
+    padding-bottom: 11px;
   }
 
   .plan__title {
     @include set-font(24px, 30px, 700);
     width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 52px;
+    letter-spacing: -0.1px;
+    margin-left: 4px;
+
+    &::before {
+      @include set-font(20px, 20px, 500);
+      align-self: flex-end;
+      margin-right: 7px;
+      margin-bottom: 3px;
+    }
   }
 
   .plan__text {
     @include set-font(20px, 20px, 500);
     width: 33%;
+    letter-spacing: 2.2px;
   }
 
   .plan__change-btn {
     @include set-font(20px, 20px, 500);
-    margin-top: 0;
+    margin-top: -5px;
+    margin-right: 11px;
     margin-left: auto;
+    letter-spacing: 1.5px;
   }
 }
 
