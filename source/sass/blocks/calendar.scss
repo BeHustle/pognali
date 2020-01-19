@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-bottom: 22px;
 }
 
 .calendar__weekdays-list {
@@ -55,6 +56,7 @@
   display: block;
   width: 9px;
   height: 18px;
+  padding: 0;
   align-self: auto;
   border: 0 none;
   background-color: transparent;
@@ -92,7 +94,7 @@
     color: #ff5c23;
   }
 
-  &:first-letter {
+  &::first-letter {
     font-size: 14px;
   }
 }
@@ -112,6 +114,15 @@
   width: 100%;
   height: 100%;
   background-color: #edeff6;
+  position: relative;
+
+  &--first {
+    font-size: 0;
+
+    &::first-letter {
+      font-size: 14px;
+    }
+  }
 }
 
 .calendar__input {
@@ -124,5 +135,125 @@
   &:disabled + .calendar__day-number {
     background-color: transparent;
     opacity: 0.3;
+  }
+
+  &:not([disabled]) + .calendar__day-number:hover::after {
+    position: absolute;
+    content: "";
+    border: 2px solid #ff5c23;
+    top: -1px;
+    left: -1px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    z-index: 1;
+  }
+
+  &:not([disabled]) + .calendar__day-number:hover {
+    background-color: #1d2e5b;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .calendar {
+    margin-top: 10px;
+    margin-bottom: 45px;
+  }
+
+  .calendar__title {
+    @include set-font(36px, 37px, 700);
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    &::before,
+    &::after {
+      width: calc(100% + 70px);
+      right: -35px;
+    }
+  }
+
+  .calendar__btn {
+    width: 35px;
+    height: 34px;
+    background-size: 19px 34px;
+
+    &--previous {
+      background-position: right;
+    }
+
+    &--next {
+      background-position: left;
+    }
+  }
+
+  .calendar__weekdays-list {
+    margin-top: 40px;
+  }
+
+  .calendar__weekday {
+    @include set-font(18px, 30px, 400);
+
+    &:first-letter {
+      @include set-font(18px, 30px, 400);
+    }
+  }
+
+  .calendar__days {
+    margin-top: 0;
+  }
+
+  .calendar__day {
+    height: 70px;
+  }
+
+  .calendar__day-number {
+    @include set-font(20px, 70px, 500);
+
+    &--first {
+      font-size: 0;
+
+      &::first-letter {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .calendar {
+    margin-top: 15px;
+    margin-bottom: -5px;
+  }
+
+  .calendar__weekdays-list {
+    margin-top: 13px;
+  }
+
+  .calendar__days {
+    margin-top: 13px;
+  }
+
+  .calendar__day-number {
+    @include set-font(20px, 70px, 400);
+    text-align: left;
+    line-height: 46px;
+    padding-left: 16px;
+  }
+
+  .calendar__input {
+    &--start:checked + .calendar__day-number::before {
+      position: absolute;
+      content: "Заезд";
+      top: 25px;
+      left: 16px;
+    }
+
+    &--finish:checked + .calendar__day-number::before {
+      position: absolute;
+      content: "Выезд";
+      top: 25px;
+      left: 16px;
+    }
   }
 }
