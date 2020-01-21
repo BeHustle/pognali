@@ -85,7 +85,11 @@
 
 @media only screen and (min-width: $desktop-width) {
   .page-footer .container {
-    padding-top: 50px;
+    padding-top: 47px;
     padding-bottom: 50px;
+  }
+
+  .page-footer .social-list {
+    margin-left: -45px;
   }
 }

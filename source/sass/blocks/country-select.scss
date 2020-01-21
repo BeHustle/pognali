@@ -254,18 +254,26 @@
     width: 730px;
 
     &::before {
-      right: -48px;
+      right: -53px;
     }
 
     &::after {
-      right: -41px;
-      top: -27px;
+      right: -46px;
+      top: -63px;
       height: 155px;
     }
 
     &--add::after {
-      height: 200px;
+      height: 230px;
     }
+  }
+
+  .country-select__del-btn {
+    margin-right: 7px;
+  }
+
+  .country-select__flag {
+    margin-left: -8px;
   }
 
   .country-select__text-btn {

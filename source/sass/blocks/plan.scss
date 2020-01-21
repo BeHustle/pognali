@@ -98,8 +98,11 @@
 
 @media only screen and (min-width: $desktop-width) {
   .plan {
-    padding: 40px;
-    margin-bottom: 20px;
+    padding-top: 31px;
+    padding-bottom: 36px;
+    padding-right: 27px;
+    padding-left: 39px;
+    margin-bottom: 15px;
 
     &:last-child {
       margin-bottom: 0;
@@ -112,6 +115,13 @@
   }
 
   .plan__text {
-    width: 15%;
+    width: 16%;
+    margin-bottom: -3px;
+    margin-left: -12px;
+  }
+
+  .plan__change-btn {
+    margin-top: 3px;
+    letter-spacing: 2px;
   }
 }

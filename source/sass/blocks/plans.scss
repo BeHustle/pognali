@@ -65,6 +65,13 @@
 }
 
 @media only screen and (min-width: $desktop-width) {
+  .plans {
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+    margin-bottom: -60px;
+    padding-bottom: 60px;
+  }
+
   .plans__list .plan__title {
     display: block;
 
@@ -74,7 +81,13 @@
   }
 
   .plans .container {
-    padding-top: 55px;
-    padding-bottom: 60px;
+    padding-top: 46px;
+    padding-bottom: 64px;
+    padding-left: 95px;
+    padding-right: 31px;
+  }
+
+  .plans__title {
+    margin-left: 6px;
   }
 }

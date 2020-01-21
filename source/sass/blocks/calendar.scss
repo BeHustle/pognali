@@ -222,38 +222,78 @@
 
 @media only screen and (min-width: $desktop-width) {
   .calendar {
-    margin-top: 15px;
+    margin-top: 18px;
     margin-bottom: -5px;
   }
 
+  .calendar__weekday {
+    text-align: left;
+    padding-left: 15px;
+    letter-spacing: 1.5px;
+  }
+
+  .calendar__title {
+    &::before,
+    &::after {
+      width: calc(100% + 38px);
+      right: -19px;
+    }
+
+    &::before {
+      top: -1px;
+    }
+
+    &::after {
+      bottom: 1px;
+    }
+  }
+
+  .calendar__btn {
+
+    &--previous {
+      margin-left: -15px;
+    }
+
+    &--next {
+      margin-right: -15px;
+    }
+  }
+
   .calendar__weekdays-list {
-    margin-top: 13px;
+    margin-top: 10px;
   }
 
   .calendar__days {
     margin-top: 13px;
   }
 
+  .calendar__day {
+    height: 71px;
+  }
+
   .calendar__day-number {
     @include set-font(20px, 70px, 400);
     text-align: left;
-    line-height: 46px;
-    padding-left: 16px;
+    line-height: 45px;
+    padding-left: 13px;
+    letter-spacing: 1.5px;
   }
 
   .calendar__input {
     &--start:checked + .calendar__day-number::before {
       position: absolute;
       content: "Заезд";
-      top: 25px;
-      left: 16px;
+      top: 26px;
+      left: 14px;
+      letter-spacing: 1px;
     }
 
     &--finish:checked + .calendar__day-number::before {
       position: absolute;
       content: "Выезд";
-      top: 25px;
-      left: 16px;
+      top: 26px;
+      left: 14px;
+      letter-spacing: 1px;
     }
   }
 }

@@ -79,8 +79,15 @@
 }
 
 @media only screen and (min-width: $desktop-width) {
+  .add-plan {
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+  }
+
   .add-plan .container {
-    padding-bottom: 70px;
+    padding-bottom: 76px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .add-plan__nav {
@@ -88,6 +95,7 @@
   }
 
   .add-plan__title {
-    margin-left: 65px;
+    margin-bottom: 59px;
+    margin-left: 69px;
   }
 }

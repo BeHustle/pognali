@@ -46,3 +46,9 @@
     margin-left: 25px;
   }
 }
+
+@media only screen and (min-width: $desktop-width) {
+  .copyright .content-text {
+    margin-top: 0;
+  }
+}

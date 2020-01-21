@@ -405,26 +405,30 @@
 
 @media only screen and (min-width: $desktop-width) {
   .step {
-    padding: 100px 160px;
-    margin-bottom: 40px;
+    padding-top: 95px;
+    padding-right: 159px;
+    padding-bottom: 106px;
+    padding-left: 160px;
+    margin-bottom: 44px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-radius: 25px;
+    border-radius: 60px;
   }
 
   .step__title {
-    margin-bottom: 40px;
+    margin-bottom: 37px;
   }
 
   .step__btn {
-    width: 30%;
+    width: 28%;
     order: 3;
-    margin-top: 60px;
-  }
+    margin-top: 61px;
 
-  .step__btn.button--transparent {
-    margin-top: 60px;
+    &--back {
+      width: auto;
+      margin-right: 5px;
+    }
   }
 
   .step .calendar {
@@ -443,22 +447,40 @@
 
   .step .content-text {
     @include set-font(20px, 24px, 400);
-    margin-bottom: 80px;
+    margin-bottom: 85px;
 
     &:after {
       width: 1000px;
       bottom: -55px;
     }
+  }
 
-    &--countries {
-      margin-bottom: 110px;
+  .step--countries {
+
+    & .content-text {
+      margin-bottom: 117px;
+    }
+
+    & .step__btn {
+      margin-top: 38px;
+    }
+  }
+
+  .step--entertainment {
+
+    & .content-text {
+      margin-bottom: 107px;
+    }
+
+    & .step__btn {
+      margin-top: 33px;
     }
   }
 
   .step__nav {
     display: flex;
     flex-direction: column;
-    margin-top: -70px;
+    margin-top: -63px;
     width: 30%;
   }
 
@@ -467,9 +489,10 @@
     text-transform: uppercase;
     color: #000000;
     opacity: 0.6;
-    margin-bottom: 25px;
-    padding-left: 165px;
+    margin-bottom: 24px;
+    padding-left: 113px;
     position: relative;
+    letter-spacing: 2.1px;
 
     &:last-child {
       margin-bottom: 0;
@@ -486,7 +509,7 @@
       height: 5px;
       bottom: 50%;
       transform: translateY(50%);
-      left: 125px;
+      left: 71px;
       background-color: #1d2e5b;
       border-radius: 50%;
     }
@@ -498,6 +521,10 @@
 
   .step__textarea-wrapper {
     margin-right: 270px;
+
+    &::before {
+      right: -45px;
+    }
   }
 
   .step .input-numbers {
@@ -515,11 +542,21 @@
     }
 
     &::before {
-      right: 239px;
+      right: 227px;
     }
   }
 
   .step__textarea {
-    padding: 27px 18px 20px 26px;
+    padding: 23px 18px 20px 25px;
+  }
+
+  .step .checkbox {
+    margin-top: -17px;
+    padding-bottom: 0;
+  }
+
+  .step__country-title img {
+    position: relative;
+    top: 5px;
   }
 }
