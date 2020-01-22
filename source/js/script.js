@@ -53,9 +53,9 @@ enquire.register('screen and (min-width: 728px)', {
 });
 
 //удалить при сдаче проекта
-$('#alphabet-catalog').addClass('d-none');
-$('.countries-filter__countries-container').addClass('d-none');
-$('.countries-filter__hide-btn').addClass('d-none');
+// $('#alphabet-catalog').addClass('d-none');
+// $('.countries-filter__countries-container').addClass('d-none');
+// $('.countries-filter__hide-btn').addClass('d-none');
 //
 
 function toggleFilterCatalog(className) {

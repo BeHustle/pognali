@@ -5,7 +5,7 @@
 }
 
 .travel-filter__form {
-  padding-top: 20px;
+  padding-top: 23px;
 }
 
 .travel-filter .transport {
@@ -14,11 +14,11 @@
 
 .travel-filter__label {
   display: block;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 4px;
+  padding-bottom: 8px;
 
   &:last-child {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
 }
 
@@ -26,6 +26,8 @@
   display: flex;
   justify-content: space-between;
   height: 35px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   position: relative;
 
   &::before {
@@ -65,10 +67,11 @@
 }
 
 .travel-filter__title {
-  @include set-font(22px, 22px, 700);
+  @include set-font(22px, 23px, 700);
   color: #1d2e5b;
   padding: 0;
   margin: 0;
+  letter-spacing: 0.3px;
 }
 
 .travel-filter__show-btn {
@@ -118,12 +121,15 @@
   border: 0 none;
   background-color: #ffffff;
   display: block;
-  width: 100%;
+  width: calc(100% + 10px);
   cursor: pointer;
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 50px;
-  margin-top: 20px;
+  margin-top: 25px;
+  margin-bottom: -2px;
+  margin-left: -5px;
+  margin-right: -5px;
 
   &:hover,
   &:focus {
@@ -137,7 +143,7 @@
 }
 
 .travel-filter__slider {
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 .travel-filter__fieldset {
@@ -145,6 +151,11 @@
   border-top: 1px solid #f3c72b;
   padding: 0;
   margin: 0;
+}
+
+.travel-filter .transport {
+  margin-top: 5px;
+  margin-bottom: 19px;
 }
 
 @media only screen and (max-width: $tablet-width - 1px), (min-width: $desktop-width) {
@@ -183,13 +194,23 @@
 
   .travel-filter__title {
     @include set-font(30px, 30px, 700);
+    letter-spacing: -0.1px;
   }
 
   .travel-filter__fieldset {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 25px;
+    margin-bottom: 14px;
     border-top: 0 none;
+
+    &--transport {
+      margin-top: -7px;
+      align-items: baseline;
+    }
+
+    &--level {
+      margin-top: -9px;
+    }
   }
 
   .travel-filter__show-btn {
@@ -202,26 +223,33 @@
 
   .travel-filter__slider {
     order: -1;
-    width: 282px;
-    margin-top: 15px;
+    width: 272px;
+    margin-top: 12px;
+    margin-left: 5px;
   }
 
   .travel-filter__label {
     width: 170px;
     text-align: left;
     padding: 0;
+    margin-top: 2px;
+    margin-left: 19px;
   }
 
   .travel-filter__submit-btn {
     @include set-font(20px, 30px, 700);
     padding: 10px 0;
-    margin-top: 35px;
+    margin-top: 44px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
     position: relative;
+    width: 100%;
 
     &:before {
       position: absolute;
       content: "";
-      top: -27px;
+      top: -37px;
       right: 0;
       width: 100%;
       height: 1px;
@@ -230,8 +258,10 @@
   }
 
   .travel-filter__level {
+    margin-top: -8px;
     margin-bottom: 30px;
-    width: 25%;
+    height: 45px;
+    width: 24%;
     margin-left: auto;
   }
 

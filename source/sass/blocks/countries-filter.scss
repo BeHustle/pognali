@@ -1,5 +1,5 @@
 .countries-filter {
-  @include set-bb-radius(30px);
+  @include set-bb-radius(20px);
   position: absolute;
   z-index: 19;
   padding-top: 30px;
@@ -20,12 +20,15 @@
   @include set-font(16px, 22px, 700);
   color: $blue-white;
   text-transform: uppercase;
-  padding: 16px 0;
+  padding-top: 2px;
+  padding-bottom: 15px;
+  padding-right: 0;
+  padding-left: 0;
   margin: 0;
 
   & svg {
     fill: #121936;
-    margin-right: 10px;
+    margin-right: 7px;
   }
 }
 
@@ -40,8 +43,9 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 40px;
-  margin-bottom: 25px;
+  margin-top: 36px;
+  margin-bottom: 27px;
+  padding: 5px 0;
   cursor: pointer;
 
   & svg {
@@ -73,6 +77,8 @@
   padding: 0;
   background-color: transparent;
   margin-left: auto;
+  margin-top: -15px;
+  margin-right: 7px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -108,13 +114,23 @@
 }
 
 .countries-filter .continents {
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 22px;
 }
 
 .countries-filter .alphabet {
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding: 0;
+  margin-left: 25px;
+  margin-right: 24px;
+}
+
+.countries-filter__countries-container {
+  margin-top: 44px;
+  padding-left: 26px;
+
+  & .countries__item {
+    margin-top: 1px;
+  }
 }
 
 @media only screen and (min-width: $tablet-width) {
@@ -129,6 +145,10 @@
     padding-right: 55px;
   }
 
+  .countries-filter__toggle-btn {
+    margin-top: -25px;
+  }
+
   .countries-filter__toggle-desc {
     @include set-font(20px, 24px, 700);
     display: flex;
@@ -138,7 +158,8 @@
     & svg {
       width: 18px;
       height: 18px;
-      margin-left: 60px;
+      margin-left: 64px;
+      margin-right: -5px;
     }
   }
 
@@ -154,26 +175,32 @@
   }
 
   .countries-filter .continents {
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding-top: 33px;
+    padding-bottom: 57px;
     display: flex;
     order: -1;
   }
 
   .countries-filter .alphabet {
-    margin-right: 50px;
+    margin-left: 0;
+    margin-right: 58px;
     padding-top: 0;
     padding-bottom: 0;
   }
 
   .countries-filter__countries-container {
+    margin-top: 0;
     align-self: flex-start;
+
+    & .countries__item {
+      margin-top: 0;
+    }
   }
 
   .countries-filter__hide-btn {
     @include set-font(20px, 30px, 700);
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 44px;
+    margin-bottom: 75px;
     padding-top: 35px;
     padding-bottom: 35px;
     border-radius: 15px;

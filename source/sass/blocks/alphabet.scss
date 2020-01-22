@@ -1,9 +1,12 @@
-$alphabet-item-height: 40px;
+$alphabet-item-height: 41px;
 
 .alphabet {
   @include ul-style-reset;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
+  border-top: 1px solid #cbced9;
+  border-left: 1px solid #cbced9;
 }
 
 .alphabet__link {
@@ -28,8 +31,9 @@ $alphabet-item-height: 40px;
 }
 
 .alphabet__item {
-  border: 1px solid #cbced9;
-  width: 43px;
+  border-bottom: 1px solid #cbced9;
+  border-right: 1px solid #cbced9;
+  width: 44px;
   height: $alphabet-item-height;
 
   &:hover {
@@ -43,7 +47,8 @@ $alphabet-item-height: 40px;
 
 @media only screen and (min-width: $tablet-width) {
   .alphabet {
-    width: 380px;
+    width: 385px;
+    border: 0 none;
   }
 
   .alphabet__link {
@@ -62,8 +67,8 @@ $alphabet-item-height: 40px;
 
   .alphabet__item {
     border: 0 none;
-    width: 76px;
+    width: 77px;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 }

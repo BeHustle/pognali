@@ -235,10 +235,10 @@
           <li class="countries__item">
             <a href="#" class="countries__link">Антигуа и Барбуда</a>
           </li>
-          <li class="countries__item">
+          <li class="countries__item d-none">
             <a href="#" class="countries__link">Аргентина</a>
           </li>
-          <li class="countries__item">
+          <li class="countries__item d-none">
             <a href="#" class="countries__link">Армения</a>
           </li>
           <li class="countries__item">
@@ -832,7 +832,7 @@
             <span class="checkbox__text">Веган-сыроед</span>
           </label>
         </div>
-        <div class="travel-filter__fieldset travel-filter__fieldset--opened">
+        <div class="travel-filter__fieldset travel-filter__fieldset--transport travel-filter__fieldset--opened">
           <button class="travel-filter__show-btn" type="button">
             Транспорт
             <svg class="travel-filter__btn-svg" width="8" height="4">
@@ -868,7 +868,7 @@
             </label>
           </div>
         </div>
-        <div class="travel-filter__fieldset travel-filter__fieldset--opened">
+        <div class="travel-filter__fieldset travel-filter__fieldset--level travel-filter__fieldset--opened">
           <button class="travel-filter__show-btn" type="button">
             Левел
             <svg class="travel-filter__btn-svg" width="8" height="4">
@@ -903,7 +903,7 @@
             </picture>
           </a>
           <div class="companion-catalog__info-main">
-            <a href="#" class="companion-catalog__name">Таня Фирсова</a>
+            <a href="#" class="companion-catalog__name">Таня <br>Фирсова</a>
             <ul class="tags">
               <li class="tags__item">#ЗОЖ</li>
               <li class="tags__item">#ПП</li>
@@ -967,7 +967,263 @@
                 </li>
               </ul>
               <span class="companion-catalog__fieldset-title">левел:</span>
-              <div class="companion-catalog__level">99</div>
+              <div class="companion-catalog__level">
+                <svg class="companion-catalog__level-circle" width="50" height="50" viewBox="0 0 45 45">
+                  <circle r="20" cx="22" cy="22" fill="transparent" stroke="#ff8d30" stroke-width="2" stroke-dasharray="120px 5px"></circle>
+                </svg>
+                <span class="companion-catalog__level-number">99</span>
+                <span class="companion-catalog__level-description">level</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="companion-catalog">
+          <a href="#" class="companion-catalog__image-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1380px)" srcset="img/demin-desktop@2x.webp 2x, img/demin-desktop@1x.webp 1x">
+              <source type="image/webp" media="(min-width: 728px)" srcset="img/demin-tablet@2x.webp 2x, img/demin-tablet@1x.webp 1x">
+              <source type="image/webp" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1380px)" srcset="img/demin-desktop@2x.jpg 2x, img/demin-desktop@1x.jpg 1x">
+              <source media="(min-width: 728px)" srcset="img/demin-tablet@2x.jpg 2x, img/demin-tablet@1x.jpg 1x">
+              <img src="img/firsova-mobile@1x.jpg" srcset="img/demin-mobile@1x.jpg 1x, img/demin-mobile@2x.jpg 2x"
+                   alt="Петя Демин" class="companion-catalog__image">
+            </picture>
+          </a>
+          <div class="companion-catalog__info-main">
+            <a href="#" class="companion-catalog__name">Петя <br>Демин</a>
+            <ul class="tags">
+              <li class="tags__item">#бургер</li>
+              <li class="tags__item">#бар</li>
+              <li class="tags__item">#футбол</li>
+              <li class="tags__item">#концерт</li>
+              <li class="tags__item">#крафт</li>
+            </ul>
+            <a href="companion.html" class="button">Позвать!</a>
+            <button class="companion-catalog__likes" type="button">150</button>
+          </div>
+          <div class="companion-catalog__info-other">
+
+            <div class="companion-catalog__fieldset">
+              <span class="companion-catalog__fieldset-title companion-catalog__fieldset-title--countries">хочет посетить:</span>
+              <ul class="companion-catalog__countries">
+                <li class="companion-catalog__country">
+                  <div class="companion-catalog__country-wrapper tooltip" data-tooltip="Бельгия">
+                    <img src="img/flag-belgium.svg" alt="Бельгия" width="26" height="18"
+                         class="companion-catalog__country-img">
+                  </div>
+                  Бельгия
+                </li>
+                <li class="companion-catalog__country">
+                  <div class="companion-catalog__country-wrapper tooltip" data-tooltip="Чехия">
+                    <img src="img/flag-czech.svg" alt="Чехия" width="26" height="18"
+                         class="companion-catalog__country-img">
+                  </div>
+                  Чехия
+                </li>
+              </ul>
+            </div>
+            <div class="companion-catalog__mt5"></div> <!-- ТОЛЬКО ДЛЯ соответсвия макету по PP. УДАЛИТЬ ПОСЛЕ ПРОВЕРКИ! -->
+            <div class="companion-catalog__fieldset companion-catalog__fieldset--transport-level">
+              <span class="companion-catalog__fieldset-title">транспорт:</span>
+              <ul class="transport transport--catalog">
+                <li class="transport__item transport__item--active tooltip" data-tooltip="Авиаперелет">
+                  <svg class="transport__icon" width="19" height="17">
+                    <use xlink:href="img/transport-icons.svg#plane"></use>
+                  </svg>
+                </li>
+                <li class="transport__item transport__item--active tooltip" data-tooltip="Автопутешествие">
+                  <svg class="transport__icon" width="19" height="17">
+                    <use xlink:href="img/transport-icons.svg#bus"></use>
+                  </svg>
+                </li>
+                <li class="transport__item tooltip" data-tooltip="Велопутешествие">
+                  <svg class="transport__icon" width="19" height="17">
+                    <use xlink:href="img/transport-icons.svg#bike"></use>
+                  </svg>
+                </li>
+                <li class="transport__item transport__item--active tooltip" data-tooltip="Пешее путешествие">
+                  <svg class="transport__icon" width="19" height="17">
+                    <use xlink:href="img/transport-icons.svg#run"></use>
+                  </svg>
+                </li>
+              </ul>
+              <span class="companion-catalog__fieldset-title">левел:</span>
+              <div class="companion-catalog__level">
+                <svg class="companion-catalog__level-circle" width="50" height="50" viewBox="0 0 45 45">
+                  <circle r="20" cx="22" cy="22" fill="transparent" stroke="#ff8d30" stroke-width="2" stroke-dasharray="105px 20px"></circle>
+                </svg>
+                <span class="companion-catalog__level-number">80</span>
+                <span class="companion-catalog__level-description">level</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="companion-catalog">
+          <a href="#" class="companion-catalog__image-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1380px)" srcset="img/smolov-desktop@2x.webp 2x, img/smolov-desktop@1x.webp 1x">
+              <source type="image/webp" media="(min-width: 728px)" srcset="img/smolov-tablet@2x.webp 2x, img/smolov-tablet@1x.webp 1x">
+              <source type="image/webp" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1380px)" srcset="img/smolov-desktop@2x.jpg 2x, img/smolov-desktop@1x.jpg 1x">
+              <source media="(min-width: 728px)" srcset="img/smolov-tablet@2x.jpg 2x, img/smolov-tablet@1x.jpg 1x">
+              <img src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@1x.jpg 1x, img/smolov-mobile@2x.jpg 2x"
+                   alt="Марк Смолов" class="companion-catalog__image">
+            </picture>
+          </a>
+          <div class="companion-catalog__info-main">
+            <a href="#" class="companion-catalog__name">Марк <br>Смолов</a>
+            <ul class="tags">
+              <li class="tags__item">#рэп</li>
+              <li class="tags__item">#тату</li>
+              <li class="tags__item">#хайпбист</li>
+              <li class="tags__item">#кроссовки</li>
+              <li class="tags__item">#суприм</li>
+            </ul>
+            <a href="companion.html" class="button">Позвать!</a>
+            <button class="companion-catalog__likes companion-catalog__likes--favourite" type="button">1700</button>
+          </div>
+          <div class="companion-catalog__info-other">
+            <div class="companion-catalog__fieldset">
+              <span class="companion-catalog__fieldset-title companion-catalog__fieldset-title--countries">хочет посетить:</span>
+              <ul class="companion-catalog__countries">
+                <li class="companion-catalog__country">
+                  <div class="companion-catalog__country-wrapper tooltip" data-tooltip="США">
+                    <img src="img/flag-usa.svg" alt="США" width="26" height="18"
+                         class="companion-catalog__country-img">
+                  </div>
+                  США
+                </li>
+                <li class="companion-catalog__country">
+                  <div class="companion-catalog__country-wrapper tooltip" data-tooltip="Австралия">
+                    <img src="img/flag-australia.svg" alt="Австралия" width="26" height="18"
+                         class="companion-catalog__country-img">
+                  </div>
+                  Австралия
+                </li>
+                <li class="companion-catalog__country">
+                  <div class="companion-catalog__country-wrapper tooltip" data-tooltip="Доминикана">
+                    <img src="img/flag-dominica.svg" alt="Доминикана" width="26" height="18"
+                         class="companion-catalog__country-img">
+                  </div>
+                  Доминикана
+                </li>
+              </ul>
+            </div>
+            <div class="companion-catalog__mt3"></div> <!-- ТОЛЬКО ДЛЯ соответсвия макету по PP. УДАЛИТЬ ПОСЛЕ ПРОВЕРКИ! -->
+            <div class="companion-catalog__fieldset companion-catalog__fieldset--transport-level">
+              <span class="companion-catalog__fieldset-title">транспорт:</span>
+              <ul class="transport transport--catalog">
+                <li class="transport__item transport__item--active tooltip" data-tooltip="Авиаперелет">
+                  <svg class="transport__icon" width="19" height="17">
+                    <use xlink:href="img/transport-icons.svg#plane"></use>
+                  </svg>
+                </li>
+                <li class="transport__item tooltip" data-tooltip="Автопутешествие">
+                  <svg class="transport__icon" width="19" height="17">
+                    <use xlink:href="img/transport-icons.svg#bus"></use>
+                  </svg>
+                </li>
+                <li class="transport__item tooltip transport__item--active" data-tooltip="Велопутешествие">
+                  <svg class="transport__icon" width="19" height="17">
+                    <use xlink:href="img/transport-icons.svg#bike"></use>
+                  </svg>
+                </li>
+                <li class="transport__item tooltip" data-tooltip="Пешее путешествие">
+                  <svg class="transport__icon" width="19" height="17">
+                    <use xlink:href="img/transport-icons.svg#run"></use>
+                  </svg>
+                </li>
+              </ul>
+              <span class="companion-catalog__fieldset-title">левел:</span>
+              <div class="companion-catalog__level">
+                <svg class="companion-catalog__level-circle" width="50" height="50" viewBox="0 0 45 45">
+                  <circle r="20" cx="22" cy="22" fill="transparent" stroke="#ff8d30" stroke-width="2" stroke-dasharray="31px 94px"></circle>
+                </svg>
+                <span class="companion-catalog__level-number">25</span>
+                <span class="companion-catalog__level-description">level</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="companion-catalog">
+          <a href="#" class="companion-catalog__image-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1380px)" srcset="img/rogovaya-desktop@2x.webp 2x, img/rogovaya-desktop@1x.webp 1x">
+              <source type="image/webp" media="(min-width: 728px)" srcset="img/rogovaya-tablet@2x.webp 2x, img/rogovaya-tablet@1x.webp 1x">
+              <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1380px)" srcset="img/rogovaya-desktop@2x.jpg 2x, img/rogovaya-desktop@1x.jpg 1x">
+              <source media="(min-width: 728px)" srcset="img/firsova-tablet@2x.jpg 2x, img/rogovaya-tablet@1x.jpg 1x">
+              <img src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@1x.jpg 1x, img/rogovaya-mobile@2x.jpg 2x"
+                   alt="Лариса Роговая" class="companion-catalog__image">
+            </picture>
+          </a>
+          <div class="companion-catalog__info-main">
+            <a href="#" class="companion-catalog__name companion-catalog__name--online">Лариса <br>Роговая</a>
+            <ul class="tags">
+              <li class="tags__item">#образование</li>
+              <li class="tags__item">#карьера</li>
+              <li class="tags__item">#учеба</li>
+              <li class="tags__item">#линкедин</li>
+            </ul>
+            <a href="companion.html" class="button">Позвать!</a>
+            <button class="companion-catalog__likes" type="button">23</button>
+          </div>
+          <div class="companion-catalog__info-other">
+            <div class="companion-catalog__fieldset">
+              <span class="companion-catalog__fieldset-title companion-catalog__fieldset-title--countries">хочет посетить:</span>
+              <ul class="companion-catalog__countries">
+                <li class="companion-catalog__country">
+                  <div class="companion-catalog__country-wrapper tooltip" data-tooltip="Великобритания">
+                    <img src="img/flag-united-kingdom.svg" alt="Великобритания" width="26" height="18"
+                         class="companion-catalog__country-img">
+                  </div>
+                  Великобритания
+                </li>
+                <li class="companion-catalog__country">
+                  <div class="companion-catalog__country-wrapper tooltip" data-tooltip="Германия">
+                    <img src="img/flag-germany.svg" alt="Германия" width="26" height="18"
+                         class="companion-catalog__country-img">
+                  </div>
+                  Германия
+                </li>
+              </ul>
+            </div>
+            <div class="companion-catalog__mt5"></div> <!-- ТОЛЬКО ДЛЯ соответсвия макету по PP. УДАЛИТЬ ПОСЛЕ ПРОВЕРКИ! -->
+            <div class="companion-catalog__fieldset companion-catalog__fieldset--transport-level">
+              <span class="companion-catalog__fieldset-title">транспорт:</span>
+              <ul class="transport transport--catalog">
+                <li class="transport__item transport__item--active tooltip" data-tooltip="Авиаперелет">
+                  <svg class="transport__icon" width="19" height="17">
+                    <use xlink:href="img/transport-icons.svg#plane"></use>
+                  </svg>
+                </li>
+                <li class="transport__item transport__item--active tooltip" data-tooltip="Автопутешествие">
+                  <svg class="transport__icon" width="19" height="17">
+                    <use xlink:href="img/transport-icons.svg#bus"></use>
+                  </svg>
+                </li>
+                <li class="transport__item tooltip" data-tooltip="Велопутешествие">
+                  <svg class="transport__icon" width="19" height="17">
+                    <use xlink:href="img/transport-icons.svg#bike"></use>
+                  </svg>
+                </li>
+                <li class="transport__item tooltip" data-tooltip="Пешее путешествие">
+                  <svg class="transport__icon" width="19" height="17">
+                    <use xlink:href="img/transport-icons.svg#run"></use>
+                  </svg>
+                </li>
+              </ul>
+              <span class="companion-catalog__fieldset-title">левел:</span>
+              <div class="companion-catalog__level">
+                <svg class="companion-catalog__level-circle" width="50" height="50" viewBox="0 0 45 45">
+                  <circle r="20" cx="22" cy="22" fill="transparent" stroke="#ff8d30" stroke-width="2" stroke-dasharray="63px 62px"></circle>
+                </svg>
+                <span class="companion-catalog__level-number">50</span>
+                <span class="companion-catalog__level-description">level</span>
+              </div>
             </div>
           </div>
         </li>
