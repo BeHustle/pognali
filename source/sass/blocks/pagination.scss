@@ -73,6 +73,14 @@
   .pagination__btn {
     height: 100px;
 
+    &:first-child {
+      padding-left: 40px;
+    }
+
+    &:last-child {
+      padding-right: 10px;
+    }
+
     &:first-child::after {
       display: none;
     }
@@ -81,7 +89,7 @@
   .pagination__list {
     @include ul-style-reset;
     display: flex;
-    margin-left: 30px;
+    margin-left: 28px;
   }
 
   .pagination__link {
@@ -101,6 +109,22 @@
   }
 
   .pagination__item {
-    margin-right: 2px;
+    margin-right: -1px;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .pagination__btn {
+    height: 100px;
+
+    &:first-child {
+      width: 38%;
+      padding-left: 31px;
+    }
+
+    &:last-child {
+      width: 38%;
+      padding-right: 24px;
+    }
   }
 }

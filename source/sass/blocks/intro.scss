@@ -3,9 +3,9 @@
   padding-top: 25px;
   padding-bottom: 40px;
   background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
-  background-size: 192px 225px, 100% 400px;
+  background-size: 192px 255px, 100% 400px;
   background-repeat: no-repeat, no-repeat;
-  background-position: top 26% center, top 4% center;
+  background-position: top 21.5% left 61%, top 2% center;
   position: relative;
   z-index: 20;
 
@@ -37,9 +37,11 @@
 }
 
 .intro .quote {
-  margin: 0;
-  padding: 0;
-  margin-top: 300px;
+  margin: 283px 0 0 0;
+  padding-left: 25px;
+  padding-right: 90px;
+  padding-top: 30px;
+  padding-bottom: 41px;
 }
 
 .intro .contacts-list__item--auth {
@@ -56,14 +58,9 @@
 }
 
 .intro .page-title {
+  padding-right: 10px;
+  padding-left: 10px;
   text-align: center;
-}
-
-.intro .quote {
-  padding-left: 25px;
-  padding-right: 90px;
-  padding-top: 30px;
-  padding-bottom: 35px;
 }
 
 @media only screen and (min-width: $tablet-width) {

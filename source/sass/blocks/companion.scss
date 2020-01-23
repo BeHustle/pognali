@@ -40,7 +40,15 @@
 }
 
 .companion__info {
-  padding: 25px 45px 20px;
+  padding: 21px 30px 19px;
+}
+
+.companion__info .transport {
+  padding-top: 2px;
+}
+
+.companion__info .transport__item {
+  margin-right: 11px;
 }
 
 .companion__level {
@@ -97,7 +105,7 @@
 .companion__countries-list {
   @include ul-style-reset;
   position: absolute;
-  top: 258px;
+  top: 259px;
   right: 50%;
   transform: translateX(50%);
   display: flex;
@@ -116,7 +124,9 @@
 .companion__name {
   @include set-font(21px, 21px, 700);
   color: #1d2e5b;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 5px;
   margin: 0;
   text-align: center;
   position: relative;
@@ -126,10 +136,9 @@
     content: "";
     display: inline-block;
     vertical-align: middle;
-    position: absolute;
-    bottom: 50%;
-    transform: translateY(50%);
-    left: 5px;
+    position: relative;
+    top: -2px;
+    left: -11px;
     width: 5px;
     height: 5px;
     border-radius: 50%;
@@ -148,6 +157,10 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.companion .tags__item {
+  margin-right: 3px;
 }
 
 .companion__change-photo {

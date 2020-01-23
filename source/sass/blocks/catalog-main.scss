@@ -27,7 +27,7 @@
 
   .catalog-main .companions-catalog {
     margin-top: 38px;
-    padding-bottom: 60px;
+    padding-bottom: 62px;
   }
 }
 
@@ -36,8 +36,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 90px;
+    padding-bottom: 78px;
   }
 
   .catalog-main .companions-catalog {
@@ -46,8 +46,11 @@
   }
 
   .catalog-main__content .travel-filter {
-    width: 21.2%;
+    width: 21.5%;
     order: 1;
     margin-top: 0;
+    padding-top: 46px;
+    padding-right: 48px;
+    padding-bottom: 42px;
   }
 }

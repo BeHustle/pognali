@@ -2,7 +2,7 @@
   @include set-font(18px, 18px, 700);
   color: $blue-black;
   display: block;
-  padding-top: 25px;
+  padding-top: 22px;
 }
 
 .start-steps {
@@ -19,7 +19,7 @@
   justify-content: space-between;
   min-height: 90px;
   padding-left: 25px;
-  padding-right: 25px;
+  padding-right: 21px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   position: relative;
@@ -31,7 +31,7 @@
     content: counter(start-steps-counter);
     color: #ffffff;
     display: block;
-    padding-top: 25px;
+    padding-top: 22px;
   }
 
   &:nth-child(2) {

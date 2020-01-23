@@ -10,12 +10,12 @@
 .directions .container {
   position: relative;
   padding-top: 70px;
-  padding-bottom: 90px;
+  padding-bottom: 107px;
 }
 
 .directions__list {
   @include ul-style-reset;
-  margin-top: 60px;
+  margin-top: 63px;
 }
 
 .directions__info {
@@ -25,7 +25,7 @@
 
 .directions .button {
   position: absolute;
-  bottom: 30px;
+  bottom: 32px;
   left: 25px;
   width: calc(100% - 25px * 2);
   padding-left: 23px;

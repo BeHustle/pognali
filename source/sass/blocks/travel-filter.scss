@@ -283,26 +283,51 @@
 
   .travel-filter__fieldset {
     display: block;
+    margin-bottom: 0;
+
+    &--transport {
+      margin-top: 5px;
+    }
+
+    &--level {
+      margin-top: 30px;
+    }
   }
 
-  .travel-filter__show-btn,
   .travel-filter__label {
     width: 100%;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: -4px;
+    margin-left: 2px;
+
+    &:last-child {
+      margin-bottom: 27px;
+    }
+  }
+
+  .travel-filter__show-btn {
+    width: 100%;
+    margin-bottom: 13px;
   }
 
   .travel-filter__level {
+    margin-top: 15px;
     margin-bottom: 0;
     width: 100%;
   }
 
   .travel-filter__slider {
     order: 1;
-    width: auto;
-    margin-top: 30px;
+    margin-top: 37px;
+    width: 96%;
+    margin-left: 2px;
   }
 
-  .travel-filter__submit-btn::before {
-    display: none;
+  .travel-filter__submit-btn {
+    width: 103%;
+
+    &::before {
+      display: none;
+    }
   }
 }

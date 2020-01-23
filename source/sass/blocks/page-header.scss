@@ -133,7 +133,7 @@
 
 .page-header__contacts--main {
   position: absolute;
-  bottom: -444px;
+  bottom: -431px;
   display: flex;
   align-items: center;
   width: 270px;
@@ -143,6 +143,15 @@
   width: auto;
   flex-grow: 1;
   margin-bottom: 0;
+}
+
+.page-header--main .page-header__logo-link {
+  margin-top: 27px;
+  margin-bottom: 16px;
+}
+
+.page-header--main .page-header__toggle-menu {
+  margin-top: 8px;
 }
 
 @media only screen and (min-width: $tablet-width) {
