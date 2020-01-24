@@ -120,8 +120,8 @@
 .page-header .button {
   @include set-font(17px, 30px, 700);
   text-transform: uppercase;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: block;
   width: auto;
   border-radius: 50px;
@@ -160,9 +160,13 @@
     width: $tablet-width;
   }
 
-  .page-header .main-nav__list,
+  .page-header .main-nav__list {
+    padding-left: 78px;
+    padding-right: 45px;
+  }
+
   .page-header .social-list {
-    padding-left: 45px;
+    padding-left: 95px;
     padding-right: 45px;
   }
 
@@ -201,6 +205,20 @@
   .page-header--js .page-header__toggle-menu {
     margin-top: 0;
     margin-right: -11px;
+  }
+
+  .page-header__contacts--main .contacts-list__auth {
+    margin-top: 23px;
+  }
+
+  .page-header--main .page-header__logo-link {
+    margin-top: 45px;
+    margin-bottom: 16px;
+  }
+
+  .page-header--main .page-header__toggle-menu {
+    margin-top: 24px;
+    margin-right: -12px;
   }
 }
 
@@ -307,4 +325,24 @@
       display: none;
     }
   }
+
+  .page-header__contacts--main .contacts-list__auth {
+    margin-top: 0;
+  }
+
+  .page-header--main {
+    & .page-header__logo-link {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    & .site-list__item {
+      margin-right: 36px;
+    }
+
+    & .site-list__link {
+      letter-spacing: -0.2px;
+    }
+  }
+
 }

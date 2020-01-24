@@ -6,7 +6,7 @@
   z-index: 1;
   right: 50%;
   transform: translateX(50%);
-  top: 100px;
+  top: 188px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -32,10 +32,11 @@
 
 .alphabet-modal .alphabet {
   background-color: #ffffff;
+  border-top: 0 none;
 }
 
 .alphabet-modal .alphabet__item {
-  width: 44px;
+  width: calc(100% / 5);
   height: 41px;
 
   &--active {
@@ -97,7 +98,8 @@
 @media only screen and (min-width: $tablet-width) {
   .alphabet-modal {
     width: calc(100% - 45px);
-    left: 45px;
+    left: 44px;
+    top: 278px;
     right: auto;
     transform: none;
   }
@@ -155,6 +157,7 @@
   .alphabet-modal {
     width: calc(100% - 160px - 430px);
     left: 160px;
+    top: 333px;
   }
 
   .alphabet-modal__menu {

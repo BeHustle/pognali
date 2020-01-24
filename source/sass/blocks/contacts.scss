@@ -86,7 +86,7 @@
   }
 
   .contacts .container {
-    padding-top: 45px;
+    padding-top: 49px;
     padding-bottom: 85px;
     padding-left: 55px;
     padding-right: 55px;
@@ -97,8 +97,9 @@
   }
 
   .contacts .button {
-    margin-top: 45px;
+    margin-top: 42px;
     padding: 26px 34px;
+    border-radius: 20px;
   }
 
   .contacts__location {
@@ -118,12 +119,29 @@
   .contacts .container {
     padding: 55px 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
   }
 
   .contacts .button {
     margin-top: 0;
+    margin-left: auto;
+    margin-right: 4px;
     width: 325px;
+  }
+
+  .contacts__link {
+    margin-left: 153px;
+  }
+
+  .contacts__location {
+    width: 90px;
+    height: 90px;
+    margin-right: 32px;
+
+    & svg {
+      width: 28px;
+      height: 43px;
+    }
   }
 }

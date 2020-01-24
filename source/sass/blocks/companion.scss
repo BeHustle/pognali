@@ -52,24 +52,60 @@
 }
 
 .companion__level {
+  position: absolute;
+  top: 15px;
+  left: 18px;
+  width: 58px;
+  height: 58px;
+  background-color: rgba(#000000, 0.6);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 9px;
+}
+
+.companion__level-number {
   @include set-font(24px, 24px, 700);
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: calc(100% + 4px);
+    bottom: 0;
+    right: -1px;
+    background-color: rgba(#ffffff, 0.3);
+  }
+}
+
+.companion__level-desc {
+  @include set-font(14px, 14px, 400);
+  margin-top: 1px;
+  margin-left: -2px;
+}
+
+.companion__level-circle {
   position: absolute;
   top: 0;
   right: 0;
+  transform: rotate(-90deg);
 }
 
 .companion__level--form {
-  & {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    top: auto;
-    right: auto;
-    margin-left: 18px;
-  }
+  padding-top: 0;
+  justify-content: flex-start;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: auto;
+  left: auto;
+  margin-left: 18px;
+  border-radius: 0;
+  background-color: transparent;
 
   & .companion__level-circle {
     position: absolute;
@@ -99,6 +135,7 @@
     @include set-font(18px, 22px, 400);
     color: $grey;
     margin-top: 3px;
+    margin-left: 0;
   }
 }
 
@@ -250,10 +287,17 @@
   }
 
   .companion__info {
-    padding: 30px 25px 25px 25px;
+    padding: 26px 25px 25px 25px;
+  }
+
+  .companion__level {
+    top: 20px;
+    left: 22px;
   }
 
   .companion__level--form {
+    top: auto;
+    left: auto;
     margin-top: 2px;
     margin-left: -3px;
     order: -2;
@@ -295,8 +339,14 @@
   }
 
   .companion .tags {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 23px;
+    margin-bottom: 25px;
+  }
+
+  .companion .tags__item {
+    letter-spacing: 0.1px;
+    margin-right: 4px;
+    line-height: 23px;
   }
 
   .companion__fieldset-container .tags {
@@ -308,7 +358,9 @@
     @include set-font(24px, 24px, 700);
 
     &::before {
-      left: 20px;
+      width: 7px;
+      height: 7px;
+      left: -16px;
     }
   }
 
@@ -383,9 +435,16 @@
     color: #ffffff;
   }
 
+  .companion__level {
+    top: 21px;
+    left: 25px;
+  }
+
   .companion__level--form {
     margin-top: -10px;
     margin-right: -2px;
+    top: auto;
+    left: auto;
 
     & .companion__level-number {
       color: #ffffff;
@@ -422,11 +481,24 @@
   }
 
   .companion__info {
-    padding: 30px
+    padding-top: 27px;
+    padding-bottom: 26px;
+    padding-left: 29px;
+    padding-right: 30px;
   }
 
   .companion__fieldset-container--tags .companion__fieldset {
     left: 22px;
     transform: none;
+  }
+
+  .companion__tags {
+    margin-top: 21px;
+    margin-bottom: 25px;
+  }
+
+  .companion__info .transport {
+    padding-top: 0;
+    margin-left: 2px;
   }
 }

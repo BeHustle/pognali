@@ -5,7 +5,7 @@
 
 .leed-form__input {
   @include set-font(18px, 18px, 700);
-  padding: 0 25px;
+  padding: 0 20px;
   color: rgba($grey, 0.3);
   flex-grow: 1;
   height: 62px;
@@ -66,6 +66,7 @@
   width: 60px;
   color: #1d2e5b;
   cursor: pointer;
+  padding-left: 4px;
 
   &:hover,
   &:focus {
@@ -86,12 +87,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     text-align: left;
-    margin-top: 60px;
+    margin-top: 56px;
+    margin-left: 8px;
   }
 
   .leed-form__input {
     @include set-font(24px, 24px, 700);
     height: 82px;
+    padding: 0 30px;
   }
 
   .leed-form__button {
@@ -99,13 +102,27 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     margin-left: 0;
+    padding: 0;
   }
 }
 
 @media only screen and (min-width: $desktop-width) {
   .leed-form__description {
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 66px;
+  }
+
+  .leed-form__description .content-text {
+    &:last-child {
+      padding-left: 5px;
+      margin-left: 0;
+      letter-spacing: 0.7px;
+    }
+
+    &:first-child {
+      margin-left: -6px;
+      margin-right: 2px;
+    }
   }
 
   .leed-form__button {
@@ -113,8 +130,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 320px;
+    width: 327px;
     padding-left: 35px;
-    padding-right: 35px;
+    padding-right: 40px;
   }
 }

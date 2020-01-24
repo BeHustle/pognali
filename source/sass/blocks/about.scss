@@ -28,7 +28,7 @@
       width: $tablet-width;
       background-image: url("../img/about-tablet@1x.png"), url("../img/rectangle-big.svg");
       background-size: 376px 548px, 688px 213px;
-      background-position: right 15px bottom 88px, left 30px top 0;
+      background-position: right -13px bottom 88px, left 20px top -2px;
       background-repeat: no-repeat, no-repeat;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -40,7 +40,7 @@
       width: $desktop-width;
       background-image: url("../img/about-desktop@1x.png"), url("../img/rectangle.svg");
       background-size: 638px 665px, 213px 213px;
-      background-position: right 55px bottom, left 60px top 131px;
+      background-position: right 25px bottom, left 29px top 131px;
       background-repeat: no-repeat, no-repeat;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -79,25 +79,25 @@
   }
 
   .about .container {
-    padding-left: 60px;
-    padding-right: 360px;
-    padding-top: 40px;
-    padding-bottom: 90px;
+    padding-left: 54px;
+    padding-right: 372px;
+    padding-top: 38px;
+    padding-bottom: 88px;
   }
 
   .about .button {
     display: flex;
     width: 275px;
-    margin-top: 50px;
+    margin-top: 55px;
     color: #1d2e5b;
   }
 
   .about .content-title {
-    margin-bottom: 35px;
+    margin-bottom: 42px;
   }
 
   .about .content-text {
-    margin-bottom: 35px;
+    margin-bottom: 31px;
 
     &:last-child {
       margin-bottom: 0;
@@ -114,15 +114,24 @@
   .about .container {
     padding-left: 100px;
     padding-right: 650px;
-    padding-top: 130px;
-    padding-bottom: 160px;
+    padding-top: 129px;
+    padding-bottom: 163px;
   }
 
   .about .content-title {
-    margin-bottom: 50px;
+    margin-bottom: 59px;
   }
 
   .about .button {
-    margin-top: 80px;
+    margin-top: 87px;
+  }
+
+  .about .content-text {
+    margin-bottom: 39px;
+
+    &--bold {
+      padding-right: 180px;
+      margin-bottom: 0;
+    }
   }
 }

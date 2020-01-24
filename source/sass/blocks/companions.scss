@@ -4,7 +4,7 @@
   margin-top: -30px;
   padding-top: 30px;
   z-index: 17;
-  background-color: $blue-black;
+  background-color: $blue-white;
   background-image: url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-mobile@1x.png");
   background-repeat: no-repeat, no-repeat;
   background-size: 143px 143px, 71px 71px;
@@ -28,7 +28,15 @@
   @media only screen and (min-width: $tablet-width) {
     background-image: url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-desktop@1x.png");
     background-size: 143px auto, 285px auto;
-    background-position: top 420px left 40px, top 80px right 75px;
+    background-position: top 486px left 40px, top 140px right 75px;
+
+    &::before {
+      width: 216px;
+      height: 213px;
+      border-radius: 20px;
+      top: 137px;
+      left: 34px;
+    }
 
     @media (min-resolution: 1.5dppx) {
       background-image: url("../img/smolov-back-desktop@2x.png"), url("../img/rogovaya-back-desktop@2x.png");
@@ -36,14 +44,19 @@
   }
 
   @media only screen and (min-width: $desktop-width) {
-    background-position: top 130px left 510px, top 380px left 160px;
+    background-position: top 192px left 547px, top 444px left 191px;
+
+    &::before {
+      top: 129px;
+      left: 57px;
+    }
   }
 }
 
 .companions .container {
   position: relative;
   padding-top: 70px;
-  padding-bottom: 110px;
+  padding-bottom: 112px;
 }
 
 .companions__list {
@@ -58,7 +71,7 @@
 
 .companions__show-btn {
   position: absolute;
-  bottom: 30px;
+  bottom: 31px;
   left: 25px;
   width: calc(100% - 25px * 2);
   border-radius: 10px;
@@ -95,14 +108,14 @@
   }
 
   .companions .container {
-    padding-left: 55px;
-    padding-right: 55px;
-    padding-top: 140px;
-    padding-bottom: 250px;
+    padding-left: 54px;
+    padding-right: 54px;
+    padding-top: 138px;
+    padding-bottom: 249px;
   }
 
   .companions__show-btn {
-    bottom: 85px;
+    bottom: 89px;
     left: 55px;
     width: calc(100% - 55px * 2);
     border-radius: 15px;
@@ -112,7 +125,7 @@
 
   .companions__info {
     padding-left: 0;
-    padding-right: 220px;
+    padding-right: 180px;
   }
 
   .companions__list {
@@ -132,7 +145,7 @@
   }
 
   .companions .content-title {
-    margin-bottom: 50px;
+    margin-bottom: 58px;
   }
 
   .companions .content-text {
@@ -147,14 +160,17 @@
 @media only screen and (min-width: $desktop-width) {
   .companions .container {
     display: flex;
+    padding-left: 101px;
+    padding-right: 30px;
     padding-top: 125px;
-    padding-bottom: 135px;
+    padding-bottom: 132px;
   }
 
   .companions__show-btn {
     position: static;
     display: flex;
     width: 280px;
+    margin-top: 86px;
   }
 
   .companions__info {
@@ -163,7 +179,11 @@
   }
 
   .companions__list {
-    margin-top: 0;
+    margin-top: 8px;
+  }
+
+  .companions .content-title {
+    margin-left: -3px;
   }
 
   .companions__list .companion {

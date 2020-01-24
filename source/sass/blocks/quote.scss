@@ -6,10 +6,19 @@
   }
 }
 
+@media only screen and (min-width: $tablet-width) {
+  .quote .content-text {
+    margin-bottom: 44px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
 
 @media only screen and (min-width: $desktop-width) {
   .quote .content-text {
-    margin-bottom: 40px;
+    margin-bottom: 44px;
 
     &:last-child {
       margin-bottom: 0;

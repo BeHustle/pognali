@@ -144,7 +144,7 @@
 
       <blockquote class="quote">
         <p class="content-text">«Лучшее приложение, что я видел в жизни!»</p>
-        <cite class="content-text content-text--bold">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+        <cite class="content-text content-text--bold">Мурат Эльтазин главный&nbsp;редактор газеты «гаджетлайф»</cite>
       </blockquote>
       <ol class="start-steps">
         <li class="start-steps__item">
@@ -168,7 +168,7 @@
       <h2 class="content-title">О сервисе</h2>
       <p class="content-text">
         Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с тобой!
-        Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+        Делитесь своими идеями путешествий и&nbsp;черпайте вдохновение в чужих.
       </p>
       <p class="content-text content-text--bold">
         А если найдете кого-то
@@ -189,7 +189,7 @@
         <h2 class="content-title">Направления</h2>
         <p class="content-text content-text--grey">
           Мы не продаем туры и&nbsp;ничего не рекламируем.
-          Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+          Люди сами пишут о странах, куда хотели бы отправиться и&nbsp;чем можно там заняться.
         </p>
         <a href="form.html" class="button button--arrow">
           Показать все
@@ -217,7 +217,7 @@
           <div class="direction__content">
             <h3 class="direction__title">Тайланд</h3>
             <p class="direction__users">18321</p>
-            <p class="direction__text">Джунгли зовут</p>
+            <p class="direction__text">Джунгли зовут!</p>
           </div>
         </li>
         <li class="direction">
@@ -268,10 +268,10 @@
         <h2 class="content-title">Попутчики</h2>
         <p class="content-text">
           Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
-          Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+          Одному нужен пляж и коктейль, а&nbsp;другому маршрут для хайкинга.
         </p>
         <p class="content-text content-text--bold">
-          Теперь можно легко найти единомышленников!
+          Теперь можно легко найти&nbsp;единомышленников!
         </p>
         <a href="catalog.html" class="companions__show-btn button button--arrow">
           Показать всех
@@ -289,7 +289,13 @@
                    alt="Таня Фирсова" class="companion__image">
             </picture>
           </div>
-          <div class="companion__level">99</div>
+          <div class="companion__level">
+            <svg class="companion__level-circle" width="60" height="60" viewBox="0 0 60 60">
+              <circle r="28" cx="30" cy="30" fill="transparent" stroke="#ff8d30" stroke-width="3" stroke-dasharray="170px 5px"></circle>
+            </svg>
+            <span class="companion__level-number">99</span>
+            <span class="companion__level-desc">level</span>
+          </div>
           <ul class="companion__countries-list">
             <li class="companion__country tooltip" data-tooltip="Шри-Ланка">
               <img src="img/flag-sri-lanka.svg" alt="Шри-Ланка" width="35" height="25">
@@ -343,7 +349,13 @@
                    alt="Таня Фирсова" class="companion__image">
             </picture>
           </div>
-          <div class="companion__level">80</div>
+          <div class="companion__level">
+            <svg class="companion__level-circle" width="60" height="60" viewBox="0 0 60 60">
+              <circle r="28" cx="30" cy="30" fill="transparent" stroke="#ff8d30" stroke-width="3" stroke-dasharray="140px 35px"></circle>
+            </svg>
+            <span class="companion__level-number">80</span>
+            <span class="companion__level-desc">level</span>
+          </div>
           <ul class="companion__countries-list">
             <li class="companion__country tooltip" data-tooltip="Бельгия">
               <img src="img/flag-belgium.svg" alt="Бельгия" width="35" height="25">
@@ -472,7 +484,7 @@
         <li class="contacts-list__item">
           <a href="tel:88005558628" class="contacts-list__link contacts-list__link--yellow">
               <span class="contacts-list__icon">
-                <svg width="18" height="18"><use xlink:href="img/nav-icons.svg#contacts-phone"></use></svg>
+                <svg class="contacts-list__svg" width="18" height="18"><use xlink:href="img/nav-icons.svg#contacts-phone"></use></svg>
               </span>
             8 800 555-86-28
           </a>
@@ -480,7 +492,7 @@
         <li class="contacts-list__item">
           <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link contacts-list__link--yellow">
               <span class="contacts-list__icon">
-                <svg width="18" height="13"><use xlink:href="img/nav-icons.svg#contacts-mail"></use></svg>
+                <svg class="contacts-list__svg" width="18" height="13"><use xlink:href="img/nav-icons.svg#contacts-mail"></use></svg>
               </span>
             mail@htmlacademy.ru
           </a>
@@ -509,7 +521,8 @@
 
   <section class="map">
     <h2 class="visually-hidden">Карта проезда</h2>
-  </section> <!-- здесь будет карта -->
+    <iframe class="map__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3A314a7b76b872a9a358bc33bdafdc7a38c46de3a0efedf267746352d2df99a8e8&amp;source=constructor"></iframe>
+  </section>
 </main>
 
 <footer class="page-footer">

@@ -12,6 +12,7 @@
   text-transform: uppercase;
   position: relative;
   display: flex;
+  justify-content: center;
   transition: transform 0.3s;
 
   &::before {
@@ -33,12 +34,10 @@
 }
 
 @media only screen and (min-width: $tablet-width) {
-  .site-list {
-    text-align: left;
-  }
-
   .site-list__link {
     @include set-font(60px, 71px, 500);
+    justify-content: flex-start;
+    letter-spacing: -0.6px;
   }
 }
 

@@ -1,12 +1,12 @@
 .main-nav {
   background-color: #ffffff;
   width: 100%;
-  padding-top: 40px;
+  padding-top: 48px;
   padding-bottom: 40px;
 }
 
 .main-nav .contacts-list {
-  margin-top: 55px;
+  margin-top: 53px;
 }
 
 .main-nav .social-list {
@@ -23,22 +23,37 @@
   }
 
   .main-nav {
-    padding-top: 60px;
+    padding-top: 71px;
     padding-bottom: 85px;
   }
 
   .main-nav .contacts-list {
-    margin-top: 140px;
+    margin-top: 135px;
     display: flex;
     flex-direction: column;
   }
 
   .main-nav .social-list {
-    margin-top: 125px;
+    margin-top: 133px;
   }
 
   .main-nav .contacts-list__auth {
     display: none;
+  }
+
+  .main-nav .contacts-list__icon {
+    width: 69px;
+    height: 68px;
+    margin-right: 21px;
+  }
+
+  .main-nav .social-list__item {
+    margin-right: 29px;
+  }
+
+  .main-nav .social-list__icon {
+    width: 31px;
+    height: 28px;
   }
 }
 
