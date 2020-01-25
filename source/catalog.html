@@ -11,6 +11,10 @@
   <script>svg4everybody(); // run it now or whenever you are ready</script>
   <title>Погнали - попутчики</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2">
 </head>
 <body>
 <header class="page-header">
@@ -27,9 +31,7 @@
           <source media="(min-width: 1380px)"
                   srcset="img/logo-desktop-white@2x.png 2x, img/logo-desktop-white@1x.png 1x">
           <source media="(min-width: 728px)" srcset="img/logo-tablet-white@2x.png 2x, img/logo-tablet-white@1x.png 1x">
-          <img src="img/logo-mobile-white@1x.png"
-               srcset="img/logo-mobile-white@2x.png 2x, img/logo-mobile-white@1x.png 1x"
-               alt="Погнали - сервис путешествий">
+          <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x, img/logo-mobile-white@1x.png 1x" alt="Погнали - сервис путешествий">
         </picture>
       </div>
       <div class="logo logo--blue">
@@ -42,9 +44,7 @@
 
           <source media="(min-width: 1380px)" srcset="img/logo-desktop-blue@2x.png 2x, img/logo-desktop-blue@1x.png 1x">
           <source media="(min-width: 728px)" srcset="img/logo-tablet-blue@2x.png 2x, img/logo-tablet-blue@1x.png 1x">
-          <img src="img/logo-mobile-blue@1x.png"
-               srcset="img/logo-mobile-blue@2x.png 2x, img/logo-mobile-blue@1x.png 1x"
-               alt="Погнали - сервис путешествий">
+          <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x, img/logo-mobile-blue@1x.png 1x" alt="Погнали - сервис путешествий">
         </picture>
       </div>
     </a>
@@ -65,15 +65,14 @@
         </a>
       </li>
       <li class="contacts-list__item">
-        <a href="mailto:mail@htmlacademy.ru" class="contacts-list__img contacts-list__img--mail"
-           aria-label="Написать на email">
+        <a href="mailto:mail@htmlacademy.ru" class="contacts-list__img contacts-list__img--mail" aria-label="Написать на email">
           <svg width="18" height="18">
             <use xlink:href="img/nav-icons.svg#topmenu-mail"></use>
           </svg>
         </a>
       </li>
       <li class="contacts-list__item contacts-list__auth">
-        <a href="#" class="button">Авторизация</a>
+        <a href="auth.html" class="button">Авторизация</a>
       </li>
     </ul>
     <nav class="main-nav">
@@ -90,7 +89,7 @@
       </ul>
       <ul class="main-nav__list contacts-list">
         <li class="contacts-list__item contacts-list__auth">
-          <a href="#" class="button">Авторизация</a>
+          <a href="auth.html" class="button">Авторизация</a>
         </li>
         <li class="contacts-list__item">
           <a href="tel:88005558628" class="contacts-list__link">
@@ -158,11 +157,11 @@
         Фильтрация по странам
       </h2>
       <button class="countries-filter__toggle-btn" aria-label="Показать страны.">
-        <span class="countries-filter__toggle-desc d-none">
+        <span class="countries-filter__toggle-desc">
           Показать все
           <svg width="17" height="3"><use xlink:href="img/nav-icons.svg#dots"></use></svg>
         </span>
-        <span class="countries-filter__toggle-desc">
+        <span class="countries-filter__toggle-desc d-none">
           Свернуть
           <svg width="12" height="12"><use xlink:href="img/nav-icons.svg#filter-close"></use></svg>
         </span>
@@ -212,10 +211,10 @@
         <ul class="countries countries--active">
           <li class="countries__title">А</li>
           <li class="countries__item">
-            <a href="#" class="countries__link">Австралия</a>
+            <a href="australia/australia.html" class="countries__link">Австралия</a>
           </li>
           <li class="countries__item">
-            <a href="#" class="countries__link">Австрия</a>
+            <a href="europe/austria.html" class="countries__link">Австрия</a>
           </li>
           <li class="countries__item">
             <a href="#" class="countries__link">Азербайджан</a>
@@ -876,10 +875,8 @@
             </svg>
           </button>
           <div class="travel-filter__level">
-            <input aria-label="Ввести минимальный уровень" type="text" name="min-level"
-                   class="travel-filter__level-number travel-filter__level-number--min" value="30">
-            <input aria-label="Ввести максимальный уровень" type="text" name="max-level"
-                   class="travel-filter__level-number travel-filter__level-number--max" value="100">
+            <input aria-label="Ввести минимальный уровень" type="text" name="min-level" class="travel-filter__level-number travel-filter__level-number--min" value="30">
+            <input aria-label="Ввести максимальный уровень" type="text" name="max-level" class="travel-filter__level-number travel-filter__level-number--max" value="100">
           </div>
           <div class="travel-filter__slider d-none"></div> <!-- ползунок -->
         </div>
@@ -892,14 +889,15 @@
         <li class="companion-catalog">
           <a href="#" class="companion-catalog__image-wrapper">
             <picture>
-              <source type="image/webp" media="(min-width: 1380px)" srcset="img/firsova-desktop@2x.webp 2x, img/firsova-desktop@1x.webp 1x">
-              <source type="image/webp" media="(min-width: 728px)" srcset="img/firsova-tablet@2x.webp 2x, img/firsova-tablet@1x.webp 1x">
+              <source type="image/webp" media="(min-width: 1380px)"
+                      srcset="img/firsova-desktop@2x.webp 2x, img/firsova-desktop@1x.webp 1x">
+              <source type="image/webp" media="(min-width: 728px)"
+                      srcset="img/firsova-tablet@2x.webp 2x, img/firsova-tablet@1x.webp 1x">
               <source type="image/webp" srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
 
               <source media="(min-width: 1380px)" srcset="img/firsova-desktop@2x.jpg 2x, img/firsova-desktop@1x.jpg 1x">
               <source media="(min-width: 728px)" srcset="img/firsova-tablet@2x.jpg 2x, img/firsova-tablet@1x.jpg 1x">
-              <img src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@1x.jpg 1x, img/firsova-mobile@2x.jpg 2x"
-                   alt="Таня Фирсова" class="companion-catalog__image">
+              <img src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@1x.jpg 1x, img/firsova-mobile@2x.jpg 2x" alt="Таня Фирсова" class="companion-catalog__image">
             </picture>
           </a>
           <div class="companion-catalog__info-main">
@@ -921,22 +919,19 @@
               <ul class="companion-catalog__countries">
                 <li class="companion-catalog__country">
                   <div class="companion-catalog__country-wrapper tooltip" data-tooltip="Шри-Ланка">
-                    <img src="img/flag-sri-lanka.svg" alt="Шри-Ланка" width="26" height="18"
-                         class="companion-catalog__country-img">
+                    <img src="img/flag-sri-lanka.svg" alt="Шри-Ланка" width="26" height="18" class="companion-catalog__country-img">
                   </div>
                   Шри-ланка
                 </li>
                 <li class="companion-catalog__country">
                   <div class="companion-catalog__country-wrapper tooltip" data-tooltip="Тайланд">
-                    <img src="img/flag-thailand.svg" alt="Тайланд" width="26" height="18"
-                         class="companion-catalog__country-img">
+                    <img src="img/flag-thailand.svg" alt="Тайланд" width="26" height="18" class="companion-catalog__country-img">
                   </div>
                   Таиланд
                 </li>
                 <li class="companion-catalog__country">
                   <div class="companion-catalog__country-wrapper tooltip" data-tooltip="Сейшелы">
-                    <img src="img/flag-seychelles.svg" alt="Сейшелы" width="26" height="18"
-                         class="companion-catalog__country-img">
+                    <img src="img/flag-seychelles.svg" alt="Сейшелы" width="26" height="18" class="companion-catalog__country-img">
                   </div>
                   Сейшелы
                 </li>
@@ -969,7 +964,8 @@
               <span class="companion-catalog__fieldset-title">левел:</span>
               <div class="companion-catalog__level">
                 <svg class="companion-catalog__level-circle" width="50" height="50" viewBox="0 0 45 45">
-                  <circle r="20" cx="22" cy="22" fill="transparent" stroke="#ff8d30" stroke-width="2" stroke-dasharray="120px 5px"></circle>
+                  <circle r="20" cx="22" cy="22" fill="transparent" stroke="#ff8d30" stroke-width="2"
+                          stroke-dasharray="120px 5px"></circle>
                 </svg>
                 <span class="companion-catalog__level-number">99</span>
                 <span class="companion-catalog__level-description">level</span>
@@ -980,14 +976,15 @@
         <li class="companion-catalog">
           <a href="#" class="companion-catalog__image-wrapper">
             <picture>
-              <source type="image/webp" media="(min-width: 1380px)" srcset="img/demin-desktop@2x.webp 2x, img/demin-desktop@1x.webp 1x">
-              <source type="image/webp" media="(min-width: 728px)" srcset="img/demin-tablet@2x.webp 2x, img/demin-tablet@1x.webp 1x">
+              <source type="image/webp" media="(min-width: 1380px)"
+                      srcset="img/demin-desktop@2x.webp 2x, img/demin-desktop@1x.webp 1x">
+              <source type="image/webp" media="(min-width: 728px)"
+                      srcset="img/demin-tablet@2x.webp 2x, img/demin-tablet@1x.webp 1x">
               <source type="image/webp" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
 
               <source media="(min-width: 1380px)" srcset="img/demin-desktop@2x.jpg 2x, img/demin-desktop@1x.jpg 1x">
               <source media="(min-width: 728px)" srcset="img/demin-tablet@2x.jpg 2x, img/demin-tablet@1x.jpg 1x">
-              <img src="img/firsova-mobile@1x.jpg" srcset="img/demin-mobile@1x.jpg 1x, img/demin-mobile@2x.jpg 2x"
-                   alt="Петя Демин" class="companion-catalog__image">
+              <img src="img/firsova-mobile@1x.jpg" srcset="img/demin-mobile@1x.jpg 1x, img/demin-mobile@2x.jpg 2x" alt="Петя Демин" class="companion-catalog__image">
             </picture>
           </a>
           <div class="companion-catalog__info-main">
@@ -1009,21 +1006,20 @@
               <ul class="companion-catalog__countries">
                 <li class="companion-catalog__country">
                   <div class="companion-catalog__country-wrapper tooltip" data-tooltip="Бельгия">
-                    <img src="img/flag-belgium.svg" alt="Бельгия" width="26" height="18"
-                         class="companion-catalog__country-img">
+                    <img src="img/flag-belgium.svg" alt="Бельгия" width="26" height="18" class="companion-catalog__country-img">
                   </div>
                   Бельгия
                 </li>
                 <li class="companion-catalog__country">
                   <div class="companion-catalog__country-wrapper tooltip" data-tooltip="Чехия">
-                    <img src="img/flag-czech.svg" alt="Чехия" width="26" height="18"
-                         class="companion-catalog__country-img">
+                    <img src="img/flag-czech.svg" alt="Чехия" width="26" height="18" class="companion-catalog__country-img">
                   </div>
                   Чехия
                 </li>
               </ul>
             </div>
-            <div class="companion-catalog__mt5"></div> <!-- ТОЛЬКО ДЛЯ соответсвия макету по PP. УДАЛИТЬ ПОСЛЕ ПРОВЕРКИ! -->
+            <div class="companion-catalog__mt5"></div>
+            <!-- ТОЛЬКО ДЛЯ соответсвия макету по PP. УДАЛИТЬ ПОСЛЕ ПРОВЕРКИ! -->
             <div class="companion-catalog__fieldset companion-catalog__fieldset--transport-level">
               <span class="companion-catalog__fieldset-title">транспорт:</span>
               <ul class="transport transport--catalog">
@@ -1051,7 +1047,8 @@
               <span class="companion-catalog__fieldset-title">левел:</span>
               <div class="companion-catalog__level">
                 <svg class="companion-catalog__level-circle" width="50" height="50" viewBox="0 0 45 45">
-                  <circle r="20" cx="22" cy="22" fill="transparent" stroke="#ff8d30" stroke-width="2" stroke-dasharray="105px 20px"></circle>
+                  <circle r="20" cx="22" cy="22" fill="transparent" stroke="#ff8d30" stroke-width="2"
+                          stroke-dasharray="105px 20px"></circle>
                 </svg>
                 <span class="companion-catalog__level-number">80</span>
                 <span class="companion-catalog__level-description">level</span>
@@ -1062,14 +1059,15 @@
         <li class="companion-catalog">
           <a href="#" class="companion-catalog__image-wrapper">
             <picture>
-              <source type="image/webp" media="(min-width: 1380px)" srcset="img/smolov-desktop@2x.webp 2x, img/smolov-desktop@1x.webp 1x">
-              <source type="image/webp" media="(min-width: 728px)" srcset="img/smolov-tablet@2x.webp 2x, img/smolov-tablet@1x.webp 1x">
+              <source type="image/webp" media="(min-width: 1380px)"
+                      srcset="img/smolov-desktop@2x.webp 2x, img/smolov-desktop@1x.webp 1x">
+              <source type="image/webp" media="(min-width: 728px)"
+                      srcset="img/smolov-tablet@2x.webp 2x, img/smolov-tablet@1x.webp 1x">
               <source type="image/webp" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
 
               <source media="(min-width: 1380px)" srcset="img/smolov-desktop@2x.jpg 2x, img/smolov-desktop@1x.jpg 1x">
               <source media="(min-width: 728px)" srcset="img/smolov-tablet@2x.jpg 2x, img/smolov-tablet@1x.jpg 1x">
-              <img src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@1x.jpg 1x, img/smolov-mobile@2x.jpg 2x"
-                   alt="Марк Смолов" class="companion-catalog__image">
+              <img src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@1x.jpg 1x, img/smolov-mobile@2x.jpg 2x" alt="Марк Смолов" class="companion-catalog__image">
             </picture>
           </a>
           <div class="companion-catalog__info-main">
@@ -1090,28 +1088,26 @@
               <ul class="companion-catalog__countries">
                 <li class="companion-catalog__country">
                   <div class="companion-catalog__country-wrapper tooltip" data-tooltip="США">
-                    <img src="img/flag-usa.svg" alt="США" width="26" height="18"
-                         class="companion-catalog__country-img">
+                    <img src="img/flag-usa.svg" alt="США" width="26" height="18" class="companion-catalog__country-img">
                   </div>
                   США
                 </li>
                 <li class="companion-catalog__country">
                   <div class="companion-catalog__country-wrapper tooltip" data-tooltip="Австралия">
-                    <img src="img/flag-australia.svg" alt="Австралия" width="26" height="18"
-                         class="companion-catalog__country-img">
+                    <img src="img/flag-australia.svg" alt="Австралия" width="26" height="18" class="companion-catalog__country-img">
                   </div>
                   Австралия
                 </li>
                 <li class="companion-catalog__country">
                   <div class="companion-catalog__country-wrapper tooltip" data-tooltip="Доминикана">
-                    <img src="img/flag-dominica.svg" alt="Доминикана" width="26" height="18"
-                         class="companion-catalog__country-img">
+                    <img src="img/flag-dominica.svg" alt="Доминикана" width="26" height="18" class="companion-catalog__country-img">
                   </div>
                   Доминикана
                 </li>
               </ul>
             </div>
-            <div class="companion-catalog__mt3"></div> <!-- ТОЛЬКО ДЛЯ соответсвия макету по PP. УДАЛИТЬ ПОСЛЕ ПРОВЕРКИ! -->
+            <div class="companion-catalog__mt3"></div>
+            <!-- ТОЛЬКО ДЛЯ соответсвия макету по PP. УДАЛИТЬ ПОСЛЕ ПРОВЕРКИ! -->
             <div class="companion-catalog__fieldset companion-catalog__fieldset--transport-level">
               <span class="companion-catalog__fieldset-title">транспорт:</span>
               <ul class="transport transport--catalog">
@@ -1139,7 +1135,8 @@
               <span class="companion-catalog__fieldset-title">левел:</span>
               <div class="companion-catalog__level">
                 <svg class="companion-catalog__level-circle" width="50" height="50" viewBox="0 0 45 45">
-                  <circle r="20" cx="22" cy="22" fill="transparent" stroke="#ff8d30" stroke-width="2" stroke-dasharray="31px 94px"></circle>
+                  <circle r="20" cx="22" cy="22" fill="transparent" stroke="#ff8d30" stroke-width="2"
+                          stroke-dasharray="31px 94px"></circle>
                 </svg>
                 <span class="companion-catalog__level-number">25</span>
                 <span class="companion-catalog__level-description">level</span>
@@ -1150,14 +1147,16 @@
         <li class="companion-catalog">
           <a href="#" class="companion-catalog__image-wrapper">
             <picture>
-              <source type="image/webp" media="(min-width: 1380px)" srcset="img/rogovaya-desktop@2x.webp 2x, img/rogovaya-desktop@1x.webp 1x">
-              <source type="image/webp" media="(min-width: 728px)" srcset="img/rogovaya-tablet@2x.webp 2x, img/rogovaya-tablet@1x.webp 1x">
+              <source type="image/webp" media="(min-width: 1380px)"
+                      srcset="img/rogovaya-desktop@2x.webp 2x, img/rogovaya-desktop@1x.webp 1x">
+              <source type="image/webp" media="(min-width: 728px)"
+                      srcset="img/rogovaya-tablet@2x.webp 2x, img/rogovaya-tablet@1x.webp 1x">
               <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1380px)" srcset="img/rogovaya-desktop@2x.jpg 2x, img/rogovaya-desktop@1x.jpg 1x">
+              <source media="(min-width: 1380px)"
+                      srcset="img/rogovaya-desktop@2x.jpg 2x, img/rogovaya-desktop@1x.jpg 1x">
               <source media="(min-width: 728px)" srcset="img/firsova-tablet@2x.jpg 2x, img/rogovaya-tablet@1x.jpg 1x">
-              <img src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@1x.jpg 1x, img/rogovaya-mobile@2x.jpg 2x"
-                   alt="Лариса Роговая" class="companion-catalog__image">
+              <img src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@1x.jpg 1x, img/rogovaya-mobile@2x.jpg 2x" alt="Лариса Роговая" class="companion-catalog__image">
             </picture>
           </a>
           <div class="companion-catalog__info-main">
@@ -1177,21 +1176,20 @@
               <ul class="companion-catalog__countries">
                 <li class="companion-catalog__country">
                   <div class="companion-catalog__country-wrapper tooltip" data-tooltip="Великобритания">
-                    <img src="img/flag-united-kingdom.svg" alt="Великобритания" width="26" height="18"
-                         class="companion-catalog__country-img">
+                    <img src="img/flag-united-kingdom.svg" alt="Великобритания" width="26" height="18" class="companion-catalog__country-img">
                   </div>
                   Великобритания
                 </li>
                 <li class="companion-catalog__country">
                   <div class="companion-catalog__country-wrapper tooltip" data-tooltip="Германия">
-                    <img src="img/flag-germany.svg" alt="Германия" width="26" height="18"
-                         class="companion-catalog__country-img">
+                    <img src="img/flag-germany.svg" alt="Германия" width="26" height="18" class="companion-catalog__country-img">
                   </div>
                   Германия
                 </li>
               </ul>
             </div>
-            <div class="companion-catalog__mt5"></div> <!-- ТОЛЬКО ДЛЯ соответсвия макету по PP. УДАЛИТЬ ПОСЛЕ ПРОВЕРКИ! -->
+            <div class="companion-catalog__mt5"></div>
+            <!-- ТОЛЬКО ДЛЯ соответсвия макету по PP. УДАЛИТЬ ПОСЛЕ ПРОВЕРКИ! -->
             <div class="companion-catalog__fieldset companion-catalog__fieldset--transport-level">
               <span class="companion-catalog__fieldset-title">транспорт:</span>
               <ul class="transport transport--catalog">
@@ -1219,7 +1217,8 @@
               <span class="companion-catalog__fieldset-title">левел:</span>
               <div class="companion-catalog__level">
                 <svg class="companion-catalog__level-circle" width="50" height="50" viewBox="0 0 45 45">
-                  <circle r="20" cx="22" cy="22" fill="transparent" stroke="#ff8d30" stroke-width="2" stroke-dasharray="63px 62px"></circle>
+                  <circle r="20" cx="22" cy="22" fill="transparent" stroke="#ff8d30" stroke-width="2"
+                          stroke-dasharray="63px 62px"></circle>
                 </svg>
                 <span class="companion-catalog__level-number">50</span>
                 <span class="companion-catalog__level-description">level</span>
@@ -1255,16 +1254,17 @@
 
 <footer class="page-footer">
   <div class="container">
-    <a class="page-footer__logo-link">
+    <a href="index.html" class="page-footer__logo-link">
       <picture>
-        <source type="image/webp" media="(min-width: 1380px)" srcset="img/logo-desktop-blue@2x.webp 2x, img/logo-desktop-blue@1x.webp 1x">
-        <source type="image/webp" media="(min-width: 728px)" srcset="img/logo-tablet-blue@2x.webp 2x, img/logo-tablet-blue@1x.webp 1x">
+        <source type="image/webp" media="(min-width: 1380px)"
+                srcset="img/logo-desktop-blue@2x.webp 2x, img/logo-desktop-blue@1x.webp 1x">
+        <source type="image/webp" media="(min-width: 728px)"
+                srcset="img/logo-tablet-blue@2x.webp 2x, img/logo-tablet-blue@1x.webp 1x">
         <source type="image/webp" srcset="img/logo-mobile-blue@2x.webp 2x, img/logo-mobile-blue@1x.webp 1x">
 
         <source media="(min-width: 1380px)" srcset="img/logo-desktop-blue@2x.png 2x, img/logo-desktop-blue@1x.png 1x">
         <source media="(min-width: 728px)" srcset="img/logo-tablet-blue@2x.png 2x, img/logo-tablet-blue@1x.png 1x">
-        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x, img/logo-mobile-blue@1x.png 1x"
-             alt="Погнали - сервис путешествий" class="logo logo--blue">
+        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x, img/logo-mobile-blue@1x.png 1x" alt="Погнали - сервис путешествий" class="logo logo--blue">
       </picture>
     </a>
     <ul class="main-nav__list social-list">
@@ -1298,9 +1298,9 @@
     </div>
   </div>
 </footer>
-<script src="js/jquery-1.6.1.min.js"></script>
+<script src="js/jquery.js"></script>
 <script src="js/enquire.min.js"></script>
-<script src="js/jquery.ui-slider.js"></script>
+<script src="js/jquery-ui.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 .step {
   background-color: #ffffff;
-  padding: 25px 25px 20px 25px;
+  padding: 25px 26px 20px 25px;
   margin-bottom: 10px;
   position: relative;
   border-radius: 10px;
@@ -93,6 +93,14 @@
   & svg {
     display: none;
   }
+
+  &:active {
+    color: rgba(#1d2e5b, 0.3);
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 .step .content-text {
@@ -152,7 +160,7 @@
 
   &:hover,
   &:focus {
-    border-color: #959bb2
+    border-color: #959bb2;
   }
 
   &:active {
@@ -170,19 +178,21 @@
   &::-webkit-input-placeholder {
     color: rgba($grey, 0.3);
   }
+
   &::-moz-placeholder {
     color: rgba($grey, 0.3);
   }
+
   &:-ms-input-placeholder {
     color: rgba($grey, 0.3);
   }
+
   &:-moz-placeholder {
     color: rgba($grey, 0.3);
   }
 }
 
 .step__btn--fwd {
-
   &:hover,
   &:focus {
     background-color: #ffbd30;
@@ -207,30 +217,7 @@
   }
 }
 
-.step__btn {
-
-  &:active {
-    color: rgba(#1d2e5b, 0.3);
-  }
-
-  &:active svg {
-    opacity: 0.3;
-  }
-}
-
 @media only screen and (min-width: $tablet-width) {
-  .step {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 44px 43px 55px 43px;
-    margin-bottom: 40px;
-    border-radius: 30px;
-
-    &--countries {
-      margin-bottom: 49px;
-    }
-  }
-
   .step__textarea {
     @include set-font(20px, 24px, 400);
     padding: 16px 32px 16px 18px;
@@ -373,21 +360,6 @@
     letter-spacing: 2px;
   }
 
-  .step--countries {
-    & .step__btn {
-      margin-top: 32px;
-    }
-
-    & .content-text {
-      margin-bottom: 77px;
-      position: relative;
-
-      &::after {
-        bottom: -37px;
-      }
-    }
-  }
-
   .step--entertainment {
     & .content-text {
       margin-bottom: 42px;
@@ -401,12 +373,37 @@
       margin-top: 24px;
     }
   }
+
+  .step {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 44px 45px 55px 43px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+
+    &--countries {
+      margin-bottom: 49px;
+
+      & .step__btn {
+        margin-top: 32px;
+      }
+
+      & .content-text {
+        margin-bottom: 77px;
+        position: relative;
+
+        &::after {
+          bottom: -37px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: $desktop-width) {
   .step {
     padding-top: 95px;
-    padding-right: 159px;
+    padding-right: 161px;
     padding-bottom: 106px;
     padding-left: 160px;
     margin-bottom: 44px;
@@ -449,31 +446,9 @@
     @include set-font(20px, 24px, 400);
     margin-bottom: 85px;
 
-    &:after {
+    &::after {
       width: 1000px;
       bottom: -55px;
-    }
-  }
-
-  .step--countries {
-
-    & .content-text {
-      margin-bottom: 117px;
-    }
-
-    & .step__btn {
-      margin-top: 38px;
-    }
-  }
-
-  .step--entertainment {
-
-    & .content-text {
-      margin-bottom: 107px;
-    }
-
-    & .step__btn {
-      margin-top: 33px;
     }
   }
 
@@ -534,6 +509,7 @@
   .step .checkbox {
     padding-bottom: 0;
     align-self: center;
+    margin-top: -17px;
   }
 
   .step__country-label {
@@ -550,13 +526,28 @@
     padding: 23px 18px 20px 25px;
   }
 
-  .step .checkbox {
-    margin-top: -17px;
-    padding-bottom: 0;
-  }
-
   .step__country-title img {
     position: relative;
     top: 5px;
+  }
+
+  .step--countries {
+    & .content-text {
+      margin-bottom: 117px;
+    }
+
+    & .step__btn {
+      margin-top: 38px;
+    }
+  }
+
+  .step--entertainment {
+    & .content-text {
+      margin-bottom: 107px;
+    }
+
+    & .step__btn {
+      margin-top: 33px;
+    }
   }
 }

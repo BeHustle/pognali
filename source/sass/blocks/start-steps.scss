@@ -144,7 +144,7 @@
       margin-left: -20px;
       flex-grow: 1;
 
-      &:before {
+      &::before {
         position: absolute;
         content: "";
         top: 0;
@@ -162,7 +162,7 @@
       flex-shrink: 1;
       width: 25.6%;
 
-      &:before {
+      &::before {
         position: absolute;
         content: "";
         top: 0;

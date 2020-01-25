@@ -94,7 +94,6 @@
 }
 
 .checkbox--bordered {
-
   & .checkbox__text::before {
     border: 1px solid #cbced9;
     width: 26px;
@@ -174,7 +173,6 @@
   }
 
   .checkbox__input {
-
     &:checked + .checkbox__text::after {
       width: 12px;
       height: 12px;

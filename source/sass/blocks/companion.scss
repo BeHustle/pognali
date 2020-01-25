@@ -120,7 +120,7 @@
     position: relative;
     margin-top: 20px;
 
-    &:after {
+    &::after {
       position: absolute;
       content: "";
       height: 2px;
@@ -301,9 +301,7 @@
     margin-top: 2px;
     margin-left: -3px;
     order: -2;
-  }
 
-  .companion__level--form {
     & .companion__level-circle {
       width: 100px;
       height: 100px;
@@ -400,7 +398,6 @@
 
 @media only screen and (min-width: $desktop-width) {
   .companion__fieldset-container {
-
     &--transport {
       order: 0;
       width: 388px;
@@ -431,10 +428,6 @@
     width: 190px;
   }
 
-  .companion__level--form {
-    color: #ffffff;
-  }
-
   .companion__level {
     top: 21px;
     left: 25px;
@@ -445,6 +438,7 @@
     margin-right: -2px;
     top: auto;
     left: auto;
+    color: #ffffff;
 
     & .companion__level-number {
       color: #ffffff;

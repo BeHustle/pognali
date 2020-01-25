@@ -76,11 +76,6 @@
   background: #1d2e5b;
 }
 
-/* скругление для полосы слайдера */
-.ui-corner-all {
-  border-radius: 0;
-}
-
 @media only screen and (min-width: $tablet-width) {
   .ui-slider-horizontal .ui-slider-range {
     height: 3px;

@@ -8,6 +8,10 @@
   padding-bottom: 30px;
 }
 
+.add-plan form {
+  width: 270px; /** для ie11 **/
+}
+
 .add-plan__title {
   @include set-font(24px, 24px, 700);
   color: #1d2e5b;
@@ -37,7 +41,7 @@
   margin-right: 14px;
   opacity: 0.3;
 
-  &[href] {
+  &--current {
     margin-right: 12px;
     opacity: 1;
   }
@@ -49,6 +53,10 @@
     border-top-left-radius: 30px;
     margin-bottom: -55px;
     padding-bottom: 51px;
+  }
+
+  .add-plan form {
+    width: 618px; /** для ie11 **/
   }
 
   .add-plan .container {
@@ -82,6 +90,10 @@
   .add-plan {
     border-top-right-radius: 60px;
     border-top-left-radius: 60px;
+  }
+
+  .add-plan form {
+    width: 1320px; /** для ie11 **/
   }
 
   .add-plan .container {

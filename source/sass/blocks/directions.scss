@@ -5,6 +5,8 @@
   background-color: #edeff6;
   position: relative;
   z-index: 18;
+  overflow: hidden;
+  clip: rect(auto, auto, auto, auto);
 }
 
 .directions .container {

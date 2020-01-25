@@ -169,6 +169,16 @@
   }
 }
 
+.country-select--add .country-select__text-btn,
+.country-select--choose .country-select__text-btn {
+  width: 100%;
+}
+
+.country-select--add .country-select__text-btn::after,
+.country-select--choose .country-select__text-btn::after {
+  display: none;
+}
+
 @media only screen and (min-width: $tablet-width) {
   .country-select__button {
     @include set-font(20px, 20px, 500);
@@ -189,6 +199,11 @@
     & svg {
       width: 17px;
       height: 9px;
+    }
+
+    &--add svg {
+      width: 15px;
+      height: 15px;
     }
 
     &::after {

@@ -30,8 +30,7 @@
   border: 1px solid #cbced9;
   text-align: center;
   border-radius: 3px;
-  -webkit-appearance: none;
-  -moz-appearance: textfield;
+  appearance: none;
 
   &:hover,
   &:focus {
@@ -157,4 +156,3 @@
     }
   }
 }
-

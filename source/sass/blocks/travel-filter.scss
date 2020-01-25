@@ -10,6 +10,8 @@
 
 .travel-filter .transport {
   justify-content: flex-start;
+  margin-top: 5px;
+  margin-bottom: 19px;
 }
 
 .travel-filter__label {
@@ -153,14 +155,8 @@
   margin: 0;
 }
 
-.travel-filter .transport {
-  margin-top: 5px;
-  margin-bottom: 19px;
-}
-
 @media only screen and (max-width: $tablet-width - 1px), (min-width: $desktop-width) {
   .travel-filter__fieldset {
-
     & .travel-filter__label,
     & .transport,
     & .travel-filter__level,
@@ -246,7 +242,7 @@
     position: relative;
     width: 100%;
 
-    &:before {
+    &::before {
       position: absolute;
       content: "";
       top: -37px;

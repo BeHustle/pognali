@@ -126,7 +126,6 @@
 }
 
 .calendar__input {
-
   &:checked + .calendar__day-number {
     background-color: #1d2e5b;
     color: #ffffff;
@@ -194,7 +193,8 @@
   .calendar__weekday {
     @include set-font(18px, 30px, 400);
 
-    &:first-letter {
+
+    &::first-letter {
       @include set-font(18px, 30px, 400);
     }
   }
@@ -249,7 +249,6 @@
   }
 
   .calendar__btn {
-
     &--previous {
       margin-left: -15px;
     }

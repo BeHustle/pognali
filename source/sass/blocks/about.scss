@@ -3,6 +3,8 @@
   background-color: $blue-white;
   position: relative;
   z-index: 19;
+  overflow: hidden;
+  clip: rect(auto, auto, auto, auto);
 
   &::after {
     width: 320px;
@@ -17,7 +19,7 @@
     z-index: -1;
     background-image: url("../img/about-mobile@1x.png"), url("../img/rectangle.svg");
     background-size: contain, 143px 143px;
-    background-position: left 15px center,  left -30px top -11px;
+    background-position: left 15px center, left -30px top -11px;
     background-repeat: no-repeat, no-repeat;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {

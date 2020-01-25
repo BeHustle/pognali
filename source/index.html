@@ -11,6 +11,10 @@
   <script>svg4everybody(); // run it now or whenever you are ready</script>
   <title>Погнали - главная</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2">
 </head>
 <body>
 <header class="page-header page-header--main">
@@ -27,9 +31,7 @@
           <source media="(min-width: 1380px)"
                   srcset="img/logo-desktop-white@2x.png 2x, img/logo-desktop-white@1x.png 1x">
           <source media="(min-width: 728px)" srcset="img/logo-tablet-white@2x.png 2x, img/logo-tablet-white@1x.png 1x">
-          <img src="img/logo-mobile-white@1x.png"
-               srcset="img/logo-mobile-white@2x.png 2x, img/logo-mobile-white@1x.png 1x"
-               alt="Погнали - сервис путешествий">
+          <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x, img/logo-mobile-white@1x.png 1x" alt="Погнали - сервис путешествий">
         </picture>
       </div>
       <div class="logo logo--blue">
@@ -42,9 +44,7 @@
 
           <source media="(min-width: 1380px)" srcset="img/logo-desktop-blue@2x.png 2x, img/logo-desktop-blue@1x.png 1x">
           <source media="(min-width: 728px)" srcset="img/logo-tablet-blue@2x.png 2x, img/logo-tablet-blue@1x.png 1x">
-          <img src="img/logo-mobile-blue@1x.png"
-               srcset="img/logo-mobile-blue@2x.png 2x, img/logo-mobile-blue@1x.png 1x"
-               alt="Погнали - сервис путешествий">
+          <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x, img/logo-mobile-blue@1x.png 1x" alt="Погнали - сервис путешествий">
         </picture>
       </div>
     </a>
@@ -65,15 +65,14 @@
         </a>
       </li>
       <li class="contacts-list__item">
-        <a href="mailto:mail@htmlacademy.ru" class="contacts-list__img contacts-list__img--mail"
-           aria-label="Написать на email">
+        <a href="mailto:mail@htmlacademy.ru" class="contacts-list__img contacts-list__img--mail" aria-label="Написать на email">
           <svg width="18" height="18">
             <use xlink:href="img/nav-icons.svg#topmenu-mail"></use>
           </svg>
         </a>
       </li>
       <li class="contacts-list__item contacts-list__auth">
-        <a href="#" class="button">Авторизация</a>
+        <a href="auth.html" class="button">Авторизация</a>
       </li>
     </ul>
     <nav class="main-nav">
@@ -90,7 +89,7 @@
       </ul>
       <ul class="main-nav__list contacts-list">
         <li class="contacts-list__item contacts-list__auth">
-          <a href="#" class="button">Авторизация</a>
+          <a href="auth.html" class="button">Авторизация</a>
         </li>
         <li class="contacts-list__item">
           <a href="tel:88005558628" class="contacts-list__link">
@@ -208,9 +207,7 @@
 
               <source media="(min-width: 728px)"
                       srcset="img/thailand-desktop@2x.jpg 2x, img/thailand-desktop@1x.jpg 1x">
-              <img src="img/thailand-mobile@1x.jpg"
-                   srcset="img/thailand-mobile@2x.jpg 2x, img/thailand-mobile@1x.jpg 1x"
-                   alt="Погнали - сервис путешествий" class="direction__image">
+              <img src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x, img/thailand-mobile@1x.jpg 1x" alt="Погнали - сервис путешествий" class="direction__image">
             </picture>
           </div>
           <img src="img/flag-thailand.svg" alt="Тайланд" width="35" height="25" class="direction__flag">
@@ -228,8 +225,7 @@
               <source type="image/webp" srcset="img/france-mobile@2x.webp 2x, img/france-mobile@1x.webp 1x">
 
               <source media="(min-width: 728px)" srcset="img/france-desktop@2x.jpg 2x, img/france-desktop@1x.jpg 1x">
-              <img src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x, img/france-mobile@1x.jpg 1x"
-                   alt="Погнали - сервис путешествий" class="direction__image">
+              <img src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x, img/france-mobile@1x.jpg 1x" alt="Погнали - сервис путешествий" class="direction__image">
             </picture>
           </div>
           <img src="img/flag-france.svg" alt="Франция" width="35" height="25" class="direction__flag">
@@ -247,8 +243,7 @@
               <source type="image/webp" srcset="img/czech-mobile@2x.webp 2x, img/czech-mobile@1x.webp 1x">
 
               <source media="(min-width: 728px)" srcset="img/czech-desktop@2x.jpg 2x, img/czech-desktop@1x.jpg 1x">
-              <img src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x, img/czech-mobile@1x.jpg 1x"
-                   alt="Погнали - сервис путешествий" class="direction__image">
+              <img src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x, img/czech-mobile@1x.jpg 1x" alt="Погнали - сервис путешествий" class="direction__image">
             </picture>
           </div>
           <img src="img/flag-czech.svg" alt="Чехия" width="35" height="25" class="direction__flag">
@@ -285,13 +280,13 @@
           <div class="companion__image-wrapper">
             <picture>
               <source type="image/webp" srcset="img/firsova-desktop@2x.webp 2x, img/firsova-desktop@1x.webp 1x">
-              <img srcset="img/firsova-desktop@2x.jpg 2x, img/firsova-desktop@1x.jpg 1x" src="img/firsova-desktop@1x.jpg"
-                   alt="Таня Фирсова" class="companion__image">
+              <img srcset="img/firsova-desktop@2x.jpg 2x, img/firsova-desktop@1x.jpg 1x" src="img/firsova-desktop@1x.jpg" alt="Таня Фирсова" class="companion__image">
             </picture>
           </div>
           <div class="companion__level">
             <svg class="companion__level-circle" width="60" height="60" viewBox="0 0 60 60">
-              <circle r="28" cx="30" cy="30" fill="transparent" stroke="#ff8d30" stroke-width="3" stroke-dasharray="170px 5px"></circle>
+              <circle r="28" cx="30" cy="30" fill="transparent" stroke="#ff8d30" stroke-width="3"
+                      stroke-dasharray="170px 5px"></circle>
             </svg>
             <span class="companion__level-number">99</span>
             <span class="companion__level-desc">level</span>
@@ -345,13 +340,13 @@
           <div class="companion__image-wrapper">
             <picture>
               <source type="image/webp" srcset="img/demin-desktop@2x.webp 2x, img/demin-desktop@1x.webp 1x">
-              <img srcset="img/demin-desktop@2x.jpg 2x, img/demin-desktop@1x.jpg 1x" src="img/demin-desktop@1x.jpg"
-                   alt="Таня Фирсова" class="companion__image">
+              <img srcset="img/demin-desktop@2x.jpg 2x, img/demin-desktop@1x.jpg 1x" src="img/demin-desktop@1x.jpg" alt="Таня Фирсова" class="companion__image">
             </picture>
           </div>
           <div class="companion__level">
             <svg class="companion__level-circle" width="60" height="60" viewBox="0 0 60 60">
-              <circle r="28" cx="30" cy="30" fill="transparent" stroke="#ff8d30" stroke-width="3" stroke-dasharray="140px 35px"></circle>
+              <circle r="28" cx="30" cy="30" fill="transparent" stroke="#ff8d30" stroke-width="3"
+                      stroke-dasharray="140px 35px"></circle>
             </svg>
             <span class="companion__level-number">80</span>
             <span class="companion__level-desc">level</span>
@@ -408,8 +403,7 @@
       </h2>
       <picture>
         <source type="image/webp" srcset="img/rates@2x.webp 2x, img/rates@1x.webp 1x">
-        <img srcset="img/rates@2x.png 2x, img/rates@1x.png 1x" src="img/rates@1x.png" width="99" height="99"
-             alt="Имя профиля" class="rates__img">
+        <img srcset="img/rates@2x.png 2x, img/rates@1x.png 1x" src="img/rates@1x.png" width="99" height="99" alt="Имя профиля" class="rates__img">
       </picture>
       <ol class="rates__list">
         <li class="rates__item">
@@ -467,8 +461,7 @@
         Уже зарегистрированы? Тогда скорее <a href="auth.html" class="cta__login">авторизуйтесь.</a>
       </p>
       <form action="index.html" method="post" name="cta-form" class="leed-form">
-        <input type="email" class="leed-form__input" id="cta-email" name="cta-email" placeholder="E-mail"
-               aria-label="Ввести ваш email" required>
+        <input type="email" class="leed-form__input" id="cta-email" name="cta-email" placeholder="E-mail" aria-label="Ввести ваш email" required>
         <button type="submit" class="leed-form__button" aria-label="Отправить ваш email">
           Регистрация
           <svg class="button__right" width="10" height="14">
@@ -484,7 +477,8 @@
         <li class="contacts-list__item">
           <a href="tel:88005558628" class="contacts-list__link contacts-list__link--yellow">
               <span class="contacts-list__icon">
-                <svg class="contacts-list__svg" width="18" height="18"><use xlink:href="img/nav-icons.svg#contacts-phone"></use></svg>
+                <svg class="contacts-list__svg" width="18" height="18"><use
+                  xlink:href="img/nav-icons.svg#contacts-phone"></use></svg>
               </span>
             8 800 555-86-28
           </a>
@@ -492,7 +486,8 @@
         <li class="contacts-list__item">
           <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link contacts-list__link--yellow">
               <span class="contacts-list__icon">
-                <svg class="contacts-list__svg" width="18" height="13"><use xlink:href="img/nav-icons.svg#contacts-mail"></use></svg>
+                <svg class="contacts-list__svg" width="18" height="13"><use
+                  xlink:href="img/nav-icons.svg#contacts-mail"></use></svg>
               </span>
             mail@htmlacademy.ru
           </a>
@@ -529,14 +524,15 @@
   <div class="container">
     <a class="page-footer__logo-link">
       <picture>
-        <source type="image/webp" media="(min-width: 1380px)" srcset="img/logo-desktop-blue@2x.webp 2x, img/logo-desktop-blue@1x.webp 1x">
-        <source type="image/webp" media="(min-width: 728px)" srcset="img/logo-tablet-blue@2x.webp 2x, img/logo-tablet-blue@1x.webp 1x">
+        <source type="image/webp" media="(min-width: 1380px)"
+                srcset="img/logo-desktop-blue@2x.webp 2x, img/logo-desktop-blue@1x.webp 1x">
+        <source type="image/webp" media="(min-width: 728px)"
+                srcset="img/logo-tablet-blue@2x.webp 2x, img/logo-tablet-blue@1x.webp 1x">
         <source type="image/webp" srcset="img/logo-mobile-blue@2x.webp 2x, img/logo-mobile-blue@1x.webp 1x">
 
         <source media="(min-width: 1380px)" srcset="img/logo-desktop-blue@2x.png 2x, img/logo-desktop-blue@1x.png 1x">
         <source media="(min-width: 728px)" srcset="img/logo-tablet-blue@2x.png 2x, img/logo-tablet-blue@1x.png 1x">
-        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x, img/logo-mobile-blue@1x.png 1x"
-             alt="Погнали - сервис путешествий" class="logo logo--blue">
+        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x, img/logo-mobile-blue@1x.png 1x" alt="Погнали - сервис путешествий" class="logo logo--blue">
       </picture>
     </a>
     <ul class="main-nav__list social-list">
