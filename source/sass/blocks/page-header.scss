@@ -49,25 +49,6 @@
   display: block;
 }
 
-.page-header--scrolled {
-  background-color: #ffffff;
-  position: fixed;
-  left: 0;
-  right: 0;
-
-  & .page-header__menu-open {
-    fill: #cccccc;
-  }
-
-  & .logo--white {
-    display: none;
-  }
-
-  & .logo--blue {
-    display: block;
-  }
-}
-
 .page-header .container {
   display: flex;
   justify-content: space-between;
@@ -154,6 +135,25 @@
     & .logo--blue {
       display: block;
     }
+  }
+}
+
+.page-header--scrolled {
+  background-color: #ffffff;
+  position: fixed;
+  left: 0;
+  right: 0;
+
+  & .page-header__menu-open {
+    fill: #cccccc;
+  }
+
+  & .logo--white {
+    display: none;
+  }
+
+  & .logo--blue {
+    display: block;
   }
 }
 

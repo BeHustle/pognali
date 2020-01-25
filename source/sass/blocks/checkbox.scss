@@ -179,10 +179,20 @@
     }
   }
 
-  .checkbox--bordered .checkbox__text::before {
-    width: 36px;
-    height: 36px;
-    border-radius: 3px;
-    margin-right: 24px;
+  .checkbox--bordered {
+    & .checkbox__text::before {
+      width: 36px;
+      height: 36px;
+      border-radius: 3px;
+      margin-right: 24px;
+    }
+
+    & .checkbox__input:checked + .checkbox__text::after {
+      width: 36px;
+      height: 36px;
+      background-size: 12px 12px;
+      top: -18px;
+      left: -18px;
+    }
   }
 }

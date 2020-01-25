@@ -3,12 +3,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <script>
-    document.createElement("picture");
-  </script>
-  <script src="js/picturefill.min.js" async></script>
-  <script src="js/svg4everybody.min.js"></script>
-  <script>svg4everybody(); // run it now or whenever you are ready</script>
   <title>Погнали - главная</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" type="font/woff2">
@@ -17,6 +11,9 @@
   <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2">
 </head>
 <body>
+<div class="d-none">
+  <include src="build/img/sprite.svg"></include>
+</div>
 <header class="page-header page-header--main">
   <div class="container">
     <a class="page-header__logo-link">
@@ -50,24 +47,24 @@
     </a>
     <button class="page-header__toggle-menu" type="button" aria-label="открыть меню.">
       <svg class="page-header__menu-open" width="25" height="11">
-        <use xlink:href="img/nav-icons.svg#menu"></use>
+        <use xlink:href="#menu-icon"></use>
       </svg>
       <svg class="page-header__menu-close" width="19" height="19">
-        <use xlink:href="img/nav-icons.svg#menu-close"></use>
+        <use xlink:href="#menu-close-icon"></use>
       </svg>
     </button>
     <ul class="page-header__contacts page-header__contacts--main contacts-list">
       <li class="contacts-list__item">
         <a href="tel:88005558628" class="contacts-list__img contacts-list__img--tel" aria-label="Позвонить в сервис.">
           <svg width="18" height="18">
-            <use xlink:href="img/nav-icons.svg#topmenu-phone"></use>
+            <use xlink:href="#topmenu-phone-icon"></use>
           </svg>
         </a>
       </li>
       <li class="contacts-list__item">
         <a href="mailto:mail@htmlacademy.ru" class="contacts-list__img contacts-list__img--mail" aria-label="Написать на email">
           <svg width="18" height="18">
-            <use xlink:href="img/nav-icons.svg#topmenu-mail"></use>
+            <use xlink:href="#topmenu-mail-icon"></use>
           </svg>
         </a>
       </li>
@@ -78,7 +75,7 @@
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a class="site-list__link" data-hover="Направления">О сервисе</a>
+          <a class="site-list__link" data-hover="О сервисе">О сервисе</a>
         </li>
         <li class="site-list__item">
           <a href="form.html" class="site-list__link" data-hover="Направления">Направления</a>
@@ -94,7 +91,7 @@
         <li class="contacts-list__item">
           <a href="tel:88005558628" class="contacts-list__link">
               <span class="contacts-list__icon">
-                <svg width="18" height="18"><use xlink:href="img/nav-icons.svg#contacts-phone"></use></svg>
+                <svg width="18" height="18"><use xlink:href="#contacts-phone-icon"></use></svg>
               </span>
             8 800 555-86-28
           </a>
@@ -102,7 +99,7 @@
         <li class="contacts-list__item">
           <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link">
               <span class="contacts-list__icon">
-                <svg width="18" height="13"><use xlink:href="img/nav-icons.svg#contacts-mail"></use></svg>
+                <svg width="18" height="13"><use xlink:href="#contacts-mail-icon"></use></svg>
               </span>
             mail@htmlacademy.ru
           </a>
@@ -112,21 +109,21 @@
         <li class="social-list__item">
           <a href="#" aria-label="Погнали в facebook" class="social-list__link">
             <svg class="social-list__icon" width="23" height="21">
-              <use xlink:href="img/social-icons.svg#facebook"></use>
+              <use xlink:href="#facebook-icon"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a href="#" aria-label="Погнали в вконтакте" class="social-list__link">
             <svg class="social-list__icon" width="23" height="21">
-              <use xlink:href="img/social-icons.svg#vk"></use>
+              <use xlink:href="#vk-icon"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a href="#" aria-label="Погнали в инстаграм" class="social-list__link">
             <svg class="social-list__icon" width="23" height="21">
-              <use xlink:href="img/social-icons.svg#instagram"></use>
+              <use xlink:href="#instagram-icon"></use>
             </svg>
           </a>
         </li>
@@ -176,7 +173,7 @@
       <button type="button" class="button button--arrow">
         Подробнее
         <svg class="button__right" width="10" height="14">
-          <use xlink:href="img/nav-icons.svg#arrow-right"></use>
+          <use xlink:href="#arrow-right-icon"></use>
         </svg>
       </button>
     </div>
@@ -193,7 +190,7 @@
         <a href="form.html" class="button button--arrow">
           Показать все
           <svg class="button__right" width="10" height="14">
-            <use xlink:href="img/nav-icons.svg#arrow-right"></use>
+            <use xlink:href="#arrow-right-icon"></use>
           </svg>
         </a>
       </div>
@@ -271,7 +268,7 @@
         <a href="catalog.html" class="companions__show-btn button button--arrow">
           Показать всех
           <svg class="button__right" width="10" height="14">
-            <use xlink:href="img/nav-icons.svg#arrow-right"></use>
+            <use xlink:href="#arrow-right-icon"></use>
           </svg>
         </a>
       </div>
@@ -315,22 +312,22 @@
             <ul class="transport">
               <li class="transport__item transport__item--active tooltip" data-tooltip="Авиаперелет">
                 <svg width="24" height="21" class="transport__icon">
-                  <use xlink:href="img/transport-icons.svg#plane"></use>
+                  <use xlink:href="#plane-icon"></use>
                 </svg>
               </li>
               <li class="transport__item tooltip" data-tooltip="Автопутешествие">
                 <svg width="24" height="21" class="transport__icon">
-                  <use xlink:href="img/transport-icons.svg#bus"></use>
+                  <use xlink:href="#bus-icon"></use>
                 </svg>
               </li>
               <li class="transport__item tooltip" data-tooltip="Велопутешествие">
                 <svg width="24" height="21" class="transport__icon">
-                  <use xlink:href="img/transport-icons.svg#bike"></use>
+                  <use xlink:href="#bike-icon"></use>
                 </svg>
               </li>
               <li class="transport__item tooltip" data-tooltip="Пешее путешествие">
                 <svg width="24" height="21" class="transport__icon">
-                  <use xlink:href="img/transport-icons.svg#run"></use>
+                  <use xlink:href="#run-icon"></use>
                 </svg>
               </li>
             </ul>
@@ -371,22 +368,22 @@
             <ul class="transport">
               <li class="transport__item transport__item--active tooltip" data-tooltip="Авиаперелет">
                 <svg width="24" height="21" class="transport__icon">
-                  <use xlink:href="img/transport-icons.svg#plane"></use>
+                  <use xlink:href="#plane-icon"></use>
                 </svg>
               </li>
               <li class="transport__item transport__item--active tooltip" data-tooltip="Автопутешествие">
                 <svg width="24" height="21" class="transport__icon">
-                  <use xlink:href="img/transport-icons.svg#bus"></use>
+                  <use xlink:href="#bus-icon"></use>
                 </svg>
               </li>
               <li class="transport__item tooltip" data-tooltip="Велопутешествие">
                 <svg width="24" height="21" class="transport__icon">
-                  <use xlink:href="img/transport-icons.svg#bike"></use>
+                  <use xlink:href="#bike-icon"></use>
                 </svg>
               </li>
               <li class="transport__item transport__item--active tooltip" data-tooltip="Пешее путешествие">
                 <svg width="24" height="21" class="transport__icon">
-                  <use xlink:href="img/transport-icons.svg#run"></use>
+                  <use xlink:href="#run-icon"></use>
                 </svg>
               </li>
             </ul>
@@ -421,7 +418,7 @@
       </ol>
       <a href="rates.html" class="rates__modal-show">
           <span class="rates__business-icon">
-            <svg width="17" height="21"><use xlink:href="img/nav-icons.svg#business"></use></svg>
+            <svg width="17" height="21"><use xlink:href="#business-icon"></use></svg>
           </span>
         Показать тарифы для бизнеса
       </a>
@@ -465,7 +462,7 @@
         <button type="submit" class="leed-form__button" aria-label="Отправить ваш email">
           Регистрация
           <svg class="button__right" width="10" height="14">
-            <use xlink:href="img/nav-icons.svg#arrow-right"></use>
+            <use xlink:href="#arrow-right-icon"></use>
           </svg>
         </button>
         <label for="cta-email" class="leed-form__description">
@@ -477,8 +474,8 @@
         <li class="contacts-list__item">
           <a href="tel:88005558628" class="contacts-list__link contacts-list__link--yellow">
               <span class="contacts-list__icon">
-                <svg class="contacts-list__svg" width="18" height="18"><use
-                  xlink:href="img/nav-icons.svg#contacts-phone"></use></svg>
+                <svg class="contacts-list__svg" width="18" height="18">
+                  <use xlink:href="#contacts-phone-icon"></use></svg>
               </span>
             8 800 555-86-28
           </a>
@@ -486,8 +483,8 @@
         <li class="contacts-list__item">
           <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link contacts-list__link--yellow">
               <span class="contacts-list__icon">
-                <svg class="contacts-list__svg" width="18" height="13"><use
-                  xlink:href="img/nav-icons.svg#contacts-mail"></use></svg>
+                <svg class="contacts-list__svg" width="18" height="13">
+                  <use xlink:href="#contacts-mail-icon"></use></svg>
               </span>
             mail@htmlacademy.ru
           </a>
@@ -501,14 +498,16 @@
     <div class="container">
       <a href="https://yandex.ru/maps/-/CBFXQGSKCD" target="_blank" class="contacts__link">
           <span class="contacts__location">
-            <svg width="14" height="22"><use xlink:href="img/nav-icons.svg#location"></use></svg>
+            <svg width="14" height="22">
+              <use xlink:href="#location-icon"></use>
+            </svg>
           </span>
         ул. Большая Конюшенная,&nbsp;19/8
       </a>
       <a href="http://tiny.cc/n03miz" target="_blank" class="contacts__btn button button--bordered">
         Проложить маршрут
         <svg class="button__right" width="10" height="14">
-          <use xlink:href="img/nav-icons.svg#arrow-right"></use>
+          <use xlink:href="#arrow-right-icon"></use>
         </svg>
       </a>
     </div>
@@ -539,21 +538,21 @@
       <li class="social-list__item">
         <a href="#" aria-label="Погнали в facebook" class="social-list__link">
           <svg class="social-list__icon" width="23" height="21">
-            <use xlink:href="img/social-icons.svg#facebook"></use>
+            <use xlink:href="#facebook-icon"></use>
           </svg>
         </a>
       </li>
       <li class="social-list__item">
         <a href="#" aria-label="Погнали в вконтакте" class="social-list__link">
           <svg class="social-list__icon" width="23" height="21">
-            <use xlink:href="img/social-icons.svg#vk"></use>
+            <use xlink:href="#vk-icon"></use>
           </svg>
         </a>
       </li>
       <li class="social-list__item">
         <a href="#" aria-label="Погнали в инстаграм" class="social-list__link">
           <svg class="social-list__icon" width="23" height="21">
-            <use xlink:href="img/social-icons.svg#instagram"></use>
+            <use xlink:href="#instagram-icon"></use>
           </svg>
         </a>
       </li>
@@ -566,9 +565,6 @@
     </div>
   </div>
 </footer>
-<script src="js/jquery-1.6.1.min.js"></script>
-<script src="js/enquire.min.js"></script>
-<script src="js/jquery.ui-slider.js"></script>
-<script src="js/script.js"></script>
+<script src="js/main-min.js"></script>
 </body>
 </html>
