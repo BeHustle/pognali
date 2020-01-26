@@ -15,9 +15,9 @@
   <include src="build/img/sprite.svg"></include>
 </div>
 <header class="page-header">
-  <div class="container">
-    <a href="index.html" class="page-header__logo-link">
-      <div class="logo logo--white">
+  <div class="page-header__container container">
+    <a class="page-header__logo-link">
+      <div class="page-header__logo page-header__logo--white logo">
         <picture>
           <source type="image/webp" media="(min-width: 1380px)"
                   srcset="img/logo-desktop-white@2x.webp 2x, img/logo-desktop-white@1x.webp 1x">
@@ -31,7 +31,7 @@
           <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x, img/logo-mobile-white@1x.png 1x" alt="Погнали - сервис путешествий">
         </picture>
       </div>
-      <div class="logo logo--blue">
+      <div class="page-header__logo page-header__logo--blue logo">
         <picture>
           <source type="image/webp" media="(min-width: 1380px)"
                   srcset="img/logo-desktop-blue@2x.webp 2x, img/logo-desktop-blue@1x.webp 1x">
@@ -53,76 +53,76 @@
         <use xlink:href="#menu-close-icon"></use>
       </svg>
     </button>
-    <ul class="page-header__contacts contacts-list">
-      <li class="contacts-list__item">
+    <ul class="page-header__contacts page-header__contacts--top contacts-list">
+      <li class="page-header__contacts-item contacts-list__item">
         <a href="tel:88005558628" class="contacts-list__img contacts-list__img--tel" aria-label="Позвонить в сервис.">
           <svg width="18" height="18">
             <use xlink:href="#topmenu-phone-icon"></use>
           </svg>
         </a>
       </li>
-      <li class="contacts-list__item">
+      <li class="page-header__contacts-item contacts-list__item">
         <a href="mailto:mail@htmlacademy.ru" class="contacts-list__img contacts-list__img--mail" aria-label="Написать на email">
           <svg width="18" height="18">
             <use xlink:href="#topmenu-mail-icon"></use>
           </svg>
         </a>
       </li>
-      <li class="contacts-list__item contacts-list__auth">
-        <a href="auth.html" class="button">Авторизация</a>
+      <li class="page-header__contacts-item page-header__auth contacts-list__item contacts-list__auth">
+        <a href="auth.html" class="page-header__auth-btn contacts-list__auth-btn button">Авторизация</a>
       </li>
-    </ul>
-    <nav class="main-nav">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="index.html" class="site-list__link" data-hover="О сервисе">О сервисе</a>
+    </ul><!-- заменить на внутренних страницах -->
+    <nav class="page-header__nav main-nav">
+      <ul class="page-header__nav-list page-header__site main-nav__list main-nav__site-list site-list">
+        <li class="page-header__site-item site-list__item">
+          <a class="page-header__site-link site-list__link" data-hover="О сервисе">О сервисе</a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link" data-hover="Направления">Направления</a>
+        <li class="page-header__site-item site-list__item">
+          <a href="form.html" class="page-header__site-link site-list__link" data-hover="Направления">Направления</a>
         </li>
-        <li class="site-list__item">
-          <a href="catalog.html" class="site-list__link" data-hover="Попутчики">Попутчики</a>
+        <li class="page-header__site-item site-list__item">
+          <a href="catalog.html" class="page-header__site-link site-list__link" data-hover="Попутчики">Попутчики</a>
         </li>
       </ul>
-      <ul class="main-nav__list contacts-list">
-        <li class="contacts-list__item contacts-list__auth">
-          <a href="auth.html" class="button">Авторизация</a>
+      <ul class="page-header__nav-list page-header__contacts main-nav__list main-nav__contacts-list contacts-list">
+        <li class="main-nav__auth contacts-list__item contacts-list__auth">
+          <a href="auth.html" class="contacts-list__auth-btn button">Авторизация</a>
         </li>
         <li class="contacts-list__item">
-          <a href="tel:88005558628" class="contacts-list__link">
-              <span class="contacts-list__icon">
+          <a href="tel:88005558628" class="main-nav__contacts-link contacts-list__link">
+              <span class="main-nav__contacts-icon contacts-list__icon">
                 <svg width="18" height="18"><use xlink:href="#contacts-phone-icon"></use></svg>
               </span>
             8 800 555-86-28
           </a>
         </li>
         <li class="contacts-list__item">
-          <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link">
-              <span class="contacts-list__icon">
+          <a href="mailto:mail@htmlacademy.ru" class="main-nav__contacts-link contacts-list__link">
+              <span class="main-nav__contacts-icon contacts-list__icon">
                 <svg width="18" height="13"><use xlink:href="#contacts-mail-icon"></use></svg>
               </span>
             mail@htmlacademy.ru
           </a>
         </li>
       </ul>
-      <ul class="main-nav__list social-list">
-        <li class="social-list__item">
+      <ul class="page-header__nav-list page-header__social main-nav__list main-nav__social-list social-list">
+        <li class="main-nav__social-item social-list__item">
           <a href="#" aria-label="Погнали в facebook" class="social-list__link">
-            <svg class="social-list__icon" width="23" height="21">
+            <svg class="main-nav__social-icon social-list__icon" width="23" height="21">
               <use xlink:href="#facebook-icon"></use>
             </svg>
           </a>
         </li>
-        <li class="social-list__item">
+        <li class="main-nav__social-item social-list__item">
           <a href="#" aria-label="Погнали в вконтакте" class="social-list__link">
-            <svg class="social-list__icon" width="23" height="21">
+            <svg class="main-nav__social-icon social-list__icon" width="23" height="21">
               <use xlink:href="#vk-icon"></use>
             </svg>
           </a>
         </li>
-        <li class="social-list__item">
+        <li class="main-nav__social-item social-list__item">
           <a href="#" aria-label="Погнали в инстаграм" class="social-list__link">
-            <svg class="social-list__icon" width="23" height="21">
+            <svg class="main-nav__social-icon social-list__icon" width="23" height="21">
               <use xlink:href="#instagram-icon"></use>
             </svg>
           </a>
@@ -134,14 +134,14 @@
 
 <main class="form-main">
   <section class="main-title">
-    <div class="container">
+    <div class="main-title__container container">
       <h1 class="page-title page-title--underline">Направления</h1>
     </div>
   </section>
 
   <section class="form-main__companion companion">
     <h2 class="visually-hidden">Мои данные</h2>
-    <div class="container">
+    <div class="form-main__companion-container container">
       <div class="companion__level companion__level--form">
         <svg class="companion__level-circle" width="102" height="102" viewBox="0 0 100 100">
           <circle r="47" cx="50" cy="50" fill="transparent" stroke="#ff8d30" stroke-width="3"
@@ -162,11 +162,11 @@
       <button class="companion__change-photo"><span class="companion__desktop-hide">Сменить</span> фото</button>
       <div class="companion__fieldset-container companion__fieldset-container--tags">
         <div class="companion__fieldset companion__fieldset--big">Тэги</div>
-        <textarea class="tags tags--textarea">#бургер #бар #футбол #концерт #крафт</textarea>
+        <textarea class="companion__tags companion__tags--textarea tags tags--textarea">#бургер #бар #футбол #концерт #крафт</textarea>
       </div>
       <div class="companion__fieldset-container companion__fieldset-container--transport">
         <div class="companion__fieldset companion__fieldset--big">Транспорт</div>
-        <ul class="transport transport--form">
+        <ul class="companion__transport companion__transport-form transport transport--form">
           <li class="transport__item">
             <button class="transport__button transport__button--active tooltip" data-tooltip="Авиаперелет" type="button"
                     aria-label="Выбрать транспорт самолет">
@@ -207,7 +207,7 @@
   </section>
 
   <section class="plans">
-    <div class="container">
+    <div class="plans__container container">
       <h2 class="plans__title">Мои планы:</h2>
       <ol class="plans__list">
         <li class="plan">
@@ -235,7 +235,7 @@
   </section>
 
   <section class="add-plan">
-    <div class="container">
+    <div class="add-plan__container container">
       <h2 class="add-plan__title">Добавить план:</h2>
       <div class="add-plan__nav">
         <a class="add-plan__nav-link add-plan__nav-link--current" aria-label="шаг 1"></a>
@@ -245,7 +245,7 @@
       <form action="https://echo.htmlacademy.ru" method="post">
         <div id="step1" class="step">
           <h3 class="step__title">Шаг 1.<br> Даты пребывания</h3>
-          <p class="content-text content-text--grey">
+          <p class="step__text content-text content-text--grey">
             Укажите предпочтительное количество попутчиков, которых<br>
             вы хотели бы позвать в поездку и ее предполагаемую длительность.
           </p>
@@ -254,7 +254,7 @@
             <a href="#step2" class="step__nav-link">Маршрут</a>
             <a href="#step3" class="step__nav-link">Развлечения</a>
           </div>
-          <div class="input-numbers">
+          <div class="step__input-numbers input-numbers">
             <label for="people-number" class="input-numbers__label">Ищу попутчиков:</label>
             <label for="people-number" class="input-numbers__label input-numbers__label--opacity">чел.</label>
             <button class="input-numbers__btn input-numbers__btn--reduce" aria-label="уменьшить количество."
@@ -263,14 +263,14 @@
                 <use xlink:href="#minus-icon"></use>
               </svg>
             </button>
-            <input class="input-numbers__input" type="number" name="people-number" id="people-number" aria-label="ввести количество попутчиков.">
+            <input class="input-numbers__input" type="number" name="people-number" id="people-number" aria-label="ввести количество попутчиков." value="2">
             <button class="input-numbers__btn input-numbers__btn--increase" aria-label="увеличить количество." type="button">
               <svg width="14" height="14">
                 <use xlink:href="#plus-icon"></use>
               </svg>
             </button>
           </div>
-          <div class="input-numbers input-numbers--duration">
+          <div class="step__input-numbers step__input-numbers--duration input-numbers">
             <label for="days-number" class="input-numbers__label">Длительность:</label>
             <label for="days-number" class="input-numbers__label input-numbers__label--opacity">дн.</label>
             <button class="input-numbers__btn input-numbers__btn--reduce" aria-label="уменьшить количество." type="button">
@@ -278,18 +278,18 @@
                 <use xlink:href="#minus-icon"></use>
               </svg>
             </button>
-            <input class="input-numbers__input" type="number" name="days-number" id="days-number" aria-label="ввести количество дней.">
+            <input class="input-numbers__input" type="number" name="days-number" id="days-number" aria-label="ввести количество дней." value="2">
             <button class="input-numbers__btn input-numbers__btn--increase" aria-label="увеличить количество." type="button">
               <svg width="14" height="14">
                 <use xlink:href="#plus-icon"></use>
               </svg>
             </button>
           </div>
-          <label for="children" class="checkbox checkbox--bordered">
+          <label for="children" class="step__checkbox checkbox checkbox--bordered">
             <input class="checkbox__input" type="checkbox" name="children" id="children">
-            <span class="checkbox__text">Можно с детьми</span>
+            <span class="step__checkbox-text">Можно с детьми</span>
           </label>
-          <div class="calendar">
+          <div class="step__calendar calendar">
             <button type="button" class="calendar__btn calendar__btn--previous" aria-label="Предыдущий месяц"></button>
             <div class="calendar__title">Март 2019</div>
             <button type="button" class="calendar__btn calendar__btn--next" aria-label="Следующий месяц"></button>
@@ -483,7 +483,7 @@
 
         <div id="step2" class="step step--countries">
           <h3 class="step__title">Шаг 2. <br>Маршрут</h3>
-          <p class="content-text content-text--grey">
+          <p class="step__text content-text content-text--grey">
             Укажите страны, которые вы хотели посетить.<br>Это&nbsp;может&nbsp;быть&nbsp;одна или сразу несколько.
           </p>
           <div class="step__nav">
@@ -491,7 +491,7 @@
             <a class="step__nav-link">Маршрут</a>
             <a href="#step3" class="step__nav-link">Развлечения</a>
           </div>
-          <div class="country-select"><!-- список стран -->
+          <div class="step__country-select country-select"><!-- список стран -->
             <button class="country-select__button" type="button">
               <span class="country-select__text-btn">Босния и Герцеговина</span>
               <svg width="12" height="7">
@@ -507,7 +507,7 @@
               </svg>
             </button>
           </div>
-          <div class="country-select"><!-- список стран -->
+          <div class="step__country-select country-select"><!-- список стран -->
             <button class="country-select__button" type="button">
               <span class="country-select__text-btn">Чехия</span>
               <svg width="12" height="7">
@@ -523,7 +523,7 @@
               </svg>
             </button>
           </div>
-          <div class="country-select country-select--choose"><!-- список стран -->
+          <div class="step__country-select country-select country-select--choose"><!-- список стран -->
             <button class="country-select__button country-select__button--choose" type="button">
               <span class="country-select__text-btn">Выберите страну</span>
               <svg width="12" height="7">
@@ -536,7 +536,7 @@
               </svg>
             </button>
           </div>
-          <div class="country-select country-select--add"><!-- список стран -->
+          <div class="step__country-select country-select country-select--add"><!-- список стран -->
             <button class="country-select__button country-select__button--add" type="button">
               <span class="country-select__text-btn">Добавить страну</span>
               <svg width="14" height="14">
@@ -565,37 +565,37 @@
                 </svg>
               </button>
             </div>
-            <ul class="alphabet">
-              <li class="alphabet__item alphabet__item--active">
-                <a href="#" class="alphabet__link alphabet__link--active">А</a>
+            <ul class="alphabet-modal__letters alphabet">
+              <li class="alphabet__item alphabet__item--active alphabet-modal__item">
+                <a href="#" class="alphabet__link alphabet-modal__link alphabet__link--active alphabet-modal__link--active">А</a>
               </li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">Б</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">В</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">Г</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">Д</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">Е</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">З</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">И</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">К</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">Л</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">М</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">Н</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">О</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">П</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">Р</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">С</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">Т</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">У</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">Ф</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">Х</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">Ч</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">Ш</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">Э</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">Ю</a></li>
-              <li class="alphabet__item"><a href="#" class="alphabet__link">Я</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">Б</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">В</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">Г</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">Д</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">Е</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">З</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">И</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">К</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">Л</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">М</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">Н</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">О</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">П</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">Р</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">С</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">Т</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">У</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">Ф</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">Х</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">Ч</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">Ш</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">Э</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">Ю</a></li>
+              <li class="alphabet__item alphabet-modal__item"><a href="#" class="alphabet__link alphabet-modal__link">Я</a></li>
             </ul>
             <div class="alphabet-modal__container">
-              <ul class="countries countries--active">
+              <ul class="countries countries--active alphabet-modal__countries alphabet-modal__countries--active">
                 <li class="countries__item">
                   <a href="#" class="countries__link">Австралия</a>
                 </li>
@@ -630,7 +630,7 @@
                   <a href="#" class="countries__link">Афганистан</a>
                 </li>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
                 <li class="countries__item">
                   <a href="#" class="countries__link">Багамские Острова</a>
                 </li>
@@ -683,7 +683,7 @@
                   <a href="#" class="countries__link">Бутан</a>
                 </li>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
                 <li class="countries__item">
                   <a href="#" class="countries__link">Вануату</a>
                 </li>
@@ -703,7 +703,7 @@
                   <a href="#" class="countries__link">Вьетнам</a>
                 </li>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
                 <li class="countries__item">
                   <a href="#" class="countries__link">Габон</a>
                 <li class="countries__item">
@@ -731,7 +731,7 @@
                 <li class="countries__item">
                   <a href="#" class="countries__link">Грузия</a>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
 
                 <li class="countries__item">
                   <a href="#" class="countries__link">Дания</a>
@@ -742,12 +742,12 @@
                 <li class="countries__item">
                   <a href="#" class="countries__link">Доминикана</a>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
                 <li class="countries__item">
                   <a href="#" class="countries__link">Египет</a>
                 </li>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
                 <li class="countries__item">
                   <a href="#" class="countries__link">Замбия</a>
                 </li>
@@ -755,7 +755,7 @@
                   <a href="#" class="countries__link">Зимбабве</a>
                 </li>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
                 <li class="countries__item">
                   <a href="#" class="countries__link">Израиль</a>
                 </li>
@@ -787,7 +787,7 @@
                   <a href="#" class="countries__link">Италия</a>
                 </li>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
                 <li class="countries__item">
                   <a href="#" class="countries__link">Кабо-Верде</a>
                 </li>
@@ -825,7 +825,7 @@
                   <a href="#" class="countries__link">Колумбия</a>
                 </li>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
                 <li class="countries__item">
                   <a href="#" class="countries__link">Лаос</a>
                 </li>
@@ -854,38 +854,38 @@
                   <a href="#" class="countries__link">Люксембург</a>
                 </li>
               </ul>
-              <ul class="countries">
-                <li class="countries-filter__item">
+              <ul class="countries alphabet-modal__countries">
+                <li class="countries__item">
                   <a href="#" class="countries__link">Маврикий</a>
                 </li>
-                <li class="countries-filter__item">
+                <li class="countries__item">
                   <a href="#" class="countries__link">Мавритания</a>
                 </li>
-                <li class="countries-filter__item">
+                <li class="countries__item">
                   <a href="#" class="countries__link">Мадагаскар</a>
                 </li>
-                <li class="countries-filter__item">
+                <li class="countries__item">
                   <a href="#" class="countries__link">Малави</a>
                 </li>
-                <li class="countries-filter__item">
+                <li class="countries__item">
                   <a href="#" class="countries__link">Малайзия</a>
                 </li>
-                <li class="countries-filter__item">
+                <li class="countries__item">
                   <a href="#" class="countries__link">Мали</a>
                 </li>
-                <li class="countries-filter__item">
+                <li class="countries__item">
                   <a href="#" class="countries__link">Мальдивы</a>
                 </li>
-                <li class="countries-filter__item">
+                <li class="countries__item">
                   <a href="#" class="countries__link">Мальта</a>
                 </li>
-                <li class="countries-filter__item">
+                <li class="countries__item">
                   <a href="#" class="countries__link">Марокко</a>
                 </li>
-                <li class="countries-filter__item">
+                <li class="countries__item">
                   <a href="#" class="countries__link">Мексика</a>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
                 <li class="countries__item">
                   <a href="#" class="countries__link">Намибия</a>
                 </li>
@@ -914,7 +914,7 @@
                   <a href="#" class="countries__link">Норвегия</a>
                 </li>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
                 <li class="countries__item">
                   <a href="#" class="countries__link">ОАЭ</a>
                 </li>
@@ -922,7 +922,7 @@
                   <a href="#" class="countries__link">Оман</a>
                 </li>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
                 <li class="countries__item">
                   <a href="#" class="countries__link">Пакистан</a>
                 </li>
@@ -948,7 +948,7 @@
                   <a href="#" class="countries__link">Португалия</a>
                 </li>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
                 <li class="countries__item">
                   <a href="#" class="countries__link">Руанда</a>
                 </li>
@@ -959,7 +959,7 @@
                   <a href="#" class="countries__link">Россия</a>
                 </li>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
                 <li class="countries__item">
                   <a href="#" class="countries__link">Сальвадор</a>
                 </li>
@@ -997,7 +997,7 @@
                   <a href="#" class="countries__link">США</a>
                 </li>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
                 <li class="countries__item">
                   <a href="#" class="countries__link">Таджикистан</a>
                 </li>
@@ -1029,7 +1029,7 @@
                   <a href="#" class="countries__link">Турция</a>
                 </li>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
                 <li class="countries__item">
                   <a href="#" class="countries__link">Уганда</a>
                 </li>
@@ -1043,7 +1043,7 @@
                   <a href="#" class="countries__link">Уругвай</a>
                 </li>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
                 <li class="countries__item">
                   <a href="#" class="countries__link">Фиджи</a>
                 </li>
@@ -1057,12 +1057,12 @@
                   <a href="#" class="countries__link">Франция</a>
                 </li>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
                 <li class="countries__link">
                   <a href="#" class="countries__link">Хорватия</a>
                 </li>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
                 <li class="countries__item">
                   <a href="#" class="countries__link">Чад</a>
                 </li>
@@ -1076,7 +1076,7 @@
                   <a href="#" class="countries__link">Чили</a>
                 </li>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
                 <li class="countries__item">
                   <a href="#" class="countries__link">Швейцария</a>
                 </li>
@@ -1087,7 +1087,7 @@
                   <a href="#" class="countries__link">Шри-Ланка</a>
                 </li>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
                 <li class="countries__item">
                   <a href="#" class="countries__link">Эквадор</a>
                 </li>
@@ -1104,7 +1104,7 @@
                   <a href="#" class="countries__link">Эфиопия</a>
                 </li>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
                 <li class="countries__item">
                   <a href="#" class="countries__link">ЮАР</a>
                 </li>
@@ -1112,7 +1112,7 @@
                   <a href="#" class="countries__link">Южный судан</a>
                 </li>
               </ul>
-              <ul class="countries">
+              <ul class="countries alphabet-modal__countries">
                 <li class="countries__item">
                   <a href="#" class="countries__link">Ямайка</a>
                 </li>
@@ -1126,7 +1126,7 @@
 
         <div id="step3" class="step step--entertainment">
           <h3 class="step__title">Шаг 3. <br>Развлечения</h3>
-          <p class="content-text content-text--grey">
+          <p class="step__text content-text content-text--grey">
             Наконец, расскажите о своих планах времяпровождения.<br>
             Можно писать в свободной форме и ставить тэги.
           </p>
@@ -1172,7 +1172,7 @@
 </main>
 
 <footer class="page-footer">
-  <div class="container">
+  <div class="page-footer__container container">
     <a href="index.html" class="page-footer__logo-link">
       <picture>
         <source type="image/webp" media="(min-width: 1380px)"
@@ -1186,31 +1186,31 @@
         <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x, img/logo-mobile-blue@1x.png 1x" alt="Погнали - сервис путешествий" class="logo logo--blue">
       </picture>
     </a>
-    <ul class="main-nav__list social-list">
-      <li class="social-list__item">
-        <a href="#" aria-label="Погнали в facebook" class="social-list__link">
-          <svg class="social-list__icon" width="23" height="21">
+    <ul class="page-footer__social social-list">
+      <li class="page-footer__social-item social-list__item">
+        <a href="#" aria-label="Погнали в facebook" class="page-footer__social-link social-list__link">
+          <svg class="page-footer__social-icon social-list__icon" width="23" height="21">
             <use xlink:href="#facebook-icon"></use>
           </svg>
         </a>
       </li>
-      <li class="social-list__item">
-        <a href="#" aria-label="Погнали в вконтакте" class="social-list__link">
-          <svg class="social-list__icon" width="23" height="21">
+      <li class="page-footer__social-item social-list__item">
+        <a href="#" aria-label="Погнали в вконтакте" class="page-footer__social-link social-list__link">
+          <svg class="page-footer__social-icon social-list__icon" width="23" height="21">
             <use xlink:href="#vk-icon"></use>
           </svg>
         </a>
       </li>
-      <li class="social-list__item">
-        <a href="#" aria-label="Погнали в инстаграм" class="social-list__link">
-          <svg class="social-list__icon" width="23" height="21">
+      <li class="page-footer__social-item social-list__item">
+        <a href="#" aria-label="Погнали в инстаграм" class="page-footer__social-link social-list__link">
+          <svg class="page-footer__social-icon social-list__icon" width="23" height="21">
             <use xlink:href="#instagram-icon"></use>
           </svg>
         </a>
       </li>
     </ul>
-    <div class="copyright">
-      <p class="content-text content-text--grey">Разработано</p>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text content-text content-text--grey">Разработано</p>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
         <img src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
       </a>

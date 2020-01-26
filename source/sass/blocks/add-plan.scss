@@ -20,7 +20,7 @@
   margin-bottom: 30px;
 }
 
-.add-plan .container {
+.add-plan .add-plan__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -59,7 +59,7 @@
     width: 618px; /** для ie11 **/
   }
 
-  .add-plan .container {
+  .add-plan .add-plan__container {
     padding-top: 49px;
     padding-bottom: 65px;
     padding-left: 55px;
@@ -96,7 +96,7 @@
     width: 1320px; /** для ie11 **/
   }
 
-  .add-plan .container {
+  .add-plan .add-plan__container {
     padding-bottom: 76px;
     padding-left: 30px;
     padding-right: 30px;

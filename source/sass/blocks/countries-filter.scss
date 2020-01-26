@@ -10,7 +10,7 @@
   left: 0;
 }
 
-.countries-filter .container {
+.countries-filter .countries-filter__container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -106,19 +106,19 @@
   }
 }
 
-.countries-filter .continents,
-.countries-filter .alphabet,
+.countries-filter .countries-filter__continents,
+.countries-filter .countries-filter__alphabet,
 .countries-filter__countries-container {
   padding-left: 25px;
   padding-right: 25px;
 }
 
-.countries-filter .continents {
+.countries-filter .countries-filter__continents {
   padding-top: 15px;
   padding-bottom: 22px;
 }
 
-.countries-filter .alphabet {
+.countries-filter .countries-filter__alphabet {
   padding: 0;
   margin-left: 25px;
   margin-right: 24px;
@@ -140,7 +140,7 @@
     padding-top: 60px;
   }
 
-  .countries-filter .container {
+  .countries-filter .countries-filter__container {
     padding-left: 55px;
     padding-right: 55px;
   }
@@ -167,21 +167,21 @@
     display: none;
   }
 
-  .countries-filter .continents,
-  .countries-filter .alphabet,
+  .countries-filter .countries-filter__continents,
+  .countries-filter .countries-filter__alphabet,
   .countries-filter__countries-container {
     padding-left: 0;
     padding-right: 0;
   }
 
-  .countries-filter .continents {
+  .countries-filter .countries-filter__continents {
     padding-top: 33px;
     padding-bottom: 57px;
     display: flex;
     order: -1;
   }
 
-  .countries-filter .alphabet {
+  .countries-filter .countries-filter__alphabet {
     margin-left: 0;
     margin-right: 58px;
     padding-top: 0;
@@ -243,7 +243,7 @@
     flex-wrap: wrap;
   }
 
-  .countries-filter .continents {
+  .countries-filter .countries-filter__continents {
     padding-top: 56px;
     padding-bottom: 67px;
     margin-right: 50px;
@@ -253,12 +253,12 @@
     }
   }
 
-  .countries-filter .container {
+  .countries-filter .countries-filter__container {
     padding-left: 50px;
     padding-right: 15px;
   }
 
-  .countries-filter .countries {
+  .countries-filter .countries-filter__countries {
     width: 251px;
   }
 
@@ -267,7 +267,7 @@
     margin-top: -5px;
   }
 
-  .countries-filter .alphabet {
+  .countries-filter .countries-filter__alphabet {
     display: none;
   }
 

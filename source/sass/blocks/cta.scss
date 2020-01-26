@@ -7,7 +7,7 @@
   background-color: $blue-white;
 }
 
-.cta .container {
+.cta .cta__container {
   padding-top: 70px;
   padding-bottom: 30px;
 }
@@ -26,7 +26,7 @@
   }
 }
 
-.cta .content-title {
+.cta .cta__content-title {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -37,7 +37,7 @@
   padding-right: 30px;
 }
 
-.cta .leed-form {
+.cta .cta__form {
   margin-top: 30px;
   margin-bottom: 19px;
 }
@@ -50,7 +50,7 @@
     z-index: 15;
   }
 
-  .cta .container {
+  .cta .cta__container {
     padding-left: 55px;
     padding-right: 55px;
     padding-top: 72px;
@@ -62,16 +62,16 @@
     padding-right: 0;
   }
 
-  .cta .leed-form {
+  .cta .cta__form {
     margin-top: 65px;
     margin-bottom: 40px;
   }
 
-  .cta .content-title {
+  .cta .cta__content-title {
     margin-bottom: 59px;
   }
 
-  .cta .contacts-list__icon {
+  .cta .cta__contacts-icon {
     width: 68px;
     height: 68px;
     margin-right: 23px;
@@ -83,21 +83,21 @@
 }
 
 @media only screen and (min-width: $desktop-width) {
-  .cta .container {
+  .cta .cta__container {
     padding: 102px 101px;
   }
 
-  .cta .leed-form {
+  .cta .cta__form {
     margin-top: 59px;
     margin-bottom: 46px;
   }
 
-  .cta .contacts-list {
+  .cta .cta__contacts-list {
     display: flex;
     justify-content: center;
   }
 
-  .cta .contacts-list__item {
+  .cta .cta__contacts-item {
     margin-right: 120px;
 
     &:last-child {
@@ -105,13 +105,13 @@
     }
   }
 
-  .cta .contacts-list__icon {
+  .cta .cta__contacts-icon {
     width: 90px;
     height: 90px;
     margin-right: 26px;
   }
 
-  .cta .contacts-list__svg {
+  .cta__contacts-icon svg {
     width: 36px;
     height: 36px;
   }

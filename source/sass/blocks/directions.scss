@@ -9,7 +9,7 @@
   clip: rect(auto, auto, auto, auto);
 }
 
-.directions .container {
+.directions .directions__container {
   position: relative;
   padding-top: 70px;
   padding-bottom: 107px;
@@ -25,7 +25,7 @@
   padding-right: 50px;
 }
 
-.directions .button {
+.directions .directions__btn {
   position: absolute;
   bottom: 32px;
   left: 25px;
@@ -44,7 +44,7 @@
   margin-bottom: 20px;
 }
 
-.directions .direction {
+.directions .directions__item {
   margin-bottom: 11px;
 }
 
@@ -55,11 +55,11 @@
     padding-top: 60px;
   }
 
-  .directions .direction {
+  .directions .directions__item {
     margin-bottom: 10px;
   }
 
-  .directions .container {
+  .directions .directions__container {
     padding-top: 70px;
     padding-bottom: 197px;
     background-image: url("../img/flags-back@1x.png");
@@ -72,7 +72,7 @@
     }
   }
 
-  .directions .button {
+  .directions .directions__btn {
     bottom: 80px;
     left: 55px;
     width: calc(100% - 55px * 2);
@@ -105,13 +105,13 @@
     }
   }
 
-  .directions .content-title {
+  .directions .directions__title {
     margin-bottom: 60px;
   }
 }
 
 @media only screen and (min-width: $desktop-width) {
-  .directions .container {
+  .directions .directions__container {
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 160px;
@@ -143,14 +143,14 @@
     }
   }
 
-  .directions .button {
+  .directions .directions__btn {
     position: static;
     display: flex;
     width: 276px;
     margin-top: 99px;
   }
 
-  .directions .content-title {
+  .directions .directions__title {
     margin-bottom: 61px;
     margin-top: 2px;
   }

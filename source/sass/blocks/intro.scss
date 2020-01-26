@@ -36,7 +36,7 @@
   }
 }
 
-.intro .quote {
+.intro .intro__quote {
   margin: 283px 0 0 0;
   padding-left: 25px;
   padding-right: 90px;
@@ -44,20 +44,7 @@
   padding-bottom: 41px;
 }
 
-.intro .contacts-list__item--auth {
-  flex-grow: 1;
-}
-
-.intro .button {
-  @include set-font(17px, 30px, 700);
-  display: block;
-  width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  text-transform: uppercase;
-}
-
-.intro .page-title {
+.intro .intro__title {
   padding-right: 10px;
   padding-left: 10px;
   text-align: center;
@@ -69,17 +56,13 @@
     padding-bottom: 95px;
   }
 
-  .intro .contacts-list {
-    display: none;
-  }
-
-  .intro .page-title {
+  .intro .intro__title {
     width: 430px;
     margin-right: auto;
     margin-left: auto;
   }
 
-  .intro .quote {
+  .intro .intro__quote {
     width: 270px;
     margin-left: 34px;
     margin-top: 0;
@@ -97,26 +80,26 @@
     padding-bottom: 124px;
   }
 
-  .intro .container {
+  .intro .intro__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .intro .page-title {
+  .intro .intro__title {
     margin-right: 0;
     margin-left: 57px;
     text-align: left;
   }
 
-  .intro .quote {
+  .intro .intro__quote {
     padding-top: 0;
     padding-bottom: 0;
     margin-right: 16px;
   }
 
-  .intro .start-steps {
+  .intro .intro__steps {
     margin-top: 105px;
   }
 }

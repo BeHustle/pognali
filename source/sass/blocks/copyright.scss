@@ -3,7 +3,7 @@
   justify-content: space-between;
   padding-top: 15px;
 
-  & .content-text {
+  & .copyright__text {
     margin-top: 4px;
   }
 
@@ -11,7 +11,7 @@
     opacity: 0.6;
   }
 
-  &:hover .content-text {
+  &:hover .copyright__text {
     color: rgba($grey, 0.6);
   }
 
@@ -19,7 +19,7 @@
     opacity: 0.6;
   }
 
-  &:focus-within .content-text {
+  &:focus-within .copyright__text {
     color: rgba($grey, 0.6);
   }
 
@@ -27,7 +27,7 @@
     opacity: 0.3;
   }
 
-  &:active .content-text {
+  &:active .copyright__text {
     color: rgba($grey, 0.3);
   }
 }
@@ -36,7 +36,7 @@
   .copyright {
     padding-top: 0;
 
-    & .content-text {
+    & .copyright__text {
       @include set-font(20px, 24px, 400);
       margin-top: 3px;
     }
@@ -48,7 +48,7 @@
 }
 
 @media only screen and (min-width: $desktop-width) {
-  .copyright .content-text {
+  .copyright .copyright__text {
     margin-top: 0;
   }
 }

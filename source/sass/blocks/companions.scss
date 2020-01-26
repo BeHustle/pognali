@@ -53,7 +53,7 @@
   }
 }
 
-.companions .container {
+.companions .companions__container {
   position: relative;
   padding-top: 70px;
   padding-bottom: 112px;
@@ -80,11 +80,11 @@
   padding-right: 23px;
 }
 
-.companions .content-title {
+.companions .companions__title {
   margin-bottom: 20px;
 }
 
-.companions .content-text {
+.companions .companions__text {
   margin-bottom: 23px;
 
   &:last-child {
@@ -92,7 +92,7 @@
   }
 }
 
-.companions__list .companion {
+.companions__list .companions__item {
   margin-bottom: 10px;
 
   &:last-child {
@@ -107,7 +107,7 @@
     padding-top: 60px;
   }
 
-  .companions .container {
+  .companions .companions__container {
     padding-left: 54px;
     padding-right: 54px;
     padding-top: 138px;
@@ -133,7 +133,7 @@
     margin-top: 60px;
   }
 
-  .companions__list .companion {
+  .companions__list .companions__item {
     margin-right: 50px;
     flex-grow: 1;
     min-width: 285px;
@@ -144,11 +144,11 @@
     }
   }
 
-  .companions .content-title {
+  .companions .companions__title {
     margin-bottom: 58px;
   }
 
-  .companions .content-text {
+  .companions .companions__text {
     margin-bottom: 40px;
 
     &:last-child {
@@ -158,7 +158,7 @@
 }
 
 @media only screen and (min-width: $desktop-width) {
-  .companions .container {
+  .companions .companions__container {
     display: flex;
     padding-left: 101px;
     padding-right: 30px;
@@ -182,11 +182,11 @@
     margin-top: 8px;
   }
 
-  .companions .content-title {
+  .companions .companions__title {
     margin-left: -3px;
   }
 
-  .companions__list .companion {
+  .companions__list .companions__item {
     margin-right: 60px;
 
     &:nth-child(2n) {

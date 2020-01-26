@@ -1,4 +1,4 @@
-.quote .content-text {
+.quote .quote__text {
   margin-bottom: 19px;
 
   &:last-child {
@@ -7,7 +7,7 @@
 }
 
 @media only screen and (min-width: $tablet-width) {
-  .quote .content-text {
+  .quote .quote__text {
     margin-bottom: 44px;
 
     &:last-child {
@@ -17,7 +17,7 @@
 }
 
 @media only screen and (min-width: $desktop-width) {
-  .quote .content-text {
+  .quote .quote__text {
     margin-bottom: 44px;
 
     &:last-child {

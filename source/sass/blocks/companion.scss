@@ -43,7 +43,7 @@
   padding: 21px 30px 19px;
 }
 
-.companion__info .transport {
+.companion__info .companion__transport {
   padding-top: 2px;
 }
 
@@ -196,7 +196,7 @@
   }
 }
 
-.companion .tags__item {
+.companion .companion__tags-item {
   margin-right: 3px;
 }
 
@@ -245,11 +245,7 @@
   }
 }
 
-.form-main .companion {
-  background-color: transparent;
-}
-
-.companion .tags {
+.companion .companion__tags {
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -257,21 +253,21 @@
 .companion__fieldset-container {
   width: 100%;
 
-  & .tags {
+  & .companion__tags {
     justify-content: flex-start;
     margin: 0;
   }
 
-  & .transport {
+  & .companion__transport {
     margin: 0;
   }
 
-  & .tags--textarea {
+  & .companion__tags--textarea {
     padding: 21px 25px;
     min-height: 90px;
   }
 
-  & .transport--form {
+  & .companion__transport-form {
     padding-top: 15px;
     padding-bottom: 14px;
   }
@@ -324,30 +320,30 @@
       width: 100%;
     }
 
-    & .tags--textarea {
+    & .companion__tags--textarea {
       padding: 32px 39px;
       height: 94px;
     }
 
-    & .transport--form {
+    & .companion__transport-form {
       margin-top: -7px;
       margin-right: 5px;
       padding: 24px 55px 25px 55px;
     }
   }
 
-  .companion .tags {
+  .companion .companion__tags {
     margin-top: 23px;
     margin-bottom: 25px;
   }
 
-  .companion .tags__item {
+  .companion .companion__tags-item {
     letter-spacing: 0.1px;
     margin-right: 4px;
     line-height: 23px;
   }
 
-  .companion__fieldset-container .tags {
+  .companion__fieldset-container .companion__tags {
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -408,13 +404,13 @@
       margin-right: 140px;
     }
 
-    & .tags--textarea {
+    & .companion__tags--textarea {
       padding: 33px 38px;
       height: 94px;
       margin-left: -3px;
     }
 
-    & .transport--form {
+    & .companion__transport-form {
       padding: 25px 15px 24px 15px;
     }
   }
@@ -491,7 +487,7 @@
     margin-bottom: 25px;
   }
 
-  .companion__info .transport {
+  .companion__info .companion__transport {
     padding-top: 0;
     margin-left: 2px;
   }

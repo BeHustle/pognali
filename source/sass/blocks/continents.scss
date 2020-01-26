@@ -21,7 +21,8 @@
     opacity: 0.6;
   }
 
-  &:active {
+  &:active,
+  &--current {
     opacity: 1;
   }
 }

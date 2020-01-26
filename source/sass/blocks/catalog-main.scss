@@ -6,11 +6,11 @@
   padding-bottom: 30px;
 }
 
-.catalog-main .travel-filter {
+.catalog-main .catalog-main__filter {
   margin-top: 76px;
 }
 
-.catalog-main .companions-catalog {
+.catalog-main .catalog-main__companions {
   margin-top: 28px;
   padding-bottom: 45px;
 }
@@ -21,7 +21,7 @@
     padding-bottom: 60px;
   }
 
-  .catalog-main .travel-filter {
+  .catalog-main .catalog-main__filter {
     margin-top: 182px;
   }
 
@@ -40,12 +40,12 @@
     padding-bottom: 78px;
   }
 
-  .catalog-main .companions-catalog {
+  .catalog-main .catalog-main__companions {
     margin-top: 0;
     padding-bottom: 0;
   }
 
-  .catalog-main__content .travel-filter {
+  .catalog-main .catalog-main__filter {
     width: 21.5%;
     order: 1;
     margin-top: 0;

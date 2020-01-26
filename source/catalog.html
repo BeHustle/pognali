@@ -14,10 +14,10 @@
 <div class="d-none">
   <include src="build/img/sprite.svg"></include>
 </div>
-<header class="page-header">
-  <div class="container">
-    <a href="index.html" class="page-header__logo-link">
-      <div class="logo logo--white">
+<header class="page-header"><!-- заменить на внутренних страницах -->
+  <div class="page-header__container container">
+    <a class="page-header__logo-link">
+      <div class="page-header__logo page-header__logo--white logo">
         <picture>
           <source type="image/webp" media="(min-width: 1380px)"
                   srcset="img/logo-desktop-white@2x.webp 2x, img/logo-desktop-white@1x.webp 1x">
@@ -31,7 +31,7 @@
           <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x, img/logo-mobile-white@1x.png 1x" alt="Погнали - сервис путешествий">
         </picture>
       </div>
-      <div class="logo logo--blue">
+      <div class="page-header__logo page-header__logo--blue logo">
         <picture>
           <source type="image/webp" media="(min-width: 1380px)"
                   srcset="img/logo-desktop-blue@2x.webp 2x, img/logo-desktop-blue@1x.webp 1x">
@@ -53,76 +53,76 @@
         <use xlink:href="#menu-close-icon"></use>
       </svg>
     </button>
-    <ul class="page-header__contacts contacts-list">
-      <li class="contacts-list__item">
+    <ul class="page-header__contacts page-header__contacts--top  contacts-list">
+      <li class="page-header__contacts-item contacts-list__item">
         <a href="tel:88005558628" class="contacts-list__img contacts-list__img--tel" aria-label="Позвонить в сервис.">
           <svg width="18" height="18">
             <use xlink:href="#topmenu-phone-icon"></use>
           </svg>
         </a>
       </li>
-      <li class="contacts-list__item">
+      <li class="page-header__contacts-item contacts-list__item">
         <a href="mailto:mail@htmlacademy.ru" class="contacts-list__img contacts-list__img--mail" aria-label="Написать на email">
           <svg width="18" height="18">
             <use xlink:href="#topmenu-mail-icon"></use>
           </svg>
         </a>
       </li>
-      <li class="contacts-list__item contacts-list__auth">
-        <a href="auth.html" class="button">Авторизация</a>
+      <li class="page-header__contacts-item page-header__auth contacts-list__item contacts-list__auth">
+        <a href="auth.html" class="page-header__auth-btn contacts-list__auth-btn button">Авторизация</a>
       </li>
-    </ul>
-    <nav class="main-nav">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="index.html" class="site-list__link" data-hover="О сервисе">О сервисе</a>
+    </ul><!-- заменить на внутренних страницах -->
+    <nav class="page-header__nav main-nav">
+      <ul class="page-header__nav-list page-header__site main-nav__list main-nav__site-list site-list">
+        <li class="page-header__site-item site-list__item">
+          <a class="page-header__site-link site-list__link" data-hover="О сервисе">О сервисе</a>
         </li>
-        <li class="site-list__item">
-          <a href="form.html" class="site-list__link" data-hover="Направления">Направления</a>
+        <li class="page-header__site-item site-list__item">
+          <a href="form.html" class="page-header__site-link site-list__link" data-hover="Направления">Направления</a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link" data-hover="Попутчики">Попутчики</a>
+        <li class="page-header__site-item site-list__item">
+          <a href="catalog.html" class="page-header__site-link site-list__link" data-hover="Попутчики">Попутчики</a>
         </li>
       </ul>
-      <ul class="main-nav__list contacts-list">
-        <li class="contacts-list__item contacts-list__auth">
-          <a href="auth.html" class="button">Авторизация</a>
+      <ul class="page-header__nav-list page-header__contacts main-nav__list main-nav__contacts-list contacts-list">
+        <li class="main-nav__auth contacts-list__item contacts-list__auth">
+          <a href="auth.html" class="contacts-list__auth-btn button">Авторизация</a>
         </li>
         <li class="contacts-list__item">
-          <a href="tel:88005558628" class="contacts-list__link">
-              <span class="contacts-list__icon">
+          <a href="tel:88005558628" class="main-nav__contacts-link contacts-list__link">
+              <span class="main-nav__contacts-icon contacts-list__icon">
                 <svg width="18" height="18"><use xlink:href="#contacts-phone-icon"></use></svg>
               </span>
             8 800 555-86-28
           </a>
         </li>
         <li class="contacts-list__item">
-          <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link">
-              <span class="contacts-list__icon">
+          <a href="mailto:mail@htmlacademy.ru" class="main-nav__contacts-link contacts-list__link">
+              <span class="main-nav__contacts-icon contacts-list__icon">
                 <svg width="18" height="13"><use xlink:href="#contacts-mail-icon"></use></svg>
               </span>
             mail@htmlacademy.ru
           </a>
         </li>
       </ul>
-      <ul class="main-nav__list social-list">
-        <li class="social-list__item">
+      <ul class="page-header__nav-list page-header__social main-nav__list main-nav__social-list social-list">
+        <li class="main-nav__social-item social-list__item">
           <a href="#" aria-label="Погнали в facebook" class="social-list__link">
-            <svg class="social-list__icon" width="23" height="21">
+            <svg class="main-nav__social-icon social-list__icon" width="23" height="21">
               <use xlink:href="#facebook-icon"></use>
             </svg>
           </a>
         </li>
-        <li class="social-list__item">
+        <li class="main-nav__social-item social-list__item">
           <a href="#" aria-label="Погнали в вконтакте" class="social-list__link">
-            <svg class="social-list__icon" width="23" height="21">
+            <svg class="main-nav__social-icon social-list__icon" width="23" height="21">
               <use xlink:href="#vk-icon"></use>
             </svg>
           </a>
         </li>
-        <li class="social-list__item">
+        <li class="main-nav__social-item social-list__item">
           <a href="#" aria-label="Погнали в инстаграм" class="social-list__link">
-            <svg class="social-list__icon" width="23" height="21">
+            <svg class="main-nav__social-icon social-list__icon" width="23" height="21">
               <use xlink:href="#instagram-icon"></use>
             </svg>
           </a>
@@ -134,7 +134,7 @@
 
 <main class="catalog-main">
   <section class="main-title">
-    <div class="container">
+    <div class="main-title__container container">
       <h1 class="page-title page-title--underline">Попутчики</h1>
       <a href="index.html" class="main-title__link">
         На главную
@@ -146,7 +146,7 @@
   </section>
 
   <section class="countries-filter">
-    <div class="container">
+    <div class="countries-filter__container container">
       <h2 class="countries-filter__title">
         <svg width="15" height="10">
           <use xlink:href="#filter-icon"></use>
@@ -163,7 +163,7 @@
           <svg width="12" height="12"><use xlink:href="#filter-close-icon"></use></svg>
         </span>
       </button>
-      <ul id="continents-catalog" class="continents">
+      <ul id="continents-catalog" class="countries-filter__continents continents">
         <li class="continents__item">
           <a href="#" class="continents__link continents__link--current">Европа</a>
         </li>
@@ -177,7 +177,7 @@
           <a href="#" class="continents__link">Острова</a>
         </li>
       </ul>
-      <ul id="alphabet-catalog" class="alphabet">
+      <ul id="alphabet-catalog" class="countries-filter__alphabet alphabet">
         <li class="alphabet__item"><a href="#" class="alphabet__link alphabet__link--active">А</a></li>
         <li class="alphabet__item"><a href="#" class="alphabet__link">Б</a></li>
         <li class="alphabet__item"><a href="#" class="alphabet__link">В</a></li>
@@ -205,7 +205,7 @@
         <li class="alphabet__item"><a href="#" class="alphabet__link">Я</a></li>
       </ul>
       <div class="countries-filter__countries-container">
-        <ul class="countries countries--active">
+        <ul class="countries-filter__countries countries countries--active">
           <li class="countries__title">А</li>
           <li class="countries__item">
             <a href="australia/australia.html" class="countries__link">Австралия</a>
@@ -241,7 +241,7 @@
             <a href="#" class="countries__link">Афганистан</a>
           </li>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">Б</li>
           <li class="countries__item">
             <a href="#" class="countries__link">Багамские Острова</a>
@@ -295,7 +295,7 @@
             <a href="#" class="countries__link">Бутан</a>
           </li>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">В</li>
           <li class="countries__item">
             <a href="#" class="countries__link">Вануату</a>
@@ -316,7 +316,7 @@
             <a href="#" class="countries__link">Вьетнам</a>
           </li>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">Г</li>
           <li class="countries__item">
             <a href="#" class="countries__link">Габон</a>
@@ -345,7 +345,7 @@
           <li class="countries__item">
             <a href="#" class="countries__link">Грузия</a>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">Д</li>
           <li class="countries__item">
             <a href="#" class="countries__link">Дания</a>
@@ -356,13 +356,13 @@
           <li class="countries__item">
             <a href="#" class="countries__link">Доминикана</a>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">Е</li>
           <li class="countries__item">
             <a href="#" class="countries__link">Египет</a>
           </li>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">З</li>
           <li class="countries__item">
             <a href="#" class="countries__link">Замбия</a>
@@ -371,7 +371,7 @@
             <a href="#" class="countries__link">Зимбабве</a>
           </li>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">И</li>
           <li class="countries__item">
             <a href="#" class="countries__link">Израиль</a>
@@ -404,7 +404,7 @@
             <a href="#" class="countries__link">Италия</a>
           </li>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">К</li>
           <li class="countries__item">
             <a href="#" class="countries__link">Кабо-Верде</a>
@@ -443,7 +443,7 @@
             <a href="#" class="countries__link">Колумбия</a>
           </li>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">Л</li>
           <li class="countries__item">
             <a href="#" class="countries__link">Лаос</a>
@@ -473,7 +473,7 @@
             <a href="#" class="countries__link">Люксембург</a>
           </li>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">М</li>
           <li class="countries-filter__item">
             <a href="#" class="countries__link">Маврикий</a>
@@ -505,7 +505,7 @@
           <li class="countries-filter__item">
             <a href="#" class="countries__link">Мексика</a>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">Н</li>
           <li class="countries__item">
             <a href="#" class="countries__link">Намибия</a>
@@ -535,7 +535,7 @@
             <a href="#" class="countries__link">Норвегия</a>
           </li>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">О</li>
           <li class="countries__item">
             <a href="#" class="countries__link">ОАЭ</a>
@@ -544,7 +544,7 @@
             <a href="#" class="countries__link">Оман</a>
           </li>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">П</li>
           <li class="countries__item">
             <a href="#" class="countries__link">Пакистан</a>
@@ -571,7 +571,7 @@
             <a href="#" class="countries__link">Португалия</a>
           </li>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">Р</li>
           <li class="countries__item">
             <a href="#" class="countries__link">Руанда</a>
@@ -583,7 +583,7 @@
             <a href="#" class="countries__link">Россия</a>
           </li>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">С</li>
           <li class="countries__item">
             <a href="#" class="countries__link">Сальвадор</a>
@@ -622,7 +622,7 @@
             <a href="#" class="countries__link">США</a>
           </li>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">Т</li>
           <li class="countries__item">
             <a href="#" class="countries__link">Таджикистан</a>
@@ -655,7 +655,7 @@
             <a href="#" class="countries__link">Турция</a>
           </li>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">У</li>
           <li class="countries__item">
             <a href="#" class="countries__link">Уганда</a>
@@ -670,7 +670,7 @@
             <a href="#" class="countries__link">Уругвай</a>
           </li>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">Ф</li>
           <li class="countries__item">
             <a href="#" class="countries__link">Фиджи</a>
@@ -685,13 +685,13 @@
             <a href="#" class="countries__link">Франция</a>
           </li>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">Х</li>
           <li class="countries__link">
             <a href="#" class="countries__link">Хорватия</a>
           </li>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">Ч</li>
           <li class="countries__item">
             <a href="#" class="countries__link">Чад</a>
@@ -706,7 +706,7 @@
             <a href="#" class="countries__link">Чили</a>
           </li>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">Ш</li>
           <li class="countries__item">
             <a href="#" class="countries__link">Швейцария</a>
@@ -718,7 +718,7 @@
             <a href="#" class="countries__link">Шри-Ланка</a>
           </li>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">Э</li>
           <li class="countries__item">
             <a href="#" class="countries__link">Эквадор</a>
@@ -736,7 +736,7 @@
             <a href="#" class="countries__link">Эфиопия</a>
           </li>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">Ю</li>
           <li class="countries__item">
             <a href="#" class="countries__link">ЮАР</a>
@@ -745,7 +745,7 @@
             <a href="#" class="countries__link">Южный судан</a>
           </li>
         </ul>
-        <ul class="countries">
+        <ul class="countries-filter__countries countries">
           <li class="countries__title">Я</li>
           <li class="countries__item">
             <a href="#" class="countries__link">Ямайка</a>
@@ -765,7 +765,7 @@
   </section>
 
   <div class="catalog-main__content container">
-    <section class="travel-filter">
+    <section class="catalog-main__filter travel-filter">
       <h2 class="travel-filter__title">Подберите идеального попутчика</h2>
       <form action="https://echo.htmlacademy.ru" class="travel-filter__form" method="get" name="travel-filter-form">
         <div class="travel-filter__fieldset travel-filter__fieldset--opened">
@@ -835,29 +835,29 @@
               <use xlink:href="#dropdown-icon"></use>
             </svg>
           </button>
-          <div class="transport">
+          <div class="travel-filter__transport transport">
             <label class="checkbox tooltip" data-tooltip="Авиаперелет">
               <input type="checkbox" name="by-plane" class="checkbox__input" checked>
               <span class="transport__item checkbox__transport">
-              <svg class="transport__icon" width="19" height="17"><use xlink:href="#plane-icon"></use></svg>
+              <svg class="checkbox__transport-icon transport__icon" width="19" height="17"><use xlink:href="#plane-icon"></use></svg>
             </span>
             </label>
             <label class="checkbox tooltip" data-tooltip="Автопутешествие">
               <input type="checkbox" name="by-bus" class="checkbox__input" checked>
               <span class="transport__item checkbox__transport">
-              <svg class="transport__icon" width="19" height="17"><use xlink:href="#bus-icon"></use></svg>
+              <svg class="checkbox__transport-icon transport__icon" width="19" height="17"><use xlink:href="#bus-icon"></use></svg>
             </span>
             </label>
             <label class="checkbox tooltip" data-tooltip="Велопутешествие">
               <input type="checkbox" name="by-bicycle" class="checkbox__input">
               <span class="transport__item checkbox__transport">
-              <svg class="transport__icon" width="19" height="17"><use xlink:href="#bike-icon"></use></svg>
+              <svg class="checkbox__transport-icon transport__icon" width="19" height="17"><use xlink:href="#bike-icon"></use></svg>
             </span>
             </label>
             <label class="checkbox tooltip" data-tooltip="Пешее путешествие">
               <input type="checkbox" name="by-walk" class="checkbox__input" checked>
               <span class="transport__item checkbox__transport">
-              <svg class="transport__icon" width="19" height="17"><use xlink:href="#run-icon"></use></svg>
+              <svg class="checkbox__transport-icon transport__icon" width="19" height="17"><use xlink:href="#run-icon"></use></svg>
             </span>
             </label>
           </div>
@@ -873,12 +873,12 @@
             <input aria-label="Ввести минимальный уровень" type="text" name="min-level" class="travel-filter__level-number travel-filter__level-number--min" value="30">
             <input aria-label="Ввести максимальный уровень" type="text" name="max-level" class="travel-filter__level-number travel-filter__level-number--max" value="100">
           </div>
-          <div class="travel-filter__slider d-none"></div> <!-- ползунок -->
+          <div class="travel-filter__slider d-none"></div>
         </div>
         <button class="travel-filter__submit-btn" type="submit">Показать</button>
       </form>
     </section>
-    <section class="companions-catalog">
+    <section class="catalog-main__companions companions-catalog">
       <h2 class="visually-hidden">Попутчики</h2>
       <ul class="companions-catalog__list">
         <li class="companion-catalog">
@@ -897,15 +897,15 @@
           </a>
           <div class="companion-catalog__info-main">
             <a href="#" class="companion-catalog__name">Таня <br>Фирсова</a>
-            <ul class="tags">
-              <li class="tags__item">#ЗОЖ</li>
-              <li class="tags__item">#ПП</li>
-              <li class="tags__item">#Фитнес</li>
-              <li class="tags__item">#пляж</li>
-              <li class="tags__item">#авокадо</li>
-              <li class="tags__item">#смузи</li>
+            <ul class="companion-catalog__tags tags">
+              <li class="companion-catalog__tags-item tags__item">#ЗОЖ</li>
+              <li class="companion-catalog__tags-item tags__item">#ПП</li>
+              <li class="companion-catalog__tags-item tags__item">#Фитнес</li>
+              <li class="companion-catalog__tags-item tags__item">#пляж</li>
+              <li class="companion-catalog__tags-item tags__item">#авокадо</li>
+              <li class="companion-catalog__tags-item tags__item">#смузи</li>
             </ul>
-            <a href="companion" class="button">Позвать!</a>
+            <a href="companion" class="companion-catalog__button button">Позвать!</a>
             <button class="companion-catalog__likes companion-catalog__likes--favourite" type="button">1,5 M</button>
           </div>
           <div class="companion-catalog__info-other">
@@ -934,23 +934,23 @@
             </div>
             <div class="companion-catalog__fieldset companion-catalog__fieldset--transport-level">
               <span class="companion-catalog__fieldset-title">транспорт:</span>
-              <ul class="transport transport--catalog">
-                <li class="transport__item transport__item--active tooltip" data-tooltip="Авиаперелет">
+              <ul class="companion-catalog__transport transport transport--catalog">
+                <li class="companion-catalog__transport-item transport__item transport__item--active tooltip" data-tooltip="Авиаперелет">
                   <svg class="transport__icon" width="19" height="17">
                     <use xlink:href="#plane-icon"></use>
                   </svg>
                 </li>
-                <li class="transport__item tooltip" data-tooltip="Автопутешествие">
+                <li class="companion-catalog__transport-item transport__item tooltip" data-tooltip="Автопутешествие">
                   <svg class="transport__icon" width="19" height="17">
                     <use xlink:href="#bus-icon"></use>
                   </svg>
                 </li>
-                <li class="transport__item tooltip" data-tooltip="Велопутешествие">
+                <li class="companion-catalog__transport-item transport__item tooltip" data-tooltip="Велопутешествие">
                   <svg class="transport__icon" width="19" height="17">
                     <use xlink:href="#bike-icon"></use>
                   </svg>
                 </li>
-                <li class="transport__item tooltip" data-tooltip="Пешее путешествие">
+                <li class="companion-catalog__transport-item transport__item tooltip" data-tooltip="Пешее путешествие">
                   <svg class="transport__icon" width="19" height="17">
                     <use xlink:href="#run-icon"></use>
                   </svg>
@@ -984,14 +984,14 @@
           </a>
           <div class="companion-catalog__info-main">
             <a href="#" class="companion-catalog__name">Петя <br>Демин</a>
-            <ul class="tags">
-              <li class="tags__item">#бургер</li>
-              <li class="tags__item">#бар</li>
-              <li class="tags__item">#футбол</li>
-              <li class="tags__item">#концерт</li>
-              <li class="tags__item">#крафт</li>
+            <ul class="companion-catalog__tags tags">
+              <li class="companion-catalog__tags-item tags__item">#бургер</li>
+              <li class="companion-catalog__tags-item tags__item">#бар</li>
+              <li class="companion-catalog__tags-item tags__item">#футбол</li>
+              <li class="companion-catalog__tags-item tags__item">#концерт</li>
+              <li class="companion-catalog__tags-item tags__item">#крафт</li>
             </ul>
-            <a href="companion.html" class="button">Позвать!</a>
+            <a href="companion.html" class="companion-catalog__button button">Позвать!</a>
             <button class="companion-catalog__likes" type="button">150</button>
           </div>
           <div class="companion-catalog__info-other">
@@ -1017,23 +1017,23 @@
             <!-- ТОЛЬКО ДЛЯ соответсвия макету по PP. УДАЛИТЬ ПОСЛЕ ПРОВЕРКИ! -->
             <div class="companion-catalog__fieldset companion-catalog__fieldset--transport-level">
               <span class="companion-catalog__fieldset-title">транспорт:</span>
-              <ul class="transport transport--catalog">
-                <li class="transport__item transport__item--active tooltip" data-tooltip="Авиаперелет">
+              <ul class="companion-catalog__transport transport transport--catalog">
+                <li class="companion-catalog__transport-item transport__item transport__item--active tooltip" data-tooltip="Авиаперелет">
                   <svg class="transport__icon" width="19" height="17">
                     <use xlink:href="#plane-icon"></use>
                   </svg>
                 </li>
-                <li class="transport__item transport__item--active tooltip" data-tooltip="Автопутешествие">
+                <li class="companion-catalog__transport-item transport__item transport__item--active tooltip" data-tooltip="Автопутешествие">
                   <svg class="transport__icon" width="19" height="17">
                     <use xlink:href="#bus-icon"></use>
                   </svg>
                 </li>
-                <li class="transport__item tooltip" data-tooltip="Велопутешествие">
+                <li class="companion-catalog__transport-item transport__item tooltip" data-tooltip="Велопутешествие">
                   <svg class="transport__icon" width="19" height="17">
                     <use xlink:href="#bike-icon"></use>
                   </svg>
                 </li>
-                <li class="transport__item transport__item--active tooltip" data-tooltip="Пешее путешествие">
+                <li class="companion-catalog__transport-item transport__item transport__item--active tooltip" data-tooltip="Пешее путешествие">
                   <svg class="transport__icon" width="19" height="17">
                     <use xlink:href="#run-icon"></use>
                   </svg>
@@ -1067,14 +1067,14 @@
           </a>
           <div class="companion-catalog__info-main">
             <a href="#" class="companion-catalog__name">Марк <br>Смолов</a>
-            <ul class="tags">
-              <li class="tags__item">#рэп</li>
-              <li class="tags__item">#тату</li>
-              <li class="tags__item">#хайпбист</li>
-              <li class="tags__item">#кроссовки</li>
-              <li class="tags__item">#суприм</li>
+            <ul class="companion-catalog__tags tags">
+              <li class="companion-catalog__tags-item tags__item">#рэп</li>
+              <li class="companion-catalog__tags-item tags__item">#тату</li>
+              <li class="companion-catalog__tags-item tags__item">#хайпбист</li>
+              <li class="companion-catalog__tags-item tags__item">#кроссовки</li>
+              <li class="companion-catalog__tags-item tags__item">#суприм</li>
             </ul>
-            <a href="companion.html" class="button">Позвать!</a>
+            <a href="companion.html" class="companion-catalog__button button">Позвать!</a>
             <button class="companion-catalog__likes companion-catalog__likes--favourite" type="button">1700</button>
           </div>
           <div class="companion-catalog__info-other">
@@ -1105,23 +1105,23 @@
             <!-- ТОЛЬКО ДЛЯ соответсвия макету по PP. УДАЛИТЬ ПОСЛЕ ПРОВЕРКИ! -->
             <div class="companion-catalog__fieldset companion-catalog__fieldset--transport-level">
               <span class="companion-catalog__fieldset-title">транспорт:</span>
-              <ul class="transport transport--catalog">
-                <li class="transport__item transport__item--active tooltip" data-tooltip="Авиаперелет">
+              <ul class="companion-catalog__transport transport transport--catalog">
+                <li class="companion-catalog__transport-item transport__item transport__item--active tooltip" data-tooltip="Авиаперелет">
                   <svg class="transport__icon" width="19" height="17">
                     <use xlink:href="#plane-icon"></use>
                   </svg>
                 </li>
-                <li class="transport__item tooltip" data-tooltip="Автопутешествие">
+                <li class="companion-catalog__transport-item transport__item tooltip" data-tooltip="Автопутешествие">
                   <svg class="transport__icon" width="19" height="17">
                     <use xlink:href="#bus-icon"></use>
                   </svg>
                 </li>
-                <li class="transport__item tooltip transport__item--active" data-tooltip="Велопутешествие">
+                <li class="companion-catalog__transport-item transport__item tooltip transport__item--active" data-tooltip="Велопутешествие">
                   <svg class="transport__icon" width="19" height="17">
                     <use xlink:href="#bike-icon"></use>
                   </svg>
                 </li>
-                <li class="transport__item tooltip" data-tooltip="Пешее путешествие">
+                <li class="companion-catalog__transport-item transport__item tooltip" data-tooltip="Пешее путешествие">
                   <svg class="transport__icon" width="19" height="17">
                     <use xlink:href="#run-icon"></use>
                   </svg>
@@ -1156,13 +1156,13 @@
           </a>
           <div class="companion-catalog__info-main">
             <a href="#" class="companion-catalog__name companion-catalog__name--online">Лариса <br>Роговая</a>
-            <ul class="tags">
-              <li class="tags__item">#образование</li>
-              <li class="tags__item">#карьера</li>
-              <li class="tags__item">#учеба</li>
-              <li class="tags__item">#линкедин</li>
+            <ul class="companion-catalog__tags tags">
+              <li class="companion-catalog__tags-item tags__item">#образование</li>
+              <li class="companion-catalog__tags-item tags__item">#карьера</li>
+              <li class="companion-catalog__tags-item tags__item">#учеба</li>
+              <li class="companion-catalog__tags-item tags__item">#линкедин</li>
             </ul>
-            <a href="companion.html" class="button">Позвать!</a>
+            <a href="companion.html" class="companion-catalog__button button">Позвать!</a>
             <button class="companion-catalog__likes" type="button">23</button>
           </div>
           <div class="companion-catalog__info-other">
@@ -1187,23 +1187,23 @@
             <!-- ТОЛЬКО ДЛЯ соответсвия макету по PP. УДАЛИТЬ ПОСЛЕ ПРОВЕРКИ! -->
             <div class="companion-catalog__fieldset companion-catalog__fieldset--transport-level">
               <span class="companion-catalog__fieldset-title">транспорт:</span>
-              <ul class="transport transport--catalog">
-                <li class="transport__item transport__item--active tooltip" data-tooltip="Авиаперелет">
+              <ul class="companion-catalog__transport transport transport--catalog">
+                <li class="companion-catalog__transport-item transport__item transport__item--active tooltip" data-tooltip="Авиаперелет">
                   <svg class="transport__icon" width="19" height="17">
                     <use xlink:href="#plane-icon"></use>
                   </svg>
                 </li>
-                <li class="transport__item transport__item--active tooltip" data-tooltip="Автопутешествие">
+                <li class="companion-catalog__transport-item transport__item transport__item--active tooltip" data-tooltip="Автопутешествие">
                   <svg class="transport__icon" width="19" height="17">
                     <use xlink:href="#bus-icon"></use>
                   </svg>
                 </li>
-                <li class="transport__item tooltip" data-tooltip="Велопутешествие">
+                <li class="companion-catalog__transport-item transport__item tooltip" data-tooltip="Велопутешествие">
                   <svg class="transport__icon" width="19" height="17">
                     <use xlink:href="#bike-icon"></use>
                   </svg>
                 </li>
-                <li class="transport__item tooltip" data-tooltip="Пешее путешествие">
+                <li class="companion-catalog__transport-item transport__item tooltip" data-tooltip="Пешее путешествие">
                   <svg class="transport__icon" width="19" height="17">
                     <use xlink:href="#run-icon"></use>
                   </svg>
@@ -1224,13 +1224,13 @@
       </ul>
       <a href="all_companions.html" class="companions-catalog__btn-show">Показать еще</a>
       <div class="pagination">
-        <ul class="pagination__list">
+        <ul class="companions-catalog__pagination pagination__list">
           <li class="pagination__item"><a class="pagination__link">1</a></li>
           <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
           <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
           <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
         </ul>
-        <div class="pagination__controls">
+        <div class="companions-catalog__controls pagination__controls">
           <a href="#" class="pagination__btn" aria-label="Назад">
             <svg width="10" height="20">
               <use xlink:href="#arrow-left-icon"></use>
@@ -1248,7 +1248,7 @@
 </main>
 
 <footer class="page-footer">
-  <div class="container">
+  <div class="page-footer__container container">
     <a href="index.html" class="page-footer__logo-link">
       <picture>
         <source type="image/webp" media="(min-width: 1380px)"
@@ -1262,31 +1262,31 @@
         <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x, img/logo-mobile-blue@1x.png 1x" alt="Погнали - сервис путешествий" class="logo logo--blue">
       </picture>
     </a>
-    <ul class="main-nav__list social-list">
-      <li class="social-list__item">
-        <a href="#" aria-label="Погнали в facebook" class="social-list__link">
-          <svg class="social-list__icon" width="23" height="21">
+    <ul class="page-footer__social social-list">
+      <li class="page-footer__social-item social-list__item">
+        <a href="#" aria-label="Погнали в facebook" class="page-footer__social-link social-list__link">
+          <svg class="page-footer__social-icon social-list__icon" width="23" height="21">
             <use xlink:href="#facebook-icon"></use>
           </svg>
         </a>
       </li>
-      <li class="social-list__item">
-        <a href="#" aria-label="Погнали в вконтакте" class="social-list__link">
-          <svg class="social-list__icon" width="23" height="21">
+      <li class="page-footer__social-item social-list__item">
+        <a href="#" aria-label="Погнали в вконтакте" class="page-footer__social-link social-list__link">
+          <svg class="page-footer__social-icon social-list__icon" width="23" height="21">
             <use xlink:href="#vk-icon"></use>
           </svg>
         </a>
       </li>
-      <li class="social-list__item">
-        <a href="#" aria-label="Погнали в инстаграм" class="social-list__link">
-          <svg class="social-list__icon" width="23" height="21">
+      <li class="page-footer__social-item social-list__item">
+        <a href="#" aria-label="Погнали в инстаграм" class="page-footer__social-link social-list__link">
+          <svg class="page-footer__social-icon social-list__icon" width="23" height="21">
             <use xlink:href="#instagram-icon"></use>
           </svg>
         </a>
       </li>
     </ul>
-    <div class="copyright">
-      <p class="content-text content-text--grey">Разработано</p>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text content-text content-text--grey">Разработано</p>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
         <img src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
       </a>

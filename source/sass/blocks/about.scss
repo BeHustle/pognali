@@ -52,22 +52,22 @@
   }
 }
 
-.about .container {
+.about .about__container {
   padding-left: 49px;
   padding-right: 49px;
   padding-top: 31px;
   padding-bottom: 64px;
 }
 
-.about .button {
+.about .about__button {
   display: none;
 }
 
-.about .content-title {
+.about .about__title {
   margin-bottom: 20px;
 }
 
-.about .content-text {
+.about .about__text {
   margin-bottom: 20px;
 
   &:last-child {
@@ -80,25 +80,25 @@
     @include set-bb-radius(60px);
   }
 
-  .about .container {
+  .about .about__container {
     padding-left: 54px;
     padding-right: 372px;
     padding-top: 38px;
     padding-bottom: 88px;
   }
 
-  .about .button {
+  .about .about__button {
     display: flex;
     width: 275px;
     margin-top: 55px;
     color: #1d2e5b;
   }
 
-  .about .content-title {
+  .about .about__title {
     margin-bottom: 42px;
   }
 
-  .about .content-text {
+  .about .about__text {
     margin-bottom: 31px;
 
     &:last-child {
@@ -113,22 +113,22 @@
     padding-top: 60px;
   }
 
-  .about .container {
+  .about .about__container {
     padding-left: 100px;
     padding-right: 650px;
     padding-top: 129px;
     padding-bottom: 163px;
   }
 
-  .about .content-title {
+  .about .about__title {
     margin-bottom: 59px;
   }
 
-  .about .button {
+  .about .about__button {
     margin-top: 87px;
   }
 
-  .about .content-text {
+  .about .about__text {
     margin-bottom: 39px;
 
     &--bold {

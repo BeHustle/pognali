@@ -6,7 +6,7 @@
   background-color: $blue-black;
 }
 
-.main-title .container {
+.main-title .main-title__container {
   padding-top: 23px;
   padding-bottom: 12px;
 }
@@ -20,7 +20,7 @@
     @include set-bb-radius(60px);
   }
 
-  .main-title .container {
+  .main-title .main-title__container {
     padding-left: 54px;
     padding-right: 54px;
     padding-top: 83px;
@@ -65,7 +65,7 @@
 }
 
 @media only screen and (min-width: $desktop-width) {
-  .main-title .container {
+  .main-title .main-title__container {
     padding-left: 96px;
     padding-right: 96px;
     padding-top: 90px;

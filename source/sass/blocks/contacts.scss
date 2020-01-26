@@ -7,7 +7,7 @@
   background-color: $yellow;
 }
 
-.contacts .container {
+.contacts .contacts__container {
   padding-top: 30px;
   padding-bottom: 35px;
 }
@@ -29,7 +29,7 @@
   }
 }
 
-.contacts .button {
+.contacts .contacts__btn {
   display: flex;
   width: 100%;
   margin-top: 30px;
@@ -38,9 +38,7 @@
   padding-right: 20px;
   justify-content: space-between;
   align-items: center;
-}
 
-.contacts__btn {
   &:hover,
   &:focus {
     background-color: #1d2e5b;
@@ -85,7 +83,7 @@
     padding-top: 60px;
   }
 
-  .contacts .container {
+  .contacts .contacts__container {
     padding-top: 49px;
     padding-bottom: 85px;
     padding-left: 55px;
@@ -96,7 +94,7 @@
     @include set-font(28px, 28px, 700);
   }
 
-  .contacts .button {
+  .contacts .contacts__btn {
     margin-top: 42px;
     padding: 26px 34px;
     border-radius: 20px;
@@ -116,14 +114,14 @@
 
 
 @media only screen and (min-width: $desktop-width) {
-  .contacts .container {
+  .contacts .contacts__container {
     padding: 55px 100px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
 
-  .contacts .button {
+  .contacts .contacts__btn {
     margin-top: 0;
     margin-left: auto;
     margin-right: 4px;

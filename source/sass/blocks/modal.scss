@@ -79,7 +79,7 @@
     @include set-font(45px, 45px, 700);
   }
 
-  .modal .content-text {
+  .modal .modal__text {
     @include set-font(22px, 28px, 300);
   }
 

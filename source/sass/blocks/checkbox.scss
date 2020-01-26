@@ -39,7 +39,7 @@
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
-  &:hover .transport__icon {
+  &:hover .checkbox__transport-icon {
     opacity: 0.3;
   }
 
@@ -47,7 +47,7 @@
     background-color: #e2e5f1;
   }
 
-  &:active .transport__icon {
+  &:active .checkbox__transport-icon {
     opacity: 0.1;
   }
 }
@@ -80,15 +80,15 @@
     z-index: 3;
   }
 
-  &:checked + .checkbox__transport .transport__icon {
+  &:checked + .checkbox__transport .checkbox__transport-icon {
     opacity: 1;
   }
 
-  &:checked + .checkbox__transport:hover .transport__icon {
+  &:checked + .checkbox__transport:hover .checkbox__transport-icon {
     opacity: 0.7;
   }
 
-  &:checked + .checkbox__transport:active .transport__icon {
+  &:checked + .checkbox__transport:active .checkbox__transport-icon {
     opacity: 0.3;
   }
 }
@@ -167,7 +167,7 @@
     height: 43px;
   }
 
-  .checkbox .transport__icon {
+  .checkbox .checkbox__transport-icon {
     width: 24px;
     height: 21px;
   }

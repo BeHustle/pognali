@@ -36,11 +36,11 @@
   }
 }
 
-.companions-catalog .pagination__list {
+.companions-catalog .companions-catalog__pagination {
   display: none;
 }
 
-.companions-catalog .pagination__controls {
+.companions-catalog .companions-catalog__controls {
   display: flex;
   justify-content: space-between;
 }
@@ -60,11 +60,11 @@
     }
   }
 
-  .companions-catalog .pagination__list {
+  .companions-catalog .companions-catalog__pagination {
     display: flex;
   }
 
-  .companions-catalog .pagination__controls {
+  .companions-catalog .companions-catalog__controls {
     margin-left: auto;
   }
 }
@@ -77,7 +77,7 @@
     padding-bottom: 68px;
   }
 
-  .companions-catalog .pagination__controls {
+  .companions-catalog .companions-catalog__controls {
     justify-content: flex-end;
   }
 }

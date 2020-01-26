@@ -44,7 +44,27 @@
     color: #ffffff;
   }
 
-  &:invalid {
+  &:active::-webkit-input-placeholder,
+  &:focus::-webkit-input-placeholder {
+    color: rgba(#ffffff, 0.7);
+  }
+
+  &:active::-moz-placeholder,
+  &:focus::-moz-placeholder {
+    color: rgba(#ffffff, 0.7);
+  }
+
+  &:focus::-ms-input-placeholder,
+  &:active:-ms-input-placeholder {
+    color: rgba(#ffffff, 0.7);
+  }
+
+  &:focus:-moz-placeholder,
+  &:active:-moz-placeholder {
+    color: rgba($grey, 0.7);
+  }
+
+  &--error {
     background-color: #ffefef;
     border-color: #ffefef;
     color: #ff0000;
@@ -83,6 +103,10 @@
   &:active svg {
     opacity: 0.3;
   }
+
+  & svg {
+    fill: #1d2e5b;
+  }
 }
 
 @media only screen and (min-width: $tablet-width) {
@@ -115,7 +139,7 @@
     margin-top: 66px;
   }
 
-  .leed-form__description .content-text {
+  .leed-form__description .leed-form__text {
     &:last-child {
       padding-left: 5px;
       margin-left: 0;
