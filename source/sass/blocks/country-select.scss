@@ -1,5 +1,5 @@
 .country-select {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,8 +66,9 @@
 .country-select__button {
   @include set-font(14px, 18px, 500);
   color: #1d2e5b;
+  letter-spacing: 1.3px;
   text-transform: uppercase;
-  padding: 11px 12px;
+  padding: 12px 13px 12px 10px;
   text-align: left;
   border: 1px solid #cbced9;
   border-radius: 5px;
@@ -99,7 +100,7 @@
   }
 
   &--choose::before {
-    background-color: transparent;
+    background-color: #ffffff;
     border: 1px solid #cbced9;
   }
 
@@ -121,6 +122,7 @@
   &--add {
     border-color: #cbced9;
     background-color: #edeff6;
+    margin-bottom: 1px;
   }
 
   &--add svg {
@@ -167,18 +169,57 @@
   }
 }
 
+.country-select--add .country-select__text-btn,
+.country-select--choose .country-select__text-btn {
+  width: 100%;
+}
+
+.country-select--add .country-select__text-btn::after,
+.country-select--choose .country-select__text-btn::after {
+  display: none;
+}
+
 @media only screen and (min-width: $tablet-width) {
   .country-select__button {
     @include set-font(20px, 20px, 500);
-    padding: 25px;
+    padding: 24px;
+    padding-right: 27px;
     width: 370px;
     flex-grow: 0;
+    letter-spacing: 1.9px;
 
     &::before {
       left: auto;
       right: -35px;
       width: 15px;
       height: 15px;
+      z-index: 1;
+    }
+
+    & svg {
+      width: 17px;
+      height: 9px;
+    }
+
+    &--add svg {
+      width: 15px;
+      height: 15px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 165px;
+      right: -28px;
+      top: -41px;
+      background-color: #d6d9e6;
+      z-index: 0;
+    }
+
+    &--add::after {
+      top: -15px;
+      background: linear-gradient(to top, transparent, #d6d9e6);
     }
   }
 
@@ -189,6 +230,8 @@
   .country-select__flag {
     border: 0 none;
     width: auto;
+    margin-left: 30px;
+    margin-top: 2px;
 
     & img {
       width: 70px;
@@ -203,6 +246,7 @@
     background-color: transparent;
     border-radius: 0;
     transform: none;
+    padding: 0;
 
     & svg {
       opacity: 0.2;
@@ -225,8 +269,26 @@
     width: 730px;
 
     &::before {
-      right: -48px;
+      right: -53px;
     }
+
+    &::after {
+      right: -46px;
+      top: -63px;
+      height: 155px;
+    }
+
+    &--add::after {
+      height: 230px;
+    }
+  }
+
+  .country-select__del-btn {
+    margin-right: 7px;
+  }
+
+  .country-select__flag {
+    margin-left: -8px;
   }
 
   .country-select__text-btn {

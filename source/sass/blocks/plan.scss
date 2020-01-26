@@ -1,6 +1,6 @@
 .plan {
   background-color: #ffffff;
-  padding: 25px;
+  padding: 23px 24px;
   margin-bottom: 10px;
   border-radius: 10px;
 
@@ -15,23 +15,31 @@
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
+
+  &::before {
+    margin-right: 5px;
+    color: #1d2e5b;
+  }
 }
 
 .plan__text {
   @include set-font(14px, 14px, 500);
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   color: #1d2e5b;
   padding: 0;
   margin: 0;
+  margin-bottom: 6px;
 }
 
 .plan__change-btn {
   @include set-font(14px, 18px, 500);
+  letter-spacing: 1.5px;
   color: #000000;
   text-transform: uppercase;
   padding: 0;
   border: 0 none;
-  margin-top: 20px;
+  margin-top: 22px;
   display: block;
   background-color: transparent;
   opacity: 0.3;
@@ -52,30 +60,49 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: 34px;
+    padding-left: 32px;
+    padding-right: 25px;
+    padding-bottom: 11px;
   }
 
   .plan__title {
     @include set-font(24px, 30px, 700);
     width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 52px;
+    letter-spacing: -0.1px;
+    margin-left: 4px;
+
+    &::before {
+      @include set-font(20px, 20px, 500);
+      align-self: flex-end;
+      margin-right: 7px;
+      margin-bottom: 3px;
+    }
   }
 
   .plan__text {
     @include set-font(20px, 20px, 500);
     width: 33%;
+    letter-spacing: 2.2px;
   }
 
   .plan__change-btn {
     @include set-font(20px, 20px, 500);
-    margin-top: 0;
+    margin-top: -5px;
+    margin-right: 11px;
     margin-left: auto;
+    letter-spacing: 1.5px;
   }
 }
 
 @media only screen and (min-width: $desktop-width) {
   .plan {
-    padding: 40px;
-    margin-bottom: 20px;
+    padding-top: 31px;
+    padding-bottom: 36px;
+    padding-right: 27px;
+    padding-left: 39px;
+    margin-bottom: 15px;
 
     &:last-child {
       margin-bottom: 0;
@@ -88,6 +115,13 @@
   }
 
   .plan__text {
-    width: 15%;
+    width: 16%;
+    margin-bottom: -3px;
+    margin-left: -12px;
+  }
+
+  .plan__change-btn {
+    margin-top: 3px;
+    letter-spacing: 2px;
   }
 }

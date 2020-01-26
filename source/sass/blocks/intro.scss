@@ -3,30 +3,32 @@
   padding-top: 25px;
   padding-bottom: 40px;
   background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
-  background-size: 192px 225px, 100% 400px;
+  background-size: 192px 255px, 100% 400px;
   background-repeat: no-repeat, no-repeat;
-  background-position: top 24% right 50%, top 4% right 0;
+  background-position: top 21.5% left 61%, top 2% center;
+  position: relative;
+  z-index: 20;
 
-    @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/traveller-illustration-mobile@2x.png"), url("../img/globe-back-mobile@2x.jpg");
-    }
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/traveller-illustration-mobile@2x.png"), url("../img/globe-back-mobile@2x.jpg");
+  }
 
   @media only screen and (min-width: $tablet-width) {
-  background-color: #182044;
-  background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
-  background-size: 372px 451px, 1479px auto;
-  background-position: top 39% right 37%, center;
+    background-color: #182044;
+    background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
+    background-size: 372px 451px, 1479px auto;
+    background-position: top 44.1% right 28%, right 50% top 54%;
 
     @media (min-resolution: 1.5dppx) {
       background-image: url("../img/traveller-illustration-tablet@2x.png"), url("../img/globe-back-tablet@2x.jpg");
-      }
+    }
   }
 
   @media only screen and (min-width: $desktop-width) {
     background-color: $blue-black;
     background-image: url("../img/traveller-illustration-desktop@1x.png"), url("../img/globe-back-desktop@1x.jpg");
     background-size: 431px auto, 1800px auto;
-    background-position: top 39% left 58%, top 0 center;
+    background-position: top 93% left 60%, top 100% center;
 
     @media (min-resolution: 1.5dppx) {
       background-image: url("../img/traveller-illustration-desktop@2x.png"), url("../img/globe-back-desktop@2x.jpg");
@@ -35,9 +37,11 @@
 }
 
 .intro .quote {
-  margin: 0;
-  padding: 0;
-  margin-top: 300px;
+  margin: 283px 0 0 0;
+  padding-left: 25px;
+  padding-right: 90px;
+  padding-top: 30px;
+  padding-bottom: 41px;
 }
 
 .intro .contacts-list__item--auth {
@@ -54,19 +58,14 @@
 }
 
 .intro .page-title {
+  padding-right: 10px;
+  padding-left: 10px;
   text-align: center;
-}
-
-.intro .quote {
-  padding-left: 25px;
-  padding-right: 90px;
-  padding-top: 30px;
-  padding-bottom: 35px;
 }
 
 @media only screen and (min-width: $tablet-width) {
   .intro {
-    padding-top: 40px;
+    padding-top: 52px;
     padding-bottom: 95px;
   }
 
@@ -75,17 +74,17 @@
   }
 
   .intro .page-title {
-    width: 400px;
+    width: 430px;
     margin-right: auto;
     margin-left: auto;
   }
 
   .intro .quote {
     width: 270px;
-    margin-left: 50px;
+    margin-left: 34px;
     margin-top: 0;
-    padding-top: 80px;
-    padding-bottom: 200px;
+    padding-top: 89px;
+    padding-bottom: 214px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -93,8 +92,9 @@
 
 @media only screen and (min-width: $desktop-width) {
   .intro {
-    padding-top: 105px;
-    padding-bottom: 120px;
+    @include set-bb-radius(60px);
+    padding-top: 81px;
+    padding-bottom: 124px;
   }
 
   .intro .container {
@@ -106,16 +106,17 @@
 
   .intro .page-title {
     margin-right: 0;
-    margin-left: 70px;
+    margin-left: 57px;
     text-align: left;
   }
 
   .intro .quote {
     padding-top: 0;
     padding-bottom: 0;
+    margin-right: 16px;
   }
 
   .intro .start-steps {
-    margin-top: 100px;
+    margin-top: 105px;
   }
 }

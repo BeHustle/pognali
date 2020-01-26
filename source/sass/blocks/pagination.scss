@@ -32,6 +32,15 @@
   & svg {
     fill: $blue-white;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .pagination__list {
@@ -64,6 +73,14 @@
   .pagination__btn {
     height: 100px;
 
+    &:first-child {
+      padding-left: 40px;
+    }
+
+    &:last-child {
+      padding-right: 10px;
+    }
+
     &:first-child::after {
       display: none;
     }
@@ -72,16 +89,42 @@
   .pagination__list {
     @include ul-style-reset;
     display: flex;
-    margin-left: 30px;
+    margin-left: 28px;
+  }
+
+  .pagination__link {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 50%;
+
+    &[href]:hover,
+    &[href]:focus {
+      color: rgba($blue-black, 0.6);
+    }
+
+    &:not([href]),
+    &:active {
+      background-color: $yellow;
+    }
   }
 
   .pagination__item {
-    padding: 10px 20px;
-    margin-right: 2px;
-    border-radius: 50%;
+    margin-right: -1px;
+  }
+}
 
-    &--current {
-      background-color: $yellow;
+@media only screen and (min-width: $desktop-width) {
+  .pagination__btn {
+    height: 100px;
+
+    &:first-child {
+      width: 38%;
+      padding-left: 31px;
+    }
+
+    &:last-child {
+      width: 38%;
+      padding-right: 24px;
     }
   }
 }

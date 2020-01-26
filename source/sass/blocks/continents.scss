@@ -3,7 +3,7 @@
 }
 
 .continents__item {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 
   &:last-child {
     margin-bottom: 0;
@@ -15,7 +15,13 @@
   color: $blue-white;
   text-transform: uppercase;
   opacity: 0.3;
-  &--current {
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
     opacity: 1;
   }
 }
@@ -26,8 +32,9 @@
   }
 
   .continents__item {
-    margin-right: 25px;
+    margin-right: 27px;
     margin-bottom: 0;
+
     &:last-child {
       margin-right: 0;
     }

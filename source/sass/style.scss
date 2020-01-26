@@ -1,7 +1,7 @@
 @import "vars.scss";
 @import "mixins.scss";
 @import "fonts.scss";
-@import "normalize.scss";
+@import "../../node_modules/normalize.css/normalize";
 @import "common.scss";
 @import "blocks/about.scss";
 @import "blocks/add-plan.scss";
@@ -52,7 +52,8 @@
 @import "blocks/start-steps.scss";
 @import "blocks/step.scss";
 @import "blocks/tags.scss";
+@import "blocks/tooltip.scss";
 @import "blocks/transport.scss";
 @import "blocks/travel-filter.scss";
 @import "blocks/ui-slider.scss";
-
+@import "services.scss";

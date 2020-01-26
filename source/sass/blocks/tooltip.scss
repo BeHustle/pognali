@@ -1,0 +1,35 @@
+.tooltip {
+  position: relative;
+
+  &:hover::before,
+  &:hover::after {
+    display: block;
+  }
+
+  &::before,
+  &::after {
+    display: none;
+    position: absolute;
+    white-space: nowrap;
+    content: attr(data-tooltip);
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 50;
+  }
+
+  &::before {
+    @include set-font(20px, 20px, 400);
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 19px 28px;
+    bottom: -70px;
+    background-color: #101d41;
+  }
+
+  &::after {
+    border: 8px solid transparent;
+    border-bottom-color: #101d41;
+    font-size: 0;
+    bottom: -12px;
+  }
+}

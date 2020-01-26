@@ -1,40 +1,62 @@
 .about {
+  @include set-bb-radius();
   background-color: $blue-white;
-  background-image: url("../img/about-mobile@1x.png");
-  background-size: 292px auto;
-  background-repeat: no-repeat;
-  background-position: top center;
+  position: relative;
+  z-index: 19;
+  overflow: hidden;
+  clip: rect(auto, auto, auto, auto);
 
-  @media (min-resolution: 1.5dppx) {
-    background-image: url("../img/about-mobile@2x.png");
-  }
+  &::after {
+    width: 320px;
+    height: 100%;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0 auto;
+    z-index: -1;
+    background-image: url("../img/about-mobile@1x.png"), url("../img/rectangle.svg");
+    background-size: contain, 143px 143px;
+    background-position: left 15px center, left -30px top -11px;
+    background-repeat: no-repeat, no-repeat;
 
-  @media only screen and (min-width: $tablet-width) {
-    background-image: url("../img/about-tablet@1x.png");
-    background-size: 376px auto;
-    background-position: top 50px right 0;
-
-    @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/about-tablet@2x.png");
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/about-mobile@2x.png"), url("../img/rectangle.svg");
     }
-  }
 
-  @media only screen and (min-width: $desktop-width) {
-    background-image: url("../img/about-desktop@1x.png");
-    background-size: 630px auto;
-    background-position: bottom 0 right 70px;
+    @media (min-width: $tablet-width) {
+      width: $tablet-width;
+      background-image: url("../img/about-tablet@1x.png"), url("../img/rectangle-big.svg");
+      background-size: 376px 548px, 688px 213px;
+      background-position: right -13px bottom 88px, left 20px top -2px;
+      background-repeat: no-repeat, no-repeat;
 
-    @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/about-desktop@2x.png");
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/about-tablet@2x.png"), url("../img/rectangle-big.svg");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      width: $desktop-width;
+      background-image: url("../img/about-desktop@1x.png"), url("../img/rectangle.svg");
+      background-size: 638px 665px, 213px 213px;
+      background-position: right 25px bottom, left 29px top 131px;
+      background-repeat: no-repeat, no-repeat;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/about-desktop@2x.png"), url("../img/rectangle.svg");
+      }
     }
   }
 }
 
 .about .container {
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 30px;
-  padding-bottom: 80px;
+  padding-left: 49px;
+  padding-right: 49px;
+  padding-top: 31px;
+  padding-bottom: 64px;
 }
 
 .about .button {
@@ -42,7 +64,7 @@
 }
 
 .about .content-title {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .about .content-text {
@@ -54,26 +76,30 @@
 }
 
 @media only screen and (min-width: $tablet-width) {
+  .about {
+    @include set-bb-radius(60px);
+  }
+
   .about .container {
-    padding-left: 60px;
-    padding-right: 360px;
-    padding-top: 40px;
-    padding-bottom: 90px;
+    padding-left: 54px;
+    padding-right: 372px;
+    padding-top: 38px;
+    padding-bottom: 88px;
   }
 
   .about .button {
     display: flex;
     width: 275px;
-    margin-top: 50px;
+    margin-top: 55px;
     color: #1d2e5b;
   }
 
   .about .content-title {
-    margin-bottom: 35px;
+    margin-bottom: 42px;
   }
 
   .about .content-text {
-    margin-bottom: 35px;
+    margin-bottom: 31px;
 
     &:last-child {
       margin-bottom: 0;
@@ -82,18 +108,32 @@
 }
 
 @media only screen and (min-width: $desktop-width) {
+  .about {
+    margin-top: -60px;
+    padding-top: 60px;
+  }
+
   .about .container {
     padding-left: 100px;
     padding-right: 650px;
-    padding-top: 130px;
-    padding-bottom: 160px;
+    padding-top: 129px;
+    padding-bottom: 163px;
   }
 
   .about .content-title {
-    margin-bottom: 50px;
+    margin-bottom: 59px;
   }
 
   .about .button {
-    margin-top: 80px;
+    margin-top: 87px;
+  }
+
+  .about .content-text {
+    margin-bottom: 39px;
+
+    &--bold {
+      padding-right: 180px;
+      margin-bottom: 0;
+    }
   }
 }

@@ -1,9 +1,12 @@
-$alphabet-item-height: 40px;
+$alphabet-item-height: 41px;
 
 .alphabet {
   @include ul-style-reset;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
+  border-top: 1px solid #cbced9;
+  border-left: 1px solid #cbced9;
 }
 
 .alphabet__link {
@@ -15,21 +18,37 @@ $alphabet-item-height: 40px;
   text-align: center;
   width: 100%;
   height: 100%;
+
   &--active {
+    color: #ffffff;
+    background-color: #1d2e5b;
+  }
+
+  &:active {
     color: #ffffff;
     background-color: #1d2e5b;
   }
 }
 
 .alphabet__item {
-  border: 1px solid #cbced9;
-  width: 43px;
+  border-bottom: 1px solid #cbced9;
+  border-right: 1px solid #cbced9;
+  width: 44px;
   height: $alphabet-item-height;
+
+  &:hover {
+    border-color: #959bb2;
+  }
+
+  &:focus-within {
+    border-color: #959bb2;
+  }
 }
 
 @media only screen and (min-width: $tablet-width) {
   .alphabet {
-    width: 380px;
+    width: 385px;
+    border: 0 none;
   }
 
   .alphabet__link {
@@ -40,6 +59,7 @@ $alphabet-item-height: 40px;
     height: auto;
     text-align: left;
     opacity: 0.2;
+
     &--active {
       opacity: 1;
     }
@@ -47,8 +67,8 @@ $alphabet-item-height: 40px;
 
   .alphabet__item {
     border: 0 none;
-    width: 76px;
+    width: 77px;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 }

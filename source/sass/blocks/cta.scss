@@ -1,4 +1,9 @@
 .cta {
+  @include set-bb-radius(30px);
+  position: relative;
+  margin-top: -30px;
+  padding-top: 30px;
+  z-index: 15;
   background-color: $blue-white;
 }
 
@@ -10,6 +15,15 @@
 .cta__login {
   color: $yellow;
   text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: $orange;
+  }
+
+  &:active {
+    color: rgba($orange, 0.3);
+  }
 }
 
 .cta .content-title {
@@ -25,14 +39,21 @@
 
 .cta .leed-form {
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 @media only screen and (min-width: $tablet-width) {
+  .cta {
+    @include set-bb-radius(60px);
+    margin-top: -60px;
+    padding-top: 60px;
+    z-index: 15;
+  }
+
   .cta .container {
     padding-left: 55px;
     padding-right: 55px;
-    padding-top: 75px;
+    padding-top: 72px;
     padding-bottom: 60px;
   }
 
@@ -42,34 +63,56 @@
   }
 
   .cta .leed-form {
-    margin-top: 60px;
+    margin-top: 65px;
     margin-bottom: 40px;
   }
 
   .cta .content-title {
-    margin-bottom: 50px;
+    margin-bottom: 59px;
   }
 
   .cta .contacts-list__icon {
     width: 68px;
     height: 68px;
+    margin-right: 23px;
+  }
+
+  .cta .content-text:last-child {
+    margin-left: 10px;
   }
 }
 
 @media only screen and (min-width: $desktop-width) {
   .cta .container {
-    padding: 105px 100px;
+    padding: 102px 101px;
+  }
+
+  .cta .leed-form {
+    margin-top: 59px;
+    margin-bottom: 46px;
   }
 
   .cta .contacts-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .cta .contacts-list__item {
-    margin-right: 100px;
+    margin-right: 120px;
+
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  .cta .contacts-list__icon {
+    width: 90px;
+    height: 90px;
+    margin-right: 26px;
+  }
+
+  .cta .contacts-list__svg {
+    width: 36px;
+    height: 36px;
   }
 }

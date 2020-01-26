@@ -3,66 +3,95 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <script>
-    document.createElement("picture");
-  </script>
-  <script src="js/picturefill.min.js" async></script>
-  <script src="js/svg4everybody.min.js" async></script>
-  <script>svg4everybody();</script>
   <title>Погнали - направления</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2">
 </head>
 <body>
-
-<header class="page-header page-header--js"> <!-- добавлять page-header--js, переключать page-header--opened -->
+<div class="d-none">
+  <include src="build/img/sprite.svg"></include>
+</div>
+<header class="page-header">
   <div class="container">
-    <a class="page-header__logo-link">
-      <picture>
-        <source media="(min-width: 1380px)" srcset="img/logo-desktop-white@2x.png 2x, img/logo-desktop-white@1x.png 1x">
-        <source media="(min-width: 728px)" srcset="img/logo-tablet-white@2x.png 2px, img/logo-tablet-white@1x.png 1x">
-        <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x, img/logo-mobile-white@1x.png 1x"
-             alt="Погнали - сервис путешествий" class="logo logo--white">
-      </picture>
+    <a href="index.html" class="page-header__logo-link">
+      <div class="logo logo--white">
+        <picture>
+          <source type="image/webp" media="(min-width: 1380px)"
+                  srcset="img/logo-desktop-white@2x.webp 2x, img/logo-desktop-white@1x.webp 1x">
+          <source type="image/webp" media="(min-width: 728px)"
+                  srcset="img/logo-tablet-white@2x.webp 2x, img/logo-tablet-white@1x.webp 1x">
+          <source type="image/webp" srcset="img/logo-mobile-white@2x.webp 2x, img/logo-mobile-white@1x.webp 1x">
+
+          <source media="(min-width: 1380px)"
+                  srcset="img/logo-desktop-white@2x.png 2x, img/logo-desktop-white@1x.png 1x">
+          <source media="(min-width: 728px)" srcset="img/logo-tablet-white@2x.png 2x, img/logo-tablet-white@1x.png 1x">
+          <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x, img/logo-mobile-white@1x.png 1x" alt="Погнали - сервис путешествий">
+        </picture>
+      </div>
+      <div class="logo logo--blue">
+        <picture>
+          <source type="image/webp" media="(min-width: 1380px)"
+                  srcset="img/logo-desktop-blue@2x.webp 2x, img/logo-desktop-blue@1x.webp 1x">
+          <source type="image/webp" media="(min-width: 728px)"
+                  srcset="img/logo-tablet-blue@2x.webp 2x, img/logo-tablet-blue@1x.webp 1x">
+          <source type="image/webp" srcset="img/logo-mobile-blue@2x.webp 2x, img/logo-mobile-blue@1x.webp 1x">
+
+          <source media="(min-width: 1380px)" srcset="img/logo-desktop-blue@2x.png 2x, img/logo-desktop-blue@1x.png 1x">
+          <source media="(min-width: 728px)" srcset="img/logo-tablet-blue@2x.png 2x, img/logo-tablet-blue@1x.png 1x">
+          <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x, img/logo-mobile-blue@1x.png 1x" alt="Погнали - сервис путешествий">
+        </picture>
+      </div>
     </a>
     <button class="page-header__toggle-menu" type="button" aria-label="открыть меню.">
-      <svg class="page-header__menu-open" width="25" height="11"><use xlink:href="img/nav-icons.svg#menu"></use></svg>
-      <svg class="page-header__menu-close" width="19" height="19"><use xlink:href="img/nav-icons.svg#menu-close"></use></svg>
+      <svg class="page-header__menu-open" width="25" height="11">
+        <use xlink:href="#menu-icon"></use>
+      </svg>
+      <svg class="page-header__menu-close" width="19" height="19">
+        <use xlink:href="#menu-close-icon"></use>
+      </svg>
     </button>
     <ul class="page-header__contacts contacts-list">
       <li class="contacts-list__item">
         <a href="tel:88005558628" class="contacts-list__img contacts-list__img--tel" aria-label="Позвонить в сервис.">
-          <svg width="18" height="18"><use xlink:href="img/nav-icons.svg#topmenu-phone"></use></svg>
+          <svg width="18" height="18">
+            <use xlink:href="#topmenu-phone-icon"></use>
+          </svg>
         </a>
       </li>
       <li class="contacts-list__item">
         <a href="mailto:mail@htmlacademy.ru" class="contacts-list__img contacts-list__img--mail" aria-label="Написать на email">
-          <svg width="18" height="18"><use xlink:href="img/nav-icons.svg#topmenu-mail"></use></svg>
+          <svg width="18" height="18">
+            <use xlink:href="#topmenu-mail-icon"></use>
+          </svg>
         </a>
       </li>
-      <li class="contacts-list__item contacts-list__item--auth">
-        <a href="#" class="button">Авторизация</a>
+      <li class="contacts-list__item contacts-list__auth">
+        <a href="auth.html" class="button">Авторизация</a>
       </li>
     </ul>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a class="site-list__link">О сервисе</a>
+          <a href="index.html" class="site-list__link" data-hover="О сервисе">О сервисе</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html" class="site-list__link">Направления</a>
+          <a class="site-list__link" data-hover="Направления">Направления</a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html" class="site-list__link">Попутчики</a>
+          <a href="catalog.html" class="site-list__link" data-hover="Попутчики">Попутчики</a>
         </li>
       </ul>
       <ul class="main-nav__list contacts-list">
         <li class="contacts-list__item contacts-list__auth">
-          <a href="#" class="button">Авторизация</a>
+          <a href="auth.html" class="button">Авторизация</a>
         </li>
         <li class="contacts-list__item">
           <a href="tel:88005558628" class="contacts-list__link">
               <span class="contacts-list__icon">
-                <svg width="18" height="18"><use xlink:href="img/nav-icons.svg#contacts-phone"></use></svg>
+                <svg width="18" height="18"><use xlink:href="#contacts-phone-icon"></use></svg>
               </span>
             8 800 555-86-28
           </a>
@@ -70,7 +99,7 @@
         <li class="contacts-list__item">
           <a href="mailto:mail@htmlacademy.ru" class="contacts-list__link">
               <span class="contacts-list__icon">
-                <svg width="18" height="13"><use xlink:href="img/nav-icons.svg#contacts-mail"></use></svg>
+                <svg width="18" height="13"><use xlink:href="#contacts-mail-icon"></use></svg>
               </span>
             mail@htmlacademy.ru
           </a>
@@ -79,17 +108,23 @@
       <ul class="main-nav__list social-list">
         <li class="social-list__item">
           <a href="#" aria-label="Погнали в facebook" class="social-list__link">
-            <svg class="social-list__icon" width="23" height="21"><use xlink:href="img/social-icons.svg#facebook"></use></svg>
+            <svg class="social-list__icon" width="23" height="21">
+              <use xlink:href="#facebook-icon"></use>
+            </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a href="#" aria-label="Погнали в вконтакте" class="social-list__link">
-            <svg class="social-list__icon" width="23" height="21"><use xlink:href="img/social-icons.svg#vk"></use></svg>
+            <svg class="social-list__icon" width="23" height="21">
+              <use xlink:href="#vk-icon"></use>
+            </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a href="#" aria-label="Погнали в инстаграм" class="social-list__link">
-            <svg class="social-list__icon" width="23" height="21"><use xlink:href="img/social-icons.svg#instagram"></use></svg>
+            <svg class="social-list__icon" width="23" height="21">
+              <use xlink:href="#instagram-icon"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -100,45 +135,70 @@
 <main class="form-main">
   <section class="main-title">
     <div class="container">
-      <h1 class="page-title">Направления</h1>
+      <h1 class="page-title page-title--underline">Направления</h1>
     </div>
   </section>
 
   <section class="form-main__companion companion">
+    <h2 class="visually-hidden">Мои данные</h2>
     <div class="container">
-      <div class="companion__level companion__level--medium">80</div>
+      <div class="companion__level companion__level--form">
+        <svg class="companion__level-circle" width="102" height="102" viewBox="0 0 100 100">
+          <circle r="47" cx="50" cy="50" fill="transparent" stroke="#ff8d30" stroke-width="3"
+                  stroke-dasharray="246px 63px"></circle>
+        </svg>
+        <span class="companion__level-number">80</span>
+        <span class="companion__level-desc">level</span>
+      </div>
       <picture>
-        <source media="(min-width: 1380px)" srcset="img/photo-account-mobile@2x.jpg 2x, img/photo-account-mobile@1x.jpg 1x">
-        <source media="(min-width: 728px)" srcset="img/photo-account-tablet@2x.jpg 2x, img/photo-account-tablet@1x.jpg 1x">
-        <img srcset="img/photo-account-mobile@2x.jpg 2x, img/photo-account-mobile@1x.jpg 1x" src="img/photo-account-mobile@1x.jpg"
-             alt="Сергей Демин" class="companion__image companion__image--medium">
+        <source type="image/webp" media="(min-width: 728px)"
+                srcset="img/photo-account-tablet@2x.webp 2x, img/photo-account-tablet@1x.webp 1x">
+        <source type="image/webp" srcset="img/photo-account-mobile@2x.webp 2x, img/photo-account-mobile@1x.webp 1x">
+
+        <source media="(min-width: 728px)"
+                srcset="img/photo-account-tablet@2x.jpg 2x, img/photo-account-tablet@1x.jpg 1x">
+        <img srcset="img/photo-account-mobile@2x.jpg 2x, img/photo-account-mobile@1x.jpg 1x" src="img/photo-account-mobile@1x.jpg" alt="Сергей Демин" class="companion__avatar">
       </picture>
       <button class="companion__change-photo"><span class="companion__desktop-hide">Сменить</span> фото</button>
       <div class="companion__fieldset-container companion__fieldset-container--tags">
         <div class="companion__fieldset companion__fieldset--big">Тэги</div>
-        <textarea class="tags tags--textarea">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</textarea>
+        <textarea class="tags tags--textarea">#бургер #бар #футбол #концерт #крафт</textarea>
       </div>
       <div class="companion__fieldset-container companion__fieldset-container--transport">
         <div class="companion__fieldset companion__fieldset--big">Транспорт</div>
         <ul class="transport transport--form">
           <li class="transport__item">
-            <button class="transport__button transport__button--active" type="button" aria-label="Выбрать транспорт самолет">
-              <svg width="19" height="17" class="transport__icon"><use xlink:href="img/transport-icons.svg#plane"></use></svg>
+            <button class="transport__button transport__button--active tooltip" data-tooltip="Авиаперелет" type="button"
+                    aria-label="Выбрать транспорт самолет">
+              <svg width="19" height="17" class="transport__icon">
+                <use xlink:href="#plane-icon"></use>
+              </svg>
             </button>
           </li>
           <li class="transport__item">
-            <button class="transport__button transport__button--active" type="button" aria-label="Выбрать транспорт автобус">
-              <svg width="19" height="17" class="transport__icon"><use xlink:href="img/transport-icons.svg#bus"></use></svg>
+            <button class="transport__button transport__button--active tooltip" data-tooltip="Автопутешествие"
+                    type="button"
+                    aria-label="Выбрать транспорт автобус">
+              <svg width="19" height="17" class="transport__icon">
+                <use xlink:href="#bus-icon"></use>
+              </svg>
             </button>
           </li>
           <li class="transport__item">
-            <button class="transport__button" type="button" aria-label="Выбрать транспорт велосипед">
-              <svg width="19" height="17" class="transport__icon"><use xlink:href="img/transport-icons.svg#bike"></use></svg>
+            <button class="transport__button tooltip" data-tooltip="Велопутешествие" type="button"
+                    aria-label="Выбрать транспорт велосипед">
+              <svg width="19" height="17" class="transport__icon">
+                <use xlink:href="#bike-icon"></use>
+              </svg>
             </button>
           </li>
           <li class="transport__item">
-            <button class="transport__button transport__button--active" type="button" aria-label="Выбрать транспорт пешком">
-              <svg width="19" height="17" class="transport__icon"><use xlink:href="img/transport-icons.svg#run"></use></svg>
+            <button class="transport__button transport__button--active tooltip" data-tooltip="Пешее путешествие"
+                    type="button"
+                    aria-label="Выбрать транспорт пешком">
+              <svg width="19" height="17" class="transport__icon">
+                <use xlink:href="#run-icon"></use>
+              </svg>
             </button>
           </li>
         </ul>
@@ -150,33 +210,37 @@
     <div class="container">
       <h2 class="plans__title">Мои планы:</h2>
       <ol class="plans__list">
-      <li class="plan">
-        <h3 class="plan__title">Франция, Италия</h3>
-        <p class="plan__text">3 попутчика</p>
-        <p class="plan__text">
-          <time datetime="3-26">26 мар</time> - <time datetime="3-29">29 мар</time>
-        </p>
-        <button class="plan__change-btn">Изменить</button>
-      </li>
-      <li class="plan">
-        <h3 class="plan__title">Таиланд, Индонезия</h3>
-        <p class="plan__text">1 попутчик</p>
-        <p class="plan__text">
-          <time datetime="7-1">1 июл</time> - <time datetime="7-15">15 июл</time>
-        </p>
-        <button class="plan__change-btn">Изменить</button>
-      </li>
-    </ol>
+        <li class="plan">
+          <h3 class="plan__title">Франция, Италия</h3>
+          <p class="plan__text">3 попутчика</p>
+          <p class="plan__text">
+            <time datetime="2020-03-26 00:00">26 мар</time>
+            -
+            <time datetime="2020-03-29 23:59">29 мар</time>
+          </p>
+          <a href="plans.html" class="plan__change-btn">Изменить</a>
+        </li>
+        <li class="plan">
+          <h3 class="plan__title">Таиланд, Индонезия</h3>
+          <p class="plan__text">1 попутчик</p>
+          <p class="plan__text">
+            <time datetime="2020-07-01 00:00">1 июл</time>
+            -
+            <time datetime="2020-07-15 23:59">15 июл</time>
+          </p>
+          <a href="plans.html" class="plan__change-btn">Изменить</a>
+        </li>
+      </ol>
     </div>
   </section>
 
   <section class="add-plan">
     <div class="container">
-      <h2 class="add-plan__title">Добавить план</h2>
+      <h2 class="add-plan__title">Добавить план:</h2>
       <div class="add-plan__nav">
-        <a class="add-plan__nav-link" aria-label="шаг 1"></a>
-        <a href="#step2" class="add-plan__nav-link" aria-label="шаг 2"></a>
-        <a href="#step3" class="add-plan__nav-link" aria-label="шаг 3"></a>
+        <a class="add-plan__nav-link add-plan__nav-link--current" aria-label="шаг 1"></a>
+        <a class="add-plan__nav-link" aria-label="шаг 2"></a>
+        <a class="add-plan__nav-link" aria-label="шаг 3"></a>
       </div>
       <form action="https://echo.htmlacademy.ru" method="post">
         <div id="step1" class="step">
@@ -193,40 +257,234 @@
           <div class="input-numbers">
             <label for="people-number" class="input-numbers__label">Ищу попутчиков:</label>
             <label for="people-number" class="input-numbers__label input-numbers__label--opacity">чел.</label>
-            <button class="input-numbers__btn input-numbers__btn--reduce" aria-label="уменьшить количество." type="button">
-              <svg width="14" height="2"><use xlink:href="img/nav-icons.svg#minus"></use></svg>
+            <button class="input-numbers__btn input-numbers__btn--reduce" aria-label="уменьшить количество."
+                    type="button">
+              <svg width="14" height="2">
+                <use xlink:href="#minus-icon"></use>
+              </svg>
             </button>
             <input class="input-numbers__input" type="number" name="people-number" id="people-number" aria-label="ввести количество попутчиков.">
             <button class="input-numbers__btn input-numbers__btn--increase" aria-label="увеличить количество." type="button">
-              <svg width="14" height="14"><use xlink:href="img/nav-icons.svg#plus"></use></svg>
+              <svg width="14" height="14">
+                <use xlink:href="#plus-icon"></use>
+              </svg>
             </button>
           </div>
           <div class="input-numbers input-numbers--duration">
             <label for="days-number" class="input-numbers__label">Длительность:</label>
-            <label for="days-number" class="input-numbers__label input-numbers__label--opacity">дн</label>
+            <label for="days-number" class="input-numbers__label input-numbers__label--opacity">дн.</label>
             <button class="input-numbers__btn input-numbers__btn--reduce" aria-label="уменьшить количество." type="button">
-              <svg width="14" height="2"><use xlink:href="img/nav-icons.svg#minus"></use></svg>
+              <svg width="14" height="2">
+                <use xlink:href="#minus-icon"></use>
+              </svg>
             </button>
             <input class="input-numbers__input" type="number" name="days-number" id="days-number" aria-label="ввести количество дней.">
             <button class="input-numbers__btn input-numbers__btn--increase" aria-label="увеличить количество." type="button">
-              <svg width="14" height="14"><use xlink:href="img/nav-icons.svg#plus"></use></svg>
+              <svg width="14" height="14">
+                <use xlink:href="#plus-icon"></use>
+              </svg>
             </button>
           </div>
           <label for="children" class="checkbox checkbox--bordered">
             <input class="checkbox__input" type="checkbox" name="children" id="children">
             <span class="checkbox__text">Можно с детьми</span>
           </label>
-          <div class="calendar"></div> <!-- календарь -->
-          <button class="step__btn step__btn--fwd button" type="button">
+          <div class="calendar">
+            <button type="button" class="calendar__btn calendar__btn--previous" aria-label="Предыдущий месяц"></button>
+            <div class="calendar__title">Март 2019</div>
+            <button type="button" class="calendar__btn calendar__btn--next" aria-label="Следующий месяц"></button>
+            <ul class="calendar__weekdays-list">
+              <li class="calendar__weekday">Пн</li>
+              <li class="calendar__weekday">Вт</li>
+              <li class="calendar__weekday">Ср</li>
+              <li class="calendar__weekday">Чт</li>
+              <li class="calendar__weekday">Пт</li>
+              <li class="calendar__weekday calendar__weekday--holiday">Сб</li>
+              <li class="calendar__weekday calendar__weekday--holiday">Вс</li>
+            </ul>
+            <ul class="calendar__days">
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="23-feb-19" disabled>
+                <label for="23-feb-19" class="calendar__day-number">23</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="24-feb-19" disabled>
+                <label for="24-feb-19" class="calendar__day-number">24</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="25-feb-19" disabled>
+                <label for="25-feb-19" class="calendar__day-number">25</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="26-feb-19" disabled>
+                <label for="26-feb-19" class="calendar__day-number">26</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="27-feb-19" disabled>
+                <label for="27-feb-19" class="calendar__day-number">27</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="28-feb-19" disabled>
+                <label for="28-feb-19" class="calendar__day-number">28</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="01-mar-19" disabled>
+                <label for="01-mar-19" class="calendar__day-number calendar__day-number--first">1 мар</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="02-mar-19" disabled>
+                <label for="02-mar-19" class="calendar__day-number">2</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="03-mar-19" disabled>
+                <label for="03-mar-19" class="calendar__day-number">3</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="04-mar-19" disabled>
+                <label for="04-mar-19" class="calendar__day-number">4</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="05-mar-19" disabled>
+                <label for="05-mar-19" class="calendar__day-number">5</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="06-mar-19" disabled>
+                <label for="06-mar-19" class="calendar__day-number">6</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="07-mar-19" disabled>
+                <label for="07-mar-19" class="calendar__day-number">7</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="08-mar-19" disabled>
+                <label for="08-mar-19" class="calendar__day-number">8</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="09-mar-19" disabled>
+                <label for="09-mar-19" class="calendar__day-number">9</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="10-mar-19" disabled>
+                <label for="10-mar-19" class="calendar__day-number">10</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="11-mar-19" disabled>
+                <label for="11-mar-19" class="calendar__day-number">11</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="12-mar-19" disabled>
+                <label for="12-mar-19" class="calendar__day-number">12</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="13-mar-19" disabled>
+                <label for="13-mar-19" class="calendar__day-number">13</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="14-mar-19" disabled>
+                <label for="14-mar-19" class="calendar__day-number">14</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="15-mar-19" disabled>
+                <label for="15-mar-19" class="calendar__day-number">15</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="16-mar-19" disabled>
+                <label for="16-mar-19" class="calendar__day-number">16</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="17-mar-19" disabled>
+                <label for="17-mar-19" class="calendar__day-number">17</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="18-mar-19" disabled>
+                <label for="18-mar-19" class="calendar__day-number">18</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="19-mar-19" disabled>
+                <label for="19-mar-19" class="calendar__day-number">19</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="20-mar-19" disabled>
+                <label for="20-mar-19" class="calendar__day-number">20</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="21-mar-19" disabled>
+                <label for="21-mar-19" class="calendar__day-number">21</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="22-mar-19" disabled>
+                <label for="22-mar-19" class="calendar__day-number">22</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="23-mar-19" disabled>
+                <label for="23-mar-19" class="calendar__day-number">23</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="24-mar-19" disabled>
+                <label for="24-mar-19" class="calendar__day-number">24</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="25-mar-19" disabled>
+                <label for="25-mar-19" class="calendar__day-number">25</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input calendar__input--start" id="26-mar-19" checked>
+                <label for="26-mar-19" class="calendar__day-number">26</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="27-mar-19" checked>
+                <label for="27-mar-19" class="calendar__day-number">27</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input calendar__input--finish" id="28-mar-19" checked>
+                <label for="28-mar-19" class="calendar__day-number">28</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="29-mar-19">
+                <label for="29-mar-19" class="calendar__day-number">29</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="30-mar-19">
+                <label for="30-mar-19" class="calendar__day-number">30</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="31-mar-19">
+                <label for="31-mar-19" class="calendar__day-number">31</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="01-apr-19">
+                <label for="01-apr-19" class="calendar__day-number calendar__day-number--first">1 апр</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="02-apr-19">
+                <label for="02-apr-19" class="calendar__day-number">2</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="03-apr-19">
+                <label for="03-apr-19" class="calendar__day-number">3</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="04-apr-19">
+                <label for="04-apr-19" class="calendar__day-number">4</label>
+              </li>
+              <li class="calendar__day">
+                <input type="checkbox" class="visually-hidden calendar__input" id="05-apr-19">
+                <label for="05-apr-19" class="calendar__day-number">5</label>
+              </li>
+            </ul>
+          </div>
+          <a href="#step2" class="step__btn step__btn--fwd button">
             Следующий шаг
-            <svg width="14" height="18"><use xlink:href="img/nav-icons.svg#arrow-right"></use></svg>
-          </button>
+            <svg width="14" height="18">
+              <use xlink:href="#arrow-right-icon"></use>
+            </svg>
+          </a>
         </div>
 
-        <div id="step2" class="step">
+        <div id="step2" class="step step--countries">
           <h3 class="step__title">Шаг 2. <br>Маршрут</h3>
           <p class="content-text content-text--grey">
-            Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.
+            Укажите страны, которые вы хотели посетить.<br>Это&nbsp;может&nbsp;быть&nbsp;одна или сразу несколько.
           </p>
           <div class="step__nav">
             <a href="#step1" class="step__nav-link">Даты</a>
@@ -236,59 +494,81 @@
           <div class="country-select"><!-- список стран -->
             <button class="country-select__button" type="button">
               <span class="country-select__text-btn">Босния и Герцеговина</span>
-              <svg width="12" height="7"><use xlink:href="img/nav-icons.svg#dropdown-form"></use></svg>
+              <svg width="12" height="7">
+                <use xlink:href="#dropdown-form-icon"></use>
+              </svg>
             </button>
             <span class="country-select__flag">
               <img src="img/flag-bosnia.svg" alt="Босния и Герцеговина" width="35" height="24" class="country-select__flag-img">
             </span>
             <button type="button" class="country-select__del-btn" aria-label="Удалить страну">
-              <svg width="9" height="9"><use xlink:href="img/nav-icons.svg#small-cross"></use></svg>
+              <svg width="9" height="9">
+                <use xlink:href="#small-cross-icon"></use>
+              </svg>
             </button>
           </div>
           <div class="country-select"><!-- список стран -->
             <button class="country-select__button" type="button">
               <span class="country-select__text-btn">Чехия</span>
-              <svg width="12" height="7"><use xlink:href="img/nav-icons.svg#dropdown-form"></use></svg>
+              <svg width="12" height="7">
+                <use xlink:href="#dropdown-form-icon"></use>
+              </svg>
             </button>
             <span class="country-select__flag">
               <img src="img/flag-czech.svg" alt="Чехия" width="35" height="24" class="country-select__flag-img">
             </span>
             <button type="button" class="country-select__del-btn" aria-label="Удалить страну">
-              <svg width="9" height="9"><use xlink:href="img/nav-icons.svg#small-cross"></use></svg>
+              <svg width="9" height="9">
+                <use xlink:href="#small-cross-icon"></use>
+              </svg>
             </button>
           </div>
           <div class="country-select country-select--choose"><!-- список стран -->
             <button class="country-select__button country-select__button--choose" type="button">
-              Выберите страну
-              <svg width="12" height="7"><use xlink:href="img/nav-icons.svg#dropdown-form"></use></svg>
+              <span class="country-select__text-btn">Выберите страну</span>
+              <svg width="12" height="7">
+                <use xlink:href="#dropdown-form-icon"></use>
+              </svg>
             </button>
             <button type="button" class="country-select__del-btn" aria-label="Удалить страну">
-              <svg width="9" height="9"><use xlink:href="img/nav-icons.svg#small-cross"></use></svg>
+              <svg width="9" height="9">
+                <use xlink:href="#small-cross-icon"></use>
+              </svg>
             </button>
           </div>
           <div class="country-select country-select--add"><!-- список стран -->
             <button class="country-select__button country-select__button--add" type="button">
-              Добавить страну
-              <svg width="14" height="14"><use xlink:href="img/nav-icons.svg#plus"></use></svg>
+              <span class="country-select__text-btn">Добавить страну</span>
+              <svg width="14" height="14">
+                <use xlink:href="#plus-icon"></use>
+              </svg>
             </button>
           </div>
-          <button class="step__btn step__btn--fwd button" type="button">
+          <a href="#step3" class="step__btn step__btn--fwd button">
             Следующий шаг
-            <svg width="14" height="18"><use xlink:href="img/nav-icons.svg#arrow-right"></use></svg>
-          </button>
-          <button class="step__btn step__btn--back button button--transparent" type="button">
-            <svg width="14" height="18"><use xlink:href="img/nav-icons.svg#arrow-left"></use></svg>
+            <svg width="14" height="18">
+              <use xlink:href="#arrow-right-icon"></use>
+            </svg>
+          </a>
+          <a href="#step1" class="step__btn step__btn--back button button--transparent">
+            <svg width="14" height="18">
+              <use xlink:href="#arrow-left-icon"></use>
+            </svg>
             На шаг назад
-          </button>
-          <div class="alphabet-modal">
+          </a>
+          <div class="alphabet-modal d-none">
             <div class="alphabet-modal__menu">
               <h4 class="alphabet-modal__title">Выберите страну</h4>
               <button class="alphabet-modal__close" type="button" aria-label="Закрыть окно">
-                <svg width="9" height="9"><use xlink:href="img/nav-icons.svg#small-cross"></use></svg>
+                <svg width="9" height="9">
+                  <use xlink:href="#small-cross-icon"></use>
+                </svg>
               </button>
             </div>
             <ul class="alphabet">
-              <li class="alphabet__item alphabet__item--active"><a href="#" class="alphabet__link alphabet__link--active">А</a></li>
+              <li class="alphabet__item alphabet__item--active">
+                <a href="#" class="alphabet__link alphabet__link--active">А</a>
+              </li>
               <li class="alphabet__item"><a href="#" class="alphabet__link">Б</a></li>
               <li class="alphabet__item"><a href="#" class="alphabet__link">В</a></li>
               <li class="alphabet__item"><a href="#" class="alphabet__link">Г</a></li>
@@ -844,7 +1124,7 @@
           </div>
         </div>
 
-        <div id="step3" class="step">
+        <div id="step3" class="step step--entertainment">
           <h3 class="step__title">Шаг 3. <br>Развлечения</h3>
           <p class="content-text content-text--grey">
             Наконец, расскажите о своих планах времяпровождения.<br>
@@ -856,23 +1136,35 @@
             <a class="step__nav-link">Развлечения</a>
           </div>
           <label for="text-bosny" class="step__country-label">
-            <span class="step__country-title">Босния и Герцеговина</span>
+            <span class="step__country-title">Босния и герцеговина</span>
             <img width="35" height="24" src="img/flag-bosnia.svg" alt="Босния и Герцеговина">
           </label>
-          <textarea class="step__textarea" name="text-bosny" id="text-bosny" cols="30" rows="10" placeholder="План действий"></textarea>
+          <div class="step__textarea-wrapper step__textarea-wrapper--line">
+            <textarea class="step__textarea" name="text-bosny" id="text-bosny" cols="30" rows="10"
+                      placeholder="План действий" required></textarea>
+            <div class="step__textarea-invalid">Это поле должно быть заполнено</div>
+          </div>
           <label for="text-czech" class="step__country-label">
             <span class="step__country-title">Чехия</span>
             <img width="35" height="24" src="img/flag-czech.svg" alt="Чехия">
           </label>
-          <textarea class="step__textarea" name="text-czech" id="text-czech" cols="30" rows="10" placeholder="План действий"></textarea>
+          <div class="step__textarea-wrapper">
+            <textarea class="step__textarea" name="text-czech" id="text-czech" cols="30" rows="10"
+                      placeholder="План действий" required>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+            <div class="step__textarea-invalid">Это поле должно быть заполнено</div>
+          </div>
           <button class="step__btn step__btn--fwd button" type="submit">
             Отправить
-            <svg width="14" height="18"><use xlink:href="img/nav-icons.svg#arrow-right"></use></svg>
+            <svg width="14" height="18">
+              <use xlink:href="#arrow-right-icon"></use>
+            </svg>
           </button>
-          <button class="step__btn step__btn--back button button--transparent" type="button">
-            <svg width="14" height="18"><use xlink:href="img/nav-icons.svg#arrow-left"></use></svg>
+          <a href="#step2" class="step__btn step__btn--back button button--transparent">
+            <svg width="14" height="18">
+              <use xlink:href="#arrow-left-icon"></use>
+            </svg>
             На шаг назад
-          </button>
+          </a>
         </div>
       </form>
     </div>
@@ -881,28 +1173,39 @@
 
 <footer class="page-footer">
   <div class="container">
-    <a class="page-footer__logo-link">
+    <a href="index.html" class="page-footer__logo-link">
       <picture>
+        <source type="image/webp" media="(min-width: 1380px)"
+                srcset="img/logo-desktop-blue@2x.webp 2x, img/logo-desktop-blue@1x.webp 1x">
+        <source type="image/webp" media="(min-width: 728px)"
+                srcset="img/logo-tablet-blue@2x.webp 2x, img/logo-tablet-blue@1x.webp 1x">
+        <source type="image/webp" srcset="img/logo-mobile-blue@2x.webp 2x, img/logo-mobile-blue@1x.webp 1x">
+
         <source media="(min-width: 1380px)" srcset="img/logo-desktop-blue@2x.png 2x, img/logo-desktop-blue@1x.png 1x">
-        <source media="(min-width: 728px)" srcset="img/logo-tablet-blue@2x.png 2px, img/logo-tablet-blue@1x.png 1x">
-        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x, img/logo-mobile-blue@1x.png 1x"
-             alt="Погнали - сервис путешествий" class="logo logo--blue">
+        <source media="(min-width: 728px)" srcset="img/logo-tablet-blue@2x.png 2x, img/logo-tablet-blue@1x.png 1x">
+        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x, img/logo-mobile-blue@1x.png 1x" alt="Погнали - сервис путешествий" class="logo logo--blue">
       </picture>
     </a>
     <ul class="main-nav__list social-list">
       <li class="social-list__item">
         <a href="#" aria-label="Погнали в facebook" class="social-list__link">
-          <svg class="social-list__icon" width="23" height="21"><use xlink:href="img/social-icons.svg#facebook"></use></svg>
+          <svg class="social-list__icon" width="23" height="21">
+            <use xlink:href="#facebook-icon"></use>
+          </svg>
         </a>
       </li>
       <li class="social-list__item">
         <a href="#" aria-label="Погнали в вконтакте" class="social-list__link">
-          <svg class="social-list__icon" width="23" height="21"><use xlink:href="img/social-icons.svg#vk"></use></svg>
+          <svg class="social-list__icon" width="23" height="21">
+            <use xlink:href="#vk-icon"></use>
+          </svg>
         </a>
       </li>
       <li class="social-list__item">
         <a href="#" aria-label="Погнали в инстаграм" class="social-list__link">
-          <svg class="social-list__icon" width="23" height="21"><use xlink:href="img/social-icons.svg#instagram"></use></svg>
+          <svg class="social-list__icon" width="23" height="21">
+            <use xlink:href="#instagram-icon"></use>
+          </svg>
         </a>
       </li>
     </ul>
@@ -914,5 +1217,6 @@
     </div>
   </div>
 </footer>
+<script src="js/main-min.js"></script>
 </body>
 </html>

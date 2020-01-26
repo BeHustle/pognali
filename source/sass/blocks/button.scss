@@ -3,11 +3,24 @@
   border: 0 none;
   color: $blue-black;
   background-color: $yellow;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 21px;
+  padding-bottom: 21px;
   border-radius: 50px;
   text-align: center;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba($blue-black, 0.3);
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 
   &--bordered {
     color: #1d2e5b;
@@ -38,8 +51,8 @@
   .button {
     @include set-font(24px, 24px, 700);
     border-radius: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 34px;
+    padding-right: 34px;
     padding-top: 28px;
     padding-bottom: 28px;
   }

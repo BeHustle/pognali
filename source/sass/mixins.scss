@@ -16,3 +16,8 @@
   background: $color;
   border-radius: $width/2;
 }
+
+@mixin set-bb-radius($radius: 30px) {
+  border-bottom-left-radius: $radius;
+  border-bottom-right-radius: $radius;
+}

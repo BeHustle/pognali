@@ -7,6 +7,7 @@
 
 .input-numbers__label {
   @include set-font(16px, 16px, 700);
+  letter-spacing: 1px;
   color: #1d2e5b;
   text-transform: uppercase;
   width: 80%;
@@ -20,13 +21,16 @@
 }
 
 .input-numbers__input {
+  @include set-font(15px, 15px, 500);
+  color: #1d2e5b;
   display: block;
   width: 100%;
   margin-bottom: 20px;
-  height: 45px;
+  height: 43px;
   border: 1px solid #cbced9;
   text-align: center;
   border-radius: 3px;
+  appearance: none;
 
   &:hover,
   &:focus {
@@ -44,7 +48,7 @@
   justify-content: center;
   width: 15%;
   margin-bottom: 20px;
-  height: 45px;
+  height: 43px;
   padding: 0;
   background-color: transparent;
   position: absolute;
@@ -52,11 +56,11 @@
   border: 0 none;
 
   &--increase {
-    right: 0;
+    right: 4px;
   }
 
   &--reduce {
-    left: 0;
+    left: 4px;
   }
 
   & svg {
@@ -79,10 +83,12 @@
     @include set-font(20px, 20px, 500);
     margin-bottom: 0;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
+    letter-spacing: 2px;
   }
 
   .input-numbers__input {
+    @include set-font(25px, 25px, 500);
     margin-bottom: 25px;
     height: 70px;
   }
@@ -90,6 +96,14 @@
   .input-numbers__btn {
     margin-bottom: 25px;
     height: 70px;
+
+    &--increase {
+      right: -10px;
+    }
+
+    &--reduce {
+      left: -5px;
+    }
 
     &--increase svg {
       width: 20px;
@@ -120,11 +134,11 @@
     margin-bottom: 0;
 
     &--increase {
-      right: 95px;
+      right: 152px;
     }
 
     &--reduce {
-      right: 220px;
+      right: 273px;
       left: auto;
     }
   }
@@ -132,7 +146,8 @@
   .input-numbers__label {
     padding-top: 0;
     padding-bottom: 0;
-    width: 50%;
+    width: 40%;
+
     &--opacity {
       margin-left: 35px;
       width: auto;
@@ -141,4 +156,3 @@
     }
   }
 }
-

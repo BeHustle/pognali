@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 25px 0;
+  padding: 21px 0;
   border: 0 none;
   background-color: transparent;
 
@@ -24,6 +24,15 @@
     height: 18px;
     display: block;
     margin-right: 15px;
+  }
+
+  &:hover,
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -39,7 +48,9 @@
 @media only screen and (min-width: $tablet-width) {
   .companions-catalog__btn-show {
     @include set-font(20px, 30px, 700);
-    padding: 45px 0;
+    padding-top: 45px;
+    padding-bottom: 49px;
+    padding-right: 9px;
 
     &::before {
       background-size: 27px 27px;
@@ -61,6 +72,12 @@
 @media only screen and (min-width: $desktop-width) {
   .companions-catalog__btn-show {
     @include set-font(20px, 30px, 700);
-    padding: 65px 0;
+    padding-top: 65px;
+    padding-right: 76px;
+    padding-bottom: 68px;
+  }
+
+  .companions-catalog .pagination__controls {
+    justify-content: flex-end;
   }
 }

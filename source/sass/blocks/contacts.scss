@@ -1,4 +1,9 @@
 .contacts {
+  @include set-bb-radius(30px);
+  position: relative;
+  margin-top: -30px;
+  padding-top: 30px;
+  z-index: 14;
   background-color: $yellow;
 }
 
@@ -13,6 +18,15 @@
   color: $blue-white;
   display: flex;
   align-items: center;
+
+  &:hover,
+  &:focus {
+    color: rgba($blue-white, 0.7);
+  }
+
+  &:active {
+    color: rgba($blue-white, 0.3);
+  }
 }
 
 .contacts .button {
@@ -24,6 +38,28 @@
   padding-right: 20px;
   justify-content: space-between;
   align-items: center;
+}
+
+.contacts__btn {
+  &:hover,
+  &:focus {
+    background-color: #1d2e5b;
+    color: #ffffff;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: #ffffff;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
+
+  &:active svg {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
 }
 
 .contacts__location {
@@ -43,8 +79,14 @@
 }
 
 @media only screen and (min-width: $tablet-width) {
+  .contacts {
+    @include set-bb-radius(60px);
+    margin-top: -60px;
+    padding-top: 60px;
+  }
+
   .contacts .container {
-    padding-top: 45px;
+    padding-top: 49px;
     padding-bottom: 85px;
     padding-left: 55px;
     padding-right: 55px;
@@ -55,8 +97,9 @@
   }
 
   .contacts .button {
-    margin-top: 45px;
+    margin-top: 42px;
     padding: 26px 34px;
+    border-radius: 20px;
   }
 
   .contacts__location {
@@ -76,12 +119,29 @@
   .contacts .container {
     padding: 55px 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
   }
 
   .contacts .button {
     margin-top: 0;
+    margin-left: auto;
+    margin-right: 4px;
     width: 325px;
+  }
+
+  .contacts__link {
+    margin-left: 153px;
+  }
+
+  .contacts__location {
+    width: 90px;
+    height: 90px;
+    margin-right: 32px;
+
+    & svg {
+      width: 28px;
+      height: 43px;
+    }
   }
 }

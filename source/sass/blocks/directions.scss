@@ -1,16 +1,23 @@
 .directions {
+  @include set-bb-radius(30px);
+  margin-top: -30px;
+  padding-top: 30px;
   background-color: #edeff6;
+  position: relative;
+  z-index: 18;
+  overflow: hidden;
+  clip: rect(auto, auto, auto, auto);
 }
 
 .directions .container {
   position: relative;
   padding-top: 70px;
-  padding-bottom: 90px;
+  padding-bottom: 107px;
 }
 
 .directions__list {
   @include ul-style-reset;
-  margin-top: 60px;
+  margin-top: 63px;
 }
 
 .directions__info {
@@ -20,13 +27,17 @@
 
 .directions .button {
   position: absolute;
-  bottom: 30px;
+  bottom: 32px;
   left: 25px;
   width: calc(100% - 25px * 2);
   padding-left: 23px;
   padding-right: 23px;
   border-radius: 10px;
   color: #1d2e5b;
+
+  &:active {
+    color: rgba(#1d2e5b, 0.3);
+  }
 }
 
 .directions .content-title {
@@ -38,13 +49,23 @@
 }
 
 @media only screen and (min-width: $tablet-width) {
+  .directions {
+    @include set-bb-radius(60px);
+    margin-top: -60px;
+    padding-top: 60px;
+  }
+
+  .directions .direction {
+    margin-bottom: 10px;
+  }
+
   .directions .container {
     padding-top: 70px;
-    padding-bottom: 190px;
+    padding-bottom: 197px;
     background-image: url("../img/flags-back@1x.png");
     background-repeat: no-repeat;
     background-size: 289px auto;
-    background-position: top 70px right;
+    background-position: top 80px right 20px;
 
     @media (min-resolution: 1.5dppx) {
       background-image: url("../img/flags-back@2x.png");
@@ -66,10 +87,22 @@
   }
 
   .directions__list {
-    margin-top: 105px;
+    margin-top: 107px;
     padding-left: 35px;
     padding-right: 35px;
     width: 100%;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 141px;
+      height: 141px;
+      border-radius: 15px;
+      top: -50px;
+      left: 0;
+      background-color: #e2e5f2;
+    }
   }
 
   .directions .content-title {
@@ -87,7 +120,7 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     position: relative;
-    background-position: top 85px right;
+    background-position: top 87px right 30px;
   }
 
   .directions__info,
@@ -98,21 +131,27 @@
 
   .directions__info {
     margin-right: 100px;
-    margin-left: 175px;
+    margin-left: 171px;
   }
 
   .directions__list {
     margin-top: 0;
+
+    &::before {
+      top: -71px;
+      left: -70px;
+    }
   }
 
   .directions .button {
     position: static;
     display: flex;
-    width: 275px;
-    margin-top: 100px;
+    width: 276px;
+    margin-top: 99px;
   }
 
   .directions .content-title {
-    margin-bottom: 50px;
+    margin-bottom: 61px;
+    margin-top: 2px;
   }
 }

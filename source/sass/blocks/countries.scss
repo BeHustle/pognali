@@ -1,6 +1,7 @@
 .countries {
-  display: none;
   @include ul-style-reset;
+  display: none;
+
   &--active {
     display: block;
   }
@@ -9,6 +10,15 @@
 .countries__link {
   @include set-font(16px, 22px, 400);
   color: $grey;
+
+  &:hover,
+  &:focus {
+    color: #1d2e5b;
+  }
+
+  &:active {
+    color: rgba(#1d2e5b, 0.3);
+  }
 }
 
 .countries__title {
@@ -31,6 +41,6 @@
 
   .countries {
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 52px;
   }
 }
