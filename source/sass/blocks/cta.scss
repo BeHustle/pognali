@@ -94,21 +94,23 @@
 
   .cta .cta__contacts-list {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .cta .cta__contacts-item {
-    margin-right: 120px;
+    margin-right: 111px;
+    margin-left: 153px;
 
     &:last-child {
       margin-right: 0;
+      margin-left: 0;
     }
   }
 
   .cta .cta__contacts-icon {
     width: 90px;
     height: 90px;
-    margin-right: 26px;
+    margin-right: 31px;
   }
 
   .cta__contacts-icon svg {

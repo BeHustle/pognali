@@ -26,6 +26,7 @@
   text-align: center;
   margin-top: -9px;
   margin-right: 5px;
+  margin-left: auto;
 }
 
 .page-header__menu-open {
@@ -78,16 +79,6 @@
   display: none;
 }
 
-.page-header__contacts--main {
-  position: absolute;
-  bottom: -431px;
-  right: 50%;
-  transform: translateX(50%);
-  display: flex;
-  align-items: center;
-  width: 270px;
-}
-
 .page-header__contacts--main .page-header__auth {
   width: auto;
   flex-grow: 1;
@@ -105,8 +96,12 @@
 
 .page-header {
   background-color: #ffffff;
-  position: relative;
   z-index: 300;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
 
   &--js {
     background-color: $blue-black;
@@ -139,10 +134,6 @@
 
 .page-header--scrolled {
   background-color: #ffffff;
-  position: fixed;
-  left: 0;
-  right: 0;
-  width: 100%;
 
   & .page-header__menu-open {
     fill: #cccccc;
@@ -223,13 +214,14 @@
     margin-bottom: 0;
   }
 
+  .page-header__contacts--main .page-header__auth {
+    margin-bottom: -23px;
+  }
+
   .page-header--js .page-header__toggle-menu {
     margin-top: 0;
     margin-right: -11px;
-  }
-
-  .page-header__contacts--main .page-header__auth {
-    margin-top: 23px;
+    margin-left: 0;
   }
 
   .page-header--main .page-header__logo-link {
@@ -248,7 +240,7 @@
     display: flex;
     justify-content: flex-start;
     padding-top: 48px;
-    padding-bottom: 20px;
+    padding-bottom: 0;
   }
 
   .page-header .page-header__nav {
@@ -262,7 +254,8 @@
       position: absolute;
       width: 60px;
       height: 2px;
-      top: 50%;
+      bottom: 50%;
+      transform: translateY(50%);
       left: 40px;
       background-color: #ffffff;
     }
@@ -270,6 +263,7 @@
 
   .page-header .page-header__site-link {
     color: #ffffff;
+    letter-spacing: 0;
   }
 
   .page-header .page-header__toggle-menu {
@@ -302,6 +296,7 @@
 
   .page-header__contacts .page-header__contacts-item {
     display: block;
+    margin-bottom: 0;
   }
 
   .page-header .page-header__logo--white {
@@ -377,5 +372,10 @@
     & .page-header__site-link {
       letter-spacing: -0.2px;
     }
+  }
+
+  .page-header--scrolled .page-header__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }

@@ -2,7 +2,7 @@ svg4everybody();
 
 $(window).scroll(function () {
   var height = $(window).scrollTop();
-  if (height > 9999) {
+  if (height > 50) {
     $('.page-header').addClass('page-header--scrolled');
   } else {
     $('.page-header').removeClass('page-header--scrolled');

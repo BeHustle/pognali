@@ -75,6 +75,10 @@
   }
 }
 
+.about__text br {
+  display: none;
+}
+
 @media only screen and (min-width: $tablet-width) {
   .about {
     @include set-bb-radius(60px);
@@ -135,5 +139,9 @@
       padding-right: 180px;
       margin-bottom: 0;
     }
+  }
+
+  .about__text br {
+    display: inline;
   }
 }

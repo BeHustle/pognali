@@ -101,6 +101,13 @@
     margin-right: 14px;
   }
 
+  & .checkbox__input:checked + .checkbox__text::after {
+    width: 26px;
+    height: 26px;
+    top: -13px;
+    left: -13px;
+  }
+
   &:focus-within .checkbox__text::before {
     border-color: #959bb2;
   }

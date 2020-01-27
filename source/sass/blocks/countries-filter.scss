@@ -5,7 +5,7 @@
   padding-top: 30px;
   background-color: #e2e5f2;
   width: 100%;
-  top: 60px;
+  top: 127px;
   right: 0;
   left: 0;
 }
@@ -136,7 +136,7 @@
 @media only screen and (min-width: $tablet-width) {
   .countries-filter {
     @include set-bb-radius(60px);
-    top: 185px;
+    top: 316px;
     padding-top: 60px;
   }
 
@@ -158,8 +158,12 @@
     & svg {
       width: 18px;
       height: 18px;
-      margin-left: 64px;
+      margin-left: 27px;
       margin-right: -5px;
+    }
+
+    &--hide svg {
+      margin-left: 65px;
     }
   }
 
@@ -241,6 +245,7 @@
     padding-right: 20px;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 1px;
   }
 
   .countries-filter .countries-filter__continents {
@@ -264,7 +269,7 @@
 
   .countries-filter__toggle-btn {
     padding-right: 80px;
-    margin-top: -5px;
+    margin-top: -11px;
   }
 
   .countries-filter .countries-filter__alphabet {
@@ -275,5 +280,9 @@
     margin-left: -18px;
     margin-top: 19px;
     margin-bottom: 60px;
+  }
+
+  .countries-filter .countries__item {
+    margin-top: 0.4px;
   }
 }

@@ -66,7 +66,7 @@
 
 .companions__info {
   padding-left: 25px;
-  padding-right: 25px;
+  padding-right: 24px;
 }
 
 .companions__show-btn {
@@ -90,6 +90,10 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.companions__text br {
+  display: none;
 }
 
 .companions__list .companions__item {
@@ -154,6 +158,10 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .companions__text br {
+    display: inline;
   }
 }
 
