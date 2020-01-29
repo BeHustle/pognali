@@ -64,7 +64,7 @@
     color: rgba($grey, 0.7);
   }
 
-  &--error {
+  &:invalid {
     background-color: #ffefef;
     border-color: #ffefef;
     color: #ff0000;
