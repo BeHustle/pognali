@@ -69,6 +69,22 @@
     border-color: #ffefef;
     color: #ff0000;
   }
+
+  &:invalid::-webkit-input-placeholder {
+    color: rgba($grey, 0.15);
+  }
+
+  &:invalid::-moz-placeholder {
+    color: rgba($grey, 0.15);
+  }
+
+  &:invalid:-ms-input-placeholder {
+    color: rgba($grey, 0.15);
+  }
+
+  &:invalid:-moz-placeholder {
+    color: rgba($grey, 0.15);
+  }
 }
 
 .leed-form__description {

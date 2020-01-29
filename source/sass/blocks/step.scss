@@ -159,12 +159,11 @@
   z-index: 2;
   padding: 8px 13px;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border-color: #959bb2;
   }
 
-  &:active {
+  &:focus {
     border-color: $blue-black;
   }
 

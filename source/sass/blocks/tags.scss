@@ -34,6 +34,22 @@
   &:focus {
     border: 1px solid $blue-black;
   }
+
+  &::-webkit-input-placeholder {
+    color: rgba($grey, 0.6);
+  }
+
+  &::-moz-placeholder {
+    color: rgba($grey, 0.6);
+  }
+
+  &:-ms-input-placeholder {
+    color: rgba($grey, 0.6);
+  }
+
+  &:-moz-placeholder {
+    color: rgba($grey, 0.6);
+  }
 }
 
 @media only screen and (min-width: $tablet-width) {
