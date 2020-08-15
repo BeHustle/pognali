@@ -8,6 +8,8 @@
 #### Бизнес логика: Javascript ES5 + jQuery
 #### Сборка: Gulp
 #### Styleguide HTML SCSS (stylelint)
+#### Адаптивность: Да, mobile-first (320px, 768px, 1400px)
+#### Кроссбраузерность: Да Chrome, Opera, Mozilla, Firefox, IE11+
 #### Дополнительные библиотеки: GULP- Autoprefix, csso, concat, minify, plumber, postcss, posthml, svg, webp
 
 ##### Сайт проекта:
