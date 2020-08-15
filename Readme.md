@@ -12,6 +12,6 @@
 #### Кроссбраузерность: Да Chrome, Opera, Mozilla, Firefox, IE11+
 #### Дополнительные библиотеки: GULP- Autoprefix, csso, concat, minify, plumber, postcss, posthml, svg, webp
 
-##### Сайт проекта:
+##### Сайт проекта: <a href="https://behustle.github.io/pognali/">Главная</a>, <a href="https://behustle.github.io/pognali/form.html">Форма</a>, <a href="https://behustle.github.io/pognali/catalog.html">Каталог</a>
 
 ##### Автор: Владислав Клева
